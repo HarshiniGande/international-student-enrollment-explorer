@@ -150,6 +150,7 @@
   <span class="nav-link" onclick="navTo('s-regional')">Regions</span>
   <span class="nav-link" onclick="navTo('s-regression')">Regression</span>
   <span class="nav-link" onclick="navTo('s-map')">Map</span>
+  <span class="nav-link" onclick="navTo('s-forecast')">Forecast</span>
 </nav>
 
 <div id="tooltip"></div>
@@ -292,9 +293,33 @@
   <div class="insights" id="map-insights"></div>
 </section>
 
+<!-- ── SECTION 8: FORECAST & ANOMALIES ── -->
+<section id="s-forecast">
+  <div class="section-header">
+    <div class="section-number">08 · Forecasting &amp; Anomaly Detection</div>
+    <div class="section-title">Where Enrollment Is Heading, and What Broke the Pattern</div>
+    <div class="section-desc">Two forecasting models were backtested on 2022-2024 before forecasting 2025-2027. Separately, each country's year-over-year changes were scored against its own history to flag unusual spikes and drops.</div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="chart-title">Total enrollment · actual and 2025-2027 forecast (95% interval)</div>
+      <div id="fc-chart"></div>
+    </div>
+    <div class="card">
+      <div class="chart-title">Backtest · trained on 2000-2021, tested on 2022-2024</div>
+      <div id="fc-backtest"></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:1.5rem;">
+    <div class="chart-title">Flagged anomalies · 15 largest sending countries (robust z-score of year-over-year change, |z| &ge; 3.5)</div>
+    <div id="anom-table"></div>
+  </div>
+  <div class="insights" id="fc-insights"></div>
+</section>
+
 <footer>
   Data source: IIE Open Doors 2025 · <em>Census_All-Places-of-Origin</em> &amp; <em>Census_Field-of-Study</em><br>
-  Analysis: Python (pandas, scikit-learn, scipy) · Visualization: D3.js v7, d3-geo, TopoJSON (Natural Earth boundaries)
+  Analysis: Python (pandas, scikit-learn, scipy) · Forecasting: OLS + Holt, backtested · Anomalies: robust z-score · Visualization: D3.js v7, d3-geo, TopoJSON (Natural Earth boundaries)
 </footer>
 
 <script>
@@ -957,6 +982,100 @@ const FOS_COLORS = [
     console.error(err);
     status.textContent = "Could not load world boundaries. Check your internet connection and reload.";
   });
+})();
+</script>
+<script>
+// ── 8. FORECAST & ANOMALIES ──
+// Results produced by forecast_anomaly.py (outputs 13-15), embedded here.
+(function() {
+  const FC = {"forecast": [{"year": 2025, "ols_forecast": 1242433.0, "ols_lower_95": 1090231.0, "ols_upper_95": 1394634.0}, {"year": 2026, "ols_forecast": 1273094.0, "ols_lower_95": 1119332.0, "ols_upper_95": 1426856.0}, {"year": 2027, "ols_forecast": 1303755.0, "ols_lower_95": 1148339.0, "ols_upper_95": 1459170.0}], "backtest": [{"year": 2022, "actual": 1057188.0, "ols_forecast": 1204491.0, "holt_forecast": 869020.0, "ols_pct_error": 13.93, "holt_pct_error": -17.8}, {"year": 2023, "actual": 1126690.0, "ols_forecast": 1238749.0, "holt_forecast": 822264.0, "ols_pct_error": 9.95, "holt_pct_error": -27.02}, {"year": 2024, "actual": 1177766.0, "ols_forecast": 1273006.0, "holt_forecast": 775508.0, "ols_pct_error": 8.09, "holt_pct_error": -34.15}], "mape_ols": 10.7, "mape_holt": 26.3, "anomalies": [{"place": "Brazil", "year": 2014, "prior_enrollment": 13286.0, "enrollment": 23675.0, "abs_change": 10389.0, "pct_change": 78.2, "robust_z": 7.79, "direction": "spike", "covid_year": false}, {"place": "Saudi Arabia", "year": 2006, "prior_enrollment": 3448.0, "enrollment": 7886.0, "abs_change": 4438.0, "pct_change": 128.71, "robust_z": 6.21, "direction": "spike", "covid_year": false}, {"place": "Japan", "year": 2020, "prior_enrollment": 17554.0, "enrollment": 11785.0, "abs_change": -5769.0, "pct_change": -32.86, "robust_z": -5.94, "direction": "drop", "covid_year": true}, {"place": "Ghana", "year": 2023, "prior_enrollment": 6468.0, "enrollment": 9394.0, "abs_change": 2926.0, "pct_change": 45.24, "robust_z": 5.57, "direction": "spike", "covid_year": false}, {"place": "Ghana", "year": 2024, "prior_enrollment": 9394.0, "enrollment": 12825.0, "abs_change": 3431.0, "pct_change": 36.52, "robust_z": 4.41, "direction": "spike", "covid_year": false}, {"place": "Japan", "year": 2022, "prior_enrollment": 13449.0, "enrollment": 16054.0, "abs_change": 2605.0, "pct_change": 19.37, "robust_z": 4.28, "direction": "spike", "covid_year": false}, {"place": "South Korea", "year": 2020, "prior_enrollment": 49809.0, "enrollment": 39491.0, "abs_change": -10318.0, "pct_change": -20.72, "robust_z": -3.94, "direction": "drop", "covid_year": true}, {"place": "Ghana", "year": 2022, "prior_enrollment": 4916.0, "enrollment": 6468.0, "abs_change": 1552.0, "pct_change": 31.57, "robust_z": 3.76, "direction": "spike", "covid_year": false}, {"place": "Mexico", "year": 2001, "prior_enrollment": 10670.0, "enrollment": 12518.0, "abs_change": 1848.0, "pct_change": 17.32, "robust_z": 3.62, "direction": "spike", "covid_year": false}, {"place": "Brazil", "year": 2016, "prior_enrollment": 19370.0, "enrollment": 13089.0, "abs_change": -6281.0, "pct_change": -32.43, "robust_z": -3.61, "direction": "drop", "covid_year": false}]};
+  const actual = DATA.trend.filter(d => d.total_enrollment != null)
+    .map(d => ({ year: d.year, value: d.total_enrollment }));
+  const fc = FC.forecast.map(d => ({ year: d.year, value: d.ols_forecast, lo: d.ols_lower_95, hi: d.ols_upper_95 }));
+  const last = actual[actual.length - 1];
+
+  // ── Forecast chart
+  const el = document.getElementById("fc-chart");
+  const W = el.offsetWidth || 500, H = 280, M = { t: 16, r: 16, b: 36, l: 64 };
+  const w = W - M.l - M.r, h = H - M.t - M.b;
+  const svg = d3.select("#fc-chart").append("svg").attr("width", "100%").attr("viewBox", `0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform", `translate(${M.l},${M.t})`);
+  const x = d3.scaleLinear([2000, 2027], [0, w]);
+  const y = d3.scaleLinear([0, d3.max(fc, d => d.hi) * 1.05], [h, 0]).nice();
+
+  g.append("g").selectAll("line").data(y.ticks(5)).join("line").attr("class", "grid-line")
+    .attr("x1", 0).attr("x2", w).attr("y1", d => y(d)).attr("y2", d => y(d));
+  g.append("g").attr("class", "axis").attr("transform", `translate(0,${h})`)
+    .call(d3.axisBottom(x).ticks(7).tickFormat(d3.format("d")));
+  g.append("g").attr("class", "axis").call(d3.axisLeft(y).ticks(5).tickFormat(fmtK));
+
+  const band = [{ year: last.year, lo: last.value, hi: last.value }, ...fc];
+  g.append("path").datum(band).attr("fill", "rgba(77,184,164,.18)")
+    .attr("d", d3.area().x(d => x(d.year)).y0(d => y(d.lo)).y1(d => y(d.hi)));
+  g.append("path").datum(actual).attr("fill", "none").attr("stroke", "#7c6fcd").attr("stroke-width", 2)
+    .attr("d", d3.line().x(d => x(d.year)).y(d => y(d.value)));
+  g.append("path").datum([last, ...fc]).attr("fill", "none").attr("stroke", "#4db8a4")
+    .attr("stroke-width", 2).attr("stroke-dasharray", "5 4")
+    .attr("d", d3.line().x(d => x(d.year)).y(d => y(d.value)));
+
+  g.selectAll("circle.fc").data(fc).join("circle").attr("class", "fc")
+    .attr("cx", d => x(d.year)).attr("cy", d => y(d.value)).attr("r", 4).attr("fill", "#4db8a4")
+    .on("mouseover", (e, d) => showTip(`<strong>${d.year} forecast</strong>${fmt(d.value)} students<br>95% interval: ${fmtK(d.lo)} to ${fmtK(d.hi)}`, e))
+    .on("mousemove", moveTip).on("mouseout", hideTip);
+  g.selectAll("circle.act").data(actual).join("circle").attr("class", "act")
+    .attr("cx", d => x(d.year)).attr("cy", d => y(d.value)).attr("r", 2.5).attr("fill", "#7c6fcd")
+    .on("mouseover", (e, d) => showTip(`<strong>${d.year}</strong>${fmt(d.value)} students`, e))
+    .on("mousemove", moveTip).on("mouseout", hideTip);
+
+  const lg = g.append("g").attr("transform", "translate(8,4)");
+  [["Actual", "#7c6fcd", null], ["Forecast (OLS + COVID indicator)", "#4db8a4", "5 4"]].forEach((d, i) => {
+    lg.append("line").attr("x1", 0).attr("x2", 18).attr("y1", i * 16).attr("y2", i * 16)
+      .attr("stroke", d[1]).attr("stroke-width", 2).attr("stroke-dasharray", d[2]);
+    lg.append("text").attr("x", 24).attr("y", i * 16 + 4).attr("fill", "var(--muted)").attr("font-size", 11).text(d[0]);
+  });
+
+  // ── Backtest table
+  const rows = FC.backtest.map(d =>
+    `<tr><td>${d.year}</td><td>${fmt(d.actual)}</td><td>${fmt(d.ols_forecast)} <span style="color:var(--muted)">(${d.ols_pct_error > 0 ? "+" : ""}${d.ols_pct_error}%)</span></td><td>${fmt(d.holt_forecast)} <span style="color:var(--muted)">(${d.holt_pct_error > 0 ? "+" : ""}${d.holt_pct_error}%)</span></td></tr>`).join("");
+  document.getElementById("fc-backtest").innerHTML = `
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead><tr style="color:var(--muted);text-align:left;">
+        <th style="padding:6px 4px;">Year</th><th>Actual</th><th>OLS + COVID</th><th>Holt smoothing</th></tr></thead>
+      <tbody>${rows}</tbody>
+      <tfoot><tr style="border-top:1px solid var(--border);">
+        <td style="padding:8px 4px;"><strong>MAPE</strong></td><td></td>
+        <td><strong style="color:#4db8a4">${FC.mape_ols}%</strong></td>
+        <td><strong style="color:#e0885a">${FC.mape_holt}%</strong></td></tr></tfoot>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:.75rem;">The trend model with a COVID indicator had about ${Math.round(FC.mape_holt / FC.mape_ols)}x lower error than Holt smoothing, which overreacted to the 2020-21 drop, so it is used for the forecast above.</p>`;
+  d3.selectAll("#fc-backtest td").style("padding", "6px 4px").style("border-top", "1px solid var(--border)");
+
+  // ── Anomaly table
+  const an = FC.anomalies;
+  const arow = an.map(d => {
+    const col = d.direction === "spike" ? "#4db8a4" : "#e0885a";
+    return `<tr><td><strong>${d.place}</strong></td><td>${d.year}</td><td>${fmt(d.prior_enrollment)} &rarr; ${fmt(d.enrollment)}</td>
+      <td style="color:${col}">${d.pct_change > 0 ? "+" : ""}${d.pct_change.toFixed(1)}%</td>
+      <td>${d.robust_z.toFixed(1)}</td><td style="color:${col}">${d.direction}${d.covid_year ? " (COVID year)" : ""}</td></tr>`;
+  }).join("");
+  document.getElementById("anom-table").innerHTML = `
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+      <thead><tr style="color:var(--muted);text-align:left;">
+        <th style="padding:6px 4px;">Country</th><th>Year</th><th>Students</th><th>Change</th><th>Robust z</th><th>Type</th></tr></thead>
+      <tbody>${arow}</tbody></table>`;
+  d3.selectAll("#anom-table td").style("padding", "6px 4px").style("border-top", "1px solid var(--border)");
+
+  // ── Insights
+  const f27 = fc[fc.length - 1];
+  const nonCovid = an.filter(d => !d.covid_year).length;
+  const pills = [
+    ["2027 forecast", `${fmtK(f27.value)} students (95% interval ${fmtK(f27.lo)} to ${fmtK(f27.hi)})`],
+    ["Model choice", `Chosen by holdout test: ${FC.mape_ols}% MAPE vs. ${FC.mape_holt}% for Holt smoothing`],
+    ["Anomalies flagged", `${an.length} unusual country-years among the top 15 senders, ${nonCovid} outside COVID years`],
+    ["Biggest swing", `${an[0].place} ${an[0].year}: ${an[0].pct_change > 0 ? "+" : ""}${an[0].pct_change.toFixed(0)}% in one year`]
+  ];
+  d3.select("#fc-insights").selectAll(".insight").data(pills).join("div").attr("class", "insight")
+    .html(d => `<strong>${d[0]}</strong>${d[1]}`);
 })();
 </script>
 </body>

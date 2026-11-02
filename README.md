@@ -12,7 +12,7 @@ I work with international student data day to day and wanted to see the national
 
 ## What's inside
 
-The web page has 7 interactive views:
+The web page has 8 interactive sections:
 
 | # | View | What it shows |
 |---|------|---------------|
@@ -23,6 +23,7 @@ The web page has 7 interactive views:
 | 05 | Regional share | Share of enrollment by world region |
 | 06 | Regression | Actual vs. predicted enrollment with a COVID dummy variable |
 | 07 | Geospatial map | Choropleth of enrollment by country for 2000, 2010, 2019, 2024 and 24-year growth (CAGR), with zoom and tooltips |
+| 08 | Forecast and anomalies | 2025-2027 forecast with 95% intervals, a backtest of two models, and flagged country-year anomalies |
 
 ## Key findings
 
@@ -32,6 +33,8 @@ The web page has 7 interactive views:
 - **India** became the largest sender in 2023 and reached **363,019** students in 2024.
 - **South Asia** overtook East Asia as the largest sending region in 2024 (36.1% vs. 33.5% share).
 - Among countries with 1,000+ students, **Vietnam** grew fastest since 2000 (about +11% per year); **30 countries** sent fewer students in 2024 than in 2000.
+- The trend model forecasts about **1.30M students by 2027** (95% interval 1.15M to 1.46M). It beat Holt exponential smoothing on a 2022-2024 holdout (MAPE 10.7% vs. 26.3%).
+- Anomaly detection flags swings such as **Brazil +78% in 2014** and **-32% in 2016**, and **Saudi Arabia +129% in 2006**, which line up with large government scholarship programs starting and ending.
 
 ## Methods
 
@@ -40,16 +43,19 @@ The web page has 7 interactive views:
 3. **Metrics:** CAGR (2000-2024 and post-COVID), peak year, averages, regional shares, STEM vs. non-STEM split.
 4. **Statistics:** Pearson correlations, OLS regression with a COVID indicator, K-Means clustering (k = 4, chosen with the elbow method) on standardized features.
 5. **Outputs:** 12 analysis-ready CSVs for Tableau and D3.js.
-6. **Visualization:** D3.js v7 web page (including a d3-geo choropleth on Natural Earth boundaries) and a Tableau workbook.
+6. **Forecasting** (`forecast_anomaly.py`): OLS trend with a COVID indicator vs. Holt linear exponential smoothing, compared on a 2022-2024 holdout (MAPE), then refit on all years to forecast 2025-2027 with 95% prediction intervals.
+7. **Anomaly detection:** robust z-scores (median and MAD) of each country's year-over-year % change against its own history; flags |z| >= 3.5 for countries with 1,000+ students and swings of 500+ students.
+8. **Visualization:** D3.js v7 web page (including a d3-geo choropleth on Natural Earth boundaries) and a Tableau workbook.
 
 ## Repository structure
 
 ```
 index.html                 Interactive D3.js page (open in a browser)
 analysis.py                Full Python pipeline: cleaning, metrics, models, CSV export
+forecast_anomaly.py        Forecasting (backtested) and anomaly detection, writes CSVs 13-15
 tableau/                   Tableau workbook (.twbx)
 data/                      Put the IIE Excel files here (not included)
-output/                    CSVs are written here when you run the pipeline
+output/                    Cleaned, analysis-ready CSVs (01-12) plus forecast and anomaly outputs (13-15)
 requirements.txt
 ```
 
@@ -67,9 +73,10 @@ requirements.txt
 ```bash
 pip install -r requirements.txt
 python analysis.py
+python forecast_anomaly.py
 ```
 
-The CSVs are written to `output/`.
+The CSVs are written to `output/`. The cleaned outputs are already included there, so you can explore them without rerunning the pipeline.
 
 ## Data source
 
