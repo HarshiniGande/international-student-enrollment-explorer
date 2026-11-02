@@ -1,0 +1,35 @@
+place,year,prior_enrollment,enrollment,abs_change,pct_change,robust_z,direction,covid_year
+Germany,2021,5364.0,8550.0,3186.0,59.4,13.0,spike,True
+Germany,2020,9242.0,5364.0,-3878.0,-41.96,-8.84,drop,True
+Brazil,2014,13286.0,23675.0,10389.0,78.2,8.32,spike,False
+France,2021,5643.0,7751.0,2108.0,37.36,8.15,spike,True
+Japan,2020,17554.0,11785.0,-5769.0,-32.86,-7.81,drop,True
+Australia,2020,4982.0,3623.0,-1359.0,-27.28,-7.76,drop,True
+France,2020,8471.0,5643.0,-2828.0,-33.38,-7.69,drop,True
+United Kingdom,2020,10756.0,8028.0,-2728.0,-25.36,-6.85,drop,True
+United Kingdom,2021,8028.0,10292.0,2264.0,28.2,6.63,spike,True
+Spain,2021,5781.0,8165.0,2384.0,41.24,5.52,spike,True
+Ghana,2023,6468.0,9394.0,2926.0,45.24,5.48,spike,False
+Japan,2022,13449.0,16054.0,2605.0,19.37,5.4,spike,False
+Netherlands,2020,2727.0,1767.0,-960.0,-35.2,-5.24,drop,True
+Zimbabwe,2000,1184.0,1703.0,519.0,43.83,5.14,spike,False
+Zimbabwe,2024,1907.0,2712.0,805.0,42.21,4.94,spike,False
+Denmark,2020,1264.0,608.0,-656.0,-51.9,-4.83,drop,True
+Singapore,2020,4504.0,3558.0,-946.0,-21.0,-4.64,drop,True
+Saudi Arabia,2006,3448.0,7886.0,4438.0,128.71,4.55,spike,False
+Spain,2020,7954.0,5781.0,-2173.0,-27.32,-4.5,drop,True
+Ghana,2024,9394.0,12825.0,3431.0,36.52,4.34,spike,False
+Nigeria,2002,4499.0,5816.0,1317.0,29.27,4.29,spike,False
+Japan,2021,11785.0,13449.0,1664.0,14.12,4.08,spike,True
+Chile,2021,2227.0,2750.0,523.0,23.48,4.03,spike,True
+Italy,2020,6063.0,4894.0,-1169.0,-19.28,-4.02,drop,True
+South Korea,2020,49809.0,39491.0,-10318.0,-20.72,-3.92,drop,True
+Sweden,2020,3213.0,2045.0,-1168.0,-36.35,-3.91,drop,True
+Brazil,2016,19370.0,13089.0,-6281.0,-32.43,-3.9,drop,False
+Thailand,2020,6154.0,4960.0,-1194.0,-19.4,-3.81,drop,True
+Ghana,2022,4916.0,6468.0,1552.0,31.57,3.69,spike,False
+Hong Kong,2020,6778.0,5878.0,-900.0,-13.28,-3.69,drop,True
+Mexico,2001,10670.0,12518.0,1848.0,17.32,3.67,spike,False
+Vietnam,2008,8769.0,12823.0,4054.0,46.23,3.59,spike,False
+Netherlands,2022,2172.0,2751.0,579.0,26.66,3.54,spike,False
+Vietnam,2007,6036.0,8769.0,2733.0,45.28,3.5,spike,False

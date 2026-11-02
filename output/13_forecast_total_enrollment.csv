@@ -1,0 +1,4 @@
+year,ols_forecast,ols_lower_95,ols_upper_95,holt_forecast,holt_lower_95,holt_upper_95,recommended_model
+2025,1242433.0,1090231.0,1394634.0,1206360.0,1100663.0,1312057.0,OLS trend + COVID indicator
+2026,1273094.0,1119332.0,1426856.0,1236194.0,1086716.0,1385672.0,OLS trend + COVID indicator
+2027,1303755.0,1148339.0,1459170.0,1266027.0,1082955.0,1449100.0,OLS trend + COVID indicator
