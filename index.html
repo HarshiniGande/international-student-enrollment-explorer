@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Student Enrollment in the US — IIE Open Doors 2025</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<style>
+  :root {
+    --bg: #0e0e12;
+    --surface: #16161e;
+    --card: #1c1c26;
+    --border: #2a2a3a;
+    --text: #e8e6f0;
+    --muted: #8884a0;
+    --accent: #7c6fcd;
+    --accent2: #4db8a4;
+    --accent3: #e0885a;
+    --accent4: #d4648a;
+    --covid: #e05a5a;
+    --yellow: #e8c96a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(14,14,18,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 0;
+    padding: 0 2rem; height: 52px;
+  }
+  .nav-brand { font-size: 13px; font-weight: 600; color: var(--accent); margin-right: auto; letter-spacing: .04em; }
+  .nav-link {
+    font-size: 12px; color: var(--muted); padding: 0 14px; height: 52px;
+    display: flex; align-items: center; cursor: pointer; border-bottom: 2px solid transparent;
+    transition: color .2s, border-color .2s;
+  }
+  .nav-link:hover, .nav-link.active { color: var(--text); border-bottom-color: var(--accent); }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 5rem 2rem 4rem;
+    max-width: 820px; margin: 0 auto; text-align: center;
+  }
+  .hero-tag {
+    display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent); background: rgba(124,111,205,.12);
+    border: 1px solid rgba(124,111,205,.25); border-radius: 20px;
+    padding: 4px 14px; margin-bottom: 1.5rem;
+  }
+  .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; margin-bottom: 1rem; }
+  .hero p { font-size: 16px; color: var(--muted); max-width: 600px; margin: 0 auto 2.5rem; }
+  .hero-stats { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat-val { font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .06em; }
+
+  /* ── SECTIONS ── */
+  section {
+    max-width: 1100px; margin: 0 auto;
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-header { margin-bottom: 2rem; }
+  .section-number { font-size: 11px; font-weight: 600; color: var(--accent); letter-spacing: .1em; text-transform: uppercase; margin-bottom: .5rem; }
+  .section-title { font-size: 1.5rem; font-weight: 700; margin-bottom: .5rem; }
+  .section-desc { color: var(--muted); font-size: 14px; max-width: 600px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .chart-title { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 1rem; }
+
+  /* ── GRID ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  /* ── SVG DEFAULTS ── */
+  .axis path, .axis line { stroke: var(--border); }
+  .axis text { fill: var(--muted); font-size: 11px; }
+  .grid-line { stroke: var(--border); stroke-dasharray: 3 4; opacity: .6; }
+
+  /* ── TOOLTIP ── */
+  #tooltip {
+    position: fixed; pointer-events: none;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 14px;
+    font-size: 12px; line-height: 1.8;
+    z-index: 200; opacity: 0; transition: opacity .15s;
+    box-shadow: 0 8px 32px rgba(0,0,0,.5);
+    max-width: 220px;
+  }
+  #tooltip strong { display: block; font-size: 13px; color: var(--text); margin-bottom: 2px; }
+
+  /* ── BAR RACE ── */
+  #bar-race-controls { display: flex; align-items: center; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .btn {
+    padding: 6px 16px; border-radius: 6px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); cursor: pointer; font-size: 12px;
+    transition: background .2s, border-color .2s;
+  }
+  .btn:hover { background: var(--card); border-color: var(--accent); }
+  .btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .year-display { font-size: 2rem; font-weight: 700; color: var(--accent); min-width: 70px; }
+  input[type=range] { flex: 1; min-width: 120px; accent-color: var(--accent); }
+
+  /* ── CLUSTER LEGEND ── */
+  .legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); cursor: pointer; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ── INSIGHT PILLS ── */
+  .insights { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .insight {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 14px; font-size: 12px; color: var(--muted); flex: 1; min-width: 200px;
+  }
+  .insight strong { display: block; color: var(--text); font-size: 13px; margin-bottom: 2px; }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center; padding: 3rem 2rem;
+    color: var(--muted); font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand"> Open Doors 2025</span>
+  <span class="nav-link" onclick="navTo('s-trend')">Trends</span>
+  <span class="nav-link" onclick="navTo('s-race')">Bar Race</span>
+  <span class="nav-link" onclick="navTo('s-cluster')">Clusters</span>
+  <span class="nav-link" onclick="navTo('s-fos')">Field of Study</span>
+  <span class="nav-link" onclick="navTo('s-regional')">Regions</span>
+  <span class="nav-link" onclick="navTo('s-regression')">Regression</span>
+  <span class="nav-link" onclick="navTo('s-map')">Map</span>
+</nav>
+
+<div id="tooltip"></div>
+
+<div class="hero">
+  <div class="hero-tag">Data Analysis · IIE Open Doors 2025</div>
+  <h1>International Students<br>in US Higher Education</h1>
+  <p>25 years of enrollment data — trends, clustering, regression, and field of study breakdowns across 200+ countries of origin.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-val">1.18M</div><div class="stat-label">Students in 2024</div></div>
+    <div class="stat"><div class="stat-val">200+</div><div class="stat-label">Countries of origin</div></div>
+    <div class="stat"><div class="stat-val">2000–24</div><div class="stat-label">Years of data</div></div>
+    <div class="stat"><div class="stat-val">R²=0.92</div><div class="stat-label">Regression fit</div></div>
+  </div>
+</div>
+
+<!-- ── SECTION 1: TREND ── -->
+<section id="s-trend">
+  <div class="section-header">
+    <div class="section-number">01 · Time Series</div>
+    <div class="section-title">25 Years of Enrollment</div>
+    <div class="section-desc">Total international students in US higher education, 2000–2024. COVID-19 caused a 15% drop in 2020 — the largest single-year decline on record.</div>
+  </div>
+  <div class="card">
+    <div class="chart-title">Total enrollment · annotated with COVID impact</div>
+    <div id="trend-chart"></div>
+  </div>
+  <div class="insights">
+    <div class="insight"><strong>Peak pre-COVID</strong>1.09M students in 2015/16 — first plateau after a decade of growth</div>
+    <div class="insight"><strong>COVID drop</strong>−15% in 2020, the sharpest single-year decline in 70 years of Open Doors data</div>
+    <div class="insight"><strong>Recovery</strong>1.18M in 2024 — full recovery and new record surpassed within 4 years</div>
+    <div class="insight"><strong>Growth rate</strong>+30,661 students/year on trend (excl. COVID years)</div>
+  </div>
+</section>
+
+<!-- ── SECTION 2: BAR RACE ── -->
+<section id="s-race">
+  <div class="section-header">
+    <div class="section-number">02 · Animated Ranking</div>
+    <div class="section-title">Country Rankings Over Time</div>
+    <div class="section-desc">Top 15 countries by enrollment, 2000–2024. Watch India overtake China as the dominant sender nation.</div>
+  </div>
+  <div class="card">
+    <div id="bar-race-controls">
+      <button class="btn active" id="btn-play" onclick="raceToggle()">▶ Play</button>
+      <button class="btn" onclick="raceReset()">↺ Reset</button>
+      <input type="range" id="race-slider" min="0" max="24" value="0" oninput="raceSeek(+this.value)">
+      <span class="year-display" id="race-year">2000</span>
+    </div>
+    <div id="bar-race-chart"></div>
+  </div>
+</section>
+
+<!-- ── SECTION 3: CLUSTER ── -->
+<section id="s-cluster">
+  <div class="section-header">
+    <div class="section-number">03 · K-Means Clustering</div>
+    <div class="section-title">Country Enrollment Patterns</div>
+    <div class="section-desc">K-Means (k=4) clusters countries by 2024 enrollment, CAGR, and historical average. Each cluster reveals a distinct growth archetype.</div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="chart-title">Enrollment 2024 vs CAGR 2000–2024</div>
+      <div id="cluster-chart"></div>
+      <div class="legend" id="cluster-legend"></div>
+    </div>
+    <div class="card">
+      <div class="chart-title">Cluster profiles</div>
+      <div id="cluster-table"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 4: FIELD OF STUDY ── -->
+<section id="s-fos">
+  <div class="section-header">
+    <div class="section-number">04 · Field of Study</div>
+    <div class="section-title">What Are International Students Studying?</div>
+    <div class="section-desc">Top 8 fields of study over time. Engineering and Business dominate, but STEM fields collectively are growing fastest.</div>
+  </div>
+  <div class="card">
+    <div class="chart-title">Enrollment by field · 1999–2024 (stacked area)</div>
+    <div id="fos-chart"></div>
+  </div>
+</section>
+
+<!-- ── SECTION 5: REGIONAL ── -->
+<section id="s-regional">
+  <div class="section-header">
+    <div class="section-number">05 · Regional Composition</div>
+    <div class="section-title">Where Are Students Coming From?</div>
+    <div class="section-desc">South Asia (led by India) overtook East Asia as the largest sending region in 2024 (36.1% vs. 33.5% share), a historic shift.</div>
+  </div>
+  <div class="card">
+    <div class="chart-title">Regional share of US international enrollment · 2000–2024</div>
+    <div id="regional-chart"></div>
+  </div>
+</section>
+
+<!-- ── SECTION 6: REGRESSION ── -->
+<section id="s-regression">
+  <div class="section-header">
+    <div class="section-number">06 · Linear Regression</div>
+    <div class="section-title">Modeling the Growth Trend</div>
+    <div class="section-desc">OLS regression with year and COVID dummy variable. R²=0.92 — year alone explains 92% of enrollment variance. The COVID flag captures the 2020–21 shock.</div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="chart-title">Actual vs predicted enrollment</div>
+      <div id="reg-chart"></div>
+    </div>
+    <div class="card">
+      <div class="chart-title">Model coefficients</div>
+      <div id="reg-stats"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECTION 7: GEOSPATIAL MAP ── -->
+<section id="s-map">
+  <div class="section-header">
+    <div class="section-number">07 · Geospatial</div>
+    <div class="section-title">Where Students Come From, Mapped</div>
+    <div class="section-desc">Choropleth of US international enrollment by country of origin. Switch between snapshot years, or view 24-year growth (CAGR) to see which regions are rising and which are shrinking. Scroll to zoom, drag to pan.</div>
+  </div>
+  <div class="card">
+    <div id="map-controls" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:1rem;">
+      <button class="btn" data-metric="enrollment_2000">2000</button>
+      <button class="btn" data-metric="enrollment_2010">2010</button>
+      <button class="btn" data-metric="enrollment_2019">2019</button>
+      <button class="btn active" data-metric="enrollment_2024">2024</button>
+      <button class="btn" data-metric="cagr_2000_2024">Growth 2000-24 (CAGR)</button>
+      <button class="btn" id="map-reset" style="margin-left:auto;">Reset zoom</button>
+    </div>
+    <div class="chart-title" id="map-title">Enrollment by country of origin · 2024</div>
+    <div id="map-chart" style="position:relative;"></div>
+    <div id="map-legend" style="margin-top:.75rem;"></div>
+    <div id="map-status" style="font-size:12px;color:var(--muted);margin-top:.5rem;"></div>
+  </div>
+  <div class="insights" id="map-insights"></div>
+</section>
+
+<footer>
+  Data source: IIE Open Doors 2025 · <em>Census_All-Places-of-Origin</em> &amp; <em>Census_Field-of-Study</em><br>
+  Analysis: Python (pandas, scikit-learn, scipy) · Visualization: D3.js v7, d3-geo, TopoJSON (Natural Earth boundaries)
+</footer>
+
+<script>
+const DATA = {"trend": [{"year": 2000, "total_enrollment": 545436.0, "yoy_growth": null, "covid_flag": false, "predicted": 475906.7489681408, "residual": 69529.2510318592}, {"year": 2001, "total_enrollment": 580459.0, "yoy_growth": 6.421101650789463, "covid_flag": false, "predicted": 506567.7828435568, "residual": 73891.21715644316}, {"year": 2002, "total_enrollment": 583965.0, "yoy_growth": 0.6040047617488886, "covid_flag": false, "predicted": 537228.816718973, "residual": 46736.18328102701}, {"year": 2003, "total_enrollment": 567845.0, "yoy_growth": -2.7604394098961427, "covid_flag": false, "predicted": 567889.850594389, "residual": -44.850594389019534}, {"year": 2004, "total_enrollment": 561275.0, "yoy_growth": -1.1570058730815624, "covid_flag": false, "predicted": 598550.884469805, "residual": -37275.88446980505}, {"year": 2005, "total_enrollment": 562913.0, "yoy_growth": 0.2918355529820449, "covid_flag": false, "predicted": 629211.9183452211, "residual": -66298.91834522109}, {"year": 2006, "total_enrollment": 582496.0, "yoy_growth": 3.478867960057763, "covid_flag": false, "predicted": 659872.9522206371, "residual": -77376.95222063712}, {"year": 2007, "total_enrollment": 623449.0, "yoy_growth": 7.030606218755153, "covid_flag": false, "predicted": 690533.9860960533, "residual": -67084.98609605327}, {"year": 2008, "total_enrollment": 670912.0, "yoy_growth": 7.612972352189184, "covid_flag": false, "predicted": 721195.0199714693, "residual": -50283.0199714693}, {"year": 2009, "total_enrollment": 690606.0, "yoy_growth": 2.935407326147099, "covid_flag": false, "predicted": 751856.0538468853, "residual": -61250.05384688533}, {"year": 2010, "total_enrollment": 723048.0, "yoy_growth": 4.697613400404865, "covid_flag": false, "predicted": 782517.0877223015, "residual": -59469.08772230148}, {"year": 2011, "total_enrollment": 764340.0, "yoy_growth": 5.710824177647966, "covid_flag": false, "predicted": 813178.1215977175, "residual": -48838.12159771752}, {"year": 2012, "total_enrollment": 819449.0, "yoy_growth": 7.210011251537285, "covid_flag": false, "predicted": 843839.1554731335, "residual": -24390.15547313355}, {"year": 2013, "total_enrollment": 886052.0, "yoy_growth": 8.127778543875209, "covid_flag": false, "predicted": 874500.1893485496, "residual": 11551.810651450418}, {"year": 2014, "total_enrollment": 974926.0, "yoy_growth": 10.030336819960905, "covid_flag": false, "predicted": 905161.2232239656, "residual": 69764.77677603438}, {"year": 2015, "total_enrollment": 1043839.0, "yoy_growth": 7.068536483794663, "covid_flag": false, "predicted": 935822.2570993818, "residual": 108016.74290061824}, {"year": 2016, "total_enrollment": 1078822.0, "yoy_growth": 3.35137890038597, "covid_flag": false, "predicted": 966483.2909747978, "residual": 112338.7090252022}, {"year": 2017, "total_enrollment": 1094792.0, "yoy_growth": 1.4803183472342996, "covid_flag": false, "predicted": 997144.3248502138, "residual": 97647.67514978616}, {"year": 2018, "total_enrollment": 1095299.0, "yoy_growth": 0.0463101666800636, "covid_flag": false, "predicted": 1027805.35872563, "residual": 67493.64127437014}, {"year": 2019, "total_enrollment": 1075496.0, "yoy_growth": -1.8079994595083135, "covid_flag": false, "predicted": 1058466.392601046, "residual": 17029.607398953987}, {"year": 2020, "total_enrollment": 914095.0, "yoy_growth": -15.00712229520147, "covid_flag": true, "predicted": 915976.483062292, "residual": -1881.483062291867}, {"year": 2021, "total_enrollment": 948519.0, "yoy_growth": 3.765910545402829, "covid_flag": true, "predicted": 946637.516937708, "residual": 1881.4830622921}, {"year": 2022, "total_enrollment": 1057188.0, "yoy_growth": 11.45670250147861, "covid_flag": false, "predicted": 1150449.4942272943, "residual": -93261.49422729434}, {"year": 2023, "total_enrollment": 1126690.0, "yoy_growth": 6.574232776005773, "covid_flag": false, "predicted": 1181110.5281027104, "residual": -54420.52810271038}, {"year": 2024, "total_enrollment": 1177766.0, "yoy_growth": 4.533278896590898, "covid_flag": false, "predicted": 1211771.5619781264, "residual": -34005.56197812641}], "bar_race": [{"place": "Ghana", "year": 2000, "enrollment": 2469.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2000, "enrollment": 3820.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2000, "enrollment": 59939.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2000, "enrollment": 46497.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2000, "enrollment": 45685.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2000, "enrollment": 28566.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2000, "enrollment": 4114.0, "region": "South Asia"}, {"place": "India", "year": 2000, "enrollment": 54664.0, "region": "South Asia"}, {"place": "Nepal", "year": 2000, "enrollment": 2618.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2000, "enrollment": 6948.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2000, "enrollment": 2022.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2000, "enrollment": 10670.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2000, "enrollment": 8846.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2000, "enrollment": 5273.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2000, "enrollment": 25279.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2001, "enrollment": 2672.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2001, "enrollment": 4499.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2001, "enrollment": 63211.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2001, "enrollment": 46810.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2001, "enrollment": 49046.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2001, "enrollment": 28930.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2001, "enrollment": 3935.0, "region": "South Asia"}, {"place": "India", "year": 2001, "enrollment": 66836.0, "region": "South Asia"}, {"place": "Nepal", "year": 2001, "enrollment": 3019.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2001, "enrollment": 8644.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2001, "enrollment": 2531.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2001, "enrollment": 12518.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2001, "enrollment": 8972.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2001, "enrollment": 5579.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2001, "enrollment": 26514.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2002, "enrollment": 3032.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2002, "enrollment": 5816.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2002, "enrollment": 64757.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2002, "enrollment": 45960.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2002, "enrollment": 51519.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2002, "enrollment": 28017.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2002, "enrollment": 3596.0, "region": "South Asia"}, {"place": "India", "year": 2002, "enrollment": 74603.0, "region": "South Asia"}, {"place": "Nepal", "year": 2002, "enrollment": 3729.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2002, "enrollment": 8123.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2002, "enrollment": 2722.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2002, "enrollment": 12801.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2002, "enrollment": 8388.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2002, "enrollment": 4175.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2002, "enrollment": 26513.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2003, "enrollment": 3288.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2003, "enrollment": 6140.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2003, "enrollment": 61765.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2003, "enrollment": 40835.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2003, "enrollment": 52484.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2003, "enrollment": 26178.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2003, "enrollment": 3198.0, "region": "South Asia"}, {"place": "India", "year": 2003, "enrollment": 79736.0, "region": "South Asia"}, {"place": "Nepal", "year": 2003, "enrollment": 4384.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2003, "enrollment": 7325.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2003, "enrollment": 3165.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2003, "enrollment": 13329.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2003, "enrollment": 7799.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2003, "enrollment": 3521.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2003, "enrollment": 27017.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2004, "enrollment": 3114.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2004, "enrollment": 6335.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2004, "enrollment": 62523.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2004, "enrollment": 42215.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2004, "enrollment": 53358.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2004, "enrollment": 25914.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2004, "enrollment": 2758.0, "region": "South Asia"}, {"place": "India", "year": 2004, "enrollment": 80466.0, "region": "South Asia"}, {"place": "Nepal", "year": 2004, "enrollment": 4861.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2004, "enrollment": 6296.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2004, "enrollment": 3670.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2004, "enrollment": 13063.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2004, "enrollment": 7244.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2004, "enrollment": 3035.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2004, "enrollment": 28140.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2005, "enrollment": 3160.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2005, "enrollment": 6192.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2005, "enrollment": 62582.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2005, "enrollment": 38712.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2005, "enrollment": 59022.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2005, "enrollment": 27876.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2005, "enrollment": 2581.0, "region": "South Asia"}, {"place": "India", "year": 2005, "enrollment": 76503.0, "region": "South Asia"}, {"place": "Nepal", "year": 2005, "enrollment": 6061.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2005, "enrollment": 5759.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2005, "enrollment": 4597.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2005, "enrollment": 13931.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2005, "enrollment": 7009.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2005, "enrollment": 3448.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2005, "enrollment": 28202.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2006, "enrollment": 2961.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2006, "enrollment": 5943.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2006, "enrollment": 67723.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2006, "enrollment": 35282.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2006, "enrollment": 62392.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2006, "enrollment": 29094.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2006, "enrollment": 2410.0, "region": "South Asia"}, {"place": "India", "year": 2006, "enrollment": 83833.0, "region": "South Asia"}, {"place": "Nepal", "year": 2006, "enrollment": 7754.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2006, "enrollment": 5401.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2006, "enrollment": 6036.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2006, "enrollment": 13826.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2006, "enrollment": 7126.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2006, "enrollment": 7886.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2006, "enrollment": 28280.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2007, "enrollment": 2895.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2007, "enrollment": 6222.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2007, "enrollment": 81127.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2007, "enrollment": 33974.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2007, "enrollment": 69124.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2007, "enrollment": 29001.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2007, "enrollment": 2305.0, "region": "South Asia"}, {"place": "India", "year": 2007, "enrollment": 94563.0, "region": "South Asia"}, {"place": "Nepal", "year": 2007, "enrollment": 8936.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2007, "enrollment": 5345.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2007, "enrollment": 8769.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2007, "enrollment": 14837.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2007, "enrollment": 7578.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2007, "enrollment": 9873.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2007, "enrollment": 29051.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2008, "enrollment": 2988.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2008, "enrollment": 6256.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2008, "enrollment": 98235.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2008, "enrollment": 29264.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2008, "enrollment": 75065.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2008, "enrollment": 28065.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2008, "enrollment": 2706.0, "region": "South Asia"}, {"place": "India", "year": 2008, "enrollment": 103260.0, "region": "South Asia"}, {"place": "Nepal", "year": 2008, "enrollment": 11581.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2008, "enrollment": 5298.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2008, "enrollment": 12823.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2008, "enrollment": 14850.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2008, "enrollment": 8767.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2008, "enrollment": 12661.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2008, "enrollment": 29697.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2009, "enrollment": 2951.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2009, "enrollment": 6568.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2009, "enrollment": 127628.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2009, "enrollment": 24842.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2009, "enrollment": 72153.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2009, "enrollment": 26685.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2009, "enrollment": 2619.0, "region": "South Asia"}, {"place": "India", "year": 2009, "enrollment": 104897.0, "region": "South Asia"}, {"place": "Nepal", "year": 2009, "enrollment": 11233.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2009, "enrollment": 5222.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2009, "enrollment": 13112.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2009, "enrollment": 13450.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2009, "enrollment": 8786.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2009, "enrollment": 15810.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2009, "enrollment": 28145.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2010, "enrollment": 2900.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2010, "enrollment": 7148.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2010, "enrollment": 157558.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2010, "enrollment": 21290.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2010, "enrollment": 73351.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2010, "enrollment": 24818.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2010, "enrollment": 2873.0, "region": "South Asia"}, {"place": "India", "year": 2010, "enrollment": 103895.0, "region": "South Asia"}, {"place": "Nepal", "year": 2010, "enrollment": 10301.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2010, "enrollment": 5045.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2010, "enrollment": 14888.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2010, "enrollment": 13713.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2010, "enrollment": 8777.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2010, "enrollment": 22704.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2010, "enrollment": 27546.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2011, "enrollment": 2769.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2011, "enrollment": 7028.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2011, "enrollment": 194029.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2011, "enrollment": 19966.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2011, "enrollment": 72295.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2011, "enrollment": 23250.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2011, "enrollment": 3314.0, "region": "South Asia"}, {"place": "India", "year": 2011, "enrollment": 100270.0, "region": "South Asia"}, {"place": "Nepal", "year": 2011, "enrollment": 9621.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2011, "enrollment": 4600.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2011, "enrollment": 15572.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2011, "enrollment": 13893.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2011, "enrollment": 9029.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2011, "enrollment": 34139.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2011, "enrollment": 26821.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2012, "enrollment": 2863.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2012, "enrollment": 7316.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2012, "enrollment": 235597.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2012, "enrollment": 19568.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2012, "enrollment": 70627.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2012, "enrollment": 21867.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2012, "enrollment": 3828.0, "region": "South Asia"}, {"place": "India", "year": 2012, "enrollment": 96754.0, "region": "South Asia"}, {"place": "Nepal", "year": 2012, "enrollment": 8920.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2012, "enrollment": 4772.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2012, "enrollment": 16098.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2012, "enrollment": 14199.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2012, "enrollment": 10868.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2012, "enrollment": 44566.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2012, "enrollment": 27357.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2013, "enrollment": 2914.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2013, "enrollment": 7921.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2013, "enrollment": 274439.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2013, "enrollment": 19334.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2013, "enrollment": 68047.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2013, "enrollment": 21266.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2013, "enrollment": 4802.0, "region": "South Asia"}, {"place": "India", "year": 2013, "enrollment": 102673.0, "region": "South Asia"}, {"place": "Nepal", "year": 2013, "enrollment": 8155.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2013, "enrollment": 4935.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2013, "enrollment": 16579.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2013, "enrollment": 14779.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2013, "enrollment": 13286.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2013, "enrollment": 53919.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2013, "enrollment": 28304.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2014, "enrollment": 3099.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2014, "enrollment": 9494.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2014, "enrollment": 304040.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2014, "enrollment": 19064.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2014, "enrollment": 63710.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2014, "enrollment": 20993.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2014, "enrollment": 5455.0, "region": "South Asia"}, {"place": "India", "year": 2014, "enrollment": 132888.0, "region": "South Asia"}, {"place": "Nepal", "year": 2014, "enrollment": 8158.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2014, "enrollment": 5354.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2014, "enrollment": 18722.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2014, "enrollment": 17052.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2014, "enrollment": 23675.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2014, "enrollment": 59945.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2014, "enrollment": 27240.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2015, "enrollment": 3049.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2015, "enrollment": 10674.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2015, "enrollment": 328547.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2015, "enrollment": 19060.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2015, "enrollment": 61007.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2015, "enrollment": 21127.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2015, "enrollment": 6513.0, "region": "South Asia"}, {"place": "India", "year": 2015, "enrollment": 165918.0, "region": "South Asia"}, {"place": "Nepal", "year": 2015, "enrollment": 9662.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2015, "enrollment": 6141.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2015, "enrollment": 21403.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2015, "enrollment": 16733.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2015, "enrollment": 19370.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2015, "enrollment": 61287.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2015, "enrollment": 26973.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2016, "enrollment": 3111.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2016, "enrollment": 11710.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2016, "enrollment": 350755.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2016, "enrollment": 18780.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2016, "enrollment": 58663.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2016, "enrollment": 21516.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2016, "enrollment": 7143.0, "region": "South Asia"}, {"place": "India", "year": 2016, "enrollment": 186267.0, "region": "South Asia"}, {"place": "Nepal", "year": 2016, "enrollment": 11607.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2016, "enrollment": 7015.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2016, "enrollment": 22438.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2016, "enrollment": 16835.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2016, "enrollment": 13089.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2016, "enrollment": 52611.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2016, "enrollment": 27065.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2017, "enrollment": 3213.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2017, "enrollment": 12693.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2017, "enrollment": 363341.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2017, "enrollment": 18753.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2017, "enrollment": 54555.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2017, "enrollment": 22454.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2017, "enrollment": 7496.0, "region": "South Asia"}, {"place": "India", "year": 2017, "enrollment": 196271.0, "region": "South Asia"}, {"place": "Nepal", "year": 2017, "enrollment": 13270.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2017, "enrollment": 7537.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2017, "enrollment": 24325.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2017, "enrollment": 15468.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2017, "enrollment": 14620.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2017, "enrollment": 44432.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2017, "enrollment": 25909.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2018, "enrollment": 3661.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2018, "enrollment": 13423.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2018, "enrollment": 369548.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2018, "enrollment": 18105.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2018, "enrollment": 52250.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2018, "enrollment": 23369.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2018, "enrollment": 8249.0, "region": "South Asia"}, {"place": "India", "year": 2018, "enrollment": 202014.0, "region": "South Asia"}, {"place": "Nepal", "year": 2018, "enrollment": 13229.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2018, "enrollment": 7957.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2018, "enrollment": 24392.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2018, "enrollment": 15229.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2018, "enrollment": 16059.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2018, "enrollment": 37080.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2018, "enrollment": 26122.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2019, "enrollment": 4221.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2019, "enrollment": 13762.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2019, "enrollment": 372532.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2019, "enrollment": 17554.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2019, "enrollment": 49809.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2019, "enrollment": 23724.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2019, "enrollment": 8838.0, "region": "South Asia"}, {"place": "India", "year": 2019, "enrollment": 193124.0, "region": "South Asia"}, {"place": "Nepal", "year": 2019, "enrollment": 12730.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2019, "enrollment": 7939.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2019, "enrollment": 23777.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2019, "enrollment": 14348.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2019, "enrollment": 16671.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2019, "enrollment": 30957.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2019, "enrollment": 25992.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2020, "enrollment": 4229.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2020, "enrollment": 12860.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2020, "enrollment": 317299.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2020, "enrollment": 11785.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2020, "enrollment": 39491.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2020, "enrollment": 19673.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2020, "enrollment": 8598.0, "region": "South Asia"}, {"place": "India", "year": 2020, "enrollment": 167582.0, "region": "South Asia"}, {"place": "Nepal", "year": 2020, "enrollment": 11172.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2020, "enrollment": 7475.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2020, "enrollment": 21631.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2020, "enrollment": 12986.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2020, "enrollment": 14000.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2020, "enrollment": 21933.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2020, "enrollment": 25143.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2021, "enrollment": 4916.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2021, "enrollment": 14438.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2021, "enrollment": 290086.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2021, "enrollment": 13449.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2021, "enrollment": 40755.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2021, "enrollment": 20487.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2021, "enrollment": 10597.0, "region": "South Asia"}, {"place": "India", "year": 2021, "enrollment": 199182.0, "region": "South Asia"}, {"place": "Nepal", "year": 2021, "enrollment": 11799.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2021, "enrollment": 8772.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2021, "enrollment": 20713.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2021, "enrollment": 14500.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2021, "enrollment": 14897.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2021, "enrollment": 18206.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2021, "enrollment": 27013.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2022, "enrollment": 6468.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2022, "enrollment": 17640.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2022, "enrollment": 289526.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2022, "enrollment": 16054.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2022, "enrollment": 43847.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2022, "enrollment": 21834.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2022, "enrollment": 13563.0, "region": "South Asia"}, {"place": "India", "year": 2022, "enrollment": 268923.0, "region": "South Asia"}, {"place": "Nepal", "year": 2022, "enrollment": 15090.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2022, "enrollment": 10164.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2022, "enrollment": 21900.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2022, "enrollment": 14541.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2022, "enrollment": 16025.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2022, "enrollment": 15989.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2022, "enrollment": 27876.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2023, "enrollment": 9394.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2023, "enrollment": 20029.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2023, "enrollment": 277398.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2023, "enrollment": 13959.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2023, "enrollment": 43149.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2023, "enrollment": 23157.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2023, "enrollment": 17099.0, "region": "South Asia"}, {"place": "India", "year": 2023, "enrollment": 331602.0, "region": "South Asia"}, {"place": "Nepal", "year": 2023, "enrollment": 16742.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2023, "enrollment": 10988.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2023, "enrollment": 22066.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2023, "enrollment": 15474.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2023, "enrollment": 16877.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2023, "enrollment": 14828.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2023, "enrollment": 28998.0, "region": "Other Developed"}, {"place": "Ghana", "year": 2024, "enrollment": 12825.0, "region": "Sub-Saharan Africa"}, {"place": "Nigeria", "year": 2024, "enrollment": 21847.0, "region": "Sub-Saharan Africa"}, {"place": "China", "year": 2024, "enrollment": 265919.0, "region": "East Asia & Pacific"}, {"place": "Japan", "year": 2024, "enrollment": 13814.0, "region": "East Asia & Pacific"}, {"place": "South Korea", "year": 2024, "enrollment": 42293.0, "region": "East Asia & Pacific"}, {"place": "Taiwan", "year": 2024, "enrollment": 23263.0, "region": "East Asia & Pacific"}, {"place": "Bangladesh", "year": 2024, "enrollment": 20156.0, "region": "South Asia"}, {"place": "India", "year": 2024, "enrollment": 363019.0, "region": "South Asia"}, {"place": "Nepal", "year": 2024, "enrollment": 24890.0, "region": "South Asia"}, {"place": "Pakistan", "year": 2024, "enrollment": 13165.0, "region": "South Asia"}, {"place": "Vietnam", "year": 2024, "enrollment": 25584.0, "region": "East Asia & Pacific"}, {"place": "Mexico", "year": 2024, "enrollment": 15652.0, "region": "Latin America & Caribbean"}, {"place": "Brazil", "year": 2024, "enrollment": 17277.0, "region": "Latin America & Caribbean"}, {"place": "Saudi Arabia", "year": 2024, "enrollment": 12702.0, "region": "Middle East & North Africa"}, {"place": "Canada", "year": 2024, "enrollment": 29903.0, "region": "Other Developed"}], "cluster": [{"place": "Afghanistan", "enrollment_2024": 712.0, "enrollment_2019": 422.0, "enrollment_2010": 429.0, "enrollment_2000": 75.0, "cagr_2000_2024": 9.83, "cagr_post_covid": 11.03, "avg_enrollment": 380.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Albania", "enrollment_2024": 1184.0, "enrollment_2019": 1095.0, "enrollment_2010": 697.0, "enrollment_2000": 1118.0, "cagr_2000_2024": 0.24, "cagr_post_covid": 1.58, "avg_enrollment": 897.0, "peak_year": 2023, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Argentina", "enrollment_2024": 3335.0, "enrollment_2019": 2428.0, "enrollment_2010": 2105.0, "enrollment_2000": 3172.0, "cagr_2000_2024": 0.21, "cagr_post_covid": 6.55, "avg_enrollment": 2634.0, "peak_year": 2002, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Armenia", "enrollment_2024": 525.0, "enrollment_2019": 339.0, "enrollment_2010": 350.0, "enrollment_2000": 366.0, "cagr_2000_2024": 1.51, "cagr_post_covid": 9.14, "avg_enrollment": 374.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Australia", "enrollment_2024": 4620.0, "enrollment_2019": 4982.0, "enrollment_2010": 3777.0, "enrollment_2000": 2645.0, "cagr_2000_2024": 2.35, "cagr_post_covid": -1.5, "avg_enrollment": 3796.0, "peak_year": 2019, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other Developed"}, {"place": "Austria", "enrollment_2024": 1043.0, "enrollment_2019": 1105.0, "enrollment_2010": 1019.0, "enrollment_2000": 1062.0, "cagr_2000_2024": -0.08, "cagr_post_covid": -1.15, "avg_enrollment": 1001.0, "peak_year": 2017, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Azerbaijan", "enrollment_2024": 1329.0, "enrollment_2019": 571.0, "enrollment_2010": 440.0, "enrollment_2000": 253.0, "cagr_2000_2024": 7.16, "cagr_post_covid": 18.41, "avg_enrollment": 480.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Bahamas", "enrollment_2024": 2764.0, "enrollment_2019": 2500.0, "enrollment_2010": 1720.0, "enrollment_2000": 1762.0, "cagr_2000_2024": 1.89, "cagr_post_covid": 2.03, "avg_enrollment": 2010.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Bangladesh", "enrollment_2024": 20156.0, "enrollment_2019": 8838.0, "enrollment_2010": 2873.0, "enrollment_2000": 4114.0, "cagr_2000_2024": 6.85, "cagr_post_covid": 17.93, "avg_enrollment": 6350.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "South Asia"}, {"place": "Belgium", "enrollment_2024": 1059.0, "enrollment_2019": 1055.0, "enrollment_2010": 904.0, "enrollment_2000": 881.0, "cagr_2000_2024": 0.77, "cagr_post_covid": 0.08, "avg_enrollment": 922.0, "peak_year": 2015, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Bolivia", "enrollment_2024": 1463.0, "enrollment_2019": 1199.0, "enrollment_2010": 977.0, "enrollment_2000": 897.0, "cagr_2000_2024": 2.06, "cagr_post_covid": 4.06, "avg_enrollment": 1106.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Bosnia and Herzegovina", "enrollment_2024": 517.0, "enrollment_2019": 287.0, "enrollment_2010": 356.0, "enrollment_2000": 477.0, "cagr_2000_2024": 0.34, "cagr_post_covid": 12.49, "avg_enrollment": 360.0, "peak_year": 2002, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Brazil", "enrollment_2024": 17277.0, "enrollment_2019": 16671.0, "enrollment_2010": 8777.0, "enrollment_2000": 8846.0, "cagr_2000_2024": 2.83, "cagr_post_covid": 0.72, "avg_enrollment": 12201.0, "peak_year": 2014, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Bulgaria", "enrollment_2024": 612.0, "enrollment_2019": 690.0, "enrollment_2010": 1957.0, "enrollment_2000": 3270.0, "cagr_2000_2024": -6.74, "cagr_post_covid": -2.37, "avg_enrollment": 1931.0, "peak_year": 2003, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Burma", "enrollment_2024": 3744.0, "enrollment_2019": 1828.0, "enrollment_2010": 796.0, "enrollment_2000": 673.0, "cagr_2000_2024": 7.41, "cagr_post_covid": 15.42, "avg_enrollment": 1298.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Cambodia", "enrollment_2024": 1201.0, "enrollment_2019": 742.0, "enrollment_2010": 340.0, "enrollment_2000": 187.0, "cagr_2000_2024": 8.06, "cagr_post_covid": 10.11, "avg_enrollment": 530.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "East Asia & Pacific"}, {"place": "Cameroon", "enrollment_2024": 1181.0, "enrollment_2019": 1027.0, "enrollment_2010": 1659.0, "enrollment_2000": 870.0, "cagr_2000_2024": 1.28, "cagr_post_covid": 2.83, "avg_enrollment": 1319.0, "peak_year": 2007, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Canada", "enrollment_2024": 29903.0, "enrollment_2019": 25992.0, "enrollment_2010": 27546.0, "enrollment_2000": 25279.0, "cagr_2000_2024": 0.7, "cagr_post_covid": 2.84, "avg_enrollment": 27404.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other Developed"}, {"place": "Chile", "enrollment_2024": 3092.0, "enrollment_2019": 2483.0, "enrollment_2010": 2164.0, "enrollment_2000": 1553.0, "cagr_2000_2024": 2.91, "cagr_post_covid": 4.48, "avg_enrollment": 2225.0, "peak_year": 2023, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "China", "enrollment_2024": 265919.0, "enrollment_2019": 372532.0, "enrollment_2010": 157558.0, "enrollment_2000": 59939.0, "cagr_2000_2024": 6.4, "cagr_post_covid": -6.52, "avg_enrollment": 205604.0, "peak_year": 2019, "cluster": 1, "cluster_label": "Dominant (100k+)", "region": "East Asia & Pacific"}, {"place": "Colombia", "enrollment_2024": 10213.0, "enrollment_2019": 7787.0, "enrollment_2010": 6456.0, "enrollment_2000": 6765.0, "cagr_2000_2024": 1.73, "cagr_post_covid": 5.57, "avg_enrollment": 7577.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Congo, Dem. Rep. of the (Kinshasa)", "enrollment_2024": 1794.0, "enrollment_2019": 1198.0, "enrollment_2010": 252.0, "enrollment_2000": 411.0, "cagr_2000_2024": 6.33, "cagr_post_covid": 8.41, "avg_enrollment": 749.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Costa Rica", "enrollment_2024": 1461.0, "enrollment_2019": 1240.0, "enrollment_2010": 1105.0, "enrollment_2000": 928.0, "cagr_2000_2024": 1.91, "cagr_post_covid": 3.33, "avg_enrollment": 1100.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Czech Republic", "enrollment_2024": 840.0, "enrollment_2019": 763.0, "enrollment_2010": 765.0, "enrollment_2000": 1112.0, "cagr_2000_2024": -1.16, "cagr_post_covid": 1.94, "avg_enrollment": 853.0, "peak_year": 2002, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "C\u00f4te d\u2019Ivoire", "enrollment_2024": 1188.0, "enrollment_2019": 1257.0, "enrollment_2010": 904.0, "enrollment_2000": 637.0, "cagr_2000_2024": 2.63, "cagr_post_covid": -1.12, "avg_enrollment": 971.0, "peak_year": 2018, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Denmark", "enrollment_2024": 1172.0, "enrollment_2019": 1264.0, "enrollment_2010": 1149.0, "enrollment_2000": 1007.0, "cagr_2000_2024": 0.63, "cagr_post_covid": -1.5, "avg_enrollment": 1153.0, "peak_year": 2014, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Dominican Republic", "enrollment_2024": 1582.0, "enrollment_2019": 1379.0, "enrollment_2010": 1393.0, "enrollment_2000": 869.0, "cagr_2000_2024": 2.53, "cagr_post_covid": 2.78, "avg_enrollment": 1321.0, "peak_year": 2012, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Ecuador", "enrollment_2024": 3282.0, "enrollment_2019": 2852.0, "enrollment_2010": 2150.0, "enrollment_2000": 2028.0, "cagr_2000_2024": 2.03, "cagr_post_covid": 2.85, "avg_enrollment": 2559.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Egypt", "enrollment_2024": 4518.0, "enrollment_2019": 3859.0, "enrollment_2010": 2181.0, "enrollment_2000": 2255.0, "cagr_2000_2024": 2.94, "cagr_post_covid": 3.2, "avg_enrollment": 2848.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "El Salvador", "enrollment_2024": 1384.0, "enrollment_2019": 1581.0, "enrollment_2010": 1157.0, "enrollment_2000": 825.0, "cagr_2000_2024": 2.18, "cagr_post_covid": -2.63, "avg_enrollment": 1244.0, "peak_year": 2015, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Ethiopia", "enrollment_2024": 3395.0, "enrollment_2019": 2356.0, "enrollment_2010": 1392.0, "enrollment_2000": 1205.0, "cagr_2000_2024": 4.41, "cagr_post_covid": 7.58, "avg_enrollment": 1764.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Finland", "enrollment_2024": 543.0, "enrollment_2019": 690.0, "enrollment_2010": 639.0, "enrollment_2000": 893.0, "cagr_2000_2024": -2.05, "cagr_post_covid": -4.68, "avg_enrollment": 653.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "France", "enrollment_2024": 8698.0, "enrollment_2019": 8471.0, "enrollment_2010": 8098.0, "enrollment_2000": 7273.0, "cagr_2000_2024": 0.75, "cagr_post_covid": 0.53, "avg_enrollment": 7809.0, "peak_year": 2016, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Georgia", "enrollment_2024": 1040.0, "enrollment_2019": 640.0, "enrollment_2010": 460.0, "enrollment_2000": 329.0, "cagr_2000_2024": 4.91, "cagr_post_covid": 10.2, "avg_enrollment": 526.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Germany", "enrollment_2024": 9123.0, "enrollment_2019": 9242.0, "enrollment_2010": 9458.0, "enrollment_2000": 10128.0, "cagr_2000_2024": -0.43, "cagr_post_covid": -0.26, "avg_enrollment": 9273.0, "peak_year": 2014, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Ghana", "enrollment_2024": 12825.0, "enrollment_2019": 4221.0, "enrollment_2010": 2900.0, "enrollment_2000": 2469.0, "cagr_2000_2024": 7.11, "cagr_post_covid": 24.89, "avg_enrollment": 3966.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Greece", "enrollment_2024": 2641.0, "enrollment_2019": 2489.0, "enrollment_2010": 1874.0, "enrollment_2000": 2768.0, "cagr_2000_2024": -0.2, "cagr_post_covid": 1.19, "avg_enrollment": 2246.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Guatemala", "enrollment_2024": 1344.0, "enrollment_2019": 1195.0, "enrollment_2010": 1042.0, "enrollment_2000": 1050.0, "cagr_2000_2024": 1.03, "cagr_post_covid": 2.38, "avg_enrollment": 1135.0, "peak_year": 2023, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Haiti", "enrollment_2024": 896.0, "enrollment_2019": 1016.0, "enrollment_2010": 888.0, "enrollment_2000": 1012.0, "cagr_2000_2024": -0.51, "cagr_post_covid": -2.48, "avg_enrollment": 977.0, "peak_year": 2001, "cluster": 3, "cluster_label": "Declining", "region": "Other"}, {"place": "Honduras", "enrollment_2024": 2548.0, "enrollment_2019": 2161.0, "enrollment_2010": 1349.0, "enrollment_2000": 974.0, "cagr_2000_2024": 4.09, "cagr_post_covid": 3.35, "avg_enrollment": 1630.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Hong Kong", "enrollment_2024": 5492.0, "enrollment_2019": 6778.0, "enrollment_2010": 8136.0, "enrollment_2000": 7627.0, "cagr_2000_2024": -1.36, "cagr_post_covid": -4.12, "avg_enrollment": 7342.0, "peak_year": 2008, "cluster": 3, "cluster_label": "Declining", "region": "Other"}, {"place": "Hungary", "enrollment_2024": 848.0, "enrollment_2019": 724.0, "enrollment_2010": 670.0, "enrollment_2000": 1174.0, "cagr_2000_2024": -1.35, "cagr_post_covid": 3.21, "avg_enrollment": 799.0, "peak_year": 2001, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "India", "enrollment_2024": 363019.0, "enrollment_2019": 193124.0, "enrollment_2010": 103895.0, "enrollment_2000": 54664.0, "cagr_2000_2024": 8.21, "cagr_post_covid": 13.45, "avg_enrollment": 145190.0, "peak_year": 2024, "cluster": 1, "cluster_label": "Dominant (100k+)", "region": "South Asia"}, {"place": "Indonesia", "enrollment_2024": 8104.0, "enrollment_2019": 8300.0, "enrollment_2010": 6942.0, "enrollment_2000": 11625.0, "cagr_2000_2024": -1.49, "cagr_post_covid": -0.48, "avg_enrollment": 8338.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Iran", "enrollment_2024": 12656.0, "enrollment_2019": 11451.0, "enrollment_2010": 5626.0, "enrollment_2000": 1844.0, "cagr_2000_2024": 8.36, "cagr_post_covid": 2.02, "avg_enrollment": 7456.0, "peak_year": 2017, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Iraq", "enrollment_2024": 572.0, "enrollment_2019": 965.0, "enrollment_2010": 616.0, "enrollment_2000": 155.0, "cagr_2000_2024": 5.59, "cagr_post_covid": -9.93, "avg_enrollment": 726.0, "peak_year": 2015, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Ireland", "enrollment_2024": 1404.0, "enrollment_2019": 1228.0, "enrollment_2010": 1167.0, "enrollment_2000": 1086.0, "cagr_2000_2024": 1.08, "cagr_post_covid": 2.71, "avg_enrollment": 1153.0, "peak_year": 2022, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Israel", "enrollment_2024": 2266.0, "enrollment_2019": 2226.0, "enrollment_2010": 2701.0, "enrollment_2000": 3402.0, "cagr_2000_2024": -1.68, "cagr_post_covid": 0.36, "avg_enrollment": 2686.0, "peak_year": 2002, "cluster": 3, "cluster_label": "Declining", "region": "Middle East & North Africa"}, {"place": "Italy", "enrollment_2024": 6744.0, "enrollment_2019": 6063.0, "enrollment_2010": 4308.0, "enrollment_2000": 3490.0, "cagr_2000_2024": 2.78, "cagr_post_covid": 2.15, "avg_enrollment": 4633.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Jamaica", "enrollment_2024": 3416.0, "enrollment_2019": 2884.0, "enrollment_2010": 3172.0, "enrollment_2000": 4225.0, "cagr_2000_2024": -0.88, "cagr_post_covid": 3.44, "avg_enrollment": 3367.0, "peak_year": 2003, "cluster": 3, "cluster_label": "Declining", "region": "Latin America & Caribbean"}, {"place": "Japan", "enrollment_2024": 13814.0, "enrollment_2019": 17554.0, "enrollment_2010": 21290.0, "enrollment_2000": 46497.0, "cagr_2000_2024": -4.93, "cagr_post_covid": -4.68, "avg_enrollment": 25797.0, "peak_year": 2001, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Jordan", "enrollment_2024": 2768.0, "enrollment_2019": 2441.0, "enrollment_2010": 2002.0, "enrollment_2000": 2187.0, "cagr_2000_2024": 0.99, "cagr_post_covid": 2.55, "avg_enrollment": 2205.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Kazakhstan", "enrollment_2024": 3102.0, "enrollment_2019": 2091.0, "enrollment_2010": 1890.0, "enrollment_2000": 540.0, "cagr_2000_2024": 7.56, "cagr_post_covid": 8.21, "avg_enrollment": 1651.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Kenya", "enrollment_2024": 5337.0, "enrollment_2019": 3710.0, "enrollment_2010": 4666.0, "enrollment_2000": 6229.0, "cagr_2000_2024": -0.64, "cagr_post_covid": 7.54, "avg_enrollment": 4862.0, "peak_year": 2002, "cluster": 3, "cluster_label": "Declining", "region": "Sub-Saharan Africa"}, {"place": "Kuwait", "enrollment_2024": 5018.0, "enrollment_2019": 8375.0, "enrollment_2010": 2998.0, "enrollment_2000": 3045.0, "cagr_2000_2024": 2.1, "cagr_post_covid": -9.74, "avg_enrollment": 5010.0, "peak_year": 2017, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Kyrgyzstan", "enrollment_2024": 1386.0, "enrollment_2019": 357.0, "enrollment_2010": 279.0, "enrollment_2000": 160.0, "cagr_2000_2024": 9.41, "cagr_post_covid": 31.17, "avg_enrollment": 346.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Lebanon", "enrollment_2024": 1826.0, "enrollment_2019": 1709.0, "enrollment_2010": 1462.0, "enrollment_2000": 2005.0, "cagr_2000_2024": -0.39, "cagr_post_covid": 1.33, "avg_enrollment": 1782.0, "peak_year": 2001, "cluster": 3, "cluster_label": "Declining", "region": "Middle East & North Africa"}, {"place": "Malawi", "enrollment_2024": 610.0, "enrollment_2019": 315.0, "enrollment_2010": 269.0, "enrollment_2000": 428.0, "cagr_2000_2024": 1.49, "cagr_post_covid": 14.13, "avg_enrollment": 344.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Malaysia", "enrollment_2024": 4485.0, "enrollment_2019": 6910.0, "enrollment_2010": 6735.0, "enrollment_2000": 7795.0, "cagr_2000_2024": -2.28, "cagr_post_covid": -8.28, "avg_enrollment": 6422.0, "peak_year": 2017, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Mexico", "enrollment_2024": 15652.0, "enrollment_2019": 14348.0, "enrollment_2010": 13713.0, "enrollment_2000": 10670.0, "cagr_2000_2024": 1.61, "cagr_post_covid": 1.75, "avg_enrollment": 14347.0, "peak_year": 2014, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Mongolia", "enrollment_2024": 1991.0, "enrollment_2019": 1438.0, "enrollment_2010": 1259.0, "enrollment_2000": 442.0, "cagr_2000_2024": 6.47, "cagr_post_covid": 6.72, "avg_enrollment": 1249.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Morocco", "enrollment_2024": 1975.0, "enrollment_2019": 1499.0, "enrollment_2010": 1201.0, "enrollment_2000": 1917.0, "cagr_2000_2024": 0.12, "cagr_post_covid": 5.67, "avg_enrollment": 1514.0, "peak_year": 2001, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Nepal", "enrollment_2024": 24890.0, "enrollment_2019": 12730.0, "enrollment_2010": 10301.0, "enrollment_2000": 2618.0, "cagr_2000_2024": 9.84, "cagr_post_covid": 14.35, "avg_enrollment": 9981.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "South Asia"}, {"place": "Netherlands", "enrollment_2024": 2462.0, "enrollment_2019": 2727.0, "enrollment_2010": 1833.0, "enrollment_2000": 1856.0, "cagr_2000_2024": 1.18, "cagr_post_covid": -2.02, "avg_enrollment": 2069.0, "peak_year": 2022, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "New Zealand", "enrollment_2024": 1781.0, "enrollment_2019": 1856.0, "enrollment_2010": 1164.0, "enrollment_2000": 971.0, "cagr_2000_2024": 2.56, "cagr_post_covid": -0.82, "avg_enrollment": 1337.0, "peak_year": 2019, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other Developed"}, {"place": "Nicaragua", "enrollment_2024": 696.0, "enrollment_2019": 489.0, "enrollment_2010": 434.0, "enrollment_2000": 611.0, "cagr_2000_2024": 0.54, "cagr_post_covid": 7.31, "avg_enrollment": 482.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Nigeria", "enrollment_2024": 21847.0, "enrollment_2019": 13762.0, "enrollment_2010": 7148.0, "enrollment_2000": 3820.0, "cagr_2000_2024": 7.54, "cagr_post_covid": 9.68, "avg_enrollment": 9831.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Norway", "enrollment_2024": 1617.0, "enrollment_2019": 1886.0, "enrollment_2010": 1822.0, "enrollment_2000": 2098.0, "cagr_2000_2024": -1.08, "cagr_post_covid": -3.03, "avg_enrollment": 1799.0, "peak_year": 2014, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Oman", "enrollment_2024": 1401.0, "enrollment_2019": 2808.0, "enrollment_2010": 313.0, "enrollment_2000": 702.0, "cagr_2000_2024": 2.92, "cagr_post_covid": -12.98, "avg_enrollment": 1367.0, "peak_year": 2017, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Pakistan", "enrollment_2024": 13165.0, "enrollment_2019": 7939.0, "enrollment_2010": 5045.0, "enrollment_2000": 6948.0, "cagr_2000_2024": 2.7, "cagr_post_covid": 10.64, "avg_enrollment": 7049.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "South Asia"}, {"place": "Palestinian Territories", "enrollment_2024": 500.0, "enrollment_2019": 478.0, "enrollment_2010": 331.0, "enrollment_2000": 237.0, "cagr_2000_2024": 3.16, "cagr_post_covid": 0.9, "avg_enrollment": 375.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Panama", "enrollment_2024": 2233.0, "enrollment_2019": 1708.0, "enrollment_2010": 1173.0, "enrollment_2000": 1217.0, "cagr_2000_2024": 2.56, "cagr_post_covid": 5.51, "avg_enrollment": 1426.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Paraguay", "enrollment_2024": 665.0, "enrollment_2019": 609.0, "enrollment_2010": 322.0, "enrollment_2000": 371.0, "cagr_2000_2024": 2.46, "cagr_post_covid": 1.77, "avg_enrollment": 486.0, "peak_year": 2020, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Peru", "enrollment_2024": 5667.0, "enrollment_2019": 3547.0, "enrollment_2010": 2939.0, "enrollment_2000": 2660.0, "cagr_2000_2024": 3.2, "cagr_post_covid": 9.82, "avg_enrollment": 3553.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Latin America & Caribbean"}, {"place": "Philippines", "enrollment_2024": 4573.0, "enrollment_2019": 3295.0, "enrollment_2010": 3604.0, "enrollment_2000": 3139.0, "cagr_2000_2024": 1.58, "cagr_post_covid": 6.77, "avg_enrollment": 3491.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "East Asia & Pacific"}, {"place": "Poland", "enrollment_2024": 1809.0, "enrollment_2019": 1513.0, "enrollment_2010": 1852.0, "enrollment_2000": 2432.0, "cagr_2000_2024": -1.23, "cagr_post_covid": 3.64, "avg_enrollment": 2030.0, "peak_year": 2005, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Portugal", "enrollment_2024": 1137.0, "enrollment_2019": 934.0, "enrollment_2010": 981.0, "enrollment_2000": 884.0, "cagr_2000_2024": 1.05, "cagr_post_covid": 4.01, "avg_enrollment": 941.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Romania", "enrollment_2024": 956.0, "enrollment_2019": 1000.0, "enrollment_2010": 1883.0, "enrollment_2000": 2976.0, "cagr_2000_2024": -4.62, "cagr_post_covid": -0.9, "avg_enrollment": 1905.0, "peak_year": 2002, "cluster": 3, "cluster_label": "Declining", "region": "Middle East & North Africa"}, {"place": "Russia", "enrollment_2024": 4948.0, "enrollment_2019": 5293.0, "enrollment_2010": 4692.0, "enrollment_2000": 6858.0, "cagr_2000_2024": -1.35, "cagr_post_covid": -1.34, "avg_enrollment": 5245.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Rwanda", "enrollment_2024": 1359.0, "enrollment_2019": 1444.0, "enrollment_2010": 457.0, "enrollment_2000": 261.0, "cagr_2000_2024": 7.12, "cagr_post_covid": -1.21, "avg_enrollment": 730.0, "peak_year": 2019, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Saudi Arabia", "enrollment_2024": 12702.0, "enrollment_2019": 30957.0, "enrollment_2010": 22704.0, "enrollment_2000": 5273.0, "cagr_2000_2024": 3.73, "cagr_post_covid": -16.32, "avg_enrollment": 23862.0, "peak_year": 2015, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Singapore", "enrollment_2024": 4449.0, "enrollment_2019": 4504.0, "enrollment_2010": 4316.0, "enrollment_2000": 4166.0, "cagr_2000_2024": 0.27, "cagr_post_covid": -0.25, "avg_enrollment": 4271.0, "peak_year": 2015, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "South Africa", "enrollment_2024": 2952.0, "enrollment_2019": 2224.0, "enrollment_2010": 1669.0, "enrollment_2000": 2106.0, "cagr_2000_2024": 1.42, "cagr_post_covid": 5.83, "avg_enrollment": 2003.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "South Korea", "enrollment_2024": 42293.0, "enrollment_2019": 49809.0, "enrollment_2010": 73351.0, "enrollment_2000": 45685.0, "cagr_2000_2024": -0.32, "cagr_post_covid": -3.22, "avg_enrollment": 56948.0, "peak_year": 2008, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Spain", "enrollment_2024": 9229.0, "enrollment_2019": 7954.0, "enrollment_2010": 4330.0, "enrollment_2000": 4156.0, "cagr_2000_2024": 3.38, "cagr_post_covid": 3.02, "avg_enrollment": 5614.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Sri Lanka", "enrollment_2024": 3661.0, "enrollment_2019": 3206.0, "enrollment_2010": 2965.0, "enrollment_2000": 1964.0, "cagr_2000_2024": 2.63, "cagr_post_covid": 2.69, "avg_enrollment": 2797.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "South Asia"}, {"place": "Sweden", "enrollment_2024": 2665.0, "enrollment_2019": 3213.0, "enrollment_2010": 3236.0, "enrollment_2000": 4598.0, "cagr_2000_2024": -2.25, "cagr_post_covid": -3.67, "avg_enrollment": 3426.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Switzerland", "enrollment_2024": 1382.0, "enrollment_2019": 1340.0, "enrollment_2010": 1287.0, "enrollment_2000": 1850.0, "cagr_2000_2024": -1.21, "cagr_post_covid": 0.62, "avg_enrollment": 1398.0, "peak_year": 2000, "cluster": 3, "cluster_label": "Declining", "region": "Europe"}, {"place": "Taiwan", "enrollment_2024": 23263.0, "enrollment_2019": 23724.0, "enrollment_2010": 24818.0, "enrollment_2000": 28566.0, "cagr_2000_2024": -0.85, "cagr_post_covid": -0.39, "avg_enrollment": 24445.0, "peak_year": 2006, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Tanzania", "enrollment_2024": 1140.0, "enrollment_2019": 859.0, "enrollment_2010": 1006.0, "enrollment_2000": 1528.0, "cagr_2000_2024": -1.21, "cagr_post_covid": 5.82, "avg_enrollment": 1089.0, "peak_year": 2002, "cluster": 3, "cluster_label": "Declining", "region": "Sub-Saharan Africa"}, {"place": "Thailand", "enrollment_2024": 5022.0, "enrollment_2019": 6154.0, "enrollment_2010": 8236.0, "enrollment_2000": 11187.0, "cagr_2000_2024": -3.28, "cagr_post_covid": -3.98, "avg_enrollment": 7639.0, "peak_year": 2001, "cluster": 3, "cluster_label": "Declining", "region": "East Asia & Pacific"}, {"place": "Trinidad and Tobago", "enrollment_2024": 1419.0, "enrollment_2019": 1272.0, "enrollment_2010": 1882.0, "enrollment_2000": 2901.0, "cagr_2000_2024": -2.94, "cagr_post_covid": 2.21, "avg_enrollment": 1975.0, "peak_year": 2003, "cluster": 3, "cluster_label": "Declining", "region": "Latin America & Caribbean"}, {"place": "Tunisia", "enrollment_2024": 769.0, "enrollment_2019": 665.0, "enrollment_2010": 386.0, "enrollment_2000": 385.0, "cagr_2000_2024": 2.92, "cagr_post_covid": 2.95, "avg_enrollment": 505.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Middle East & North Africa"}, {"place": "Turkey/T\u00fcrkiye", "enrollment_2024": 9413.0, "enrollment_2019": 9481.0, "enrollment_2010": 12184.0, "enrollment_2000": 10983.0, "cagr_2000_2024": -0.64, "cagr_post_covid": -0.14, "avg_enrollment": 10863.0, "peak_year": 2008, "cluster": 3, "cluster_label": "Declining", "region": "Middle East & North Africa"}, {"place": "Uganda", "enrollment_2024": 1495.0, "enrollment_2019": 870.0, "enrollment_2010": 820.0, "enrollment_2000": 754.0, "cagr_2000_2024": 2.89, "cagr_post_covid": 11.44, "avg_enrollment": 849.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Sub-Saharan Africa"}, {"place": "Ukraine", "enrollment_2024": 2346.0, "enrollment_2019": 1899.0, "enrollment_2010": 1583.0, "enrollment_2000": 1909.0, "cagr_2000_2024": 0.86, "cagr_post_covid": 4.32, "avg_enrollment": 1830.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "United Arab Emirates", "enrollment_2024": 1808.0, "enrollment_2019": 2074.0, "enrollment_2010": 1871.0, "enrollment_2000": 2659.0, "cagr_2000_2024": -1.59, "cagr_post_covid": -2.71, "avg_enrollment": 1896.0, "peak_year": 2015, "cluster": 3, "cluster_label": "Declining", "region": "Other"}, {"place": "United Kingdom", "enrollment_2024": 11136.0, "enrollment_2019": 10756.0, "enrollment_2010": 8947.0, "enrollment_2000": 8139.0, "cagr_2000_2024": 1.31, "cagr_post_covid": 0.7, "avg_enrollment": 9591.0, "peak_year": 2015, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Europe"}, {"place": "Uzbekistan", "enrollment_2024": 1310.0, "enrollment_2019": 546.0, "enrollment_2010": 560.0, "enrollment_2000": 418.0, "cagr_2000_2024": 4.87, "cagr_post_covid": 19.13, "avg_enrollment": 590.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "Central Asia"}, {"place": "Venezuela", "enrollment_2024": 3886.0, "enrollment_2019": 6855.0, "enrollment_2010": 5491.0, "enrollment_2000": 5217.0, "cagr_2000_2024": -1.22, "cagr_post_covid": -10.73, "avg_enrollment": 5860.0, "peak_year": 2016, "cluster": 3, "cluster_label": "Declining", "region": "Latin America & Caribbean"}, {"place": "Vietnam", "enrollment_2024": 25584.0, "enrollment_2019": 23777.0, "enrollment_2010": 14888.0, "enrollment_2000": 2022.0, "cagr_2000_2024": 11.15, "cagr_post_covid": 1.48, "avg_enrollment": 14781.0, "peak_year": 2024, "cluster": 2, "cluster_label": "Stable Mid-Tier", "region": "East Asia & Pacific"}, {"place": "Zambia", "enrollment_2024": 743.0, "enrollment_2019": 464.0, "enrollment_2010": 560.0, "enrollment_2000": 613.0, "cagr_2000_2024": 0.8, "cagr_post_covid": 9.87, "avg_enrollment": 621.0, "peak_year": 2002, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}, {"place": "Zimbabwe", "enrollment_2024": 2712.0, "enrollment_2019": 1377.0, "enrollment_2010": 1135.0, "enrollment_2000": 1703.0, "cagr_2000_2024": 1.96, "cagr_post_covid": 14.52, "avg_enrollment": 1540.0, "peak_year": 2024, "cluster": 0, "cluster_label": "Stable Mid-Tier", "region": "Other"}], "fos": [{"field": "Business and Management", "year": 1998, "enrollment": 101360.0, "is_stem": false}, {"field": "Engineering", "year": 1998, "enrollment": 73014.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 1998, "enrollment": 31486.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 1998, "enrollment": 48236.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 1998, "enrollment": 40085.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 1998, "enrollment": 37055.0, "is_stem": true}, {"field": "Social Sciences", "year": 1998, "enrollment": 37255.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 1998, "enrollment": 36128.0, "is_stem": false}, {"field": "Business and Management", "year": 1999, "enrollment": 102492.0, "is_stem": false}, {"field": "Engineering", "year": 1999, "enrollment": 76834.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 1999, "enrollment": 32479.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 1999, "enrollment": 57266.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 1999, "enrollment": 49487.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 1999, "enrollment": 37420.0, "is_stem": true}, {"field": "Social Sciences", "year": 1999, "enrollment": 38629.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 1999, "enrollment": 39207.0, "is_stem": false}, {"field": "Business and Management", "year": 2000, "enrollment": 105214.0, "is_stem": false}, {"field": "Engineering", "year": 2000, "enrollment": 83396.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2000, "enrollment": 34220.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2000, "enrollment": 67825.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2000, "enrollment": 59836.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2000, "enrollment": 38396.0, "is_stem": true}, {"field": "Social Sciences", "year": 2000, "enrollment": 38940.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2000, "enrollment": 42606.0, "is_stem": false}, {"field": "Business and Management", "year": 2001, "enrollment": 113495.0, "is_stem": false}, {"field": "Engineering", "year": 2001, "enrollment": 88258.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2001, "enrollment": 33978.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2001, "enrollment": 76736.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2001, "enrollment": 67850.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2001, "enrollment": 41417.0, "is_stem": true}, {"field": "Social Sciences", "year": 2001, "enrollment": 41241.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2001, "enrollment": 44628.0, "is_stem": false}, {"field": "Business and Management", "year": 2002, "enrollment": 113990.0, "is_stem": false}, {"field": "Engineering", "year": 2002, "enrollment": 96574.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2002, "enrollment": 31018.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2002, "enrollment": 71926.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2002, "enrollment": 61857.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2002, "enrollment": 43549.0, "is_stem": true}, {"field": "Social Sciences", "year": 2002, "enrollment": 42415.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2002, "enrollment": 42934.0, "is_stem": false}, {"field": "Business and Management", "year": 2003, "enrollment": 107909.0, "is_stem": false}, {"field": "Engineering", "year": 2003, "enrollment": 95225.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2003, "enrollment": 31882.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2003, "enrollment": 67693.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2003, "enrollment": 57739.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2003, "enrollment": 44607.0, "is_stem": true}, {"field": "Social Sciences", "year": 2003, "enrollment": 50464.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2003, "enrollment": 46358.0, "is_stem": false}, {"field": "Business and Management", "year": 2004, "enrollment": 98975.0, "is_stem": false}, {"field": "Engineering", "year": 2004, "enrollment": 92970.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2004, "enrollment": 28063.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2004, "enrollment": 50747.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2004, "enrollment": 38966.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2004, "enrollment": 49499.0, "is_stem": true}, {"field": "Social Sciences", "year": 2004, "enrollment": 42263.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2004, "enrollment": 46347.0, "is_stem": false}, {"field": "Business and Management", "year": 2005, "enrollment": 99382.0, "is_stem": false}, {"field": "Engineering", "year": 2005, "enrollment": 88663.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2005, "enrollment": 29509.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2005, "enrollment": 45518.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2005, "enrollment": 34318.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2005, "enrollment": 50168.0, "is_stem": true}, {"field": "Social Sciences", "year": 2005, "enrollment": 42235.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2005, "enrollment": 44938.0, "is_stem": false}, {"field": "Business and Management", "year": 2006, "enrollment": 102506.0, "is_stem": false}, {"field": "Engineering", "year": 2006, "enrollment": 89179.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2006, "enrollment": 29588.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2006, "enrollment": 46019.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2006, "enrollment": 33437.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2006, "enrollment": 51863.0, "is_stem": true}, {"field": "Social Sciences", "year": 2006, "enrollment": 44983.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2006, "enrollment": 45049.0, "is_stem": false}, {"field": "Business and Management", "year": 2007, "enrollment": 110041.0, "is_stem": false}, {"field": "Engineering", "year": 2007, "enrollment": 96189.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2007, "enrollment": 31727.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2007, "enrollment": 46313.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2007, "enrollment": 34819.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2007, "enrollment": 52867.0, "is_stem": true}, {"field": "Social Sciences", "year": 2007, "enrollment": 45535.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2007, "enrollment": 45933.0, "is_stem": false}, {"field": "Business and Management", "year": 2008, "enrollment": 137495.0, "is_stem": false}, {"field": "Engineering", "year": 2008, "enrollment": 119338.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2008, "enrollment": 34854.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2008, "enrollment": 56367.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2008, "enrollment": 43050.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2008, "enrollment": 61699.0, "is_stem": true}, {"field": "Social Sciences", "year": 2008, "enrollment": 52631.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2008, "enrollment": 55303.0, "is_stem": false}, {"field": "Business and Management", "year": 2009, "enrollment": 144294.0, "is_stem": false}, {"field": "Engineering", "year": 2009, "enrollment": 127444.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2009, "enrollment": 35807.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2009, "enrollment": 60800.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2009, "enrollment": 45511.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2009, "enrollment": 61311.0, "is_stem": true}, {"field": "Social Sciences", "year": 2009, "enrollment": 54853.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2009, "enrollment": 58118.0, "is_stem": false}, {"field": "Business and Management", "year": 2010, "enrollment": 154452.0, "is_stem": false}, {"field": "Engineering", "year": 2010, "enrollment": 135616.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2010, "enrollment": 37237.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2010, "enrollment": 64588.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2010, "enrollment": 46849.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2010, "enrollment": 63471.0, "is_stem": true}, {"field": "Social Sciences", "year": 2010, "enrollment": 58345.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2010, "enrollment": 55948.0, "is_stem": false}, {"field": "Business and Management", "year": 2011, "enrollment": 164943.0, "is_stem": false}, {"field": "Engineering", "year": 2011, "enrollment": 141313.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2011, "enrollment": 41710.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2011, "enrollment": 71364.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2011, "enrollment": 51333.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2011, "enrollment": 66007.0, "is_stem": true}, {"field": "Social Sciences", "year": 2011, "enrollment": 60974.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2011, "enrollment": 57024.0, "is_stem": false}, {"field": "Business and Management", "year": 2012, "enrollment": 177741.0, "is_stem": false}, {"field": "Engineering", "year": 2012, "enrollment": 154239.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2012, "enrollment": 45850.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2012, "enrollment": 77560.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2012, "enrollment": 53953.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2012, "enrollment": 69152.0, "is_stem": true}, {"field": "Social Sciences", "year": 2012, "enrollment": 67786.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2012, "enrollment": 57510.0, "is_stem": false}, {"field": "Business and Management", "year": 2013, "enrollment": 188179.0, "is_stem": false}, {"field": "Engineering", "year": 2013, "enrollment": 170189.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2013, "enrollment": 51195.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2013, "enrollment": 91434.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2013, "enrollment": 65291.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2013, "enrollment": 70479.0, "is_stem": true}, {"field": "Social Sciences", "year": 2013, "enrollment": 72390.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2013, "enrollment": 63257.0, "is_stem": false}, {"field": "Business and Management", "year": 2014, "enrollment": 197258.0, "is_stem": false}, {"field": "Engineering", "year": 2014, "enrollment": 196750.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2014, "enrollment": 56758.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2014, "enrollment": 112950.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2014, "enrollment": 83241.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2014, "enrollment": 73838.0, "is_stem": true}, {"field": "Social Sciences", "year": 2014, "enrollment": 75951.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2014, "enrollment": 73176.0, "is_stem": false}, {"field": "Business and Management", "year": 2015, "enrollment": 200312.0, "is_stem": false}, {"field": "Engineering", "year": 2015, "enrollment": 216932.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2015, "enrollment": 59736.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2015, "enrollment": 141651.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2015, "enrollment": 107682.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2015, "enrollment": 75385.0, "is_stem": true}, {"field": "Social Sciences", "year": 2015, "enrollment": 81304.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2015, "enrollment": 81318.0, "is_stem": false}, {"field": "Business and Management", "year": 2016, "enrollment": 200754.0, "is_stem": false}, {"field": "Engineering", "year": 2016, "enrollment": 230711.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2016, "enrollment": 61506.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2016, "enrollment": 167180.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2016, "enrollment": 127324.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2016, "enrollment": 76838.0, "is_stem": true}, {"field": "Social Sciences", "year": 2016, "enrollment": 83046.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2016, "enrollment": 87577.0, "is_stem": false}, {"field": "Business and Management", "year": 2017, "enrollment": 196054.0, "is_stem": false}, {"field": "Engineering", "year": 2017, "enrollment": 232710.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2017, "enrollment": 63795.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2017, "enrollment": 186003.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2017, "enrollment": 144574.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2017, "enrollment": 78700.0, "is_stem": true}, {"field": "Social Sciences", "year": 2017, "enrollment": 83708.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2017, "enrollment": 88720.0, "is_stem": false}, {"field": "Business and Management", "year": 2018, "enrollment": 182170.0, "is_stem": false}, {"field": "Engineering", "year": 2018, "enrollment": 230780.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2018, "enrollment": 63097.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2018, "enrollment": 203461.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2018, "enrollment": 156654.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2018, "enrollment": 81580.0, "is_stem": true}, {"field": "Social Sciences", "year": 2018, "enrollment": 84320.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2018, "enrollment": 86057.0, "is_stem": false}, {"field": "Business and Management", "year": 2019, "enrollment": 174470.0, "is_stem": false}, {"field": "Engineering", "year": 2019, "enrollment": 220542.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2019, "enrollment": 64501.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2019, "enrollment": 205207.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2019, "enrollment": 157566.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2019, "enrollment": 81971.0, "is_stem": true}, {"field": "Social Sciences", "year": 2019, "enrollment": 84440.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2019, "enrollment": 81837.0, "is_stem": false}, {"field": "Business and Management", "year": 2020, "enrollment": 145658.0, "is_stem": false}, {"field": "Engineering", "year": 2020, "enrollment": 190590.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2020, "enrollment": 51101.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2020, "enrollment": 182106.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2020, "enrollment": 139621.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2020, "enrollment": 75029.0, "is_stem": true}, {"field": "Social Sciences", "year": 2020, "enrollment": 76419.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2020, "enrollment": 64042.0, "is_stem": false}, {"field": "Business and Management", "year": 2021, "enrollment": 147293.0, "is_stem": false}, {"field": "Engineering", "year": 2021, "enrollment": 188194.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2021, "enrollment": 51136.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2021, "enrollment": 200301.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2021, "enrollment": 157896.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2021, "enrollment": 78712.0, "is_stem": true}, {"field": "Social Sciences", "year": 2021, "enrollment": 78770.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2021, "enrollment": 70948.0, "is_stem": false}, {"field": "Business and Management", "year": 2022, "enrollment": 157281.0, "is_stem": false}, {"field": "Engineering", "year": 2022, "enrollment": 202801.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2022, "enrollment": 51689.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2022, "enrollment": 240230.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2022, "enrollment": 196727.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2022, "enrollment": 84830.0, "is_stem": true}, {"field": "Social Sciences", "year": 2022, "enrollment": 85998.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2022, "enrollment": 87962.0, "is_stem": false}, {"field": "Business and Management", "year": 2023, "enrollment": 159810.0, "is_stem": false}, {"field": "Engineering", "year": 2023, "enrollment": 210163.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2023, "enrollment": 54159.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2023, "enrollment": 280922.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2023, "enrollment": 236922.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2023, "enrollment": 88717.0, "is_stem": true}, {"field": "Social Sciences", "year": 2023, "enrollment": 84307.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2023, "enrollment": 102440.0, "is_stem": false}, {"field": "Business and Management", "year": 2024, "enrollment": 159857.0, "is_stem": false}, {"field": "Engineering", "year": 2024, "enrollment": 217016.0, "is_stem": true}, {"field": "Fine and Applied Arts", "year": 2024, "enrollment": 49542.0, "is_stem": false}, {"field": "Math and Computer Science", "year": 2024, "enrollment": 305377.0, "is_stem": false}, {"field": "Computer and Information Sciences", "year": 2024, "enrollment": 261662.0, "is_stem": true}, {"field": "Physical and Life Sciences", "year": 2024, "enrollment": 95667.0, "is_stem": true}, {"field": "Social Sciences", "year": 2024, "enrollment": 86008.0, "is_stem": false}, {"field": "Other Fields of Study", "year": 2024, "enrollment": 113367.0, "is_stem": false}], "regional": [{"year": 2000, "region": "Central Asia", "enrollment": 2249.0, "total": 545436.0, "share_pct": 0.41}, {"year": 2000, "region": "East Asia & Pacific", "enrollment": 216865.0, "total": 545436.0, "share_pct": 39.76}, {"year": 2000, "region": "Europe", "enrollment": 67838.0, "total": 545436.0, "share_pct": 12.44}, {"year": 2000, "region": "Latin America & Caribbean", "enrollment": 56693.0, "total": 545436.0, "share_pct": 10.39}, {"year": 2000, "region": "Middle East & North Africa", "enrollment": 39498.0, "total": 545436.0, "share_pct": 7.24}, {"year": 2000, "region": "Other", "enrollment": 43341.0, "total": 545436.0, "share_pct": 7.95}, {"year": 2000, "region": "Other Developed", "enrollment": 28895.0, "total": 545436.0, "share_pct": 5.3}, {"year": 2000, "region": "South Asia", "enrollment": 70370.0, "total": 545436.0, "share_pct": 12.9}, {"year": 2000, "region": "Sub-Saharan Africa", "enrollment": 19687.0, "total": 545436.0, "share_pct": 3.61}, {"year": 2001, "region": "Central Asia", "enrollment": 2503.0, "total": 580459.0, "share_pct": 0.43}, {"year": 2001, "region": "East Asia & Pacific", "enrollment": 224931.0, "total": 580459.0, "share_pct": 38.75}, {"year": 2001, "region": "Europe", "enrollment": 67315.0, "total": 580459.0, "share_pct": 11.6}, {"year": 2001, "region": "Latin America & Caribbean", "enrollment": 61411.0, "total": 580459.0, "share_pct": 10.58}, {"year": 2001, "region": "Middle East & North Africa", "enrollment": 42655.0, "total": 580459.0, "share_pct": 7.35}, {"year": 2001, "region": "Other", "enrollment": 44864.0, "total": 580459.0, "share_pct": 7.73}, {"year": 2001, "region": "Other Developed", "enrollment": 30267.0, "total": 580459.0, "share_pct": 5.21}, {"year": 2001, "region": "South Asia", "enrollment": 84581.0, "total": 580459.0, "share_pct": 14.57}, {"year": 2001, "region": "Sub-Saharan Africa", "enrollment": 21932.0, "total": 580459.0, "share_pct": 3.78}, {"year": 2002, "region": "Central Asia", "enrollment": 2472.0, "total": 583965.0, "share_pct": 0.42}, {"year": 2002, "region": "East Asia & Pacific", "enrollment": 224210.0, "total": 583965.0, "share_pct": 38.39}, {"year": 2002, "region": "Europe", "enrollment": 64208.0, "total": 583965.0, "share_pct": 11.0}, {"year": 2002, "region": "Latin America & Caribbean", "enrollment": 61936.0, "total": 583965.0, "share_pct": 10.61}, {"year": 2002, "region": "Middle East & North Africa", "enrollment": 39034.0, "total": 583965.0, "share_pct": 6.68}, {"year": 2002, "region": "Other", "enrollment": 45249.0, "total": 583965.0, "share_pct": 7.75}, {"year": 2002, "region": "Other Developed", "enrollment": 30331.0, "total": 583965.0, "share_pct": 5.19}, {"year": 2002, "region": "South Asia", "enrollment": 92213.0, "total": 583965.0, "share_pct": 15.79}, {"year": 2002, "region": "Sub-Saharan Africa", "enrollment": 24312.0, "total": 583965.0, "share_pct": 4.16}, {"year": 2003, "region": "Central Asia", "enrollment": 2367.0, "total": 567845.0, "share_pct": 0.42}, {"year": 2003, "region": "East Asia & Pacific", "enrollment": 212763.0, "total": 567845.0, "share_pct": 37.47}, {"year": 2003, "region": "Europe", "enrollment": 61032.0, "total": 567845.0, "share_pct": 10.75}, {"year": 2003, "region": "Latin America & Caribbean", "enrollment": 62682.0, "total": 567845.0, "share_pct": 11.04}, {"year": 2003, "region": "Middle East & North Africa", "enrollment": 36261.0, "total": 567845.0, "share_pct": 6.39}, {"year": 2003, "region": "Other", "enrollment": 41492.0, "total": 567845.0, "share_pct": 7.31}, {"year": 2003, "region": "Other Developed", "enrollment": 30685.0, "total": 567845.0, "share_pct": 5.4}, {"year": 2003, "region": "South Asia", "enrollment": 96670.0, "total": 567845.0, "share_pct": 17.02}, {"year": 2003, "region": "Sub-Saharan Africa", "enrollment": 23893.0, "total": 567845.0, "share_pct": 4.21}, {"year": 2004, "region": "Central Asia", "enrollment": 2341.0, "total": 561275.0, "share_pct": 0.42}, {"year": 2004, "region": "East Asia & Pacific", "enrollment": 214365.0, "total": 561275.0, "share_pct": 38.19}, {"year": 2004, "region": "Europe", "enrollment": 58776.0, "total": 561275.0, "share_pct": 10.47}, {"year": 2004, "region": "Latin America & Caribbean", "enrollment": 59560.0, "total": 561275.0, "share_pct": 10.61}, {"year": 2004, "region": "Middle East & North Africa", "enrollment": 35269.0, "total": 561275.0, "share_pct": 6.28}, {"year": 2004, "region": "Other", "enrollment": 39915.0, "total": 561275.0, "share_pct": 7.11}, {"year": 2004, "region": "Other Developed", "enrollment": 31699.0, "total": 561275.0, "share_pct": 5.65}, {"year": 2004, "region": "South Asia", "enrollment": 96443.0, "total": 561275.0, "share_pct": 17.18}, {"year": 2004, "region": "Sub-Saharan Africa", "enrollment": 22907.0, "total": 561275.0, "share_pct": 4.08}, {"year": 2005, "region": "Central Asia", "enrollment": 2714.0, "total": 562913.0, "share_pct": 0.48}, {"year": 2005, "region": "East Asia & Pacific", "enrollment": 219032.0, "total": 562913.0, "share_pct": 38.91}, {"year": 2005, "region": "Europe", "enrollment": 58829.0, "total": 562913.0, "share_pct": 10.45}, {"year": 2005, "region": "Latin America & Caribbean", "enrollment": 58066.0, "total": 562913.0, "share_pct": 10.32}, {"year": 2005, "region": "Middle East & North Africa", "enrollment": 34786.0, "total": 562913.0, "share_pct": 6.18}, {"year": 2005, "region": "Other", "enrollment": 41373.0, "total": 562913.0, "share_pct": 7.35}, {"year": 2005, "region": "Other Developed", "enrollment": 31937.0, "total": 562913.0, "share_pct": 5.67}, {"year": 2005, "region": "South Asia", "enrollment": 93138.0, "total": 562913.0, "share_pct": 16.55}, {"year": 2005, "region": "Sub-Saharan Africa", "enrollment": 23038.0, "total": 562913.0, "share_pct": 4.09}, {"year": 2006, "region": "Central Asia", "enrollment": 3375.0, "total": 582496.0, "share_pct": 0.58}, {"year": 2006, "region": "East Asia & Pacific", "enrollment": 226402.0, "total": 582496.0, "share_pct": 38.87}, {"year": 2006, "region": "Europe", "enrollment": 57949.0, "total": 582496.0, "share_pct": 9.95}, {"year": 2006, "region": "Latin America & Caribbean", "enrollment": 57874.0, "total": 582496.0, "share_pct": 9.94}, {"year": 2006, "region": "Middle East & North Africa", "enrollment": 39000.0, "total": 582496.0, "share_pct": 6.7}, {"year": 2006, "region": "Other", "enrollment": 41440.0, "total": 582496.0, "share_pct": 7.11}, {"year": 2006, "region": "Other Developed", "enrollment": 31947.0, "total": 582496.0, "share_pct": 5.48}, {"year": 2006, "region": "South Asia", "enrollment": 101854.0, "total": 582496.0, "share_pct": 17.49}, {"year": 2006, "region": "Sub-Saharan Africa", "enrollment": 22655.0, "total": 582496.0, "share_pct": 3.89}, {"year": 2007, "region": "Central Asia", "enrollment": 3888.0, "total": 623449.0, "share_pct": 0.62}, {"year": 2007, "region": "East Asia & Pacific", "enrollment": 248792.0, "total": 623449.0, "share_pct": 39.91}, {"year": 2007, "region": "Europe", "enrollment": 59390.0, "total": 623449.0, "share_pct": 9.53}, {"year": 2007, "region": "Latin America & Caribbean", "enrollment": 58591.0, "total": 623449.0, "share_pct": 9.4}, {"year": 2007, "region": "Middle East & North Africa", "enrollment": 41934.0, "total": 623449.0, "share_pct": 6.73}, {"year": 2007, "region": "Other", "enrollment": 41366.0, "total": 623449.0, "share_pct": 6.64}, {"year": 2007, "region": "Other Developed", "enrollment": 33160.0, "total": 623449.0, "share_pct": 5.32}, {"year": 2007, "region": "South Asia", "enrollment": 113836.0, "total": 623449.0, "share_pct": 18.26}, {"year": 2007, "region": "Sub-Saharan Africa", "enrollment": 22492.0, "total": 623449.0, "share_pct": 3.61}, {"year": 2008, "region": "Central Asia", "enrollment": 4371.0, "total": 670912.0, "share_pct": 0.65}, {"year": 2008, "region": "East Asia & Pacific", "enrollment": 270341.0, "total": 670912.0, "share_pct": 40.29}, {"year": 2008, "region": "Europe", "enrollment": 61688.0, "total": 670912.0, "share_pct": 9.19}, {"year": 2008, "region": "Latin America & Caribbean", "enrollment": 61361.0, "total": 670912.0, "share_pct": 9.15}, {"year": 2008, "region": "Middle East & North Africa", "enrollment": 46997.0, "total": 670912.0, "share_pct": 7.0}, {"year": 2008, "region": "Other", "enrollment": 43101.0, "total": 670912.0, "share_pct": 6.42}, {"year": 2008, "region": "Other Developed", "enrollment": 33974.0, "total": 670912.0, "share_pct": 5.06}, {"year": 2008, "region": "South Asia", "enrollment": 125930.0, "total": 670912.0, "share_pct": 18.77}, {"year": 2008, "region": "Sub-Saharan Africa", "enrollment": 23149.0, "total": 670912.0, "share_pct": 3.45}, {"year": 2009, "region": "Central Asia", "enrollment": 4437.0, "total": 690606.0, "share_pct": 0.64}, {"year": 2009, "region": "East Asia & Pacific", "enrollment": 290367.0, "total": 690606.0, "share_pct": 42.05}, {"year": 2009, "region": "Europe", "enrollment": 61013.0, "total": 690606.0, "share_pct": 8.83}, {"year": 2009, "region": "Latin America & Caribbean", "enrollment": 59125.0, "total": 690606.0, "share_pct": 8.56}, {"year": 2009, "region": "Middle East & North Africa", "enrollment": 50318.0, "total": 690606.0, "share_pct": 7.29}, {"year": 2009, "region": "Other", "enrollment": 42844.0, "total": 690606.0, "share_pct": 6.2}, {"year": 2009, "region": "Other Developed", "enrollment": 32544.0, "total": 690606.0, "share_pct": 4.71}, {"year": 2009, "region": "South Asia", "enrollment": 127054.0, "total": 690606.0, "share_pct": 18.4}, {"year": 2009, "region": "Sub-Saharan Africa", "enrollment": 22904.0, "total": 690606.0, "share_pct": 3.32}, {"year": 2010, "region": "Central Asia", "enrollment": 4438.0, "total": 723048.0, "share_pct": 0.61}, {"year": 2010, "region": "East Asia & Pacific", "enrollment": 317827.0, "total": 723048.0, "share_pct": 43.96}, {"year": 2010, "region": "Europe", "enrollment": 61404.0, "total": 723048.0, "share_pct": 8.49}, {"year": 2010, "region": "Latin America & Caribbean", "enrollment": 58252.0, "total": 723048.0, "share_pct": 8.06}, {"year": 2010, "region": "Middle East & North Africa", "enrollment": 58334.0, "total": 723048.0, "share_pct": 8.07}, {"year": 2010, "region": "Other", "enrollment": 42874.0, "total": 723048.0, "share_pct": 5.93}, {"year": 2010, "region": "Other Developed", "enrollment": 32487.0, "total": 723048.0, "share_pct": 4.49}, {"year": 2010, "region": "South Asia", "enrollment": 125194.0, "total": 723048.0, "share_pct": 17.31}, {"year": 2010, "region": "Sub-Saharan Africa", "enrollment": 22238.0, "total": 723048.0, "share_pct": 3.08}, {"year": 2011, "region": "Central Asia", "enrollment": 4489.0, "total": 764340.0, "share_pct": 0.59}, {"year": 2011, "region": "East Asia & Pacific", "enrollment": 350197.0, "total": 764340.0, "share_pct": 45.82}, {"year": 2011, "region": "Europe", "enrollment": 63114.0, "total": 764340.0, "share_pct": 8.26}, {"year": 2011, "region": "Latin America & Caribbean", "enrollment": 58397.0, "total": 764340.0, "share_pct": 7.64}, {"year": 2011, "region": "Middle East & North Africa", "enrollment": 71944.0, "total": 764340.0, "share_pct": 9.41}, {"year": 2011, "region": "Other", "enrollment": 42603.0, "total": 764340.0, "share_pct": 5.57}, {"year": 2011, "region": "Other Developed", "enrollment": 31873.0, "total": 764340.0, "share_pct": 4.17}, {"year": 2011, "region": "South Asia", "enrollment": 120807.0, "total": 764340.0, "share_pct": 15.81}, {"year": 2011, "region": "Sub-Saharan Africa", "enrollment": 20916.0, "total": 764340.0, "share_pct": 2.74}, {"year": 2012, "region": "Central Asia", "enrollment": 4354.0, "total": 819449.0, "share_pct": 0.53}, {"year": 2012, "region": "East Asia & Pacific", "enrollment": 389207.0, "total": 819449.0, "share_pct": 47.5}, {"year": 2012, "region": "Europe", "enrollment": 64523.0, "total": 819449.0, "share_pct": 7.87}, {"year": 2012, "region": "Latin America & Caribbean", "enrollment": 61036.0, "total": 819449.0, "share_pct": 7.45}, {"year": 2012, "region": "Middle East & North Africa", "enrollment": 85869.0, "total": 819449.0, "share_pct": 10.48}, {"year": 2012, "region": "Other", "enrollment": 42751.0, "total": 819449.0, "share_pct": 5.22}, {"year": 2012, "region": "Other Developed", "enrollment": 32789.0, "total": 819449.0, "share_pct": 4.0}, {"year": 2012, "region": "South Asia", "enrollment": 117453.0, "total": 819449.0, "share_pct": 14.33}, {"year": 2012, "region": "Sub-Saharan Africa", "enrollment": 21467.0, "total": 819449.0, "share_pct": 2.62}, {"year": 2013, "region": "Central Asia", "enrollment": 4354.0, "total": 886052.0, "share_pct": 0.49}, {"year": 2013, "region": "East Asia & Pacific", "enrollment": 425368.0, "total": 886052.0, "share_pct": 48.01}, {"year": 2013, "region": "Europe", "enrollment": 66594.0, "total": 886052.0, "share_pct": 7.52}, {"year": 2013, "region": "Latin America & Caribbean", "enrollment": 66532.0, "total": 886052.0, "share_pct": 7.51}, {"year": 2013, "region": "Middle East & North Africa", "enrollment": 100164.0, "total": 886052.0, "share_pct": 11.3}, {"year": 2013, "region": "Other", "enrollment": 43625.0, "total": 886052.0, "share_pct": 4.92}, {"year": 2013, "region": "Other Developed", "enrollment": 34018.0, "total": 886052.0, "share_pct": 3.84}, {"year": 2013, "region": "South Asia", "enrollment": 123609.0, "total": 886052.0, "share_pct": 13.95}, {"year": 2013, "region": "Sub-Saharan Africa", "enrollment": 21788.0, "total": 886052.0, "share_pct": 2.46}, {"year": 2014, "region": "Central Asia", "enrollment": 4443.0, "total": 974926.0, "share_pct": 0.46}, {"year": 2014, "region": "East Asia & Pacific", "enrollment": 452754.0, "total": 974926.0, "share_pct": 46.44}, {"year": 2014, "region": "Europe", "enrollment": 70149.0, "total": 974926.0, "share_pct": 7.2}, {"year": 2014, "region": "Latin America & Caribbean", "enrollment": 80795.0, "total": 974926.0, "share_pct": 8.29}, {"year": 2014, "region": "Middle East & North Africa", "enrollment": 110337.0, "total": 974926.0, "share_pct": 11.32}, {"year": 2014, "region": "Other", "enrollment": 44688.0, "total": 974926.0, "share_pct": 4.58}, {"year": 2014, "region": "Other Developed", "enrollment": 33223.0, "total": 974926.0, "share_pct": 3.41}, {"year": 2014, "region": "South Asia", "enrollment": 154865.0, "total": 974926.0, "share_pct": 15.88}, {"year": 2014, "region": "Sub-Saharan Africa", "enrollment": 23672.0, "total": 974926.0, "share_pct": 2.43}, {"year": 2015, "region": "Central Asia", "enrollment": 4347.0, "total": 1043839.0, "share_pct": 0.42}, {"year": 2015, "region": "East Asia & Pacific", "enrollment": 478284.0, "total": 1043839.0, "share_pct": 45.82}, {"year": 2015, "region": "Europe", "enrollment": 71591.0, "total": 1043839.0, "share_pct": 6.86}, {"year": 2015, "region": "Latin America & Caribbean", "enrollment": 78776.0, "total": 1043839.0, "share_pct": 7.55}, {"year": 2015, "region": "Middle East & North Africa", "enrollment": 115121.0, "total": 1043839.0, "share_pct": 11.03}, {"year": 2015, "region": "Other", "enrollment": 45805.0, "total": 1043839.0, "share_pct": 4.39}, {"year": 2015, "region": "Other Developed", "enrollment": 33333.0, "total": 1043839.0, "share_pct": 3.19}, {"year": 2015, "region": "South Asia", "enrollment": 191457.0, "total": 1043839.0, "share_pct": 18.34}, {"year": 2015, "region": "Sub-Saharan Africa", "enrollment": 25125.0, "total": 1043839.0, "share_pct": 2.41}, {"year": 2016, "region": "Central Asia", "enrollment": 4172.0, "total": 1078822.0, "share_pct": 0.39}, {"year": 2016, "region": "East Asia & Pacific", "enrollment": 499685.0, "total": 1078822.0, "share_pct": 46.32}, {"year": 2016, "region": "Europe", "enrollment": 72434.0, "total": 1078822.0, "share_pct": 6.71}, {"year": 2016, "region": "Latin America & Caribbean", "enrollment": 73262.0, "total": 1078822.0, "share_pct": 6.79}, {"year": 2016, "region": "Middle East & North Africa", "enrollment": 107286.0, "total": 1078822.0, "share_pct": 9.94}, {"year": 2016, "region": "Other", "enrollment": 45601.0, "total": 1078822.0, "share_pct": 4.23}, {"year": 2016, "region": "Other Developed", "enrollment": 33739.0, "total": 1078822.0, "share_pct": 3.13}, {"year": 2016, "region": "South Asia", "enrollment": 215443.0, "total": 1078822.0, "share_pct": 19.97}, {"year": 2016, "region": "Sub-Saharan Africa", "enrollment": 27200.0, "total": 1078822.0, "share_pct": 2.52}, {"year": 2017, "region": "Central Asia", "enrollment": 4454.0, "total": 1094792.0, "share_pct": 0.41}, {"year": 2017, "region": "East Asia & Pacific", "enrollment": 510976.0, "total": 1094792.0, "share_pct": 46.67}, {"year": 2017, "region": "Europe", "enrollment": 72292.0, "total": 1094792.0, "share_pct": 6.6}, {"year": 2017, "region": "Latin America & Caribbean", "enrollment": 73547.0, "total": 1094792.0, "share_pct": 6.72}, {"year": 2017, "region": "Middle East & North Africa", "enrollment": 98936.0, "total": 1094792.0, "share_pct": 9.04}, {"year": 2017, "region": "Other", "enrollment": 44872.0, "total": 1094792.0, "share_pct": 4.1}, {"year": 2017, "region": "Other Developed", "enrollment": 32602.0, "total": 1094792.0, "share_pct": 2.98}, {"year": 2017, "region": "South Asia", "enrollment": 228035.0, "total": 1094792.0, "share_pct": 20.83}, {"year": 2017, "region": "Sub-Saharan Africa", "enrollment": 29078.0, "total": 1094792.0, "share_pct": 2.66}, {"year": 2018, "region": "Central Asia", "enrollment": 4640.0, "total": 1095299.0, "share_pct": 0.42}, {"year": 2018, "region": "East Asia & Pacific", "enrollment": 514335.0, "total": 1095299.0, "share_pct": 46.96}, {"year": 2018, "region": "Europe", "enrollment": 70872.0, "total": 1095299.0, "share_pct": 6.47}, {"year": 2018, "region": "Latin America & Caribbean", "enrollment": 74874.0, "total": 1095299.0, "share_pct": 6.84}, {"year": 2018, "region": "Middle East & North Africa", "enrollment": 88588.0, "total": 1095299.0, "share_pct": 8.09}, {"year": 2018, "region": "Other", "enrollment": 43903.0, "total": 1095299.0, "share_pct": 4.01}, {"year": 2018, "region": "Other Developed", "enrollment": 32893.0, "total": 1095299.0, "share_pct": 3.0}, {"year": 2018, "region": "South Asia", "enrollment": 234929.0, "total": 1095299.0, "share_pct": 21.45}, {"year": 2018, "region": "Sub-Saharan Africa", "enrollment": 30265.0, "total": 1095299.0, "share_pct": 2.76}, {"year": 2019, "region": "Central Asia", "enrollment": 5058.0, "total": 1075496.0, "share_pct": 0.47}, {"year": 2019, "region": "East Asia & Pacific", "enrollment": 512929.0, "total": 1075496.0, "share_pct": 47.69}, {"year": 2019, "region": "Europe", "enrollment": 70071.0, "total": 1075496.0, "share_pct": 6.52}, {"year": 2019, "region": "Latin America & Caribbean", "enrollment": 73271.0, "total": 1075496.0, "share_pct": 6.81}, {"year": 2019, "region": "Middle East & North Africa", "enrollment": 79534.0, "total": 1075496.0, "share_pct": 7.4}, {"year": 2019, "region": "Other", "enrollment": 43874.0, "total": 1075496.0, "share_pct": 4.08}, {"year": 2019, "region": "Other Developed", "enrollment": 32830.0, "total": 1075496.0, "share_pct": 3.05}, {"year": 2019, "region": "South Asia", "enrollment": 225991.0, "total": 1075496.0, "share_pct": 21.01}, {"year": 2019, "region": "Sub-Saharan Africa", "enrollment": 31938.0, "total": 1075496.0, "share_pct": 2.97}, {"year": 2020, "region": "Central Asia", "enrollment": 4627.0, "total": 914095.0, "share_pct": 0.51}, {"year": 2020, "region": "East Asia & Pacific", "enrollment": 431478.0, "total": 914095.0, "share_pct": 47.2}, {"year": 2020, "region": "Europe", "enrollment": 51045.0, "total": 914095.0, "share_pct": 5.58}, {"year": 2020, "region": "Latin America & Caribbean", "enrollment": 66159.0, "total": 914095.0, "share_pct": 7.24}, {"year": 2020, "region": "Middle East & North Africa", "enrollment": 63801.0, "total": 914095.0, "share_pct": 6.98}, {"year": 2020, "region": "Other", "enrollment": 38884.0, "total": 914095.0, "share_pct": 4.25}, {"year": 2020, "region": "Other Developed", "enrollment": 30286.0, "total": 914095.0, "share_pct": 3.31}, {"year": 2020, "region": "South Asia", "enrollment": 197713.0, "total": 914095.0, "share_pct": 21.63}, {"year": 2020, "region": "Sub-Saharan Africa", "enrollment": 30102.0, "total": 914095.0, "share_pct": 3.29}, {"year": 2021, "region": "Central Asia", "enrollment": 5392.0, "total": 948519.0, "share_pct": 0.57}, {"year": 2021, "region": "East Asia & Pacific", "enrollment": 407691.0, "total": 948519.0, "share_pct": 42.98}, {"year": 2021, "region": "Europe", "enrollment": 64948.0, "total": 948519.0, "share_pct": 6.85}, {"year": 2021, "region": "Latin America & Caribbean", "enrollment": 71650.0, "total": 948519.0, "share_pct": 7.55}, {"year": 2021, "region": "Middle East & North Africa", "enrollment": 59868.0, "total": 948519.0, "share_pct": 6.31}, {"year": 2021, "region": "Other", "enrollment": 39623.0, "total": 948519.0, "share_pct": 4.18}, {"year": 2021, "region": "Other Developed", "enrollment": 32444.0, "total": 948519.0, "share_pct": 3.42}, {"year": 2021, "region": "South Asia", "enrollment": 233421.0, "total": 948519.0, "share_pct": 24.61}, {"year": 2021, "region": "Sub-Saharan Africa", "enrollment": 33482.0, "total": 948519.0, "share_pct": 3.53}, {"year": 2022, "region": "Central Asia", "enrollment": 6893.0, "total": 1057188.0, "share_pct": 0.65}, {"year": 2022, "region": "East Asia & Pacific", "enrollment": 416965.0, "total": 1057188.0, "share_pct": 39.44}, {"year": 2022, "region": "Europe", "enrollment": 70834.0, "total": 1057188.0, "share_pct": 6.7}, {"year": 2022, "region": "Latin America & Caribbean", "enrollment": 75250.0, "total": 1057188.0, "share_pct": 7.12}, {"year": 2022, "region": "Middle East & North Africa", "enrollment": 59420.0, "total": 1057188.0, "share_pct": 5.62}, {"year": 2022, "region": "Other", "enrollment": 42555.0, "total": 1057188.0, "share_pct": 4.03}, {"year": 2022, "region": "Other Developed", "enrollment": 34031.0, "total": 1057188.0, "share_pct": 3.22}, {"year": 2022, "region": "South Asia", "enrollment": 311034.0, "total": 1057188.0, "share_pct": 29.42}, {"year": 2022, "region": "Sub-Saharan Africa", "enrollment": 40206.0, "total": 1057188.0, "share_pct": 3.8}, {"year": 2023, "region": "Central Asia", "enrollment": 8104.0, "total": 1126690.0, "share_pct": 0.72}, {"year": 2023, "region": "East Asia & Pacific", "enrollment": 403414.0, "total": 1126690.0, "share_pct": 35.81}, {"year": 2023, "region": "Europe", "enrollment": 70415.0, "total": 1126690.0, "share_pct": 6.25}, {"year": 2023, "region": "Latin America & Caribbean", "enrollment": 79459.0, "total": 1126690.0, "share_pct": 7.05}, {"year": 2023, "region": "Middle East & North Africa", "enrollment": 59940.0, "total": 1126690.0, "share_pct": 5.32}, {"year": 2023, "region": "Other", "enrollment": 43811.0, "total": 1126690.0, "share_pct": 3.89}, {"year": 2023, "region": "Other Developed", "enrollment": 35126.0, "total": 1126690.0, "share_pct": 3.12}, {"year": 2023, "region": "South Asia", "enrollment": 380039.0, "total": 1126690.0, "share_pct": 33.73}, {"year": 2023, "region": "Sub-Saharan Africa", "enrollment": 46382.0, "total": 1126690.0, "share_pct": 4.12}, {"year": 2024, "region": "Central Asia", "enrollment": 9373.0, "total": 1177766.0, "share_pct": 0.8}, {"year": 2024, "region": "East Asia & Pacific", "enrollment": 394382.0, "total": 1177766.0, "share_pct": 33.49}, {"year": 2024, "region": "Europe", "enrollment": 72054.0, "total": 1177766.0, "share_pct": 6.12}, {"year": 2024, "region": "Latin America & Caribbean", "enrollment": 81157.0, "total": 1177766.0, "share_pct": 6.89}, {"year": 2024, "region": "Middle East & North Africa", "enrollment": 58746.0, "total": 1177766.0, "share_pct": 4.99}, {"year": 2024, "region": "Other", "enrollment": 47117.0, "total": 1177766.0, "share_pct": 4.0}, {"year": 2024, "region": "Other Developed", "enrollment": 36304.0, "total": 1177766.0, "share_pct": 3.08}, {"year": 2024, "region": "South Asia", "enrollment": 425119.0, "total": 1177766.0, "share_pct": 36.1}, {"year": 2024, "region": "Sub-Saharan Africa", "enrollment": 53514.0, "total": 1177766.0, "share_pct": 4.54}], "regression": [{"year": 2000, "total_enrollment": 545436.0, "yoy_growth": null, "covid_flag": false, "year_idx": 0, "is_covid": 0, "predicted": 475906.7489681408, "residual": 69529.2510318592}, {"year": 2001, "total_enrollment": 580459.0, "yoy_growth": 6.421101650789463, "covid_flag": false, "year_idx": 1, "is_covid": 0, "predicted": 506567.7828435568, "residual": 73891.21715644316}, {"year": 2002, "total_enrollment": 583965.0, "yoy_growth": 0.6040047617488886, "covid_flag": false, "year_idx": 2, "is_covid": 0, "predicted": 537228.816718973, "residual": 46736.18328102701}, {"year": 2003, "total_enrollment": 567845.0, "yoy_growth": -2.7604394098961427, "covid_flag": false, "year_idx": 3, "is_covid": 0, "predicted": 567889.850594389, "residual": -44.850594389019534}, {"year": 2004, "total_enrollment": 561275.0, "yoy_growth": -1.1570058730815624, "covid_flag": false, "year_idx": 4, "is_covid": 0, "predicted": 598550.884469805, "residual": -37275.88446980505}, {"year": 2005, "total_enrollment": 562913.0, "yoy_growth": 0.2918355529820449, "covid_flag": false, "year_idx": 5, "is_covid": 0, "predicted": 629211.9183452211, "residual": -66298.91834522109}, {"year": 2006, "total_enrollment": 582496.0, "yoy_growth": 3.478867960057763, "covid_flag": false, "year_idx": 6, "is_covid": 0, "predicted": 659872.9522206371, "residual": -77376.95222063712}, {"year": 2007, "total_enrollment": 623449.0, "yoy_growth": 7.030606218755153, "covid_flag": false, "year_idx": 7, "is_covid": 0, "predicted": 690533.9860960533, "residual": -67084.98609605327}, {"year": 2008, "total_enrollment": 670912.0, "yoy_growth": 7.612972352189184, "covid_flag": false, "year_idx": 8, "is_covid": 0, "predicted": 721195.0199714693, "residual": -50283.0199714693}, {"year": 2009, "total_enrollment": 690606.0, "yoy_growth": 2.935407326147099, "covid_flag": false, "year_idx": 9, "is_covid": 0, "predicted": 751856.0538468853, "residual": -61250.05384688533}, {"year": 2010, "total_enrollment": 723048.0, "yoy_growth": 4.697613400404865, "covid_flag": false, "year_idx": 10, "is_covid": 0, "predicted": 782517.0877223015, "residual": -59469.08772230148}, {"year": 2011, "total_enrollment": 764340.0, "yoy_growth": 5.710824177647966, "covid_flag": false, "year_idx": 11, "is_covid": 0, "predicted": 813178.1215977175, "residual": -48838.12159771752}, {"year": 2012, "total_enrollment": 819449.0, "yoy_growth": 7.210011251537285, "covid_flag": false, "year_idx": 12, "is_covid": 0, "predicted": 843839.1554731335, "residual": -24390.15547313355}, {"year": 2013, "total_enrollment": 886052.0, "yoy_growth": 8.127778543875209, "covid_flag": false, "year_idx": 13, "is_covid": 0, "predicted": 874500.1893485496, "residual": 11551.810651450418}, {"year": 2014, "total_enrollment": 974926.0, "yoy_growth": 10.030336819960905, "covid_flag": false, "year_idx": 14, "is_covid": 0, "predicted": 905161.2232239656, "residual": 69764.77677603438}, {"year": 2015, "total_enrollment": 1043839.0, "yoy_growth": 7.068536483794663, "covid_flag": false, "year_idx": 15, "is_covid": 0, "predicted": 935822.2570993818, "residual": 108016.74290061824}, {"year": 2016, "total_enrollment": 1078822.0, "yoy_growth": 3.35137890038597, "covid_flag": false, "year_idx": 16, "is_covid": 0, "predicted": 966483.2909747978, "residual": 112338.7090252022}, {"year": 2017, "total_enrollment": 1094792.0, "yoy_growth": 1.4803183472342996, "covid_flag": false, "year_idx": 17, "is_covid": 0, "predicted": 997144.3248502138, "residual": 97647.67514978616}, {"year": 2018, "total_enrollment": 1095299.0, "yoy_growth": 0.0463101666800636, "covid_flag": false, "year_idx": 18, "is_covid": 0, "predicted": 1027805.35872563, "residual": 67493.64127437014}, {"year": 2019, "total_enrollment": 1075496.0, "yoy_growth": -1.8079994595083135, "covid_flag": false, "year_idx": 19, "is_covid": 0, "predicted": 1058466.392601046, "residual": 17029.607398953987}, {"year": 2020, "total_enrollment": 914095.0, "yoy_growth": -15.00712229520147, "covid_flag": true, "year_idx": 20, "is_covid": 1, "predicted": 915976.483062292, "residual": -1881.483062291867}, {"year": 2021, "total_enrollment": 948519.0, "yoy_growth": 3.765910545402829, "covid_flag": true, "year_idx": 21, "is_covid": 1, "predicted": 946637.516937708, "residual": 1881.4830622921}, {"year": 2022, "total_enrollment": 1057188.0, "yoy_growth": 11.45670250147861, "covid_flag": false, "year_idx": 22, "is_covid": 0, "predicted": 1150449.4942272943, "residual": -93261.49422729434}, {"year": 2023, "total_enrollment": 1126690.0, "yoy_growth": 6.574232776005773, "covid_flag": false, "year_idx": 23, "is_covid": 0, "predicted": 1181110.5281027104, "residual": -54420.52810271038}, {"year": 2024, "total_enrollment": 1177766.0, "yoy_growth": 4.533278896590898, "covid_flag": false, "year_idx": 24, "is_covid": 0, "predicted": 1211771.5619781264, "residual": -34005.56197812641}]};
+
+// ── UTILS ──
+const fmt = d3.format(",");
+const fmtK = d => d >= 1e6 ? d3.format(".2f")(d/1e6)+"M" : d3.format(".0f")(d/1e3)+"K";
+const tooltip = document.getElementById("tooltip");
+
+function showTip(html, event) {
+  tooltip.innerHTML = html;
+  tooltip.style.opacity = 1;
+  moveTip(event);
+}
+function moveTip(event) {
+  let x = event.clientX + 14, y = event.clientY - 14;
+  if (x + 240 > window.innerWidth) x = event.clientX - 240;
+  tooltip.style.left = x + "px";
+  tooltip.style.top = y + "px";
+}
+function hideTip() { tooltip.style.opacity = 0; }
+
+function navTo(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+
+// ── COLORS ──
+const CLUSTER_COLORS = {
+  "Dominant (100k+)": "#7c6fcd",
+  "Rising Stars":     "#4db8a4",
+  "Stable Mid-Tier":  "#e8c96a",
+  "Declining":        "#e0885a"
+};
+const REGION_COLORS = {
+  "South Asia":                "#7c6fcd",
+  "East Asia & Pacific":       "#4db8a4",
+  "Europe":                    "#e8c96a",
+  "Latin America & Caribbean": "#e0885a",
+  "Middle East & North Africa":"#d4648a",
+  "Sub-Saharan Africa":        "#5baad8",
+  "Other Developed":           "#8884a0",
+  "Central Asia":              "#a0c070",
+  "Other":                     "#666680"
+};
+const FOS_COLORS = [
+  "#7c6fcd","#4db8a4","#e8c96a","#e0885a",
+  "#d4648a","#5baad8","#a0c070","#c07860"
+];
+
+// ── 1. TREND CHART ──
+(function() {
+  const data = DATA.trend.filter(d => d.total_enrollment != null);
+  const W = document.getElementById("trend-chart").offsetWidth || 700;
+  const H = 300, M = { t:20, r:20, b:40, l:70 };
+  const w = W - M.l - M.r, h = H - M.t - M.b;
+
+  const svg = d3.select("#trend-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const x = d3.scaleLinear().domain(d3.extent(data,d=>d.year)).range([0,w]);
+  const y = d3.scaleLinear().domain([0, d3.max(data,d=>d.total_enrollment)*1.08]).range([h,0]);
+
+  // Grid
+  g.append("g").selectAll("line").data(y.ticks(5)).join("line")
+    .attr("class","grid-line").attr("x1",0).attr("x2",w)
+    .attr("y1",d=>y(d)).attr("y2",d=>y(d));
+
+  // COVID band
+  g.append("rect")
+    .attr("x", x(2020)).attr("y", 0)
+    .attr("width", x(2022)-x(2020)).attr("height", h)
+    .attr("fill","#e05a5a").attr("opacity",.08);
+  g.append("text").attr("x", x(2021)).attr("y",14)
+    .attr("text-anchor","middle").attr("fill","#e05a5a")
+    .attr("font-size","10px").text("COVID");
+
+  // Regression line
+  const regLine = d3.line().x(d=>x(d.year)).y(d=>y(d.predicted))
+    .defined(d => d.predicted != null);
+  g.append("path").datum(DATA.regression.filter(d=>d.predicted!=null))
+    .attr("fill","none").attr("stroke","#7c6fcd").attr("stroke-width",1.5)
+    .attr("stroke-dasharray","5,4").attr("opacity",.7).attr("d",regLine);
+
+  // Area
+  const area = d3.area().x(d=>x(d.year)).y0(h).y1(d=>y(d.total_enrollment))
+    .curve(d3.curveCatmullRom);
+  g.append("path").datum(data).attr("fill","#4db8a4").attr("opacity",.12).attr("d",area);
+
+  // Line
+  const line = d3.line().x(d=>x(d.year)).y(d=>y(d.total_enrollment)).curve(d3.curveCatmullRom);
+  g.append("path").datum(data).attr("fill","none").attr("stroke","#4db8a4")
+    .attr("stroke-width",2.5).attr("d",line);
+
+  // Dots
+  g.selectAll("circle").data(data).join("circle")
+    .attr("cx",d=>x(d.year)).attr("cy",d=>y(d.total_enrollment)).attr("r",4)
+    .attr("fill",d=>d.covid_flag?"#e05a5a":"#4db8a4")
+    .attr("stroke","#0e0e12").attr("stroke-width",1.5)
+    .on("mouseover",(e,d)=>showTip(`<strong>${d.year}</strong>${fmt(d.total_enrollment)} students<br>${d.yoy_growth!=null?((d.yoy_growth>0?"+":"")+d.yoy_growth.toFixed(1)+"% YoY"):""}${d.covid_flag?" · COVID year":""}`,e))
+    .on("mousemove",moveTip).on("mouseleave",hideTip);
+
+  // Legend
+  g.append("line").attr("x1",w-130).attr("y1",h-24).attr("x2",w-110).attr("y2",h-24)
+    .attr("stroke","#7c6fcd").attr("stroke-width",1.5).attr("stroke-dasharray","5,4");
+  g.append("text").attr("x",w-105).attr("y",h-20).attr("fill","#8884a0").attr("font-size","10px").text("Regression trend");
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(8));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).tickFormat(d=>fmtK(d)).ticks(5));
+})();
+
+// ── 2. BAR RACE ──
+(function() {
+  const raw = DATA.bar_race;
+  const years = [...new Set(raw.map(d=>d.year))].sort();
+  const countries = [...new Set(raw.map(d=>d.place))];
+  const byYear = {};
+  years.forEach(y => {
+    byYear[y] = raw.filter(d=>d.year===y).sort((a,b)=>b.enrollment-a.enrollment);
+  });
+
+  const W = document.getElementById("bar-race-chart").offsetWidth || 700;
+  const BAR_H = 32, N = 12, H = N*BAR_H + 40;
+  const M = { t:10, r:120, b:30, l:150 };
+  const w = W - M.l - M.r;
+
+  const svg = d3.select("#bar-race-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const colMap = {};
+  const palette = ["#7c6fcd","#4db8a4","#e8c96a","#e0885a","#d4648a","#5baad8","#a0c070","#c07860","#8884a0","#88c4a0","#c4a070","#a070c4"];
+  countries.forEach((c,i) => { colMap[c] = palette[i % palette.length]; });
+
+  const x = d3.scaleLinear().range([0,w]);
+  let yearIdx = 0, playing = false, timer = null;
+
+  function draw(idx, animated) {
+    const yr = years[idx];
+    const top = byYear[yr].slice(0,N);
+    x.domain([0, top[0].enrollment * 1.05]);
+    document.getElementById("race-year").textContent = yr;
+    document.getElementById("race-slider").value = idx;
+
+    const bars = g.selectAll(".rbar").data(top, d=>d.place);
+    const dur = animated ? 600 : 0;
+
+    bars.join(
+      enter => {
+        const eg = enter.append("g").attr("class","rbar")
+          .attr("transform",(_,i)=>`translate(0,${i*BAR_H})`);
+        eg.append("rect").attr("height",BAR_H-4).attr("rx",3)
+          .attr("fill",d=>colMap[d.place]).attr("opacity",.85)
+          .attr("x",0).attr("width",d=>x(d.enrollment));
+        eg.append("text").attr("class","bar-label")
+          .attr("x",-8).attr("y",BAR_H/2-2)
+          .attr("text-anchor","end").attr("dominant-baseline","central")
+          .attr("fill","#e8e6f0").attr("font-size","12px")
+          .text(d=>d.place);
+        eg.append("text").attr("class","bar-val")
+          .attr("x",d=>x(d.enrollment)+6).attr("y",BAR_H/2-2)
+          .attr("dominant-baseline","central")
+          .attr("fill","#8884a0").attr("font-size","11px")
+          .text(d=>fmtK(d.enrollment));
+        return eg;
+      },
+      update => update,
+      exit => exit.transition().duration(dur).attr("transform",`translate(0,${N*BAR_H})`).style("opacity",0).remove()
+    )
+    .transition().duration(dur).ease(d3.easeQuadInOut)
+    .attr("transform",(_,i)=>`translate(0,${i*BAR_H})`)
+    .each(function(d) {
+      d3.select(this).select("rect").transition().duration(dur).attr("width",x(d.enrollment));
+      d3.select(this).select(".bar-val").transition().duration(dur)
+        .attr("x",x(d.enrollment)+6).text(fmtK(d.enrollment));
+    });
+  }
+
+  draw(0, false);
+
+  window.raceToggle = function() {
+    playing = !playing;
+    document.getElementById("btn-play").textContent = playing ? "⏸ Pause" : "▶ Play";
+    document.getElementById("btn-play").classList.toggle("active", playing);
+    if (playing) {
+      timer = setInterval(() => {
+        yearIdx = (yearIdx + 1) % years.length;
+        draw(yearIdx, true);
+        if (yearIdx === years.length - 1) {
+          clearInterval(timer); playing = false;
+          document.getElementById("btn-play").textContent = "▶ Play";
+          document.getElementById("btn-play").classList.remove("active");
+        }
+      }, 700);
+    } else {
+      clearInterval(timer);
+    }
+  };
+  window.raceReset = function() {
+    clearInterval(timer); playing = false; yearIdx = 0;
+    document.getElementById("btn-play").textContent = "▶ Play";
+    document.getElementById("btn-play").classList.remove("active");
+    draw(0, true);
+  };
+  window.raceSeek = function(idx) {
+    clearInterval(timer); playing = false; yearIdx = idx;
+    document.getElementById("btn-play").textContent = "▶ Play";
+    document.getElementById("btn-play").classList.remove("active");
+    draw(idx, true);
+  };
+})();
+
+// ── 3. CLUSTER SCATTER ──
+(function() {
+  const data = DATA.cluster.filter(d=>d.enrollment_2024&&d.cagr_2000_2024!=null);
+  const W = document.getElementById("cluster-chart").offsetWidth || 480;
+  const H = 320, M = { t:10, r:20, b:45, l:70 };
+  const w = W - M.l - M.r, h = H - M.t - M.b;
+
+  const svg = d3.select("#cluster-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const x = d3.scaleLog().domain([400, d3.max(data,d=>d.enrollment_2024)*1.4]).range([0,w]);
+  const y = d3.scaleLinear().domain(d3.extent(data,d=>d.cagr_2000_2024)).nice().range([h,0]);
+
+  g.append("g").selectAll(".gl").data(y.ticks(5)).join("line")
+    .attr("class","grid-line").attr("x1",0).attr("x2",w).attr("y1",d=>y(d)).attr("y2",d=>y(d));
+
+  // Zero line
+  g.append("line").attr("x1",0).attr("x2",w).attr("y1",y(0)).attr("y2",y(0))
+    .attr("stroke","#8884a0").attr("stroke-dasharray","2,3").attr("opacity",.5);
+
+  g.selectAll("circle").data(data).join("circle")
+    .attr("cx",d=>x(d.enrollment_2024)).attr("cy",d=>y(d.cagr_2000_2024))
+    .attr("r", d => d.enrollment_2024 > 100000 ? 10 : d.enrollment_2024 > 10000 ? 6 : 4)
+    .attr("fill",d=>CLUSTER_COLORS[d.cluster_label]||"#8884a0")
+    .attr("opacity",.8).attr("stroke","#0e0e12").attr("stroke-width",.8)
+    .on("mouseover",(e,d)=>showTip(`<strong>${d.place}</strong>2024: ${fmt(d.enrollment_2024)}<br>CAGR: ${d.cagr_2000_2024>0?"+":""}${d.cagr_2000_2024?.toFixed(1)}%/yr<br>Cluster: ${d.cluster_label}`,e))
+    .on("mousemove",moveTip).on("mouseleave",hideTip);
+
+  // Labels for top countries
+  const top5 = data.filter(d=>d.enrollment_2024>30000);
+  g.selectAll(".clabel").data(top5).join("text")
+    .attr("class","clabel").attr("x",d=>x(d.enrollment_2024)+7)
+    .attr("y",d=>y(d.cagr_2000_2024)+4)
+    .attr("fill","#e8e6f0").attr("font-size","10px").text(d=>d.place);
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d=>fmtK(d)).ticks(4));
+  g.append("g").attr("class","axis")
+    .call(d3.axisLeft(y).tickFormat(d=>d+"%").ticks(5));
+
+  g.append("text").attr("x",w/2).attr("y",h+38)
+    .attr("text-anchor","middle").attr("fill","#8884a0").attr("font-size","11px").text("Enrollment 2024 (log scale)");
+  g.append("text").attr("transform","rotate(-90)").attr("x",-h/2).attr("y",-55)
+    .attr("text-anchor","middle").attr("fill","#8884a0").attr("font-size","11px").text("CAGR 2000–2024 (%)");
+
+  // Legend
+  const legend = document.getElementById("cluster-legend");
+  Object.entries(CLUSTER_COLORS).forEach(([label, color]) => {
+    if(DATA.cluster.some(d=>d.cluster_label===label)) {
+      const item = document.createElement("div");
+      item.className = "legend-item";
+      item.innerHTML = `<div class="legend-dot" style="background:${color}"></div>${label}`;
+      legend.appendChild(item);
+    }
+  });
+
+  // Cluster table
+  const labels = [...new Set(DATA.cluster.map(d=>d.cluster_label))];
+  const tableHTML = labels.map(label => {
+    const group = DATA.cluster.filter(d=>d.cluster_label===label);
+    const top = group.sort((a,b)=>b.enrollment_2024-a.enrollment_2024).slice(0,4).map(d=>d.place).join(", ");
+    const avgCAGR = (group.reduce((s,d)=>s+(d.cagr_2000_2024||0),0)/group.length).toFixed(1);
+    const col = CLUSTER_COLORS[label]||"#8884a0";
+    return `<div style="border-left:3px solid ${col};padding:10px 14px;margin-bottom:10px;background:var(--surface);border-radius:0 6px 6px 0">
+      <div style="font-size:12px;font-weight:600;color:${col};margin-bottom:4px">${label} (${group.length} countries)</div>
+      <div style="font-size:11px;color:#8884a0;margin-bottom:3px">Avg CAGR: ${avgCAGR>0?"+":""}${avgCAGR}%/yr</div>
+      <div style="font-size:11px;color:#c8c6d8">${top}…</div>
+    </div>`;
+  }).join("");
+  document.getElementById("cluster-table").innerHTML = tableHTML;
+})();
+
+// ── 4. FIELD OF STUDY (stacked area) ──
+(function() {
+  const raw = DATA.fos;
+  const fields = [...new Set(raw.map(d=>d.field))];
+  const years = [...new Set(raw.map(d=>d.year))].sort();
+
+  // Build stacked data
+  const nested = years.map(yr => {
+    const obj = { year: yr };
+    fields.forEach(f => {
+      const rec = raw.find(d=>d.year===yr&&d.field===f);
+      obj[f] = rec ? rec.enrollment : 0;
+    });
+    return obj;
+  });
+
+  const stack = d3.stack().keys(fields).order(d3.stackOrderDescending);
+  const series = stack(nested);
+
+  const W = document.getElementById("fos-chart").offsetWidth || 700;
+  const H = 320, M = {t:20, r:160, b:40, l:70};
+  const w = W - M.l - M.r, h = H - M.t - M.b;
+
+  const svg = d3.select("#fos-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0,w]);
+  const y = d3.scaleLinear().domain([0, d3.max(series, s=>d3.max(s, d=>d[1]))]).range([h,0]);
+
+  const area = d3.area().x(d=>x(d.data.year)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveCatmullRom);
+
+  g.selectAll(".layer").data(series).join("path")
+    .attr("class","layer").attr("d",area)
+    .attr("fill",(_,i)=>FOS_COLORS[i]).attr("opacity",.85)
+    .on("mouseover",(e,d)=>showTip(`<strong>${d.key}</strong>`,e))
+    .on("mousemove",moveTip).on("mouseleave",hideTip);
+
+  // Legend (right side)
+  series.forEach((s,i) => {
+    svg.append("rect").attr("x",M.l+w+12).attr("y",M.t+i*22)
+      .attr("width",10).attr("height",10).attr("rx",2).attr("fill",FOS_COLORS[i]);
+    svg.append("text").attr("x",M.l+w+26).attr("y",M.t+i*22+9)
+      .attr("fill","#8884a0").attr("font-size","10px").text(s.key.length>20?s.key.slice(0,18)+"…":s.key);
+  });
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(8));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).tickFormat(d=>fmtK(d)).ticks(5));
+})();
+
+// ── 5. REGIONAL STACKED AREA ──
+(function() {
+  const raw = DATA.regional;
+  const regions = [...new Set(raw.map(d=>d.region))];
+  const years = [...new Set(raw.map(d=>d.year))].sort();
+
+  const nested = years.map(yr => {
+    const obj = { year: yr };
+    regions.forEach(r => {
+      const rec = raw.find(d=>d.year===yr&&d.region===r);
+      obj[r] = rec ? rec.enrollment : 0;
+    });
+    return obj;
+  });
+
+  const stack = d3.stack().keys(regions).order(d3.stackOrderDescending);
+  const series = stack(nested);
+
+  const W = document.getElementById("regional-chart").offsetWidth || 700;
+  const H = 320, M = {t:20, r:200, b:40, l:70};
+  const w = W - M.l - M.r, h = H - M.t - M.b;
+
+  const svg = d3.select("#regional-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const x = d3.scaleLinear().domain(d3.extent(years)).range([0,w]);
+  const y = d3.scaleLinear().domain([0, d3.max(series, s=>d3.max(s, d=>d[1]))*1.05]).range([h,0]);
+
+  const area = d3.area().x(d=>x(d.data.year)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveCatmullRom);
+  const colArr = Object.values(REGION_COLORS);
+
+  g.selectAll(".rlayer").data(series).join("path")
+    .attr("class","rlayer").attr("d",area)
+    .attr("fill",(_,i)=>colArr[i]||"#666680").attr("opacity",.85)
+    .on("mouseover",(e,d)=>showTip(`<strong>${d.key}</strong>`,e))
+    .on("mousemove",moveTip).on("mouseleave",hideTip);
+
+  // COVID line
+  g.append("line").attr("x1",x(2020)).attr("x2",x(2020))
+    .attr("y1",0).attr("y2",h).attr("stroke","#e05a5a").attr("stroke-dasharray","4,3").attr("opacity",.6);
+  g.append("text").attr("x",x(2020)+4).attr("y",14).attr("fill","#e05a5a").attr("font-size","10px").text("COVID");
+
+  series.forEach((s,i) => {
+    svg.append("rect").attr("x",M.l+w+12).attr("y",M.t+i*22).attr("width",10).attr("height",10).attr("rx",2).attr("fill",colArr[i]||"#666");
+    svg.append("text").attr("x",M.l+w+26).attr("y",M.t+i*22+9).attr("fill","#8884a0").attr("font-size","10px").text(s.key);
+  });
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(8));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).tickFormat(d=>fmtK(d)).ticks(5));
+})();
+
+// ── 6. REGRESSION CHART ──
+(function() {
+  const data = DATA.regression.filter(d=>d.total_enrollment!=null&&d.predicted!=null);
+  const W = document.getElementById("reg-chart").offsetWidth || 480;
+  const H = 300, M={t:20,r:20,b:40,l:70};
+  const w=W-M.l-M.r, h=H-M.t-M.b;
+
+  const svg = d3.select("#reg-chart").append("svg")
+    .attr("width","100%").attr("viewBox",`0 0 ${W} ${H}`);
+  const g = svg.append("g").attr("transform",`translate(${M.l},${M.t})`);
+
+  const x = d3.scaleLinear().domain(d3.extent(data,d=>d.year)).range([0,w]);
+  const y = d3.scaleLinear().domain([0,d3.max(data,d=>Math.max(d.total_enrollment,d.predicted))*1.08]).range([h,0]);
+
+  g.selectAll(".gl").data(y.ticks(5)).join("line")
+    .attr("class","grid-line").attr("x1",0).attr("x2",w).attr("y1",d=>y(d)).attr("y2",d=>y(d));
+
+  // Regression line
+  const rl = d3.line().x(d=>x(d.year)).y(d=>y(d.predicted)).curve(d3.curveCatmullRom);
+  g.append("path").datum(data).attr("fill","none").attr("stroke","#7c6fcd")
+    .attr("stroke-width",2).attr("stroke-dasharray","6,4").attr("d",rl);
+
+  // Residual lines
+  data.forEach(d => {
+    g.append("line").attr("x1",x(d.year)).attr("x2",x(d.year))
+      .attr("y1",y(d.total_enrollment)).attr("y2",y(d.predicted))
+      .attr("stroke","#8884a0").attr("stroke-width",1).attr("opacity",.4);
+  });
+
+  // Actual dots
+  g.selectAll("circle").data(data).join("circle")
+    .attr("cx",d=>x(d.year)).attr("cy",d=>y(d.total_enrollment)).attr("r",5)
+    .attr("fill",d=>d.covid_flag?"#e05a5a":"#4db8a4")
+    .attr("stroke","#0e0e12").attr("stroke-width",1.5)
+    .on("mouseover",(e,d)=>showTip(`<strong>${d.year}</strong>Actual: ${fmt(d.total_enrollment)}<br>Predicted: ${fmt(Math.round(d.predicted))}<br>Residual: ${d.residual>0?"+":""}${fmt(Math.round(d.residual))}`,e))
+    .on("mousemove",moveTip).on("mouseleave",hideTip);
+
+  // Legend
+  g.append("circle").attr("cx",w-110).attr("cy",h-22).attr("r",5).attr("fill","#4db8a4");
+  g.append("text").attr("x",w-100).attr("y",h-18).attr("fill","#8884a0").attr("font-size","10px").text("Actual");
+  g.append("circle").attr("cx",w-60).attr("cy",h-22).attr("r",5).attr("fill","#e05a5a");
+  g.append("text").attr("x",w-50).attr("y",h-18).attr("fill","#8884a0").attr("font-size","10px").text("COVID");
+
+  g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+    .call(d3.axisBottom(x).tickFormat(d3.format("d")).ticks(6));
+  g.append("g").attr("class","axis").call(d3.axisLeft(y).tickFormat(d=>fmtK(d)).ticks(5));
+
+  // Stats table
+  document.getElementById("reg-stats").innerHTML = `
+    <div style="display:flex;flex-direction:column;gap:14px;padding:8px 0">
+      <div>
+        <div style="font-size:11px;color:#8884a0;text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px">Model equation</div>
+        <div style="font-size:13px;color:#e8e6f0;font-family:monospace;background:var(--bg);padding:10px 14px;border-radius:6px;line-height:1.8">
+          Enrollment = 475,907<br>
+          + 30,661 × (Year − 2000)<br>
+          − 173,151 × COVID_flag
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div style="background:var(--surface);border-radius:8px;padding:12px">
+          <div style="font-size:22px;font-weight:700;color:#7c6fcd">0.92</div>
+          <div style="font-size:11px;color:#8884a0;margin-top:2px">R² score</div>
+        </div>
+        <div style="background:var(--surface);border-radius:8px;padding:12px">
+          <div style="font-size:22px;font-weight:700;color:#4db8a4">+30.7K</div>
+          <div style="font-size:11px;color:#8884a0;margin-top:2px">Students/year (trend)</div>
+        </div>
+        <div style="background:var(--surface);border-radius:8px;padding:12px">
+          <div style="font-size:22px;font-weight:700;color:#e05a5a">−173K</div>
+          <div style="font-size:11px;color:#8884a0;margin-top:2px">COVID impact (2020–21)</div>
+        </div>
+        <div style="background:var(--surface);border-radius:8px;padding:12px">
+          <div style="font-size:22px;font-weight:700;color:#e8c96a">2</div>
+          <div style="font-size:11px;color:#8884a0;margin-top:2px">Predictors used</div>
+        </div>
+      </div>
+    </div>`;
+})();
+</script>
+<script>
+// ── 7. GEOSPATIAL CHOROPLETH ──
+// World boundaries: Natural Earth 1:50m via the world-atlas package (TopoJSON, ISO 3166-1 numeric ids).
+// Country data: DATA.cluster (countries with 500+ students in 2024 and complete 2000-2024 history).
+(function() {
+  const WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
+
+  // IIE Open Doors place name -> ISO 3166-1 numeric code (as used by world-atlas)
+  const ISO_NUM = {
+    "Afghanistan":"004","Albania":"008","Argentina":"032","Armenia":"051","Australia":"036",
+    "Austria":"040","Azerbaijan":"031","Bahamas":"044","Bangladesh":"050","Belgium":"056",
+    "Bolivia":"068","Bosnia and Herzegovina":"070","Brazil":"076","Bulgaria":"100","Burma":"104",
+    "Cambodia":"116","Cameroon":"120","Canada":"124","Chile":"152","China":"156","Colombia":"170",
+    "Congo, Dem. Rep. of the (Kinshasa)":"180","Costa Rica":"188","Czech Republic":"203",
+    "Côte d’Ivoire":"384","Cote d'Ivoire":"384","Denmark":"208","Dominican Republic":"214",
+    "Ecuador":"218","Egypt":"818","El Salvador":"222","Ethiopia":"231","Finland":"246","France":"250",
+    "Georgia":"268","Germany":"276","Ghana":"288","Greece":"300","Guatemala":"320","Haiti":"332",
+    "Honduras":"340","Hong Kong":"344","Hungary":"348","India":"356","Indonesia":"360","Iran":"364",
+    "Iraq":"368","Ireland":"372","Israel":"376","Italy":"380","Jamaica":"388","Japan":"392",
+    "Jordan":"400","Kazakhstan":"398","Kenya":"404","Kuwait":"414","Kyrgyzstan":"417","Lebanon":"422",
+    "Malawi":"454","Malaysia":"458","Mexico":"484","Mongolia":"496","Morocco":"504","Nepal":"524",
+    "Netherlands":"528","New Zealand":"554","Nicaragua":"558","Nigeria":"566","Norway":"578",
+    "Oman":"512","Pakistan":"586","Palestinian Territories":"275","Panama":"591","Paraguay":"600",
+    "Peru":"604","Philippines":"608","Poland":"616","Portugal":"620","Romania":"642","Russia":"643",
+    "Rwanda":"646","Saudi Arabia":"682","Singapore":"702","South Africa":"710","South Korea":"410",
+    "Spain":"724","Sri Lanka":"144","Sweden":"752","Switzerland":"756","Taiwan":"158",
+    "Tanzania":"834","Thailand":"764","Trinidad and Tobago":"780","Tunisia":"788",
+    "Turkey/Türkiye":"792","Uganda":"800","Ukraine":"804","United Arab Emirates":"784",
+    "United Kingdom":"826","Uzbekistan":"860","Venezuela":"862","Vietnam":"704","Zambia":"894",
+    "Zimbabwe":"716"
+  };
+
+  const METRIC_LABEL = {
+    enrollment_2000: "Enrollment by country of origin · 2000",
+    enrollment_2010: "Enrollment by country of origin · 2010",
+    enrollment_2019: "Enrollment by country of origin · 2019",
+    enrollment_2024: "Enrollment by country of origin · 2024",
+    cagr_2000_2024:  "Average annual growth (CAGR) · 2000-2024"
+  };
+
+  // Join data to ISO codes; report anything that fails to match
+  const byId = new Map();
+  const unmatched = [];
+  DATA.cluster.forEach(d => {
+    const id = ISO_NUM[d.place];
+    if (id) byId.set(id, d); else unmatched.push(d.place);
+  });
+  if (unmatched.length) console.warn("Map: no ISO code for", unmatched);
+
+  const container = document.getElementById("map-chart");
+  const status = document.getElementById("map-status");
+  const W = container.offsetWidth || 1000;
+  const H = Math.round(W * 0.5);
+
+  const svg = d3.select("#map-chart").append("svg")
+    .attr("width", "100%").attr("viewBox", `0 0 ${W} ${H}`)
+    .style("display", "block").style("cursor", "grab");
+  const g = svg.append("g");
+
+  // Color scales: log scale for enrollment (China/India are 100x most countries), diverging for CAGR
+  const enrollMax = d3.max(DATA.cluster, d => Math.max(d.enrollment_2000 || 0, d.enrollment_2024 || 0, d.enrollment_2019 || 0, d.enrollment_2010 || 0));
+  const enrollScale = d3.scaleSequentialLog([100, enrollMax],
+    d3.interpolateRgbBasis(["#2b2850", "#7c6fcd", "#4db8a4", "#e8c96a"])).clamp(true);
+  const cagrAbs = Math.min(15, d3.max(DATA.cluster, d => Math.abs(d.cagr_2000_2024 || 0)));
+  const cagrScale = d3.scaleDiverging([-cagrAbs, 0, cagrAbs],
+    d3.interpolateRgbBasis(["#e0885a", "#2a2a3a", "#4db8a4"])).clamp(true);
+  const NO_DATA = "#20202b";
+
+  let metric = "enrollment_2024";
+  let paths = null;
+
+  function colorFor(d) {
+    const rec = byId.get(d.id);
+    if (!rec) return NO_DATA;
+    const v = rec[metric];
+    if (v == null || isNaN(v)) return NO_DATA;
+    if (metric === "cagr_2000_2024") return cagrScale(v);
+    return v > 0 ? enrollScale(Math.max(v, 100)) : NO_DATA;
+  }
+
+  function tipHtml(d) {
+    const rec = byId.get(d.id);
+    const name = rec ? rec.place : (d.properties && d.properties.name) || "Unknown";
+    if (!rec) return `<strong>${name}</strong>Under 500 students in 2024 or incomplete history`;
+    const growth = rec.cagr_2000_2024 != null ? `${rec.cagr_2000_2024 > 0 ? "+" : ""}${rec.cagr_2000_2024.toFixed(1)}% / yr` : "n/a";
+    return `<strong>${name}</strong>` +
+      `2000: ${fmt(rec.enrollment_2000)}<br>` +
+      `2024: ${fmt(rec.enrollment_2024)}<br>` +
+      `CAGR 2000-24: ${growth}<br>` +
+      `Cluster: ${rec.cluster_label}`;
+  }
+
+  function drawLegend() {
+    const lw = Math.min(420, W - 40), lh = 10;
+    const el = d3.select("#map-legend");
+    el.selectAll("*").remove();
+    const ls = el.append("svg").attr("width", lw + 180).attr("height", 44).style("max-width", "100%");
+    const grad = ls.append("defs").append("linearGradient").attr("id", "map-grad");
+    const isCagr = metric === "cagr_2000_2024";
+    const x = isCagr
+      ? d3.scaleLinear([-cagrAbs, cagrAbs], [0, lw])
+      : d3.scaleLog([100, enrollMax], [0, lw]);
+    d3.range(0, 1.0001, 0.05).forEach(t => {
+      const v = isCagr ? -cagrAbs + t * 2 * cagrAbs : Math.exp(Math.log(100) + t * (Math.log(enrollMax) - Math.log(100)));
+      grad.append("stop").attr("offset", `${t * 100}%`).attr("stop-color", isCagr ? cagrScale(v) : enrollScale(v));
+    });
+    const lg = ls.append("g").attr("transform", "translate(20,4)");
+    lg.append("rect").attr("width", lw).attr("height", lh).attr("rx", 3).attr("fill", "url(#map-grad)");
+    const axis = isCagr
+      ? d3.axisBottom(x).ticks(5).tickFormat(d => (d > 0 ? "+" : "") + d + "%")
+      : d3.axisBottom(x).tickValues([100, 1000, 10000, 100000, enrollMax].filter(v => v <= enrollMax)).tickFormat(d => d >= 1000 ? fmtK(d) : d);
+    lg.append("g").attr("class", "axis").attr("transform", `translate(0,${lh})`).call(axis)
+      .call(s => s.select(".domain").remove());
+    const nd = ls.append("g").attr("transform", `translate(${Math.min(lw + 30, W - 140)},0)`);
+    if (lw + 160 < W) {
+      nd.append("rect").attr("x", 0).attr("y", 4).attr("width", 10).attr("height", 10).attr("fill", NO_DATA).attr("stroke", "#3a3a4a");
+      nd.append("text").attr("x", 16).attr("y", 13).attr("fill", "var(--muted)").attr("font-size", 11).text("No data / <500");
+    }
+  }
+
+  function drawInsights() {
+    const valid = DATA.cluster.filter(d => d.enrollment_2024 != null);
+    const top = d3.greatest(valid, d => d.enrollment_2024);
+    const growers = valid.filter(d => d.enrollment_2024 >= 1000 && d.cagr_2000_2024 != null);
+    const fastest = d3.greatest(growers, d => d.cagr_2000_2024);
+    const declining = valid.filter(d => d.cagr_2000_2024 != null && d.cagr_2000_2024 < 0).length;
+    const mapped = valid.filter(d => ISO_NUM[d.place]).length;
+    const pills = [
+      ["Countries mapped", `${mapped} countries with 500+ students in 2024 and full 2000-2024 history`],
+      ["Largest sender (2024)", `${top.place}: ${fmt(top.enrollment_2024)} students`],
+      ["Fastest growth (1,000+ students)", `${fastest.place}: +${fastest.cagr_2000_2024.toFixed(1)}% per year since 2000`],
+      ["Shrinking senders", `${declining} countries sent fewer students in 2024 than in 2000`]
+    ];
+    d3.select("#map-insights").selectAll(".insight").data(pills).join("div").attr("class", "insight")
+      .html(d => `<strong>${d[0]}</strong>${d[1]}`);
+  }
+
+  function update() {
+    document.getElementById("map-title").textContent = METRIC_LABEL[metric];
+    d3.selectAll("#map-controls .btn[data-metric]").classed("active", function() { return this.dataset.metric === metric; });
+    if (paths) paths.transition().duration(500).attr("fill", colorFor);
+    drawLegend();
+  }
+
+  d3.selectAll("#map-controls .btn[data-metric]").on("click", function() {
+    metric = this.dataset.metric;
+    update();
+  });
+
+  drawInsights();
+  drawLegend();
+  status.textContent = "Loading world boundaries...";
+
+  d3.json(WORLD_URL).then(world => {
+    const countries = topojson.feature(world, world.objects.countries).features
+      .filter(f => f.id !== "010"); // drop Antarctica
+    const projection = d3.geoNaturalEarth1().fitExtent([[8, 8], [W - 8, H - 8]], { type: "FeatureCollection", features: countries });
+    const path = d3.geoPath(projection);
+
+    paths = g.selectAll("path.country").data(countries).join("path")
+      .attr("class", "country")
+      .attr("d", path)
+      .attr("fill", colorFor)
+      .attr("stroke", "#0e0e12").attr("stroke-width", 0.5)
+      .on("mouseover", function(event, d) {
+        d3.select(this).raise().attr("stroke", "#e8e6f0").attr("stroke-width", 1.2);
+        showTip(tipHtml(d), event);
+      })
+      .on("mousemove", moveTip)
+      .on("mouseout", function() {
+        d3.select(this).attr("stroke", "#0e0e12").attr("stroke-width", 0.5);
+        hideTip();
+      });
+
+    const zoom = d3.zoom().scaleExtent([1, 8]).translateExtent([[0, 0], [W, H]])
+      .on("start", () => svg.style("cursor", "grabbing"))
+      .on("end", () => svg.style("cursor", "grab"))
+      .on("zoom", event => {
+        g.attr("transform", event.transform);
+        paths.attr("stroke-width", 0.5 / event.transform.k);
+      });
+    svg.call(zoom);
+    document.getElementById("map-reset").onclick = () => svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity);
+
+    const shown = new Set(countries.map(f => f.id));
+    const missing = [...byId.keys()].filter(id => !shown.has(id)).map(id => byId.get(id).place);
+    status.textContent = "Boundaries: Natural Earth 1:50m (world-atlas). Grey countries had under 500 students in 2024 or incomplete history."
+      + (missing.length ? ` Not found in the boundary file: ${missing.join(", ")}.` : "");
+  }).catch(err => {
+    console.error(err);
+    status.textContent = "Could not load world boundaries. Check your internet connection and reload.";
+  });
+})();
+</script>
+</body>
+</html>
