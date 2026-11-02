@@ -1,0 +1,501 @@
+place,year,enrollment,region
+Ghana,2000,2469.0,Sub-Saharan Africa
+Nigeria,2000,3820.0,Sub-Saharan Africa
+China,2000,59939.0,East Asia & Pacific
+Japan,2000,46497.0,East Asia & Pacific
+South Korea,2000,45685.0,East Asia & Pacific
+Taiwan,2000,28566.0,East Asia & Pacific
+Bangladesh,2000,4114.0,South Asia
+India,2000,54664.0,South Asia
+Nepal,2000,2618.0,South Asia
+Pakistan,2000,6948.0,South Asia
+Vietnam,2000,2022.0,East Asia & Pacific
+Spain,2000,4156.0,Europe
+Turkey/Türkiye,2000,10983.0,Middle East & North Africa
+United Kingdom,2000,8139.0,Europe
+Mexico,2000,10670.0,Latin America & Caribbean
+Brazil,2000,8846.0,Latin America & Caribbean
+Colombia,2000,6765.0,Latin America & Caribbean
+Iran,2000,1844.0,Middle East & North Africa
+Saudi Arabia,2000,5273.0,Middle East & North Africa
+Canada,2000,25279.0,Other Developed
+Ghana,2001,2672.0,Sub-Saharan Africa
+Nigeria,2001,4499.0,Sub-Saharan Africa
+China,2001,63211.0,East Asia & Pacific
+Japan,2001,46810.0,East Asia & Pacific
+South Korea,2001,49046.0,East Asia & Pacific
+Taiwan,2001,28930.0,East Asia & Pacific
+Bangladesh,2001,3935.0,South Asia
+India,2001,66836.0,South Asia
+Nepal,2001,3019.0,South Asia
+Pakistan,2001,8644.0,South Asia
+Vietnam,2001,2531.0,East Asia & Pacific
+Spain,2001,4048.0,Europe
+Turkey/Türkiye,2001,12091.0,Middle East & North Africa
+United Kingdom,2001,8414.0,Europe
+Mexico,2001,12518.0,Latin America & Caribbean
+Brazil,2001,8972.0,Latin America & Caribbean
+Colombia,2001,8068.0,Latin America & Caribbean
+Iran,2001,2216.0,Middle East & North Africa
+Saudi Arabia,2001,5579.0,Middle East & North Africa
+Canada,2001,26514.0,Other Developed
+Ghana,2002,3032.0,Sub-Saharan Africa
+Nigeria,2002,5816.0,Sub-Saharan Africa
+China,2002,64757.0,East Asia & Pacific
+Japan,2002,45960.0,East Asia & Pacific
+South Korea,2002,51519.0,East Asia & Pacific
+Taiwan,2002,28017.0,East Asia & Pacific
+Bangladesh,2002,3596.0,South Asia
+India,2002,74603.0,South Asia
+Nepal,2002,3729.0,South Asia
+Pakistan,2002,8123.0,South Asia
+Vietnam,2002,2722.0,East Asia & Pacific
+Spain,2002,3633.0,Europe
+Turkey/Türkiye,2002,11601.0,Middle East & North Africa
+United Kingdom,2002,8326.0,Europe
+Mexico,2002,12801.0,Latin America & Caribbean
+Brazil,2002,8388.0,Latin America & Caribbean
+Colombia,2002,7771.0,Latin America & Caribbean
+Iran,2002,2258.0,Middle East & North Africa
+Saudi Arabia,2002,4175.0,Middle East & North Africa
+Canada,2002,26513.0,Other Developed
+Ghana,2003,3288.0,Sub-Saharan Africa
+Nigeria,2003,6140.0,Sub-Saharan Africa
+China,2003,61765.0,East Asia & Pacific
+Japan,2003,40835.0,East Asia & Pacific
+South Korea,2003,52484.0,East Asia & Pacific
+Taiwan,2003,26178.0,East Asia & Pacific
+Bangladesh,2003,3198.0,South Asia
+India,2003,79736.0,South Asia
+Nepal,2003,4384.0,South Asia
+Pakistan,2003,7325.0,South Asia
+Vietnam,2003,3165.0,East Asia & Pacific
+Spain,2003,3631.0,Europe
+Turkey/Türkiye,2003,11398.0,Middle East & North Africa
+United Kingdom,2003,8439.0,Europe
+Mexico,2003,13329.0,Latin America & Caribbean
+Brazil,2003,7799.0,Latin America & Caribbean
+Colombia,2003,7533.0,Latin America & Caribbean
+Iran,2003,2321.0,Middle East & North Africa
+Saudi Arabia,2003,3521.0,Middle East & North Africa
+Canada,2003,27017.0,Other Developed
+Ghana,2004,3114.0,Sub-Saharan Africa
+Nigeria,2004,6335.0,Sub-Saharan Africa
+China,2004,62523.0,East Asia & Pacific
+Japan,2004,42215.0,East Asia & Pacific
+South Korea,2004,53358.0,East Asia & Pacific
+Taiwan,2004,25914.0,East Asia & Pacific
+Bangladesh,2004,2758.0,South Asia
+India,2004,80466.0,South Asia
+Nepal,2004,4861.0,South Asia
+Pakistan,2004,6296.0,South Asia
+Vietnam,2004,3670.0,East Asia & Pacific
+Spain,2004,3512.0,Europe
+Turkey/Türkiye,2004,12474.0,Middle East & North Africa
+United Kingdom,2004,8236.0,Europe
+Mexico,2004,13063.0,Latin America & Caribbean
+Brazil,2004,7244.0,Latin America & Caribbean
+Colombia,2004,7334.0,Latin America & Caribbean
+Iran,2004,2251.0,Middle East & North Africa
+Saudi Arabia,2004,3035.0,Middle East & North Africa
+Canada,2004,28140.0,Other Developed
+Ghana,2005,3160.0,Sub-Saharan Africa
+Nigeria,2005,6192.0,Sub-Saharan Africa
+China,2005,62582.0,East Asia & Pacific
+Japan,2005,38712.0,East Asia & Pacific
+South Korea,2005,59022.0,East Asia & Pacific
+Taiwan,2005,27876.0,East Asia & Pacific
+Bangladesh,2005,2581.0,South Asia
+India,2005,76503.0,South Asia
+Nepal,2005,6061.0,South Asia
+Pakistan,2005,5759.0,South Asia
+Vietnam,2005,4597.0,East Asia & Pacific
+Spain,2005,3455.0,Europe
+Turkey/Türkiye,2005,11622.0,Middle East & North Africa
+United Kingdom,2005,8274.0,Europe
+Mexico,2005,13931.0,Latin America & Caribbean
+Brazil,2005,7009.0,Latin America & Caribbean
+Colombia,2005,6835.0,Latin America & Caribbean
+Iran,2005,2420.0,Middle East & North Africa
+Saudi Arabia,2005,3448.0,Middle East & North Africa
+Canada,2005,28202.0,Other Developed
+Ghana,2006,2961.0,Sub-Saharan Africa
+Nigeria,2006,5943.0,Sub-Saharan Africa
+China,2006,67723.0,East Asia & Pacific
+Japan,2006,35282.0,East Asia & Pacific
+South Korea,2006,62392.0,East Asia & Pacific
+Taiwan,2006,29094.0,East Asia & Pacific
+Bangladesh,2006,2410.0,South Asia
+India,2006,83833.0,South Asia
+Nepal,2006,7754.0,South Asia
+Pakistan,2006,5401.0,South Asia
+Vietnam,2006,6036.0,East Asia & Pacific
+Spain,2006,3575.0,Europe
+Turkey/Türkiye,2006,11506.0,Middle East & North Africa
+United Kingdom,2006,8438.0,Europe
+Mexico,2006,13826.0,Latin America & Caribbean
+Brazil,2006,7126.0,Latin America & Caribbean
+Colombia,2006,6750.0,Latin America & Caribbean
+Iran,2006,2795.0,Middle East & North Africa
+Saudi Arabia,2006,7886.0,Middle East & North Africa
+Canada,2006,28280.0,Other Developed
+Ghana,2007,2895.0,Sub-Saharan Africa
+Nigeria,2007,6222.0,Sub-Saharan Africa
+China,2007,81127.0,East Asia & Pacific
+Japan,2007,33974.0,East Asia & Pacific
+South Korea,2007,69124.0,East Asia & Pacific
+Taiwan,2007,29001.0,East Asia & Pacific
+Bangladesh,2007,2305.0,South Asia
+India,2007,94563.0,South Asia
+Nepal,2007,8936.0,South Asia
+Pakistan,2007,5345.0,South Asia
+Vietnam,2007,8769.0,East Asia & Pacific
+Spain,2007,3660.0,Europe
+Turkey/Türkiye,2007,12030.0,Middle East & North Africa
+United Kingdom,2007,8367.0,Europe
+Mexico,2007,14837.0,Latin America & Caribbean
+Brazil,2007,7578.0,Latin America & Caribbean
+Colombia,2007,6662.0,Latin America & Caribbean
+Iran,2007,3060.0,Middle East & North Africa
+Saudi Arabia,2007,9873.0,Middle East & North Africa
+Canada,2007,29051.0,Other Developed
+Ghana,2008,2988.0,Sub-Saharan Africa
+Nigeria,2008,6256.0,Sub-Saharan Africa
+China,2008,98235.0,East Asia & Pacific
+Japan,2008,29264.0,East Asia & Pacific
+South Korea,2008,75065.0,East Asia & Pacific
+Taiwan,2008,28065.0,East Asia & Pacific
+Bangladesh,2008,2706.0,South Asia
+India,2008,103260.0,South Asia
+Nepal,2008,11581.0,South Asia
+Pakistan,2008,5298.0,South Asia
+Vietnam,2008,12823.0,East Asia & Pacific
+Spain,2008,3849.0,Europe
+Turkey/Türkiye,2008,13263.0,Middle East & North Africa
+United Kingdom,2008,8701.0,Europe
+Mexico,2008,14850.0,Latin America & Caribbean
+Brazil,2008,8767.0,Latin America & Caribbean
+Colombia,2008,7013.0,Latin America & Caribbean
+Iran,2008,3533.0,Middle East & North Africa
+Saudi Arabia,2008,12661.0,Middle East & North Africa
+Canada,2008,29697.0,Other Developed
+Ghana,2009,2951.0,Sub-Saharan Africa
+Nigeria,2009,6568.0,Sub-Saharan Africa
+China,2009,127628.0,East Asia & Pacific
+Japan,2009,24842.0,East Asia & Pacific
+South Korea,2009,72153.0,East Asia & Pacific
+Taiwan,2009,26685.0,East Asia & Pacific
+Bangladesh,2009,2619.0,South Asia
+India,2009,104897.0,South Asia
+Nepal,2009,11233.0,South Asia
+Pakistan,2009,5222.0,South Asia
+Vietnam,2009,13112.0,East Asia & Pacific
+Spain,2009,3971.0,Europe
+Turkey/Türkiye,2009,12397.0,Middle East & North Africa
+United Kingdom,2009,8861.0,Europe
+Mexico,2009,13450.0,Latin America & Caribbean
+Brazil,2009,8786.0,Latin America & Caribbean
+Colombia,2009,6920.0,Latin America & Caribbean
+Iran,2009,4731.0,Middle East & North Africa
+Saudi Arabia,2009,15810.0,Middle East & North Africa
+Canada,2009,28145.0,Other Developed
+Ghana,2010,2900.0,Sub-Saharan Africa
+Nigeria,2010,7148.0,Sub-Saharan Africa
+China,2010,157558.0,East Asia & Pacific
+Japan,2010,21290.0,East Asia & Pacific
+South Korea,2010,73351.0,East Asia & Pacific
+Taiwan,2010,24818.0,East Asia & Pacific
+Bangladesh,2010,2873.0,South Asia
+India,2010,103895.0,South Asia
+Nepal,2010,10301.0,South Asia
+Pakistan,2010,5045.0,South Asia
+Vietnam,2010,14888.0,East Asia & Pacific
+Spain,2010,4330.0,Europe
+Turkey/Türkiye,2010,12184.0,Middle East & North Africa
+United Kingdom,2010,8947.0,Europe
+Mexico,2010,13713.0,Latin America & Caribbean
+Brazil,2010,8777.0,Latin America & Caribbean
+Colombia,2010,6456.0,Latin America & Caribbean
+Iran,2010,5626.0,Middle East & North Africa
+Saudi Arabia,2010,22704.0,Middle East & North Africa
+Canada,2010,27546.0,Other Developed
+Ghana,2011,2769.0,Sub-Saharan Africa
+Nigeria,2011,7028.0,Sub-Saharan Africa
+China,2011,194029.0,East Asia & Pacific
+Japan,2011,19966.0,East Asia & Pacific
+South Korea,2011,72295.0,East Asia & Pacific
+Taiwan,2011,23250.0,East Asia & Pacific
+Bangladesh,2011,3314.0,South Asia
+India,2011,100270.0,South Asia
+Nepal,2011,9621.0,South Asia
+Pakistan,2011,4600.0,South Asia
+Vietnam,2011,15572.0,East Asia & Pacific
+Spain,2011,4924.0,Europe
+Turkey/Türkiye,2011,11973.0,Middle East & North Africa
+United Kingdom,2011,9186.0,Europe
+Mexico,2011,13893.0,Latin America & Caribbean
+Brazil,2011,9029.0,Latin America & Caribbean
+Colombia,2011,6295.0,Latin America & Caribbean
+Iran,2011,6982.0,Middle East & North Africa
+Saudi Arabia,2011,34139.0,Middle East & North Africa
+Canada,2011,26821.0,Other Developed
+Ghana,2012,2863.0,Sub-Saharan Africa
+Nigeria,2012,7316.0,Sub-Saharan Africa
+China,2012,235597.0,East Asia & Pacific
+Japan,2012,19568.0,East Asia & Pacific
+South Korea,2012,70627.0,East Asia & Pacific
+Taiwan,2012,21867.0,East Asia & Pacific
+Bangladesh,2012,3828.0,South Asia
+India,2012,96754.0,South Asia
+Nepal,2012,8920.0,South Asia
+Pakistan,2012,4772.0,South Asia
+Vietnam,2012,16098.0,East Asia & Pacific
+Spain,2012,5033.0,Europe
+Turkey/Türkiye,2012,11278.0,Middle East & North Africa
+United Kingdom,2012,9467.0,Europe
+Mexico,2012,14199.0,Latin America & Caribbean
+Brazil,2012,10868.0,Latin America & Caribbean
+Colombia,2012,6543.0,Latin America & Caribbean
+Iran,2012,8744.0,Middle East & North Africa
+Saudi Arabia,2012,44566.0,Middle East & North Africa
+Canada,2012,27357.0,Other Developed
+Ghana,2013,2914.0,Sub-Saharan Africa
+Nigeria,2013,7921.0,Sub-Saharan Africa
+China,2013,274439.0,East Asia & Pacific
+Japan,2013,19334.0,East Asia & Pacific
+South Korea,2013,68047.0,East Asia & Pacific
+Taiwan,2013,21266.0,East Asia & Pacific
+Bangladesh,2013,4802.0,South Asia
+India,2013,102673.0,South Asia
+Nepal,2013,8155.0,South Asia
+Pakistan,2013,4935.0,South Asia
+Vietnam,2013,16579.0,East Asia & Pacific
+Spain,2013,5350.0,Europe
+Turkey/Türkiye,2013,10821.0,Middle East & North Africa
+United Kingdom,2013,10191.0,Europe
+Mexico,2013,14779.0,Latin America & Caribbean
+Brazil,2013,13286.0,Latin America & Caribbean
+Colombia,2013,7083.0,Latin America & Caribbean
+Iran,2013,10194.0,Middle East & North Africa
+Saudi Arabia,2013,53919.0,Middle East & North Africa
+Canada,2013,28304.0,Other Developed
+Ghana,2014,3099.0,Sub-Saharan Africa
+Nigeria,2014,9494.0,Sub-Saharan Africa
+China,2014,304040.0,East Asia & Pacific
+Japan,2014,19064.0,East Asia & Pacific
+South Korea,2014,63710.0,East Asia & Pacific
+Taiwan,2014,20993.0,East Asia & Pacific
+Bangladesh,2014,5455.0,South Asia
+India,2014,132888.0,South Asia
+Nepal,2014,8158.0,South Asia
+Pakistan,2014,5354.0,South Asia
+Vietnam,2014,18722.0,East Asia & Pacific
+Spain,2014,6143.0,Europe
+Turkey/Türkiye,2014,10724.0,Middle East & North Africa
+United Kingdom,2014,10743.0,Europe
+Mexico,2014,17052.0,Latin America & Caribbean
+Brazil,2014,23675.0,Latin America & Caribbean
+Colombia,2014,7169.0,Latin America & Caribbean
+Iran,2014,11338.0,Middle East & North Africa
+Saudi Arabia,2014,59945.0,Middle East & North Africa
+Canada,2014,27240.0,Other Developed
+Ghana,2015,3049.0,Sub-Saharan Africa
+Nigeria,2015,10674.0,Sub-Saharan Africa
+China,2015,328547.0,East Asia & Pacific
+Japan,2015,19060.0,East Asia & Pacific
+South Korea,2015,61007.0,East Asia & Pacific
+Taiwan,2015,21127.0,East Asia & Pacific
+Bangladesh,2015,6513.0,South Asia
+India,2015,165918.0,South Asia
+Nepal,2015,9662.0,South Asia
+Pakistan,2015,6141.0,South Asia
+Vietnam,2015,21403.0,East Asia & Pacific
+Spain,2015,6640.0,Europe
+Turkey/Türkiye,2015,10691.0,Middle East & North Africa
+United Kingdom,2015,11599.0,Europe
+Mexico,2015,16733.0,Latin America & Caribbean
+Brazil,2015,19370.0,Latin America & Caribbean
+Colombia,2015,7815.0,Latin America & Caribbean
+Iran,2015,12269.0,Middle East & North Africa
+Saudi Arabia,2015,61287.0,Middle East & North Africa
+Canada,2015,26973.0,Other Developed
+Ghana,2016,3111.0,Sub-Saharan Africa
+Nigeria,2016,11710.0,Sub-Saharan Africa
+China,2016,350755.0,East Asia & Pacific
+Japan,2016,18780.0,East Asia & Pacific
+South Korea,2016,58663.0,East Asia & Pacific
+Taiwan,2016,21516.0,East Asia & Pacific
+Bangladesh,2016,7143.0,South Asia
+India,2016,186267.0,South Asia
+Nepal,2016,11607.0,South Asia
+Pakistan,2016,7015.0,South Asia
+Vietnam,2016,22438.0,East Asia & Pacific
+Spain,2016,7164.0,Europe
+Turkey/Türkiye,2016,10586.0,Middle East & North Africa
+United Kingdom,2016,11489.0,Europe
+Mexico,2016,16835.0,Latin America & Caribbean
+Brazil,2016,13089.0,Latin America & Caribbean
+Colombia,2016,7982.0,Latin America & Caribbean
+Iran,2016,12643.0,Middle East & North Africa
+Saudi Arabia,2016,52611.0,Middle East & North Africa
+Canada,2016,27065.0,Other Developed
+Ghana,2017,3213.0,Sub-Saharan Africa
+Nigeria,2017,12693.0,Sub-Saharan Africa
+China,2017,363341.0,East Asia & Pacific
+Japan,2017,18753.0,East Asia & Pacific
+South Korea,2017,54555.0,East Asia & Pacific
+Taiwan,2017,22454.0,East Asia & Pacific
+Bangladesh,2017,7496.0,South Asia
+India,2017,196271.0,South Asia
+Nepal,2017,13270.0,South Asia
+Pakistan,2017,7537.0,South Asia
+Vietnam,2017,24325.0,East Asia & Pacific
+Spain,2017,7489.0,Europe
+Turkey/Türkiye,2017,10520.0,Middle East & North Africa
+United Kingdom,2017,11460.0,Europe
+Mexico,2017,15468.0,Latin America & Caribbean
+Brazil,2017,14620.0,Latin America & Caribbean
+Colombia,2017,7976.0,Latin America & Caribbean
+Iran,2017,12783.0,Middle East & North Africa
+Saudi Arabia,2017,44432.0,Middle East & North Africa
+Canada,2017,25909.0,Other Developed
+Ghana,2018,3661.0,Sub-Saharan Africa
+Nigeria,2018,13423.0,Sub-Saharan Africa
+China,2018,369548.0,East Asia & Pacific
+Japan,2018,18105.0,East Asia & Pacific
+South Korea,2018,52250.0,East Asia & Pacific
+Taiwan,2018,23369.0,East Asia & Pacific
+Bangladesh,2018,8249.0,South Asia
+India,2018,202014.0,South Asia
+Nepal,2018,13229.0,South Asia
+Pakistan,2018,7957.0,South Asia
+Vietnam,2018,24392.0,East Asia & Pacific
+Spain,2018,7262.0,Europe
+Turkey/Türkiye,2018,10159.0,Middle East & North Africa
+United Kingdom,2018,11146.0,Europe
+Mexico,2018,15229.0,Latin America & Caribbean
+Brazil,2018,16059.0,Latin America & Caribbean
+Colombia,2018,8060.0,Latin America & Caribbean
+Iran,2018,12142.0,Middle East & North Africa
+Saudi Arabia,2018,37080.0,Middle East & North Africa
+Canada,2018,26122.0,Other Developed
+Ghana,2019,4221.0,Sub-Saharan Africa
+Nigeria,2019,13762.0,Sub-Saharan Africa
+China,2019,372532.0,East Asia & Pacific
+Japan,2019,17554.0,East Asia & Pacific
+South Korea,2019,49809.0,East Asia & Pacific
+Taiwan,2019,23724.0,East Asia & Pacific
+Bangladesh,2019,8838.0,South Asia
+India,2019,193124.0,South Asia
+Nepal,2019,12730.0,South Asia
+Pakistan,2019,7939.0,South Asia
+Vietnam,2019,23777.0,East Asia & Pacific
+Spain,2019,7954.0,Europe
+Turkey/Türkiye,2019,9481.0,Middle East & North Africa
+United Kingdom,2019,10756.0,Europe
+Mexico,2019,14348.0,Latin America & Caribbean
+Brazil,2019,16671.0,Latin America & Caribbean
+Colombia,2019,7787.0,Latin America & Caribbean
+Iran,2019,11451.0,Middle East & North Africa
+Saudi Arabia,2019,30957.0,Middle East & North Africa
+Canada,2019,25992.0,Other Developed
+Ghana,2020,4229.0,Sub-Saharan Africa
+Nigeria,2020,12860.0,Sub-Saharan Africa
+China,2020,317299.0,East Asia & Pacific
+Japan,2020,11785.0,East Asia & Pacific
+South Korea,2020,39491.0,East Asia & Pacific
+Taiwan,2020,19673.0,East Asia & Pacific
+Bangladesh,2020,8598.0,South Asia
+India,2020,167582.0,South Asia
+Nepal,2020,11172.0,South Asia
+Pakistan,2020,7475.0,South Asia
+Vietnam,2020,21631.0,East Asia & Pacific
+Spain,2020,5781.0,Europe
+Turkey/Türkiye,2020,8109.0,Middle East & North Africa
+United Kingdom,2020,8028.0,Europe
+Mexico,2020,12986.0,Latin America & Caribbean
+Brazil,2020,14000.0,Latin America & Caribbean
+Colombia,2020,7107.0,Latin America & Caribbean
+Iran,2020,9614.0,Middle East & North Africa
+Saudi Arabia,2020,21933.0,Middle East & North Africa
+Canada,2020,25143.0,Other Developed
+Ghana,2021,4916.0,Sub-Saharan Africa
+Nigeria,2021,14438.0,Sub-Saharan Africa
+China,2021,290086.0,East Asia & Pacific
+Japan,2021,13449.0,East Asia & Pacific
+South Korea,2021,40755.0,East Asia & Pacific
+Taiwan,2021,20487.0,East Asia & Pacific
+Bangladesh,2021,10597.0,South Asia
+India,2021,199182.0,South Asia
+Nepal,2021,11799.0,South Asia
+Pakistan,2021,8772.0,South Asia
+Vietnam,2021,20713.0,East Asia & Pacific
+Spain,2021,8165.0,Europe
+Turkey/Türkiye,2021,8467.0,Middle East & North Africa
+United Kingdom,2021,10292.0,Europe
+Mexico,2021,14500.0,Latin America & Caribbean
+Brazil,2021,14897.0,Latin America & Caribbean
+Colombia,2021,8077.0,Latin America & Caribbean
+Iran,2021,9295.0,Middle East & North Africa
+Saudi Arabia,2021,18206.0,Middle East & North Africa
+Canada,2021,27013.0,Other Developed
+Ghana,2022,6468.0,Sub-Saharan Africa
+Nigeria,2022,17640.0,Sub-Saharan Africa
+China,2022,289526.0,East Asia & Pacific
+Japan,2022,16054.0,East Asia & Pacific
+South Korea,2022,43847.0,East Asia & Pacific
+Taiwan,2022,21834.0,East Asia & Pacific
+Bangladesh,2022,13563.0,South Asia
+India,2022,268923.0,South Asia
+Nepal,2022,15090.0,South Asia
+Pakistan,2022,10164.0,South Asia
+Vietnam,2022,21900.0,East Asia & Pacific
+Spain,2022,8548.0,Europe
+Turkey/Türkiye,2022,8657.0,Middle East & North Africa
+United Kingdom,2022,10659.0,Europe
+Mexico,2022,14541.0,Latin America & Caribbean
+Brazil,2022,16025.0,Latin America & Caribbean
+Colombia,2022,9096.0,Latin America & Caribbean
+Iran,2022,10812.0,Middle East & North Africa
+Saudi Arabia,2022,15989.0,Middle East & North Africa
+Canada,2022,27876.0,Other Developed
+Ghana,2023,9394.0,Sub-Saharan Africa
+Nigeria,2023,20029.0,Sub-Saharan Africa
+China,2023,277398.0,East Asia & Pacific
+Japan,2023,13959.0,East Asia & Pacific
+South Korea,2023,43149.0,East Asia & Pacific
+Taiwan,2023,23157.0,East Asia & Pacific
+Bangladesh,2023,17099.0,South Asia
+India,2023,331602.0,South Asia
+Nepal,2023,16742.0,South Asia
+Pakistan,2023,10988.0,South Asia
+Vietnam,2023,22066.0,East Asia & Pacific
+Spain,2023,8842.0,Europe
+Turkey/Türkiye,2023,9148.0,Middle East & North Africa
+United Kingdom,2023,10473.0,Europe
+Mexico,2023,15474.0,Latin America & Caribbean
+Brazil,2023,16877.0,Latin America & Caribbean
+Colombia,2023,10120.0,Latin America & Caribbean
+Iran,2023,12430.0,Middle East & North Africa
+Saudi Arabia,2023,14828.0,Middle East & North Africa
+Canada,2023,28998.0,Other Developed
+Ghana,2024,12825.0,Sub-Saharan Africa
+Nigeria,2024,21847.0,Sub-Saharan Africa
+China,2024,265919.0,East Asia & Pacific
+Japan,2024,13814.0,East Asia & Pacific
+South Korea,2024,42293.0,East Asia & Pacific
+Taiwan,2024,23263.0,East Asia & Pacific
+Bangladesh,2024,20156.0,South Asia
+India,2024,363019.0,South Asia
+Nepal,2024,24890.0,South Asia
+Pakistan,2024,13165.0,South Asia
+Vietnam,2024,25584.0,East Asia & Pacific
+Spain,2024,9229.0,Europe
+Turkey/Türkiye,2024,9413.0,Middle East & North Africa
+United Kingdom,2024,11136.0,Europe
+Mexico,2024,15652.0,Latin America & Caribbean
+Brazil,2024,17277.0,Latin America & Caribbean
+Colombia,2024,10213.0,Latin America & Caribbean
+Iran,2024,12656.0,Middle East & North Africa
+Saudi Arabia,2024,12702.0,Middle East & North Africa
+Canada,2024,29903.0,Other Developed

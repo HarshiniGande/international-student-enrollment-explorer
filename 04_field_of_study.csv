@@ -1,0 +1,1340 @@
+field,year,enrollment,is_stem
+Agriculture,1998,7949.0,True
+Natural Resources and Conservation,1998,1803.0,True
+Business and Management,1998,101360.0,False
+Communications and Journalism,1998,11234.0,False
+"Communication, Journalism",1998,9473.0,False
+Communications Technologies/Technicians,1998,1761.0,False
+Education,1998,13261.0,False
+Engineering,1998,73014.0,True
+Engineering Technologies/Technicians,1998,5028.0,True
+Transportation and Materials Moving,1998,804.0,False
+Mechanic and Repair Technologies/Technicians,1998,476.0,False
+Construction Trades,1998,223.0,False
+Military Technologies,1998,58.0,False
+Precision Production,1998,161.0,False
+Fine and Applied Arts,1998,31486.0,False
+Visual and Performing Arts,1998,25032.0,False
+Architecture,1998,6454.0,False
+Health Professions,1998,20260.0,True
+Humanities,1998,16295.0,False
+"Foreign Languages, Literatures and Linguistics",1998,5066.0,False
+English Language and Literature/Letters,1998,5762.0,False
+Philosophy and Religious Studies,1998,1933.0,False
+Theology and Religious Vocations,1998,3534.0,False
+Intensive English,1998,21030.0,False
+Legal Studies and Law Enforcement,1998,5403.0,False
+Legal Professions and Studies,1998,4873.0,False
+"Homeland Security, Law Enforcement, and Firefighting",1998,530.0,False
+Math and Computer Science,1998,48236.0,False
+Computer and Information Sciences,1998,40085.0,True
+Mathematics and Statistics,1998,8151.0,False
+Physical and Life Sciences,1998,37055.0,True
+Biological and Biomedical Sciences,1998,18825.0,False
+Physical Sciences,1998,17265.0,False
+Science Technologies/Technicians,1998,965.0,False
+Social Sciences,1998,37255.0,False
+Psychology,1998,7500.0,False
+Public Administration and Social Service Professions,1998,4032.0,False
+"Area, Ethnic, Cultural and Gender Studies",1998,2170.0,False
+Other Fields of Study,1998,36128.0,False
+Liberal Arts and Sciences/General Studies,1998,25632.0,False
+Multi/Interdisciplinary Studies,1998,3799.0,False
+"Parks, Recreation, Leisure and Fitness Studies",1998,2277.0,False
+Family and Consumer Sciences/Human Sciences,1998,3046.0,False
+Personal and Culinary Services,1998,723.0,False
+Library Science,1998,651.0,False
+Undeclared,1998,30970.0,False
+Total,1998,490933.0,False
+Agriculture,1999,7729.0,True
+Natural Resources and Conservation,1999,1879.0,True
+Business and Management,1999,102492.0,False
+Communications and Journalism,1999,11277.0,False
+"Communication, Journalism",1999,9714.0,False
+Communications Technologies/Technicians,1999,1563.0,False
+Education,1999,12885.0,False
+Engineering,1999,76834.0,True
+Engineering Technologies/Technicians,1999,5042.0,True
+Transportation and Materials Moving,1999,1135.0,False
+Mechanic and Repair Technologies/Technicians,1999,602.0,False
+Construction Trades,1999,276.0,False
+Military Technologies,1999,85.0,False
+Precision Production,1999,101.0,False
+Fine and Applied Arts,1999,32479.0,False
+Visual and Performing Arts,1999,26290.0,False
+Architecture,1999,6189.0,False
+Health Professions,1999,21625.0,True
+Humanities,1999,16686.0,False
+"Foreign Languages, Literatures and Linguistics",1999,5261.0,False
+English Language and Literature/Letters,1999,5566.0,False
+Philosophy and Religious Studies,1999,1809.0,False
+Theology and Religious Vocations,1999,4050.0,False
+Intensive English,1999,21015.0,False
+Legal Studies and Law Enforcement,1999,6382.0,False
+Legal Professions and Studies,1999,5763.0,False
+"Homeland Security, Law Enforcement, and Firefighting",1999,619.0,False
+Math and Computer Science,1999,57266.0,False
+Computer and Information Sciences,1999,49487.0,True
+Mathematics and Statistics,1999,7779.0,False
+Physical and Life Sciences,1999,37420.0,True
+Biological and Biomedical Sciences,1999,18910.0,False
+Physical Sciences,1999,17560.0,False
+Science Technologies/Technicians,1999,950.0,False
+Social Sciences,1999,38629.0,False
+Psychology,1999,6998.0,False
+Public Administration and Social Service Professions,1999,4448.0,False
+"Area, Ethnic, Cultural and Gender Studies",1999,2779.0,False
+Other Fields of Study,1999,39207.0,False
+Liberal Arts and Sciences/General Studies,1999,28313.0,False
+Multi/Interdisciplinary Studies,1999,4525.0,False
+"Parks, Recreation, Leisure and Fitness Studies",1999,2414.0,False
+Family and Consumer Sciences/Human Sciences,1999,2577.0,False
+Personal and Culinary Services,1999,723.0,False
+Library Science,1999,655.0,False
+Undeclared,1999,32799.0,False
+Total,1999,514723.0,False
+Agriculture,2000,7200.0,True
+Natural Resources and Conservation,2000,1827.0,True
+Business and Management,2000,105214.0,False
+Communications and Journalism,2000,12219.0,False
+"Communication, Journalism",2000,9958.0,False
+Communications Technologies/Technicians,2000,2261.0,False
+Education,2000,14053.0,False
+Engineering,2000,83396.0,True
+Engineering Technologies/Technicians,2000,5630.0,True
+Transportation and Materials Moving,2000,674.0,False
+Mechanic and Repair Technologies/Technicians,2000,497.0,False
+Construction Trades,2000,371.0,False
+Military Technologies,2000,210.0,False
+Precision Production,2000,199.0,False
+Fine and Applied Arts,2000,34220.0,False
+Visual and Performing Arts,2000,27618.0,False
+Architecture,2000,6602.0,False
+Health Professions,2000,22430.0,True
+Humanities,2000,16123.0,False
+"Foreign Languages, Literatures and Linguistics",2000,4889.0,False
+English Language and Literature/Letters,2000,5735.0,False
+Philosophy and Religious Studies,2000,1785.0,False
+Theology and Religious Vocations,2000,3714.0,False
+Intensive English,2000,23011.0,False
+Legal Studies and Law Enforcement,2000,6456.0,False
+Legal Professions and Studies,2000,5759.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2000,697.0,False
+Math and Computer Science,2000,67825.0,False
+Computer and Information Sciences,2000,59836.0,True
+Mathematics and Statistics,2000,7989.0,False
+Physical and Life Sciences,2000,38396.0,True
+Biological and Biomedical Sciences,2000,20119.0,False
+Physical Sciences,2000,16975.0,False
+Science Technologies/Technicians,2000,1302.0,False
+Social Sciences,2000,38940.0,False
+Psychology,2000,7855.0,False
+Public Administration and Social Service Professions,2000,4626.0,False
+"Area, Ethnic, Cultural and Gender Studies",2000,2402.0,False
+Other Fields of Study,2000,42606.0,False
+Liberal Arts and Sciences/General Studies,2000,28957.0,False
+Multi/Interdisciplinary Studies,2000,6388.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2000,2730.0,False
+Family and Consumer Sciences/Human Sciences,2000,2886.0,False
+Personal and Culinary Services,2000,829.0,False
+Library Science,2000,816.0,False
+Undeclared,2000,35779.0,False
+Total,2000,547867.0,False
+Agriculture,2001,7950.0,True
+Natural Resources and Conservation,2001,2034.0,True
+Business and Management,2001,113495.0,False
+Communications and Journalism,2001,12595.0,False
+"Communication, Journalism",2001,10560.0,False
+Communications Technologies/Technicians,2001,2035.0,False
+Education,2001,15709.0,False
+Engineering,2001,88258.0,True
+Engineering Technologies/Technicians,2001,5655.0,True
+Transportation and Materials Moving,2001,1428.0,False
+Mechanic and Repair Technologies/Technicians,2001,660.0,False
+Construction Trades,2001,437.0,False
+Military Technologies,2001,77.0,False
+Precision Production,2001,168.0,False
+Fine and Applied Arts,2001,33978.0,False
+Visual and Performing Arts,2001,27284.0,False
+Architecture,2001,6694.0,False
+Health Professions,2001,24037.0,True
+Humanities,2001,18367.0,False
+"Foreign Languages, Literatures and Linguistics",2001,6097.0,False
+English Language and Literature/Letters,2001,5795.0,False
+Philosophy and Religious Studies,2001,2630.0,False
+Theology and Religious Vocations,2001,3845.0,False
+Intensive English,2001,21237.0,False
+Legal Studies and Law Enforcement,2001,7301.0,False
+Legal Professions and Studies,2001,6552.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2001,749.0,False
+Math and Computer Science,2001,76736.0,False
+Computer and Information Sciences,2001,67850.0,True
+Mathematics and Statistics,2001,8886.0,False
+Physical and Life Sciences,2001,41417.0,True
+Biological and Biomedical Sciences,2001,20672.0,False
+Physical Sciences,2001,19433.0,False
+Science Technologies/Technicians,2001,1312.0,False
+Social Sciences,2001,41241.0,False
+Psychology,2001,7729.0,False
+Public Administration and Social Service Professions,2001,4884.0,False
+"Area, Ethnic, Cultural and Gender Studies",2001,2420.0,False
+Other Fields of Study,2001,44628.0,False
+Liberal Arts and Sciences/General Studies,2001,29950.0,False
+Multi/Interdisciplinary Studies,2001,6840.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2001,2677.0,False
+Family and Consumer Sciences/Human Sciences,2001,2968.0,False
+Personal and Culinary Services,2001,1390.0,False
+Library Science,2001,803.0,False
+Undeclared,2001,36048.0,False
+Total,2001,582996.0,False
+Agriculture,2002,6763.0,True
+Natural Resources and Conservation,2002,1973.0,True
+Business and Management,2002,113990.0,False
+Communications and Journalism,2002,12726.0,False
+"Communication, Journalism",2002,10249.0,False
+Communications Technologies/Technicians,2002,2477.0,False
+Education,2002,16004.0,False
+Engineering,2002,96574.0,True
+Engineering Technologies/Technicians,2002,5781.0,True
+Transportation and Materials Moving,2002,1083.0,False
+Mechanic and Repair Technologies/Technicians,2002,426.0,False
+Construction Trades,2002,306.0,False
+Military Technologies,2002,29.0,False
+Precision Production,2002,140.0,False
+Fine and Applied Arts,2002,31018.0,False
+Visual and Performing Arts,2002,24306.0,False
+Architecture,2002,6712.0,False
+Health Professions,2002,28120.0,True
+Humanities,2002,19153.0,False
+"Foreign Languages, Literatures and Linguistics",2002,6845.0,False
+English Language and Literature/Letters,2002,5912.0,False
+Philosophy and Religious Studies,2002,1990.0,False
+Theology and Religious Vocations,2002,4406.0,False
+Intensive English,2002,17620.0,False
+Legal Studies and Law Enforcement,2002,7134.0,False
+Legal Professions and Studies,2002,6411.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2002,723.0,False
+Math and Computer Science,2002,71926.0,False
+Computer and Information Sciences,2002,61857.0,True
+Mathematics and Statistics,2002,10069.0,False
+Physical and Life Sciences,2002,43549.0,True
+Biological and Biomedical Sciences,2002,22960.0,False
+Physical Sciences,2002,19484.0,False
+Science Technologies/Technicians,2002,1105.0,False
+Social Sciences,2002,42415.0,False
+Psychology,2002,8522.0,False
+Public Administration and Social Service Professions,2002,4814.0,False
+"Area, Ethnic, Cultural and Gender Studies",2002,2304.0,False
+Other Fields of Study,2002,42934.0,False
+Liberal Arts and Sciences/General Studies,2002,29972.0,False
+Multi/Interdisciplinary Studies,2002,5058.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2002,2840.0,False
+Family and Consumer Sciences/Human Sciences,2002,3376.0,False
+Personal and Culinary Services,2002,787.0,False
+Library Science,2002,901.0,False
+Undeclared,2002,36395.0,False
+Total,2002,586323.0,False
+Agriculture,2003,7292.0,True
+Natural Resources and Conservation,2003,1886.0,True
+Business and Management,2003,107909.0,False
+Communications and Journalism,2003,11439.0,False
+"Communication, Journalism",2003,9104.0,False
+Communications Technologies/Technicians,2003,2335.0,False
+Education,2003,15909.0,False
+Engineering,2003,95225.0,True
+Engineering Technologies/Technicians,2003,5920.0,True
+Transportation and Materials Moving,2003,1012.0,False
+Mechanic and Repair Technologies/Technicians,2003,486.0,False
+Construction Trades,2003,184.0,False
+Military Technologies,2003,5.0,False
+Precision Production,2003,90.0,False
+Fine and Applied Arts,2003,31882.0,False
+Visual and Performing Arts,2003,25204.0,False
+Architecture,2003,6678.0,False
+Health Professions,2003,25749.0,True
+Humanities,2003,16622.0,False
+"Foreign Languages, Literatures and Linguistics",2003,5366.0,False
+English Language and Literature/Letters,2003,4841.0,False
+Philosophy and Religious Studies,2003,2243.0,False
+Theology and Religious Vocations,2003,4172.0,False
+Intensive English,2003,15006.0,False
+Legal Studies and Law Enforcement,2003,7039.0,False
+Legal Professions and Studies,2003,6222.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2003,817.0,False
+Math and Computer Science,2003,67693.0,False
+Computer and Information Sciences,2003,57739.0,True
+Mathematics and Statistics,2003,9954.0,False
+Physical and Life Sciences,2003,44607.0,True
+Biological and Biomedical Sciences,2003,23290.0,False
+Physical Sciences,2003,19603.0,False
+Science Technologies/Technicians,2003,1714.0,False
+Social Sciences,2003,50464.0,False
+Psychology,2003,8352.0,False
+Public Administration and Social Service Professions,2003,5372.0,False
+"Area, Ethnic, Cultural and Gender Studies",2003,2639.0,False
+Other Fields of Study,2003,46358.0,False
+Liberal Arts and Sciences/General Studies,2003,32007.0,False
+Multi/Interdisciplinary Studies,2003,7057.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2003,2872.0,False
+Family and Consumer Sciences/Human Sciences,2003,2801.0,False
+Personal and Culinary Services,2003,879.0,False
+Library Science,2003,742.0,False
+Undeclared,2003,29313.0,False
+Total,2003,572509.0,False
+Agriculture,2004,7519.0,True
+Natural Resources and Conservation,2004,1991.0,True
+Business and Management,2004,98975.0,False
+Communications and Journalism,2004,10955.0,False
+"Communication, Journalism",2004,9107.0,False
+Communications Technologies/Technicians,2004,1848.0,False
+Education,2004,15697.0,False
+Engineering,2004,92970.0,True
+Engineering Technologies/Technicians,2004,3427.0,True
+Transportation and Materials Moving,2004,977.0,False
+Mechanic and Repair Technologies/Technicians,2004,277.0,False
+Construction Trades,2004,242.0,False
+Military Technologies,2004,18.0,False
+Precision Production,2004,30.0,False
+Fine and Applied Arts,2004,28063.0,False
+Visual and Performing Arts,2004,21792.0,False
+Architecture,2004,6271.0,False
+Health Professions,2004,26455.0,True
+Residency Programs,2004,154.0,False
+Humanities,2004,15850.0,False
+"Foreign Languages, Literatures and Linguistics",2004,5839.0,False
+English Language and Literature/Letters,2004,4590.0,False
+Philosophy and Religious Studies,2004,1544.0,False
+Theology and Religious Vocations,2004,3877.0,False
+Intensive English,2004,16133.0,False
+Legal Studies and Law Enforcement,2004,7152.0,False
+Legal Professions and Studies,2004,6270.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2004,882.0,False
+Math and Computer Science,2004,50747.0,False
+Computer and Information Sciences,2004,38966.0,True
+Mathematics and Statistics,2004,11781.0,False
+Physical and Life Sciences,2004,49499.0,True
+Biological and Biomedical Sciences,2004,25987.0,False
+Physical Sciences,2004,22498.0,False
+Science Technologies/Technicians,2004,1014.0,False
+Social Sciences,2004,42263.0,False
+Psychology,2004,7788.0,False
+Public Administration and Social Service Professions,2004,5056.0,False
+"Area, Ethnic, Cultural and Gender Studies",2004,2570.0,False
+History,2004,1774.0,False
+Other Fields of Study,2004,46347.0,False
+Liberal Arts and Sciences/General Studies,2004,32912.0,False
+Multi/Interdisciplinary Studies,2004,5611.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2004,2940.0,False
+Family and Consumer Sciences/Human Sciences,2004,3142.0,False
+Personal and Culinary Services,2004,1104.0,False
+Library Science,2004,638.0,False
+Undeclared,2004,27982.0,False
+Total,2004,565039.0,False
+Agriculture,2005,7883.0,True
+Natural Resources and Conservation,2005,2408.0,True
+Business and Management,2005,99382.0,False
+Communications and Journalism,2005,12090.0,False
+"Communication, Journalism",2005,9573.0,False
+Communications Technologies/Technicians,2005,2517.0,False
+Education,2005,16546.0,False
+Engineering,2005,88663.0,True
+Engineering Technologies/Technicians,2005,4161.0,True
+Transportation and Materials Moving,2005,813.0,False
+Mechanic and Repair Technologies/Technicians,2005,292.0,False
+Construction Trades,2005,290.0,False
+Military Technologies,2005,203.0,False
+Precision Production,2005,20.0,False
+Fine and Applied Arts,2005,29509.0,False
+Visual and Performing Arts,2005,23472.0,False
+Architecture,2005,6036.0,False
+Health Professions,2005,27704.0,True
+Residency Programs,2005,580.0,False
+Humanities,2005,16480.0,False
+"Foreign Languages, Literatures and Linguistics",2005,6005.0,False
+English Language and Literature/Letters,2005,4908.0,False
+Philosophy and Religious Studies,2005,1613.0,False
+Theology and Religious Vocations,2005,3954.0,False
+Intensive English,2005,17239.0,False
+Legal Studies and Law Enforcement,2005,6985.0,False
+Legal Professions and Studies,2005,6114.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2005,871.0,False
+Math and Computer Science,2005,45518.0,False
+Computer and Information Sciences,2005,34318.0,True
+Mathematics and Statistics,2005,11200.0,False
+Physical and Life Sciences,2005,50168.0,True
+Biological and Biomedical Sciences,2005,27233.0,False
+Physical Sciences,2005,21655.0,False
+Science Technologies/Technicians,2005,1281.0,False
+Social Sciences,2005,42235.0,False
+Psychology,2005,8021.0,False
+Public Administration and Social Service Professions,2005,4934.0,False
+"Area, Ethnic, Cultural and Gender Studies",2005,2373.0,False
+History,2005,1868.0,False
+Other Fields of Study,2005,44938.0,False
+Liberal Arts and Sciences/General Studies,2005,29865.0,False
+Multi/Interdisciplinary Studies,2005,6557.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2005,3025.0,False
+Family and Consumer Sciences/Human Sciences,2005,3264.0,False
+Personal and Culinary Services,2005,1498.0,False
+Library Science,2005,729.0,False
+Undeclared,2005,17888.0,False
+Total,2005,564766.0,False
+Agriculture,2006,7461.0,True
+Natural Resources and Conservation,2006,2347.0,True
+Business and Management,2006,102506.0,False
+Communications and Journalism,2006,11494.0,False
+"Communication, Journalism",2006,9127.0,False
+Communications Technologies/Technicians,2006,2367.0,False
+Education,2006,16825.0,False
+Engineering,2006,89179.0,True
+Engineering Technologies/Technicians,2006,3864.0,True
+Transportation and Materials Moving,2006,617.0,False
+Mechanic and Repair Technologies/Technicians,2006,348.0,False
+Construction Trades,2006,160.0,False
+Military Technologies,2006,42.0,False
+Precision Production,2006,22.0,False
+Fine and Applied Arts,2006,29588.0,False
+Visual and Performing Arts,2006,23846.0,False
+Architecture,2006,5742.0,False
+Health Professions,2006,28723.0,True
+Residency Programs,2006,429.0,False
+Humanities,2006,16189.0,False
+"Foreign Languages, Literatures and Linguistics",2006,6053.0,False
+English Language and Literature/Letters,2006,4751.0,False
+Philosophy and Religious Studies,2006,2443.0,False
+Theology and Religious Vocations,2006,2942.0,False
+Intensive English,2006,22417.0,False
+Legal Studies and Law Enforcement,2006,7260.0,False
+Legal Professions and Studies,2006,6368.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2006,892.0,False
+Math and Computer Science,2006,46019.0,False
+Computer and Information Sciences,2006,33437.0,True
+Mathematics and Statistics,2006,12582.0,False
+Physical and Life Sciences,2006,51863.0,True
+Biological and Biomedical Sciences,2006,28315.0,False
+Physical Sciences,2006,22497.0,False
+Science Technologies/Technicians,2006,1051.0,False
+Social Sciences,2006,44983.0,False
+Psychology,2006,8307.0,False
+Public Administration and Social Service Professions,2006,5389.0,False
+"Area, Ethnic, Cultural and Gender Studies",2006,2353.0,False
+History,2006,1878.0,False
+Other Fields of Study,2006,45049.0,False
+Liberal Arts and Sciences/General Studies,2006,30371.0,False
+Multi/Interdisciplinary Studies,2006,6996.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2006,3103.0,False
+Family and Consumer Sciences/Human Sciences,2006,2720.0,False
+Personal and Culinary Services,2006,1135.0,False
+Library Science,2006,724.0,False
+Undeclared,2006,19545.0,False
+Total,2006,582984.0,False
+Agriculture,2007,8945.0,True
+Natural Resources and Conservation,2007,2224.0,True
+Business and Management,2007,110041.0,False
+Communications and Journalism,2007,12135.0,False
+"Communication, Journalism",2007,9222.0,False
+Communications Technologies/Technicians,2007,2913.0,False
+Education,2007,17775.0,False
+Engineering,2007,96189.0,True
+Engineering Technologies/Technicians,2007,4586.0,True
+Transportation and Materials Moving,2007,724.0,False
+Mechanic and Repair Technologies/Technicians,2007,470.0,False
+Construction Trades,2007,493.0,False
+Military Technologies,2007,56.0,False
+Precision Production,2007,39.0,False
+Fine and Applied Arts,2007,31727.0,False
+Visual and Performing Arts,2007,25787.0,False
+Architecture,2007,5940.0,False
+Health Professions,2007,29585.0,True
+Residency Programs,2007,422.0,False
+Humanities,2007,17460.0,False
+"Foreign Languages, Literatures and Linguistics",2007,6252.0,False
+English Language and Literature/Letters,2007,4938.0,False
+Philosophy and Religious Studies,2007,1996.0,False
+Theology and Religious Vocations,2007,4274.0,False
+Intensive English,2007,25856.0,False
+Legal Studies and Law Enforcement,2007,7463.0,False
+Legal Professions and Studies,2007,6598.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2007,865.0,False
+Math and Computer Science,2007,46313.0,False
+Computer and Information Sciences,2007,34819.0,True
+Mathematics and Statistics,2007,11494.0,False
+Physical and Life Sciences,2007,52867.0,True
+Biological and Biomedical Sciences,2007,29159.0,False
+Physical Sciences,2007,22942.0,False
+Science Technologies/Technicians,2007,766.0,False
+Social Sciences,2007,45535.0,False
+Psychology,2007,7981.0,False
+Public Administration and Social Service Professions,2007,5446.0,False
+"Area, Ethnic, Cultural and Gender Studies",2007,2204.0,False
+History,2007,2112.0,False
+Other Fields of Study,2007,45933.0,False
+Liberal Arts and Sciences/General Studies,2007,29248.0,False
+Multi/Interdisciplinary Studies,2007,8760.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2007,2975.0,False
+Family and Consumer Sciences/Human Sciences,2007,3276.0,False
+Personal and Culinary Services,2007,865.0,False
+Library Science,2007,809.0,False
+Undeclared,2007,19215.0,False
+Total,2007,623805.0,False
+Agriculture,2008,8961.0,True
+Natural Resources and Conservation,2008,2667.0,True
+Business and Management,2008,137495.0,False
+Communications and Journalism,2008,12966.0,False
+"Communication, Journalism",2008,10885.0,False
+Communications Technologies/Technicians,2008,2081.0,False
+Education,2008,18120.0,False
+Engineering,2008,119338.0,True
+Engineering Technologies/Technicians,2008,5228.0,True
+Transportation and Materials Moving,2008,1047.0,False
+Mechanic and Repair Technologies/Technicians,2008,515.0,False
+Construction Trades,2008,602.0,False
+Military Technologies,2008,358.0,False
+Precision Production,2008,56.0,False
+Fine and Applied Arts,2008,34854.0,False
+Visual and Performing Arts,2008,27652.0,False
+Architecture,2008,7202.0,False
+Health Professions,2008,35446.0,True
+Residency Programs,2008,382.0,False
+Humanities,2008,19179.0,False
+"Foreign Languages, Literatures and Linguistics",2008,6726.0,False
+English Language and Literature/Letters,2008,5745.0,False
+Philosophy and Religious Studies,2008,3008.0,False
+Theology and Religious Vocations,2008,3700.0,False
+Intensive English,2008,28524.0,False
+Legal Studies and Law Enforcement,2008,9789.0,False
+Legal Professions and Studies,2008,8700.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2008,1089.0,False
+Math and Computer Science,2008,56367.0,False
+Computer and Information Sciences,2008,43050.0,True
+Mathematics and Statistics,2008,13317.0,False
+Physical and Life Sciences,2008,61699.0,True
+Biological and Biomedical Sciences,2008,34144.0,False
+Physical Sciences,2008,26302.0,False
+Science Technologies/Technicians,2008,1253.0,False
+Social Sciences,2008,52631.0,False
+Psychology,2008,9269.0,False
+Public Administration and Social Service Professions,2008,6253.0,False
+"Area, Ethnic, Cultural and Gender Studies",2008,2321.0,False
+History,2008,2546.0,False
+Other Fields of Study,2008,55303.0,False
+Liberal Arts and Sciences/General Studies,2008,37681.0,False
+Multi/Interdisciplinary Studies,2008,9695.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2008,3628.0,False
+Family and Consumer Sciences/Human Sciences,2008,2763.0,False
+Personal and Culinary Services,2008,1070.0,False
+Library Science,2008,466.0,False
+Undeclared,2008,20944.0,False
+Total,2008,671616.0,False
+Agriculture,2009,10288.0,True
+Natural Resources and Conservation,2009,3346.0,True
+Business and Management,2009,144294.0,False
+Communications and Journalism,2009,14412.0,False
+"Communication, Journalism",2009,11695.0,False
+Communications Technologies/Technicians,2009,2717.0,False
+Education,2009,18301.0,False
+Engineering,2009,127444.0,True
+Engineering Technologies/Technicians,2009,8026.0,True
+Transportation and Materials Moving,2009,1412.0,False
+Mechanic and Repair Technologies/Technicians,2009,463.0,False
+Construction Trades,2009,179.0,False
+Military Technologies,2009,1.0,False
+Precision Production,2009,38.0,False
+Fine and Applied Arts,2009,35807.0,False
+Visual and Performing Arts,2009,27863.0,False
+Architecture,2009,7944.0,False
+Health Professions,2009,32499.0,True
+Residency Programs,2009,394.0,False
+Humanities,2009,17993.0,False
+"Foreign Languages, Literatures and Linguistics",2009,6754.0,False
+English Language and Literature/Letters,2009,5952.0,False
+Philosophy and Religious Studies,2009,2225.0,False
+Theology and Religious Vocations,2009,3062.0,False
+Intensive English,2009,26059.0,False
+Legal Studies and Law Enforcement,2009,10039.0,False
+Legal Professions and Studies,2009,8965.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2009,1074.0,False
+Math and Computer Science,2009,60800.0,False
+Computer and Information Sciences,2009,45511.0,True
+Mathematics and Statistics,2009,15289.0,False
+Physical and Life Sciences,2009,61311.0,True
+Biological and Biomedical Sciences,2009,33929.0,False
+Physical Sciences,2009,26547.0,False
+Science Technologies/Technicians,2009,835.0,False
+Social Sciences,2009,54853.0,False
+Psychology,2009,8992.0,False
+Public Administration and Social Service Professions,2009,6934.0,False
+"Area, Ethnic, Cultural and Gender Studies",2009,2131.0,False
+History,2009,2424.0,False
+Other Fields of Study,2009,58118.0,False
+Liberal Arts and Sciences/General Studies,2009,38520.0,False
+Multi/Interdisciplinary Studies,2009,10317.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2009,4051.0,False
+Family and Consumer Sciences/Human Sciences,2009,3570.0,False
+Personal and Culinary Services,2009,1107.0,False
+Library Science,2009,553.0,False
+Undeclared,2009,18705.0,False
+Total,2009,690923.0,False
+Agriculture,2010,9888.0,True
+Natural Resources and Conservation,2010,3087.0,True
+Business and Management,2010,154452.0,False
+Communications and Journalism,2010,14762.0,False
+"Communication, Journalism",2010,12225.0,False
+Communications Technologies/Technicians,2010,2537.0,False
+Education,2010,16933.0,False
+Engineering,2010,135616.0,True
+Engineering Technologies/Technicians,2010,6640.0,True
+Transportation and Materials Moving,2010,1904.0,False
+Mechanic and Repair Technologies/Technicians,2010,506.0,False
+Construction Trades,2010,319.0,False
+Military Technologies,2010,24.0,False
+Precision Production,2010,43.0,False
+Fine and Applied Arts,2010,37237.0,False
+Visual and Performing Arts,2010,28418.0,False
+Architecture,2010,8819.0,False
+Health Professions,2010,32821.0,True
+Residency Programs,2010,295.0,False
+Humanities,2010,16263.0,False
+"Foreign Languages, Literatures and Linguistics",2010,6669.0,False
+English Language and Literature/Letters,2010,4969.0,False
+Philosophy and Religious Studies,2010,2215.0,False
+Theology and Religious Vocations,2010,2410.0,False
+Intensive English,2010,32306.0,False
+Legal Studies and Law Enforcement,2010,10749.0,False
+Legal Professions and Studies,2010,9656.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2010,1093.0,False
+Math and Computer Science,2010,64588.0,False
+Computer and Information Sciences,2010,46849.0,True
+Mathematics and Statistics,2010,17739.0,False
+Physical and Life Sciences,2010,63471.0,True
+Biological and Biomedical Sciences,2010,34784.0,False
+Physical Sciences,2010,27674.0,False
+Science Technologies/Technicians,2010,1013.0,False
+Social Sciences,2010,58345.0,False
+Psychology,2010,9569.0,False
+Public Administration and Social Service Professions,2010,6763.0,False
+"Area, Ethnic, Cultural and Gender Studies",2010,2317.0,False
+History,2010,2289.0,False
+Other Fields of Study,2010,55948.0,False
+Liberal Arts and Sciences/General Studies,2010,36856.0,False
+Multi/Interdisciplinary Studies,2010,9663.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2010,3909.0,False
+Family and Consumer Sciences/Human Sciences,2010,3676.0,False
+Personal and Culinary Services,2010,1317.0,False
+Library Science,2010,431.0,False
+Reserve Officer Training Corps,2010,96.0,False
+Undeclared,2010,19898.0,False
+Total,2010,723277.0,False
+Agriculture,2011,9750.0,True
+Natural Resources and Conservation,2011,3215.0,True
+Business and Management,2011,164943.0,False
+Communications and Journalism,2011,15707.0,False
+"Communication, Journalism",2011,13169.0,False
+Communications Technologies/Technicians,2011,2538.0,False
+Education,2011,17200.0,False
+Engineering,2011,141313.0,True
+Engineering Technologies/Technicians,2011,6504.0,True
+Transportation and Materials Moving,2011,1643.0,False
+Mechanic and Repair Technologies/Technicians,2011,527.0,False
+Construction Trades,2011,157.0,False
+Military Technologies,2011,28.0,False
+Precision Production,2011,40.0,False
+Fine and Applied Arts,2011,41710.0,False
+Visual and Performing Arts,2011,31718.0,False
+Architecture,2011,9992.0,False
+Health Professions,2011,29822.0,True
+Residency Programs,2011,287.0,False
+Humanities,2011,16294.0,False
+"Foreign Languages, Literatures and Linguistics",2011,6498.0,False
+English Language and Literature/Letters,2011,5018.0,False
+Philosophy and Religious Studies,2011,2237.0,False
+Theology and Religious Vocations,2011,2541.0,False
+Intensive English,2011,38887.0,False
+Legal Studies and Law Enforcement,2011,11185.0,False
+Legal Professions and Studies,2011,9779.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2011,1406.0,False
+Math and Computer Science,2011,71364.0,False
+Computer and Information Sciences,2011,51333.0,True
+Mathematics and Statistics,2011,20031.0,False
+Physical and Life Sciences,2011,66007.0,True
+Biological and Biomedical Sciences,2011,35815.0,False
+Physical Sciences,2011,29281.0,False
+Science Technologies/Technicians,2011,911.0,False
+Social Sciences,2011,60974.0,False
+Psychology,2011,10239.0,False
+Public Administration and Social Service Professions,2011,7136.0,False
+"Area, Ethnic, Cultural and Gender Studies",2011,2181.0,False
+History,2011,2177.0,False
+Other Fields of Study,2011,57024.0,False
+Liberal Arts and Sciences/General Studies,2011,36919.0,False
+Multi/Interdisciplinary Studies,2011,10701.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2011,3783.0,False
+Family and Consumer Sciences/Human Sciences,2011,3452.0,False
+Personal and Culinary Services,2011,1790.0,False
+Library Science,2011,378.0,False
+Reserve Officer Training Corps,2011,1.0,False
+Undeclared,2011,22315.0,False
+Total,2011,764495.0,False
+Agriculture,2012,10463.0,True
+Natural Resources and Conservation,2012,3420.0,True
+Business and Management,2012,177741.0,False
+Communications and Journalism,2012,17497.0,False
+"Communication, Journalism",2012,14938.0,False
+Communications Technologies/Technicians,2012,2559.0,False
+Education,2012,17011.0,False
+Engineering,2012,154239.0,True
+Engineering Technologies/Technicians,2012,6553.0,True
+Transportation and Materials Moving,2012,2161.0,False
+Mechanic and Repair Technologies/Technicians,2012,455.0,False
+Construction Trades,2012,150.0,False
+Military Technologies,2012,53.0,False
+Precision Production,2012,62.0,False
+Fine and Applied Arts,2012,45850.0,False
+Visual and Performing Arts,2012,34932.0,False
+Architecture,2012,10918.0,False
+Health Professions,2012,31471.0,True
+Residency Programs,2012,249.0,False
+Humanities,2012,17121.0,False
+"Foreign Languages, Literatures and Linguistics",2012,6774.0,False
+English Language and Literature/Letters,2012,5196.0,False
+Philosophy and Religious Studies,2012,2122.0,False
+Theology and Religious Vocations,2012,3029.0,False
+Intensive English,2012,39990.0,False
+Legal Studies and Law Enforcement,2012,11298.0,False
+Legal Professions and Studies,2012,9955.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2012,1343.0,False
+Math and Computer Science,2012,77560.0,False
+Computer and Information Sciences,2012,53953.0,True
+Mathematics and Statistics,2012,23607.0,False
+Physical and Life Sciences,2012,69152.0,True
+Biological and Biomedical Sciences,2012,36780.0,False
+Physical Sciences,2012,31352.0,False
+Science Technologies/Technicians,2012,1020.0,False
+Social Sciences,2012,67786.0,False
+Psychology,2012,11271.0,False
+Public Administration and Social Service Professions,2012,7602.0,False
+"Area, Ethnic, Cultural and Gender Studies",2012,2298.0,False
+History,2012,2313.0,False
+Other Fields of Study,2012,57510.0,False
+Liberal Arts and Sciences/General Studies,2012,35172.0,False
+Multi/Interdisciplinary Studies,2012,10991.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2012,4145.0,False
+Family and Consumer Sciences/Human Sciences,2012,4116.0,False
+Basic Skills,2012,1443.0,False
+Personal and Culinary Services,2012,1243.0,False
+Library Science,2012,393.0,False
+Reserve Officer Training Corps,2012,7.0,False
+Undeclared,2012,24955.0,False
+Total,2012,819644.0,False
+Agriculture,2013,10635.0,True
+Natural Resources and Conservation,2013,3521.0,True
+Business and Management,2013,188179.0,False
+Communications and Journalism,2013,18678.0,False
+"Communication, Journalism",2013,15851.0,False
+Communications Technologies/Technicians,2013,2827.0,False
+Education,2013,17879.0,False
+Engineering,2013,170189.0,True
+Engineering Technologies/Technicians,2013,7310.0,True
+Transportation and Materials Moving,2013,1903.0,False
+Mechanic and Repair Technologies/Technicians,2013,581.0,False
+Construction Trades,2013,203.0,False
+Military Technologies,2013,10.0,False
+Precision Production,2013,54.0,False
+Fine and Applied Arts,2013,51195.0,False
+Visual and Performing Arts,2013,39090.0,False
+Architecture,2013,12105.0,False
+Health Professions,2013,31954.0,True
+Residency Programs,2013,427.0,False
+Humanities,2013,17930.0,False
+"Foreign Languages, Literatures and Linguistics",2013,7079.0,False
+English Language and Literature/Letters,2013,5446.0,False
+Philosophy and Religious Studies,2013,2173.0,False
+Theology and Religious Vocations,2013,3232.0,False
+Intensive English,2013,43456.0,False
+Legal Studies and Law Enforcement,2013,12702.0,False
+Legal Professions and Studies,2013,10872.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2013,1830.0,False
+Math and Computer Science,2013,91434.0,False
+Computer and Information Sciences,2013,65291.0,True
+Mathematics and Statistics,2013,26143.0,False
+Physical and Life Sciences,2013,70479.0,True
+Biological and Biomedical Sciences,2013,37357.0,False
+Physical Sciences,2013,32187.0,False
+Science Technologies/Technicians,2013,935.0,False
+Social Sciences,2013,72390.0,False
+Psychology,2013,12060.0,False
+Public Administration and Social Service Professions,2013,8089.0,False
+"Area, Ethnic, Cultural and Gender Studies",2013,2616.0,False
+History,2013,2445.0,False
+Other Fields of Study,2013,63257.0,False
+Liberal Arts and Sciences/General Studies,2013,39137.0,False
+Multi/Interdisciplinary Studies,2013,12197.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2013,4228.0,False
+Family and Consumer Sciences/Human Sciences,2013,4056.0,False
+Basic Skills,2013,2092.0,False
+Personal and Culinary Services,2013,1132.0,False
+Library Science,2013,402.0,False
+Reserve Officer Training Corps,2013,13.0,False
+Undeclared,2013,25695.0,False
+Total,2013,886052.0,False
+Agriculture,2014,12278.0,True
+Natural Resources and Conservation,2014,4007.0,True
+Business and Management,2014,197258.0,False
+Communications and Journalism,2014,20161.0,False
+"Communication, Journalism",2014,16964.0,False
+Communications Technologies/Technicians,2014,3197.0,False
+Education,2014,17675.0,False
+Engineering,2014,196750.0,True
+Engineering Technologies/Technicians,2014,9149.0,True
+Transportation and Materials Moving,2014,2192.0,False
+Mechanic and Repair Technologies/Technicians,2014,538.0,False
+Construction Trades,2014,183.0,False
+Military Technologies,2014,16.0,False
+Precision Production,2014,69.0,False
+Fine and Applied Arts,2014,56758.0,False
+Visual and Performing Arts,2014,43251.0,False
+Architecture,2014,13507.0,False
+Health Professions,2014,33399.0,True
+Residency Programs,2014,152.0,False
+Humanities,2014,17504.0,False
+"Foreign Languages, Literatures and Linguistics",2014,7389.0,False
+English Language and Literature/Letters,2014,5340.0,False
+Philosophy and Religious Studies,2014,2101.0,False
+Theology and Religious Vocations,2014,2674.0,False
+Intensive English,2014,49233.0,False
+Legal Studies and Law Enforcement,2014,13778.0,False
+Legal Professions and Studies,2014,11776.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2014,2002.0,False
+Math and Computer Science,2014,112950.0,False
+Computer and Information Sciences,2014,83241.0,True
+Mathematics and Statistics,2014,29709.0,False
+Physical and Life Sciences,2014,73838.0,True
+Biological and Biomedical Sciences,2014,39294.0,False
+Physical Sciences,2014,33607.0,False
+Science Technologies/Technicians,2014,937.0,False
+Social Sciences,2014,75951.0,False
+Psychology,2014,12840.0,False
+Public Administration and Social Service Professions,2014,8816.0,False
+"Area, Ethnic, Cultural and Gender Studies",2014,2504.0,False
+History,2014,2420.0,False
+Other Fields of Study,2014,73176.0,False
+Liberal Arts and Sciences/General Studies,2014,45762.0,False
+Multi/Interdisciplinary Studies,2014,14912.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2014,4252.0,False
+Family and Consumer Sciences/Human Sciences,2014,4158.0,False
+Basic Skills,2014,2705.0,False
+Personal and Culinary Services,2014,1078.0,False
+Library Science,2014,301.0,False
+Reserve Officer Training Corps,2014,8.0,False
+Undeclared,2014,24217.0,False
+Total,2014,974926.0,False
+Agriculture,2015,12318.0,True
+Natural Resources and Conservation,2015,4275.0,True
+Business and Management,2015,200312.0,False
+Communications and Journalism,2015,21160.0,False
+"Communication, Journalism",2015,18483.0,False
+Communications Technologies/Technicians,2015,2677.0,False
+Education,2015,19483.0,False
+Engineering,2015,216932.0,True
+Engineering Technologies/Technicians,2015,12871.0,True
+Transportation and Materials Moving,2015,1799.0,False
+Mechanic and Repair Technologies/Technicians,2015,671.0,False
+Construction Trades,2015,255.0,False
+Military Technologies,2015,116.0,False
+Precision Production,2015,75.0,False
+Fine and Applied Arts,2015,59736.0,False
+Visual and Performing Arts,2015,45605.0,False
+Architecture,2015,14131.0,False
+Health Professions,2015,33947.0,True
+Residency Programs,2015,301.0,False
+Humanities,2015,17664.0,False
+"Foreign Languages, Literatures and Linguistics",2015,7298.0,False
+English Language and Literature/Letters,2015,5052.0,False
+Philosophy and Religious Studies,2015,2170.0,False
+Theology and Religious Vocations,2015,3144.0,False
+Intensive English,2015,40877.0,False
+Legal Studies and Law Enforcement,2015,15077.0,False
+Legal Professions and Studies,2015,12709.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2015,2368.0,False
+Math and Computer Science,2015,141651.0,False
+Computer and Information Sciences,2015,107682.0,True
+Mathematics and Statistics,2015,33969.0,False
+Physical and Life Sciences,2015,75385.0,True
+Biological and Biomedical Sciences,2015,40184.0,False
+Physical Sciences,2015,33525.0,False
+Science Technologies/Technicians,2015,1676.0,False
+Social Sciences,2015,81304.0,False
+Psychology,2015,14189.0,False
+Public Administration and Social Service Professions,2015,8741.0,False
+"Area, Ethnic, Cultural and Gender Studies",2015,2656.0,False
+History,2015,3150.0,False
+Other Fields of Study,2015,81318.0,False
+Liberal Arts and Sciences/General Studies,2015,50360.0,False
+Multi/Interdisciplinary Studies,2015,17795.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2015,5083.0,False
+Family and Consumer Sciences/Human Sciences,2015,3869.0,False
+Basic Skills,2015,3101.0,False
+Personal and Culinary Services,2015,737.0,False
+Library Science,2015,350.0,False
+Reserve Officer Training Corps,2015,23.0,False
+Undeclared,2015,26675.0,False
+Total,2015,1043839.0,False
+Agriculture,2016,12602.0,True
+Natural Resources and Conservation,2016,4804.0,True
+Business and Management,2016,200754.0,False
+Communications and Journalism,2016,21913.0,False
+"Communication, Journalism",2016,18622.0,False
+Communications Technologies/Technicians,2016,3291.0,False
+Education,2016,17993.0,False
+Engineering,2016,230711.0,True
+Engineering Technologies/Technicians,2016,15309.0,True
+Transportation and Materials Moving,2016,1975.0,False
+Mechanic and Repair Technologies/Technicians,2016,659.0,False
+Construction Trades,2016,276.0,False
+Military Technologies,2016,267.0,False
+Precision Production,2016,85.0,False
+Fine and Applied Arts,2016,61506.0,False
+Visual and Performing Arts,2016,46174.0,False
+Architecture,2016,15332.0,False
+Health Professions,2016,34395.0,True
+Residency Programs,2016,214.0,False
+Humanities,2016,17561.0,False
+"Foreign Languages, Literatures and Linguistics",2016,7521.0,False
+English Language and Literature/Letters,2016,5105.0,False
+Philosophy and Religious Studies,2016,2524.0,False
+Theology and Religious Vocations,2016,2411.0,False
+Intensive English,2016,30309.0,False
+Legal Studies and Law Enforcement,2016,15306.0,False
+Legal Professions and Studies,2016,13025.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2016,2281.0,False
+Math and Computer Science,2016,167180.0,False
+Computer and Information Sciences,2016,127324.0,True
+Mathematics and Statistics,2016,39856.0,False
+Physical and Life Sciences,2016,76838.0,True
+Biological and Biomedical Sciences,2016,41589.0,False
+Physical Sciences,2016,34484.0,False
+Science Technologies/Technicians,2016,765.0,False
+Social Sciences,2016,83046.0,False
+Psychology,2016,14912.0,False
+Public Administration and Social Service Professions,2016,8641.0,False
+"Area, Ethnic, Cultural and Gender Studies",2016,2805.0,False
+History,2016,2572.0,False
+Other Fields of Study,2016,87577.0,False
+Liberal Arts and Sciences/General Studies,2016,54005.0,False
+Multi/Interdisciplinary Studies,2016,20359.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2016,5299.0,False
+Family and Consumer Sciences/Human Sciences,2016,3763.0,False
+Basic Skills,2016,2847.0,False
+Personal and Culinary Services,2016,979.0,False
+Library Science,2016,320.0,False
+Reserve Officer Training Corps,2016,5.0,False
+Undeclared,2016,21131.0,False
+Total,2016,1078822.0,False
+Agriculture,2017,12473.0,True
+Natural Resources and Conservation,2017,4728.0,True
+Business and Management,2017,196054.0,False
+Communications and Journalism,2017,22824.0,False
+"Communication, Journalism",2017,19804.0,False
+Communications Technologies/Technicians,2017,3020.0,False
+Education,2017,17615.0,False
+Engineering,2017,232710.0,True
+Engineering Technologies/Technicians,2017,14010.0,True
+Transportation and Materials Moving,2017,2496.0,False
+Mechanic and Repair Technologies/Technicians,2017,567.0,False
+Construction Trades,2017,186.0,False
+Military Technologies,2017,73.0,False
+Precision Production,2017,88.0,False
+Fine and Applied Arts,2017,63795.0,False
+Visual and Performing Arts,2017,48543.0,False
+Architecture,2017,15252.0,False
+Health Professions,2017,35169.0,True
+Residency Programs,2017,311.0,False
+Humanities,2017,17040.0,False
+"Foreign Languages, Literatures and Linguistics",2017,7508.0,False
+English Language and Literature/Letters,2017,4994.0,False
+Philosophy and Religious Studies,2017,2608.0,False
+Theology and Religious Vocations,2017,1930.0,False
+Intensive English,2017,25845.0,False
+Legal Studies and Law Enforcement,2017,16894.0,False
+Legal Professions and Studies,2017,14647.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2017,2247.0,False
+Math and Computer Science,2017,186003.0,False
+Computer and Information Sciences,2017,144574.0,True
+Mathematics and Statistics,2017,41429.0,False
+Physical and Life Sciences,2017,78700.0,True
+Biological and Biomedical Sciences,2017,42996.0,False
+Physical Sciences,2017,35018.0,False
+Science Technologies/Technicians,2017,686.0,False
+Social Sciences,2017,83708.0,False
+Psychology,2017,15462.0,False
+Public Administration and Social Service Professions,2017,8368.0,False
+"Area, Ethnic, Cultural and Gender Studies",2017,2827.0,False
+History,2017,2485.0,False
+Other Fields of Study,2017,88720.0,False
+Liberal Arts and Sciences/General Studies,2017,52976.0,False
+Multi/Interdisciplinary Studies,2017,22378.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2017,5404.0,False
+Family and Consumer Sciences/Human Sciences,2017,3793.0,False
+Basic Skills,2017,3058.0,False
+Personal and Culinary Services,2017,822.0,False
+Library Science,2017,282.0,False
+Reserve Officer Training Corps,2017,7.0,False
+Undeclared,2017,17242.0,False
+Total,2017,1094792.0,False
+Agriculture,2018,13754.0,True
+Natural Resources and Conservation,2018,5216.0,True
+Business and Management,2018,182170.0,False
+Communications and Journalism,2018,24017.0,False
+"Communication, Journalism",2018,19797.0,False
+Communications Technologies/Technicians,2018,4220.0,False
+Education,2018,16786.0,False
+Engineering,2018,230780.0,True
+Engineering Technologies/Technicians,2018,13275.0,True
+Transportation and Materials Moving,2018,2085.0,False
+Mechanic and Repair Technologies/Technicians,2018,605.0,False
+Construction Trades,2018,313.0,False
+Military Technologies,2018,89.0,False
+Precision Production,2018,82.0,False
+Fine and Applied Arts,2018,63097.0,False
+Visual and Performing Arts,2018,48407.0,False
+Architecture,2018,14690.0,False
+Health Professions,2018,35446.0,True
+Residency Programs,2018,177.0,False
+Humanities,2018,17013.0,False
+"Foreign Languages, Literatures and Linguistics",2018,7357.0,False
+English Language and Literature/Letters,2018,4916.0,False
+Philosophy and Religious Studies,2018,2673.0,False
+Theology and Religious Vocations,2018,2067.0,False
+Intensive English,2018,22026.0,False
+Legal Studies and Law Enforcement,2018,16483.0,False
+Legal Professions and Studies,2018,14161.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2018,2322.0,False
+Math and Computer Science,2018,203461.0,False
+Computer and Information Sciences,2018,156654.0,True
+Mathematics and Statistics,2018,46807.0,False
+Physical and Life Sciences,2018,81580.0,True
+Biological and Biomedical Sciences,2018,45338.0,False
+Physical Sciences,2018,35349.0,False
+Science Technologies/Technicians,2018,893.0,False
+Social Sciences,2018,84320.0,False
+Psychology,2018,16139.0,False
+Public Administration and Social Service Professions,2018,8248.0,False
+"Area, Ethnic, Cultural and Gender Studies",2018,2697.0,False
+History,2018,2585.0,False
+Other Fields of Study,2018,86057.0,False
+Liberal Arts and Sciences/General Studies,2018,51270.0,False
+Multi/Interdisciplinary Studies,2018,21052.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2018,6008.0,False
+Family and Consumer Sciences/Human Sciences,2018,3951.0,False
+Basic Skills,2018,2790.0,False
+Personal and Culinary Services,2018,671.0,False
+Library Science,2018,307.0,False
+Reserve Officer Training Corps,2018,8.0,False
+Undeclared,2018,18309.0,False
+Total,2018,1095299.0,False
+Agriculture,2019,13134.0,True
+Natural Resources and Conservation,2019,5277.0,True
+Business and Management,2019,174470.0,False
+Communications and Journalism,2019,23925.0,False
+"Communication, Journalism",2019,20587.0,False
+Communications Technologies/Technicians,2019,3338.0,False
+Education,2019,15700.0,False
+Engineering,2019,220542.0,True
+Engineering Technologies/Technicians,2019,14081.0,True
+Transportation and Materials Moving,2019,2690.0,False
+Mechanic and Repair Technologies/Technicians,2019,587.0,False
+Construction Trades,2019,147.0,False
+Military Technologies,2019,263.0,False
+Precision Production,2019,77.0,False
+Fine and Applied Arts,2019,64501.0,False
+Visual and Performing Arts,2019,49542.0,False
+Architecture,2019,14959.0,False
+Health Professions,2019,34934.0,True
+Residency Programs,2019,223.0,False
+Humanities,2019,16992.0,False
+"Foreign Languages, Literatures and Linguistics",2019,7293.0,False
+English Language and Literature/Letters,2019,4715.0,False
+Philosophy and Religious Studies,2019,2896.0,False
+Theology and Religious Vocations,2019,2088.0,False
+Intensive English,2019,21301.0,False
+Legal Studies and Law Enforcement,2019,16269.0,False
+Legal Professions and Studies,2019,14198.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2019,2071.0,False
+Math and Computer Science,2019,205207.0,False
+Computer and Information Sciences,2019,157566.0,True
+Mathematics and Statistics,2019,47641.0,False
+Physical and Life Sciences,2019,81971.0,True
+Biological and Biomedical Sciences,2019,45298.0,False
+Physical Sciences,2019,35773.0,False
+Science Technologies/Technicians,2019,900.0,False
+Social Sciences,2019,84440.0,False
+Psychology,2019,16984.0,False
+Public Administration and Social Service Professions,2019,7739.0,False
+"Area, Ethnic, Cultural and Gender Studies",2019,2695.0,False
+History,2019,2618.0,False
+Other Fields of Study,2019,81837.0,False
+Liberal Arts and Sciences/General Studies,2019,45775.0,False
+Multi/Interdisciplinary Studies,2019,21738.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2019,5963.0,False
+Family and Consumer Sciences/Human Sciences,2019,3891.0,False
+Basic Skills,2019,3481.0,False
+Personal and Culinary Services,2019,669.0,False
+Library Science,2019,263.0,False
+Reserve Officer Training Corps,2019,57.0,False
+Undeclared,2019,20273.0,False
+Total,2019,1075496.0,False
+Agriculture,2020,12360.0,True
+Natural Resources and Conservation,2020,5012.0,True
+Business and Management,2020,145658.0,False
+Communications and Journalism,2020,20613.0,False
+"Communication, Journalism",2020,17308.0,False
+Communications Technologies/Technicians,2020,3305.0,False
+Education,2020,15402.0,False
+Engineering,2020,190590.0,True
+Engineering Technologies/Technicians,2020,12276.0,True
+Transportation and Materials Moving,2020,2599.0,False
+Mechanic and Repair Technologies/Technicians,2020,326.0,False
+Construction Trades,2020,136.0,False
+Military Technologies,2020,123.0,False
+Precision Production,2020,54.0,False
+Fine and Applied Arts,2020,51101.0,False
+Visual and Performing Arts,2020,38187.0,False
+Architecture,2020,12914.0,False
+Health Professions,2020,32468.0,True
+Residency Programs,2020,700.0,False
+Humanities,2020,14702.0,False
+"Foreign Languages, Literatures and Linguistics",2020,6446.0,False
+English Language and Literature/Letters,2020,3505.0,False
+Philosophy and Religious Studies,2020,2845.0,False
+Theology and Religious Vocations,2020,1906.0,False
+Intensive English,2020,8355.0,False
+Legal Studies and Law Enforcement,2020,11684.0,False
+Legal Professions and Studies,2020,9734.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2020,1950.0,False
+Math and Computer Science,2020,182106.0,False
+Computer and Information Sciences,2020,139621.0,True
+Mathematics and Statistics,2020,42485.0,False
+Physical and Life Sciences,2020,75029.0,True
+Biological and Biomedical Sciences,2020,42067.0,False
+Physical Sciences,2020,31964.0,False
+Science Technologies/Technicians,2020,998.0,False
+Social Sciences,2020,76419.0,False
+Psychology,2020,16196.0,False
+Public Administration and Social Service Professions,2020,6360.0,False
+"Area, Ethnic, Cultural and Gender Studies",2020,2217.0,False
+History,2020,2369.0,False
+Other Fields of Study,2020,64042.0,False
+Liberal Arts and Sciences/General Studies,2020,33266.0,False
+Multi/Interdisciplinary Studies,2020,19876.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2020,5728.0,False
+Family and Consumer Sciences/Human Sciences,2020,2851.0,False
+Basic Skills,2020,1170.0,False
+Personal and Culinary Services,2020,775.0,False
+Library Science,2020,238.0,False
+Reserve Officer Training Corps,2020,138.0,False
+Undeclared,2020,13566.0,False
+Total,2020,914095.0,False
+Agriculture,2021,12725.0,True
+Natural Resources and Conservation,2021,5179.0,True
+Business and Management,2021,147293.0,False
+Communications and Journalism,2021,19702.0,False
+"Communication, Journalism",2021,16771.0,False
+Communications Technologies/Technicians,2021,2931.0,False
+Education,2021,15272.0,False
+Engineering,2021,188194.0,True
+Engineering Technologies/Technicians,2021,11261.0,True
+Transportation and Materials Moving,2021,2539.0,False
+Mechanic and Repair Technologies/Technicians,2021,353.0,False
+Construction Trades,2021,140.0,False
+Military Technologies,2021,133.0,False
+Precision Production,2021,50.0,False
+Fine and Applied Arts,2021,51136.0,False
+Visual and Performing Arts,2021,38741.0,False
+Architecture,2021,12395.0,False
+Health Professions,2021,32052.0,True
+Residency Programs,2021,673.0,False
+Humanities,2021,15204.0,False
+"Foreign Languages, Literatures and Linguistics",2021,6343.0,False
+English Language and Literature/Letters,2021,3816.0,False
+Philosophy and Religious Studies,2021,2838.0,False
+Theology and Religious Vocations,2021,2207.0,False
+Intensive English,2021,7358.0,False
+Legal Studies and Law Enforcement,2021,13793.0,False
+Legal Professions and Studies,2021,11940.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2021,1853.0,False
+Math and Computer Science,2021,200301.0,False
+Computer and Information Sciences,2021,157896.0,True
+Mathematics and Statistics,2021,42405.0,False
+Physical and Life Sciences,2021,78712.0,True
+Biological and Biomedical Sciences,2021,45214.0,False
+Physical Sciences,2021,32917.0,False
+Science Technologies/Technicians,2021,581.0,False
+Social Sciences,2021,78770.0,False
+Psychology,2021,16832.0,False
+Public Administration and Social Service Professions,2021,6780.0,False
+"Area, Ethnic, Cultural and Gender Studies",2021,2373.0,False
+History,2021,2428.0,False
+Other Fields of Study,2021,70948.0,False
+Liberal Arts and Sciences/General Studies,2021,37228.0,False
+Multi/Interdisciplinary Studies,2021,22932.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2021,6095.0,False
+Family and Consumer Sciences/Human Sciences,2021,2329.0,False
+Basic Skills,2021,1581.0,False
+Personal and Culinary Services,2021,544.0,False
+Library Science,2021,212.0,False
+Reserve Officer Training Corps,2021,27.0,False
+Undeclared,2021,17059.0,False
+Total,2021,948519.0,False
+Agriculture,2022,13461.0,True
+Natural Resources and Conservation,2022,5593.0,True
+Business and Management,2022,157281.0,False
+Communications and Journalism,2022,21990.0,False
+"Communication, Journalism",2022,18059.0,False
+Communications Technologies/Technicians,2022,3931.0,False
+Education,2022,15897.0,False
+Engineering,2022,202801.0,True
+Engineering Technologies/Technicians,2022,16132.0,True
+Transportation and Materials Moving,2022,2674.0,False
+Mechanic and Repair Technologies/Technicians,2022,361.0,False
+Construction Trades,2022,248.0,False
+Military Technologies,2022,295.0,False
+Precision Production,2022,43.0,False
+Fine and Applied Arts,2022,51689.0,False
+Visual and Performing Arts,2022,38447.0,False
+Architecture,2022,13242.0,False
+Health Professions,2022,34856.0,True
+Residency Programs,2022,1071.0,False
+Humanities,2022,15783.0,False
+"Foreign Languages, Literatures and Linguistics",2022,6416.0,False
+English Language and Literature/Letters,2022,4116.0,False
+Philosophy and Religious Studies,2022,3146.0,False
+Theology and Religious Vocations,2022,2105.0,False
+Intensive English,2022,10404.0,False
+Legal Studies and Law Enforcement,2022,16096.0,False
+Legal Professions and Studies,2022,14012.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2022,2084.0,False
+Math and Computer Science,2022,240230.0,False
+Computer and Information Sciences,2022,196727.0,True
+Mathematics and Statistics,2022,43503.0,False
+Physical and Life Sciences,2022,84830.0,True
+Biological and Biomedical Sciences,2022,49993.0,False
+Physical Sciences,2022,34126.0,False
+Science Technologies/Technicians,2022,711.0,False
+Social Sciences,2022,85998.0,False
+Psychology,2022,18474.0,False
+Public Administration and Social Service Professions,2022,8483.0,False
+"Area, Ethnic, Cultural and Gender Studies",2022,2492.0,False
+History,2022,2551.0,False
+Other Fields of Study,2022,87962.0,False
+Liberal Arts and Sciences/General Studies,2022,43067.0,False
+Multi/Interdisciplinary Studies,2022,32496.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2022,6287.0,False
+Family and Consumer Sciences/Human Sciences,2022,2250.0,False
+Basic Skills,2022,3076.0,False
+Personal and Culinary Services,2022,646.0,False
+Library Science,2022,103.0,False
+Reserve Officer Training Corps,2022,37.0,False
+Undeclared,2022,17910.0,False
+Total,2022,1057188.0,False
+Agriculture,2023,14307.0,True
+Natural Resources and Conservation,2023,5747.0,True
+Business and Management,2023,159810.0,False
+Communications and Journalism,2023,21481.0,False
+"Communication, Journalism",2023,18165.0,False
+Communications Technologies/Technicians,2023,3316.0,False
+Education,2023,15590.0,False
+Engineering,2023,210163.0,True
+Engineering Technologies/Technicians,2023,17465.0,True
+Transportation and Materials Moving,2023,2814.0,False
+Mechanic and Repair Technologies/Technicians,2023,276.0,False
+Construction Trades,2023,294.0,False
+Military Technologies,2023,674.0,False
+Precision Production,2023,66.0,False
+Fine and Applied Arts,2023,54159.0,False
+Visual and Performing Arts,2023,40734.0,False
+Architecture,2023,13425.0,False
+Health Professions,2023,36615.0,True
+Residency Programs,2023,751.0,False
+Humanities,2023,15937.0,False
+"Foreign Languages, Literatures and Linguistics",2023,6250.0,False
+English Language and Literature/Letters,2023,4288.0,False
+Philosophy and Religious Studies,2023,2946.0,False
+Theology and Religious Vocations,2023,2453.0,False
+Intensive English,2023,9750.0,False
+Legal Studies and Law Enforcement,2023,15504.0,False
+Legal Professions and Studies,2023,13386.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2023,2118.0,False
+Math and Computer Science,2023,280922.0,False
+Computer and Information Sciences,2023,236922.0,True
+Mathematics and Statistics,2023,44000.0,False
+Physical and Life Sciences,2023,88717.0,True
+Biological and Biomedical Sciences,2023,53139.0,False
+Physical Sciences,2023,35060.0,False
+Science Technologies/Technicians,2023,518.0,False
+Social Sciences,2023,84307.0,False
+Psychology,2023,18468.0,False
+Public Administration and Social Service Professions,2023,7859.0,False
+"Area, Ethnic, Cultural and Gender Studies",2023,2389.0,False
+History,2023,2584.0,False
+Other Fields of Study,2023,102440.0,False
+Liberal Arts and Sciences/General Studies,2023,41810.0,False
+Multi/Interdisciplinary Studies,2023,47526.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2023,6372.0,False
+Family and Consumer Sciences/Human Sciences,2023,1979.0,False
+Basic Skills,2023,2298.0,False
+Personal and Culinary Services,2023,1834.0,False
+Library Science,2023,562.0,False
+Reserve Officer Training Corps,2023,59.0,False
+Undeclared,2023,16988.0,False
+Total,2023,1126690.0,False
+Agriculture,2024,15035.0,True
+Natural Resources and Conservation,2024,6271.0,True
+Business and Management,2024,159857.0,False
+Communications and Journalism,2024,21493.0,False
+"Communication, Journalism",2024,18423.0,False
+Communications Technologies/Technicians,2024,3070.0,False
+Education,2024,16307.0,False
+Engineering,2024,217016.0,True
+Engineering Technologies/Technicians,2024,18242.0,True
+Transportation and Materials Moving,2024,2831.0,False
+Mechanic and Repair Technologies/Technicians,2024,362.0,False
+Construction Trades,2024,124.0,False
+Military Technologies,2024,938.0,False
+Precision Production,2024,80.0,False
+Fine and Applied Arts,2024,49542.0,False
+Visual and Performing Arts,2024,36184.0,False
+Architecture,2024,13358.0,False
+Health Professions,2024,40417.0,True
+Residency Programs,2024,596.0,False
+Humanities,2024,16388.0,False
+"Foreign Languages, Literatures and Linguistics",2024,6350.0,False
+English Language and Literature/Letters,2024,4094.0,False
+Philosophy and Religious Studies,2024,2939.0,False
+Theology and Religious Vocations,2024,3005.0,False
+Intensive English,2024,9861.0,False
+Legal Studies and Law Enforcement,2024,15383.0,False
+Legal Professions and Studies,2024,13154.0,False
+"Homeland Security, Law Enforcement, and Firefighting",2024,2229.0,False
+Math and Computer Science,2024,305377.0,False
+Computer and Information Sciences,2024,261662.0,True
+Mathematics and Statistics,2024,43715.0,False
+Physical and Life Sciences,2024,95667.0,True
+Biological and Biomedical Sciences,2024,58517.0,False
+Physical Sciences,2024,36476.0,False
+Science Technologies/Technicians,2024,674.0,False
+Social Sciences,2024,86008.0,False
+Psychology,2024,18977.0,False
+Public Administration and Social Service Professions,2024,7839.0,False
+"Area, Ethnic, Cultural and Gender Studies",2024,2358.0,False
+History,2024,2680.0,False
+Other Fields of Study,2024,113367.0,False
+Liberal Arts and Sciences/General Studies,2024,41135.0,False
+Multi/Interdisciplinary Studies,2024,59732.0,False
+"Parks, Recreation, Leisure and Fitness Studies",2024,6602.0,False
+Family and Consumer Sciences/Human Sciences,2024,2231.0,False
+Basic Skills,2024,2514.0,False
+Personal and Culinary Services,2024,662.0,False
+Library Science,2024,387.0,False
+Reserve Officer Training Corps,2024,104.0,False
+Undeclared,2024,16048.0,False
+Total,2024,1177766.0,False

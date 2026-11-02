@@ -1,0 +1,7328 @@
+place,year,enrollment
+Ethiopia,1949,37.0
+South Africa,1949,118.0
+Zimbabwe,1949,2.0
+Ghana,1949,61.0
+Liberia,1949,81.0
+Nigeria,1949,176.0
+Sierra Leone,1949,42.0
+"West Africa, Unspecified",1949,1.0
+Japan,1949,265.0
+South Korea,1949,258.0
+Taiwan,1949,3637.0
+Afghanistan,1949,48.0
+India,1949,1359.0
+Pakistan,1949,102.0
+Sri Lanka,1949,13.0
+Burma,1949,84.0
+Indonesia,1949,36.0
+Malaysia,1949,116.0
+Philippines,1949,701.0
+Thailand,1949,187.0
+Albania,1949,3.0
+Austria,1949,145.0
+Belgium,1949,136.0
+Bulgaria,1949,16.0
+Cyprus,1949,53.0
+Denmark,1949,128.0
+Estonia,1949,35.0
+Finland,1949,112.0
+France,1949,506.0
+Germany,1949,671.0
+Greece,1949,461.0
+Hungary,1949,139.0
+Iceland,1949,53.0
+Ireland,1949,56.0
+Italy,1949,259.0
+Latvia,1949,44.0
+Lithuania,1949,46.0
+Luxembourg,1949,3.0
+Netherlands,1949,314.0
+Norway,1949,515.0
+Poland,1949,261.0
+Portugal,1949,75.0
+Romania,1949,45.0
+Spain,1949,132.0
+Sweden,1949,158.0
+Switzerland,1949,173.0
+Turkey/Türkiye,1949,483.0
+United Kingdom,1949,829.0
+Cuba,1949,749.0
+Dominican Republic,1949,68.0
+Haiti,1949,81.0
+Jamaica,1949,290.0
+Martinique,1949,14.0
+Trinidad and Tobago,1949,189.0
+"Caribbean, Unspecified",1949,173.0
+Costa Rica,1949,202.0
+El Salvador,1949,105.0
+Guatemala,1949,221.0
+Honduras,1949,103.0
+Mexico,1949,825.0
+Nicaragua,1949,127.0
+Panama,1949,377.0
+Argentina,1949,183.0
+Bolivia,1949,148.0
+Brazil,1949,423.0
+Chile,1949,148.0
+Colombia,1949,582.0
+Ecuador,1949,105.0
+Guyana,1949,134.0
+Paraguay,1949,14.0
+Peru,1949,252.0
+Uruguay,1949,35.0
+Venezuela,1949,446.0
+Iran,1949,570.0
+Iraq,1949,499.0
+Israel,1949,251.0
+Jordan,1949,17.0
+Lebanon,1949,113.0
+Palestinian Territories,1949,160.0
+Saudi Arabia,1949,18.0
+Syria,1949,96.0
+Algeria,1949,8.0
+Egypt,1949,349.0
+Morocco,1949,7.0
+Canada,1949,4362.0
+Australia,1949,149.0
+Fiji,1949,2.0
+New Zealand,1949,47.0
+Stateless,1949,195.0
+Cameroon,1954,1.0
+"Congo, Dem. Rep. of the (Kinshasa)",1954,5.0
+Ethiopia,1954,62.0
+Kenya,1954,19.0
+Somalia,1954,2.0
+Sudan,1954,7.0
+Tanzania,1954,5.0
+Uganda,1954,4.0
+Mauritius,1954,9.0
+Mozambique,1954,2.0
+Namibia,1954,3.0
+South Africa,1954,157.0
+Zambia,1954,1.0
+Zimbabwe,1954,14.0
+Ghana,1954,84.0
+Liberia,1954,188.0
+Nigeria,1954,268.0
+Senegal,1954,27.0
+Togo,1954,1.0
+Japan,1954,1673.0
+South Korea,1954,1197.0
+Taiwan,1954,2553.0
+Afghanistan,1954,82.0
+India,1954,1673.0
+Nepal,1954,4.0
+Pakistan,1954,255.0
+Sri Lanka,1954,34.0
+Burma,1954,188.0
+Cambodia,1954,2.0
+Indonesia,1954,153.0
+Laos,1954,2.0
+Malaysia,1954,196.0
+Philippines,1954,1476.0
+Thailand,1954,586.0
+Vietnam,1954,101.0
+Albania,1954,2.0
+Austria,1954,149.0
+Belgium,1954,99.0
+Bulgaria,1954,2.0
+Cyprus,1954,47.0
+Denmark,1954,150.0
+Estonia,1954,12.0
+Finland,1954,130.0
+France,1954,472.0
+Germany,1954,762.0
+Greece,1954,881.0
+Hungary,1954,11.0
+Iceland,1954,49.0
+Ireland,1954,59.0
+Italy,1954,312.0
+Latvia,1954,9.0
+Liechtenstein,1954,2.0
+Luxembourg,1954,11.0
+Malta,1954,5.0
+Netherlands,1954,375.0
+Norway,1954,328.0
+Poland,1954,19.0
+Portugal,1954,55.0
+Romania,1954,2.0
+Spain,1954,204.0
+Sweden,1954,162.0
+Switzerland,1954,175.0
+Turkey/Türkiye,1954,396.0
+United Kingdom,1954,710.0
+Bahamas,1954,55.0
+Barbados,1954,15.0
+Bermuda,1954,59.0
+Cuba,1954,717.0
+Dominican Republic,1954,74.0
+Haiti,1954,110.0
+Jamaica,1954,528.0
+Trinidad and Tobago,1954,126.0
+"Caribbean, Unspecified",1954,60.0
+Belize,1954,24.0
+Costa Rica,1954,159.0
+El Salvador,1954,266.0
+Guatemala,1954,250.0
+Honduras,1954,187.0
+Mexico,1954,1247.0
+Nicaragua,1954,215.0
+Panama,1954,449.0
+Argentina,1954,228.0
+Bolivia,1954,157.0
+Brazil,1954,507.0
+Chile,1954,171.0
+Colombia,1954,1301.0
+Ecuador,1954,166.0
+Guyana,1954,142.0
+Paraguay,1954,34.0
+Peru,1954,276.0
+Suriname,1954,12.0
+Uruguay,1954,35.0
+Venezuela,1954,882.0
+Bahrain,1954,1.0
+Iran,1954,997.0
+Iraq,1954,650.0
+Israel,1954,790.0
+Jordan,1954,607.0
+Lebanon,1954,261.0
+Saudi Arabia,1954,40.0
+Syria,1954,280.0
+Yemen,1954,10.0
+Algeria,1954,1.0
+Egypt,1954,351.0
+Libya,1954,4.0
+Morocco,1954,15.0
+Tunisia,1954,1.0
+Canada,1954,4655.0
+Australia,1954,238.0
+Fiji,1954,11.0
+French Polynesia,1954,3.0
+New Caledonia,1954,1.0
+New Zealand,1954,63.0
+Samoa,1954,5.0
+Tonga,1954,1.0
+Stateless,1954,42.0
+Cameroon,1959,9.0
+"Congo, Dem. Rep. of the (Kinshasa)",1959,2.0
+Ethiopia,1959,170.0
+Kenya,1959,156.0
+Somalia,1959,11.0
+Sudan,1959,53.0
+Tanzania,1959,38.0
+Uganda,1959,29.0
+Angola,1959,1.0
+Lesotho,1959,3.0
+Madagascar,1959,1.0
+Malawi,1959,2.0
+Mauritius,1959,10.0
+Mozambique,1959,2.0
+Namibia,1959,14.0
+South Africa,1959,181.0
+Zambia,1959,9.0
+Zimbabwe,1959,16.0
+Ghana,1959,167.0
+Liberia,1959,170.0
+Nigeria,1959,258.0
+Sierra Leone,1959,39.0
+Togo,1959,1.0
+"West Africa, Unspecified",1959,4.0
+Japan,1959,2248.0
+South Korea,1959,2474.0
+Taiwan,1959,4546.0
+Afghanistan,1959,99.0
+India,1959,3780.0
+Nepal,1959,34.0
+Pakistan,1959,534.0
+Sri Lanka,1959,73.0
+Burma,1959,227.0
+Cambodia,1959,36.0
+Indonesia,1959,531.0
+Laos,1959,9.0
+Malaysia,1959,247.0
+Philippines,1959,1722.0
+Thailand,1959,1006.0
+Vietnam,1959,242.0
+Albania,1959,1.0
+Austria,1959,102.0
+Belgium,1959,117.0
+Bulgaria,1959,1.0
+Cyprus,1959,63.0
+Denmark,1959,121.0
+Estonia,1959,2.0
+Finland,1959,118.0
+France,1959,572.0
+Germany,1959,720.0
+Greece,1959,1095.0
+Hungary,1959,53.0
+Iceland,1959,55.0
+Ireland,1959,109.0
+Italy,1959,443.0
+Latvia,1959,3.0
+Liechtenstein,1959,2.0
+Lithuania,1959,4.0
+Luxembourg,1959,8.0
+Malta,1959,11.0
+Monaco,1959,1.0
+Netherlands,1959,395.0
+Norway,1959,430.0
+Poland,1959,78.0
+Portugal,1959,129.0
+Romania,1959,3.0
+San Marino,1959,1.0
+Spain,1959,288.0
+Sweden,1959,219.0
+Switzerland,1959,171.0
+Turkey/Türkiye,1959,835.0
+United Kingdom,1959,993.0
+Bahamas,1959,84.0
+Barbados,1959,60.0
+Bermuda,1959,82.0
+British Virgin Islands,1959,15.0
+Cuba,1959,935.0
+Dominican Republic,1959,86.0
+Haiti,1959,113.0
+Jamaica,1959,902.0
+Martinique,1959,2.0
+Trinidad and Tobago,1959,255.0
+"Caribbean, Unspecified",1959,90.0
+Belize,1959,33.0
+Costa Rica,1959,201.0
+El Salvador,1959,217.0
+Guatemala,1959,242.0
+Honduras,1959,151.0
+Mexico,1959,1356.0
+Nicaragua,1959,190.0
+Panama,1959,544.0
+Argentina,1959,293.0
+Bolivia,1959,155.0
+Brazil,1959,473.0
+Chile,1959,251.0
+Colombia,1959,687.0
+Ecuador,1959,210.0
+French Guiana,1959,1.0
+Guyana,1959,201.0
+Paraguay,1959,52.0
+Peru,1959,418.0
+Suriname,1959,6.0
+Uruguay,1959,39.0
+Venezuela,1959,1126.0
+Bahrain,1959,3.0
+Iran,1959,2507.0
+Iraq,1959,675.0
+Israel,1959,807.0
+Jordan,1959,556.0
+Kuwait,1959,49.0
+Lebanon,1959,590.0
+Oman,1959,2.0
+Saudi Arabia,1959,93.0
+Syria,1959,283.0
+Yemen,1959,14.0
+Algeria,1959,7.0
+Egypt,1959,490.0
+Libya,1959,27.0
+Morocco,1959,59.0
+Tunisia,1959,30.0
+Canada,1959,5679.0
+Australia,1959,367.0
+Cook Islands,1959,1.0
+Fiji,1959,21.0
+French Polynesia,1959,6.0
+New Zealand,1959,119.0
+Samoa,1959,9.0
+Tonga,1959,7.0
+Stateless,1959,93.0
+Cameroon,1964,94.0
+Chad,1964,2.0
+"Congo, Republic of the (Brazzaville)",1964,15.0
+"Congo, Dem. Rep. of the (Kinshasa)",1964,94.0
+Equatorial Guinea,1964,1.0
+Gabon,1964,3.0
+Burundi,1964,6.0
+Ethiopia,1964,266.0
+Kenya,1964,774.0
+Rwanda,1964,2.0
+Seychelles,1964,2.0
+Somalia,1964,102.0
+Sudan,1964,180.0
+Tanzania,1964,305.0
+Uganda,1964,223.0
+Angola,1964,26.0
+Botswana,1964,3.0
+Eswatini,1964,7.0
+Lesotho,1964,12.0
+Madagascar,1964,22.0
+Malawi,1964,83.0
+Mauritius,1964,9.0
+Mozambique,1964,19.0
+Namibia,1964,6.0
+South Africa,1964,390.0
+Zambia,1964,83.0
+Zimbabwe,1964,203.0
+Benin,1964,8.0
+Burkina Faso,1964,4.0
+Côte d’Ivoire,1964,17.0
+"Gambia, The",1964,13.0
+Ghana,1964,282.0
+Guinea,1964,99.0
+Liberia,1964,315.0
+Mali,1964,8.0
+Niger,1964,2.0
+Nigeria,1964,1382.0
+Sierra Leone,1964,149.0
+Togo,1964,39.0
+China,1964,5.0
+Hong Kong,1964,3279.0
+Japan,1964,3534.0
+Macau,1964,20.0
+South Korea,1964,2604.0
+Taiwan,1964,4620.0
+Afghanistan,1964,159.0
+Bhutan,1964,1.0
+India,1964,6814.0
+Nepal,1964,84.0
+Pakistan,1964,1081.0
+Sri Lanka,1964,96.0
+Brunei,1964,4.0
+Burma,1964,130.0
+Cambodia,1964,209.0
+Indonesia,1964,766.0
+Laos,1964,36.0
+Malaysia,1964,536.0
+Philippines,1964,2473.0
+Thailand,1964,1630.0
+Vietnam,1964,399.0
+Austria,1964,162.0
+Belgium,1964,231.0
+Bulgaria,1964,11.0
+Cyprus,1964,145.0
+Denmark,1964,174.0
+Estonia,1964,6.0
+Finland,1964,185.0
+France,1964,833.0
+Germany,1964,1504.0
+Greece,1964,1543.0
+Hungary,1964,82.0
+Iceland,1964,53.0
+Ireland,1964,238.0
+Italy,1964,646.0
+Latvia,1964,19.0
+Lithuania,1964,7.0
+Luxembourg,1964,7.0
+Malta,1964,9.0
+Monaco,1964,1.0
+Netherlands,1964,465.0
+Norway,1964,418.0
+Poland,1964,159.0
+Portugal,1964,140.0
+Romania,1964,28.0
+San Marino,1964,1.0
+Spain,1964,422.0
+Sweden,1964,280.0
+Switzerland,1964,275.0
+Turkey/Türkiye,1964,1070.0
+United Kingdom,1964,1959.0
+Bahamas,1964,112.0
+Barbados,1964,106.0
+Bermuda,1964,85.0
+British Virgin Islands,1964,35.0
+Cuba,1964,1565.0
+Dominican Republic,1964,214.0
+Guadeloupe,1964,3.0
+Haiti,1964,190.0
+Jamaica,1964,1183.0
+Martinique,1964,9.0
+Trinidad and Tobago,1964,594.0
+"Caribbean, Unspecified",1964,167.0
+Belize,1964,58.0
+Costa Rica,1964,266.0
+El Salvador,1964,220.0
+Guatemala,1964,226.0
+Honduras,1964,193.0
+Mexico,1964,1370.0
+Nicaragua,1964,255.0
+Panama,1964,640.0
+Argentina,1964,662.0
+Bolivia,1964,289.0
+Brazil,1964,691.0
+Chile,1964,462.0
+Colombia,1964,1196.0
+Ecuador,1964,390.0
+Guyana,1964,378.0
+Paraguay,1964,62.0
+Peru,1964,766.0
+Suriname,1964,18.0
+Uruguay,1964,85.0
+Venezuela,1964,1173.0
+Bahrain,1964,5.0
+Iran,1964,3719.0
+Iraq,1964,919.0
+Israel,1964,1539.0
+Jordan,1964,654.0
+Kuwait,1964,214.0
+Lebanon,1964,700.0
+Qatar,1964,4.0
+Saudi Arabia,1964,552.0
+Syria,1964,434.0
+United Arab Emirates,1964,1.0
+Yemen,1964,21.0
+Algeria,1964,83.0
+Egypt,1964,1279.0
+Libya,1964,74.0
+Morocco,1964,85.0
+Tunisia,1964,75.0
+Canada,1964,9253.0
+Australia,1964,678.0
+Fiji,1964,64.0
+French Polynesia,1964,24.0
+New Zealand,1964,226.0
+Samoa,1964,38.0
+Tonga,1964,90.0
+Stateless,1964,205.0
+Cameroon,1969,125.0
+Central African Republic,1969,5.0
+Chad,1969,10.0
+"Congo, Republic of the (Brazzaville)",1969,30.0
+"Congo, Dem. Rep. of the (Kinshasa)",1969,91.0
+Gabon,1969,3.0
+Burundi,1969,6.0
+Ethiopia,1969,540.0
+Kenya,1969,492.0
+Rwanda,1969,1.0
+Seychelles,1969,5.0
+Somalia,1969,80.0
+Sudan,1969,135.0
+Tanzania,1969,215.0
+Uganda,1969,257.0
+Angola,1969,21.0
+Botswana,1969,22.0
+Eswatini,1969,25.0
+Lesotho,1969,13.0
+Madagascar,1969,7.0
+Malawi,1969,65.0
+Mauritius,1969,18.0
+Mozambique,1969,33.0
+Namibia,1969,18.0
+South Africa,1969,457.0
+Zambia,1969,47.0
+Zimbabwe,1969,193.0
+Benin,1969,4.0
+Burkina Faso,1969,7.0
+Côte d’Ivoire,1969,30.0
+"Gambia, The",1969,44.0
+Ghana,1969,539.0
+Guinea,1969,21.0
+Liberia,1969,337.0
+Mali,1969,7.0
+Mauritania,1969,1.0
+Niger,1969,7.0
+Nigeria,1969,1851.0
+Saint Helena,1969,1.0
+Senegal,1969,32.0
+Sierra Leone,1969,241.0
+Togo,1969,11.0
+China,1969,19.0
+Hong Kong,1969,7202.0
+Japan,1969,4311.0
+Macau,1969,35.0
+South Korea,1969,3991.0
+Taiwan,1969,8566.0
+Afghanistan,1969,268.0
+Bhutan,1969,1.0
+India,1969,11329.0
+Nepal,1969,109.0
+Pakistan,1969,1576.0
+Sri Lanka,1969,159.0
+Brunei,1969,5.0
+Burma,1969,85.0
+Cambodia,1969,17.0
+Indonesia,1969,683.0
+Laos,1969,58.0
+Malaysia,1969,663.0
+Philippines,1969,2782.0
+Singapore,1969,343.0
+Thailand,1969,4372.0
+Timor-Leste,1969,1.0
+Vietnam,1969,993.0
+Albania,1969,6.0
+Austria,1969,317.0
+Belgium,1969,428.0
+Bulgaria,1969,37.0
+Cyprus,1969,195.0
+Denmark,1969,281.0
+Estonia,1969,9.0
+Finland,1969,275.0
+France,1969,1977.0
+Germany,1969,2634.0
+Gibraltar,1969,3.0
+Greece,1969,1811.0
+Hungary,1969,145.0
+Iceland,1969,73.0
+Ireland,1969,516.0
+Italy,1969,1174.0
+Latvia,1969,27.0
+Liechtenstein,1969,2.0
+Lithuania,1969,19.0
+Luxembourg,1969,11.0
+Malta,1969,17.0
+Monaco,1969,3.0
+Netherlands,1969,906.0
+Norway,1969,668.0
+Poland,1969,397.0
+Portugal,1969,172.0
+Romania,1969,110.0
+San Marino,1969,2.0
+Spain,1969,533.0
+Sweden,1969,471.0
+Switzerland,1969,509.0
+Turkey/Türkiye,1969,1309.0
+United Kingdom,1969,4216.0
+"Europe, Unspecified",1969,1.0
+Bahamas,1969,258.0
+Barbados,1969,123.0
+Bermuda,1969,97.0
+Cayman Islands,1969,16.0
+Cuba,1969,4487.0
+Dominican Republic,1969,802.0
+Guadeloupe,1969,12.0
+Haiti,1969,563.0
+Jamaica,1969,1353.0
+Martinique,1969,9.0
+Trinidad and Tobago,1969,780.0
+"Caribbean, Unspecified",1969,439.0
+Belize,1969,120.0
+Costa Rica,1969,423.0
+El Salvador,1969,356.0
+Guatemala,1969,337.0
+Honduras,1969,326.0
+Mexico,1969,2501.0
+Nicaragua,1969,453.0
+Panama,1969,868.0
+Argentina,1969,1079.0
+Bolivia,1969,461.0
+Brazil,1969,1349.0
+Chile,1969,906.0
+Colombia,1969,2045.0
+Ecuador,1969,648.0
+French Guiana,1969,7.0
+Guyana,1969,863.0
+Paraguay,1969,89.0
+Peru,1969,1307.0
+Suriname,1969,11.0
+Uruguay,1969,148.0
+Venezuela,1969,1722.0
+Bahrain,1969,6.0
+Iran,1969,5175.0
+Iraq,1969,512.0
+Israel,1969,2288.0
+Jordan,1969,909.0
+Kuwait,1969,319.0
+Lebanon,1969,1020.0
+Qatar,1969,17.0
+Saudi Arabia,1969,1029.0
+Syria,1969,469.0
+United Arab Emirates,1969,2.0
+Yemen,1969,26.0
+Algeria,1969,45.0
+Egypt,1969,1015.0
+Libya,1969,286.0
+Morocco,1969,83.0
+Tunisia,1969,114.0
+Canada,1969,13318.0
+Australia,1969,1077.0
+Cook Islands,1969,1.0
+Fiji,1969,66.0
+French Polynesia,1969,48.0
+New Zealand,1969,385.0
+Papua New Guinea,1969,4.0
+Samoa,1969,76.0
+Tonga,1969,93.0
+Stateless,1969,341.0
+Cameroon,1974,250.0
+Central African Republic,1974,16.0
+Chad,1974,2.0
+"Congo, Republic of the (Brazzaville)",1974,6.0
+"Congo, Dem. Rep. of the (Kinshasa)",1974,110.0
+Equatorial Guinea,1974,1.0
+Gabon,1974,1.0
+Burundi,1974,5.0
+Djibouti,1974,1.0
+Ethiopia,1974,2050.0
+Kenya,1974,870.0
+Rwanda,1974,4.0
+Seychelles,1974,2.0
+Somalia,1974,39.0
+Sudan,1974,350.0
+Tanzania,1974,350.0
+Uganda,1974,240.0
+Angola,1974,10.0
+Botswana,1974,18.0
+Eswatini,1974,32.0
+Lesotho,1974,19.0
+Madagascar,1974,9.0
+Malawi,1974,58.0
+Mauritius,1974,21.0
+Mozambique,1974,12.0
+Namibia,1974,7.0
+Reunion,1974,1.0
+South Africa,1974,510.0
+Zambia,1974,80.0
+Zimbabwe,1974,260.0
+Benin,1974,6.0
+Burkina Faso,1974,3.0
+Cabo Verde,1974,1.0
+Côte d’Ivoire,1974,190.0
+"Gambia, The",1974,100.0
+Ghana,1974,1350.0
+Guinea,1974,10.0
+Guinea-Bissau,1974,2.0
+Liberia,1974,700.0
+Mali,1974,11.0
+Mauritania,1974,1.0
+Niger,1974,4.0
+Nigeria,1974,7210.0
+Senegal,1974,21.0
+Sierra Leone,1974,930.0
+Togo,1974,13.0
+"West Africa, Unspecified",1974,48.0
+China,1974,22.0
+Hong Kong,1974,11060.0
+Japan,1974,5930.0
+Macau,1974,49.0
+Mongolia,1974,1.0
+North Korea,1974,5.0
+South Korea,1974,3390.0
+Taiwan,1974,10250.0
+Afghanistan,1974,290.0
+Bangladesh,1974,480.0
+Bhutan,1974,3.0
+India,1974,9660.0
+Nepal,1974,58.0
+Pakistan,1974,3140.0
+Sri Lanka,1974,230.0
+Brunei,1974,8.0
+Burma,1974,51.0
+Cambodia,1974,120.0
+Indonesia,1974,1080.0
+Laos,1974,160.0
+Malaysia,1974,1580.0
+Philippines,1974,2130.0
+Singapore,1974,390.0
+Thailand,1974,6250.0
+Timor-Leste,1974,2.0
+Vietnam,1974,2060.0
+Albania,1974,10.0
+Austria,1974,180.0
+Belgium,1974,350.0
+Bulgaria,1974,10.0
+Cyprus,1974,210.0
+Denmark,1974,220.0
+Finland,1974,260.0
+France,1974,1610.0
+Germany,1974,1610.0
+Gibraltar,1974,2.0
+Greece,1974,1880.0
+Holy See,1974,1.0
+Hungary,1974,47.0
+Iceland,1974,100.0
+Ireland,1974,370.0
+Italy,1974,720.0
+Luxembourg,1974,15.0
+Malta,1974,9.0
+Monaco,1974,2.0
+Netherlands,1974,620.0
+Norway,1974,490.0
+Poland,1974,260.0
+Portugal,1974,220.0
+Romania,1974,110.0
+Spain,1974,580.0
+Sweden,1974,420.0
+Switzerland,1974,440.0
+Turkey/Türkiye,1974,1410.0
+United Kingdom,1974,2770.0
+Antigua and Barbuda,1974,49.0
+Bahamas,1974,690.0
+Barbados,1974,170.0
+Bermuda,1974,200.0
+British Virgin Islands,1974,23.0
+Cayman Islands,1974,3.0
+Cuba,1974,1110.0
+Dominica,1974,11.0
+Dominican Republic,1974,570.0
+Grenada,1974,80.0
+Guadeloupe,1974,1.0
+Haiti,1974,530.0
+Jamaica,1974,1790.0
+Martinique,1974,4.0
+Montserrat,1974,4.0
+St. Kitts and Nevis,1974,32.0
+St. Lucia,1974,10.0
+St. Vincent and the Grenadines,1974,24.0
+Trinidad and Tobago,1974,1010.0
+Turks and Caicos,1974,1.0
+"Caribbean, Unspecified",1974,288.0
+Belize,1974,90.0
+Costa Rica,1974,380.0
+El Salvador,1974,490.0
+Guatemala,1974,350.0
+Honduras,1974,400.0
+Mexico,1974,4000.0
+Nicaragua,1974,670.0
+Panama,1974,882.0
+Argentina,1974,560.0
+Bolivia,1974,510.0
+Brazil,1974,1970.0
+Chile,1974,950.0
+Colombia,1974,2380.0
+Ecuador,1974,690.0
+French Guiana,1974,2.0
+Guyana,1974,900.0
+Paraguay,1974,90.0
+Peru,1974,1580.0
+Suriname,1974,11.0
+Uruguay,1974,140.0
+Venezuela,1974,2680.0
+Bahrain,1974,18.0
+Iran,1974,13780.0
+Iraq,1974,420.0
+Israel,1974,2390.0
+Jordan,1974,1010.0
+Kuwait,1974,960.0
+Lebanon,1974,1580.0
+Oman,1974,11.0
+Qatar,1974,120.0
+Saudi Arabia,1974,1540.0
+Syria,1974,410.0
+United Arab Emirates,1974,25.0
+Yemen,1974,18.0
+Algeria,1974,240.0
+Egypt,1974,980.0
+Libya,1974,980.0
+Morocco,1974,80.0
+Tunisia,1974,80.0
+Canada,1974,8430.0
+Australia,1974,950.0
+Cook Islands,1974,2.0
+Fiji,1974,36.0
+French Polynesia,1974,24.0
+New Zealand,1974,310.0
+Niue,1974,1.0
+Papua New Guinea,1974,3.0
+Samoa,1974,21.0
+Tonga,1974,40.0
+Stateless,1974,134.0
+Cameroon,1979,770.0
+Central African Republic,1979,9.0
+Chad,1979,23.0
+"Congo, Republic of the (Brazzaville)",1979,9.0
+"Congo, Dem. Rep. of the (Kinshasa)",1979,210.0
+Equatorial Guinea,1979,3.0
+Gabon,1979,14.0
+Burundi,1979,12.0
+Djibouti,1979,2.0
+Ethiopia,1979,1340.0
+Kenya,1979,1850.0
+Rwanda,1979,6.0
+Seychelles,1979,5.0
+Somalia,1979,220.0
+Sudan,1979,680.0
+Tanzania,1979,480.0
+Uganda,1979,430.0
+Angola,1979,30.0
+Botswana,1979,79.0
+Comoros,1979,1.0
+Eswatini,1979,53.0
+Lesotho,1979,61.0
+Madagascar,1979,30.0
+Malawi,1979,75.0
+Mauritius,1979,40.0
+Mozambique,1979,11.0
+Namibia,1979,41.0
+South Africa,1979,1170.0
+Zambia,1979,270.0
+Zimbabwe,1979,740.0
+Benin,1979,5.0
+Burkina Faso,1979,22.0
+Cabo Verde,1979,34.0
+Côte d’Ivoire,1979,310.0
+"Gambia, The",1979,180.0
+Ghana,1979,1810.0
+Guinea,1979,16.0
+Guinea-Bissau,1979,18.0
+Liberia,1979,980.0
+Mali,1979,62.0
+Mauritania,1979,5.0
+Niger,1979,15.0
+Nigeria,1979,16360.0
+Senegal,1979,61.0
+Sierra Leone,1979,740.0
+Togo,1979,19.0
+"West Africa, Unspecified",1979,123.0
+China,1979,1000.0
+Hong Kong,1979,9900.0
+Japan,1979,12260.0
+Macau,1979,48.0
+North Korea,1979,11.0
+South Korea,1979,4890.0
+Taiwan,1979,17560.0
+Afghanistan,1979,270.0
+Bangladesh,1979,980.0
+Bhutan,1979,6.0
+India,1979,8760.0
+Maldives,1979,1.0
+Nepal,1979,180.0
+Pakistan,1979,2660.0
+Sri Lanka,1979,490.0
+Brunei,1979,9.0
+Burma,1979,67.0
+Cambodia,1979,290.0
+Indonesia,1979,2440.0
+Laos,1979,410.0
+Malaysia,1979,3660.0
+Philippines,1979,2890.0
+Singapore,1979,1010.0
+Thailand,1979,6500.0
+Timor-Leste,1979,4.0
+Vietnam,1979,5050.0
+Albania,1979,3.0
+Austria,1979,250.0
+Belgium,1979,540.0
+Bulgaria,1979,12.0
+Cyprus,1979,420.0
+Denmark,1979,400.0
+Finland,1979,410.0
+France,1979,2250.0
+Germany,1979,3000.0
+Gibraltar,1979,1.0
+Greece,1979,3000.0
+Holy See,1979,1.0
+Hungary,1979,42.0
+Iceland,1979,240.0
+Ireland,1979,490.0
+Italy,1979,1100.0
+Liechtenstein,1979,2.0
+Luxembourg,1979,33.0
+Malta,1979,12.0
+Monaco,1979,3.0
+Netherlands,1979,1100.0
+Norway,1979,930.0
+Poland,1979,390.0
+Portugal,1979,400.0
+Romania,1979,74.0
+Spain,1979,830.0
+Sweden,1979,850.0
+Switzerland,1979,860.0
+Turkey/Türkiye,1979,2210.0
+United Kingdom,1979,4280.0
+"Europe, Unspecified",1979,73.0
+Antigua and Barbuda,1979,93.0
+Bahamas,1979,1330.0
+Barbados,1979,260.0
+Bermuda,1979,440.0
+British Virgin Islands,1979,47.0
+Cayman Islands,1979,21.0
+Cuba,1979,1130.0
+Dominica,1979,23.0
+Dominican Republic,1979,640.0
+Grenada,1979,84.0
+Guadeloupe,1979,3.0
+Haiti,1979,540.0
+Jamaica,1979,2150.0
+Martinique,1979,12.0
+Montserrat,1979,3.0
+St. Kitts and Nevis,1979,83.0
+St. Lucia,1979,20.0
+St. Vincent and the Grenadines,1979,23.0
+Trinidad and Tobago,1979,1030.0
+Turks and Caicos,1979,2.0
+"Caribbean, Unspecified",1979,346.0
+Belize,1979,107.0
+Costa Rica,1979,670.0
+El Salvador,1979,1020.0
+Guatemala,1979,500.0
+Honduras,1979,810.0
+Mexico,1979,5650.0
+Nicaragua,1979,1170.0
+Panama,1979,1200.0
+Argentina,1979,910.0
+Bolivia,1979,870.0
+Brazil,1979,2910.0
+Chile,1979,1190.0
+Colombia,1979,3200.0
+Ecuador,1979,1000.0
+French Guiana,1979,8.0
+Guyana,1979,850.0
+Paraguay,1979,80.0
+Peru,1979,1740.0
+Suriname,1979,62.0
+Uruguay,1979,190.0
+Venezuela,1979,9860.0
+Bahrain,1979,260.0
+Iran,1979,51310.0
+Iraq,1979,1220.0
+Israel,1979,2730.0
+Jordan,1979,4720.0
+Kuwait,1979,2670.0
+Lebanon,1979,6040.0
+Oman,1979,170.0
+Qatar,1979,630.0
+Saudi Arabia,1979,9540.0
+Syria,1979,840.0
+United Arab Emirates,1979,740.0
+Yemen,1979,190.0
+Algeria,1979,1560.0
+Egypt,1979,1650.0
+Libya,1979,3030.0
+Morocco,1979,220.0
+Tunisia,1979,68.0
+Canada,1979,15130.0
+Australia,1979,1560.0
+Fiji,1979,57.0
+French Polynesia,1979,32.0
+New Caledonia,1979,1.0
+New Zealand,1979,410.0
+Papua New Guinea,1979,9.0
+Solomon Islands,1979,1.0
+Tonga,1979,37.0
+Stateless,1979,170.0
+Cameroon,1984,970.0
+Central African Republic,1984,15.0
+Chad,1984,30.0
+"Congo, Republic of the (Brazzaville)",1984,6.0
+"Congo, Dem. Rep. of the (Kinshasa)",1984,230.0
+Equatorial Guinea,1984,7.0
+Gabon,1984,42.0
+São Tomé & Príncipe,1984,9.0
+Burundi,1984,32.0
+Djibouti,1984,16.0
+Ethiopia,1984,2120.0
+Kenya,1984,1890.0
+Rwanda,1984,26.0
+Seychelles,1984,8.0
+Somalia,1984,710.0
+Sudan,1984,690.0
+Tanzania,1984,560.0
+Uganda,1984,430.0
+Angola,1984,15.0
+Botswana,1984,220.0
+Comoros,1984,1.0
+Eswatini,1984,109.0
+Lesotho,1984,79.0
+Madagascar,1984,44.0
+Malawi,1984,112.0
+Mauritius,1984,97.0
+Mozambique,1984,8.0
+Namibia,1984,86.0
+South Africa,1984,1610.0
+Zambia,1984,450.0
+Zimbabwe,1984,510.0
+Benin,1984,19.0
+Burkina Faso,1984,37.0
+Cabo Verde,1984,52.0
+Côte d’Ivoire,1984,300.0
+"Gambia, The",1984,190.0
+Ghana,1984,1370.0
+Guinea,1984,54.0
+Guinea-Bissau,1984,21.0
+Liberia,1984,1060.0
+Mali,1984,81.0
+Mauritania,1984,23.0
+Niger,1984,38.0
+Nigeria,1984,18370.0
+Senegal,1984,180.0
+Sierra Leone,1984,530.0
+Togo,1984,45.0
+"West Africa, Unspecified",1984,70.0
+China,1984,10100.0
+Hong Kong,1984,10130.0
+Japan,1984,13160.0
+Macau,1984,102.0
+North Korea,1984,71.0
+South Korea,1984,16430.0
+Taiwan,1984,22590.0
+Afghanistan,1984,138.0
+Bangladesh,1984,2010.0
+Bhutan,1984,8.0
+India,1984,14620.0
+Maldives,1984,8.0
+Nepal,1984,320.0
+Pakistan,1984,4750.0
+Sri Lanka,1984,1480.0
+Brunei,1984,36.0
+Burma,1984,190.0
+Cambodia,1984,270.0
+Indonesia,1984,7190.0
+Laos,1984,460.0
+Malaysia,1984,21720.0
+Philippines,1984,3660.0
+Singapore,1984,3750.0
+Thailand,1984,7220.0
+Vietnam,1984,3220.0
+Albania,1984,1.0
+Andorra,1984,2.0
+Austria,1984,370.0
+Belgium,1984,740.0
+Bulgaria,1984,14.0
+Cyprus,1984,2200.0
+Denmark,1984,450.0
+Finland,1984,550.0
+France,1984,3390.0
+Germany,1984,4190.0
+Gibraltar,1984,2.0
+Greece,1984,4870.0
+Holy See,1984,1.0
+Hungary,1984,90.0
+Iceland,1984,550.0
+Ireland,1984,910.0
+Italy,1984,1750.0
+Liechtenstein,1984,1.0
+Luxembourg,1984,30.0
+Malta,1984,30.0
+Monaco,1984,6.0
+Netherlands,1984,1500.0
+Norway,1984,1800.0
+Poland,1984,650.0
+Portugal,1984,650.0
+Romania,1984,74.0
+San Marino,1984,2.0
+Spain,1984,1520.0
+Sweden,1984,1360.0
+Switzerland,1984,950.0
+Turkey/Türkiye,1984,2640.0
+United Kingdom,1984,6030.0
+"Europe, Unspecified",1984,88.0
+Anguilla,1984,2.0
+Antigua and Barbuda,1984,126.0
+Bahamas,1984,1520.0
+Barbados,1984,350.0
+Bermuda,1984,590.0
+British Virgin Islands,1984,56.0
+Cayman Islands,1984,37.0
+Cuba,1984,1500.0
+Dominica,1984,30.0
+Dominican Republic,1984,690.0
+Grenada,1984,91.0
+Guadeloupe,1984,3.0
+Haiti,1984,1400.0
+Jamaica,1984,2200.0
+Martinique,1984,9.0
+Montserrat,1984,5.0
+St. Kitts and Nevis,1984,39.0
+St. Lucia,1984,37.0
+St. Vincent and the Grenadines,1984,37.0
+Trinidad and Tobago,1984,2070.0
+Turks and Caicos,1984,14.0
+"Caribbean, Unspecified",1984,254.0
+Belize,1984,135.0
+Costa Rica,1984,660.0
+El Salvador,1984,1250.0
+Guatemala,1984,740.0
+Honduras,1984,1280.0
+Mexico,1984,5750.0
+Nicaragua,1984,1150.0
+Panama,1984,1570.0
+Argentina,1984,1240.0
+Bolivia,1984,1040.0
+Brazil,1984,2790.0
+Chile,1984,1190.0
+Colombia,1984,4060.0
+Ecuador,1984,1120.0
+French Guiana,1984,2.0
+Guyana,1984,630.0
+Paraguay,1984,133.0
+Peru,1984,2070.0
+Suriname,1984,172.0
+Uruguay,1984,220.0
+Venezuela,1984,10290.0
+Bahrain,1984,430.0
+Iran,1984,16640.0
+Iraq,1984,1550.0
+Israel,1984,2480.0
+Jordan,1984,6750.0
+Kuwait,1984,3980.0
+Lebanon,1984,6940.0
+Oman,1984,400.0
+Qatar,1984,810.0
+Saudi Arabia,1984,7760.0
+Syria,1984,2180.0
+United Arab Emirates,1984,1270.0
+Yemen,1984,544.0
+Algeria,1984,780.0
+Egypt,1984,2410.0
+Libya,1984,1200.0
+Morocco,1984,770.0
+Tunisia,1984,640.0
+Canada,1984,15370.0
+Australia,1984,1560.0
+Cook Islands,1984,6.0
+Fiji,1984,104.0
+French Polynesia,1984,29.0
+Kiribati,1984,1.0
+Nauru,1984,2.0
+New Zealand,1984,540.0
+Papua New Guinea,1984,18.0
+Samoa,1984,126.0
+Solomon Islands,1984,6.0
+Tonga,1984,110.0
+Vanuatu,1984,2.0
+Stateless,1984,270.0
+Cameroon,1989,1240.0
+Central African Republic,1989,22.0
+Chad,1989,15.0
+"Congo, Republic of the (Brazzaville)",1989,39.0
+"Congo, Dem. Rep. of the (Kinshasa)",1989,380.0
+Equatorial Guinea,1989,16.0
+Gabon,1989,22.0
+São Tomé & Príncipe,1989,16.0
+Burundi,1989,54.0
+Djibouti,1989,19.0
+Ethiopia,1989,2020.0
+Kenya,1989,2200.0
+Rwanda,1989,89.0
+Seychelles,1989,21.0
+Somalia,1989,420.0
+Sudan,1989,540.0
+Tanzania,1989,560.0
+Uganda,1989,470.0
+Angola,1989,34.0
+Botswana,1989,230.0
+Comoros,1989,14.0
+Eswatini,1989,157.0
+Lesotho,1989,115.0
+Madagascar,1989,70.0
+Malawi,1989,300.0
+Mauritius,1989,152.0
+Mozambique,1989,27.0
+Namibia,1989,152.0
+Reunion,1989,1.0
+South Africa,1989,2050.0
+Zambia,1989,380.0
+Zimbabwe,1989,480.0
+Benin,1989,27.0
+Burkina Faso,1989,39.0
+Cabo Verde,1989,107.0
+Côte d’Ivoire,1989,350.0
+"Gambia, The",1989,220.0
+Ghana,1989,1030.0
+Guinea,1989,45.0
+Guinea-Bissau,1989,11.0
+Liberia,1989,610.0
+Mali,1989,117.0
+Mauritania,1989,43.0
+Niger,1989,49.0
+Nigeria,1989,4480.0
+Senegal,1989,240.0
+Sierra Leone,1989,400.0
+Togo,1989,99.0
+"West Africa, Unspecified",1989,83.0
+China,1989,33390.0
+Hong Kong,1989,11230.0
+Japan,1989,29840.0
+Macau,1989,140.0
+Mongolia,1989,2.0
+North Korea,1989,31.0
+South Korea,1989,21710.0
+Taiwan,1989,30960.0
+Afghanistan,1989,220.0
+Bangladesh,1989,2470.0
+Bhutan,1989,29.0
+India,1989,26240.0
+Maldives,1989,3.0
+Nepal,1989,610.0
+Pakistan,1989,7070.0
+Sri Lanka,1989,2210.0
+Brunei,1989,15.0
+Burma,1989,340.0
+Cambodia,1989,145.0
+Indonesia,1989,9390.0
+Laos,1989,460.0
+Malaysia,1989,14110.0
+Philippines,1989,4540.0
+Singapore,1989,4440.0
+Thailand,1989,6630.0
+Vietnam,1989,1850.0
+Albania,1989,1.0
+Andorra,1989,6.0
+Austria,1989,580.0
+Belgium,1989,920.0
+Bulgaria,1989,75.0
+Cyprus,1989,1750.0
+Denmark,1989,820.0
+Finland,1989,740.0
+France,1989,5340.0
+Germany,1989,6750.0
+Greece,1989,4430.0
+Holy See,1989,1.0
+Hungary,1989,440.0
+Iceland,1989,820.0
+Ireland,1989,1380.0
+Italy,1989,2370.0
+Liechtenstein,1989,3.0
+Luxembourg,1989,41.0
+Malta,1989,45.0
+Monaco,1989,9.0
+Netherlands,1989,1840.0
+Norway,1989,2160.0
+Poland,1989,1010.0
+Portugal,1989,690.0
+Romania,1989,120.0
+San Marino,1989,4.0
+Spain,1989,3640.0
+Sweden,1989,1740.0
+Switzerland,1989,1240.0
+Turkey/Türkiye,1989,3400.0
+United Kingdom,1989,7100.0
+"Europe, Unspecified",1989,58.0
+Anguilla,1989,25.0
+Antigua and Barbuda,1989,240.0
+Aruba,1989,27.0
+Bahamas,1989,1640.0
+Barbados,1989,450.0
+Bermuda,1989,720.0
+British Virgin Islands,1989,106.0
+Cayman Islands,1989,69.0
+Cuba,1989,980.0
+Dominica,1989,82.0
+Dominican Republic,1989,960.0
+Grenada,1989,174.0
+Guadeloupe,1989,10.0
+Haiti,1989,1490.0
+Jamaica,1989,2850.0
+Martinique,1989,14.0
+Montserrat,1989,20.0
+St. Kitts and Nevis,1989,134.0
+St. Lucia,1989,83.0
+St. Vincent and the Grenadines,1989,68.0
+Trinidad and Tobago,1989,2160.0
+Turks and Caicos,1989,24.0
+"Caribbean, Unspecified",1989,244.0
+Belize,1989,360.0
+Costa Rica,1989,1060.0
+El Salvador,1989,1370.0
+Guatemala,1989,1030.0
+Honduras,1989,1470.0
+Mexico,1989,6540.0
+Nicaragua,1989,2450.0
+Panama,1989,2260.0
+Argentina,1989,1810.0
+Bolivia,1989,1060.0
+Brazil,1989,3730.0
+Chile,1989,1100.0
+Colombia,1989,3320.0
+Ecuador,1989,1170.0
+French Guiana,1989,3.0
+Guyana,1989,510.0
+Paraguay,1989,230.0
+Peru,1989,2750.0
+Suriname,1989,230.0
+Uruguay,1989,280.0
+Venezuela,1989,2740.0
+Bahrain,1989,310.0
+Iran,1989,7440.0
+Iraq,1989,770.0
+Israel,1989,2910.0
+Jordan,1989,5250.0
+Kuwait,1989,2280.0
+Lebanon,1989,4450.0
+Oman,1989,620.0
+Qatar,1989,480.0
+Saudi Arabia,1989,4110.0
+Syria,1989,1500.0
+United Arab Emirates,1989,1450.0
+Yemen,1989,610.0
+Algeria,1989,480.0
+Egypt,1989,1700.0
+Libya,1989,210.0
+Morocco,1989,1140.0
+Tunisia,1989,660.0
+Canada,1989,17870.0
+Australia,1989,1740.0
+Cook Islands,1989,2.0
+Fiji,1989,158.0
+French Polynesia,1989,95.0
+Kiribati,1989,25.0
+"Marshall Islands, Republic of the",1989,10.0
+New Caledonia,1989,7.0
+New Zealand,1989,610.0
+Niue,1989,1.0
+Palau,1989,71.0
+Papua New Guinea,1989,16.0
+Samoa,1989,128.0
+Solomon Islands,1989,1.0
+Tonga,1989,116.0
+Tuvalu,1989,1.0
+Vanuatu,1989,1.0
+Stateless,1989,110.0
+Cameroon,1994,758.0
+Central African Republic,1994,22.0
+Chad,1994,25.0
+"Congo, Republic of the (Brazzaville)",1994,22.0
+"Congo, Dem. Rep. of the (Kinshasa)",1994,370.0
+Equatorial Guinea,1994,16.0
+Gabon,1994,67.0
+São Tomé & Príncipe,1994,11.0
+Burundi,1994,68.0
+Djibouti,1994,18.0
+Eritrea,1994,17.0
+Ethiopia,1994,1325.0
+Kenya,1994,2603.0
+Rwanda,1994,72.0
+Seychelles,1994,18.0
+Somalia,1994,91.0
+Sudan,1994,440.0
+Tanzania,1994,704.0
+Uganda,1994,559.0
+Angola,1994,136.0
+Botswana,1994,417.0
+Comoros,1994,7.0
+Eswatini,1994,150.0
+Lesotho,1994,62.0
+Madagascar,1994,77.0
+Malawi,1994,239.0
+Mauritius,1994,222.0
+Mozambique,1994,78.0
+Namibia,1994,124.0
+South Africa,1994,1919.0
+Zambia,1994,354.0
+Zimbabwe,1994,687.0
+Benin,1994,72.0
+Burkina Faso,1994,36.0
+Cabo Verde,1994,65.0
+Côte d’Ivoire,1994,406.0
+"Gambia, The",1994,403.0
+Ghana,1994,1156.0
+Guinea,1994,105.0
+Guinea-Bissau,1994,25.0
+Liberia,1994,388.0
+Mali,1994,187.0
+Mauritania,1994,24.0
+Niger,1994,56.0
+Nigeria,1994,2147.0
+Senegal,1994,451.0
+Sierra Leone,1994,296.0
+Togo,1994,118.0
+"West Africa, Unspecified",1994,8.0
+China,1994,39403.0
+Hong Kong,1994,12935.0
+Japan,1994,45276.0
+Macau,1994,385.0
+Mongolia,1994,45.0
+North Korea,1994,114.0
+South Korea,1994,33599.0
+Taiwan,1994,36407.0
+Afghanistan,1994,111.0
+Bangladesh,1994,3371.0
+Bhutan,1994,21.0
+India,1994,33537.0
+Kazakhstan,1994,267.0
+Kyrgyzstan,1994,36.0
+Maldives,1994,7.0
+Nepal,1994,1264.0
+Pakistan,1994,6989.0
+Sri Lanka,1994,2097.0
+Tajikistan,1994,17.0
+Turkmenistan,1994,10.0
+Uzbekistan,1994,109.0
+Brunei,1994,21.0
+Burma,1994,455.0
+Cambodia,1994,82.0
+Indonesia,1994,11872.0
+Laos,1994,88.0
+Malaysia,1994,13617.0
+Philippines,1994,3472.0
+Singapore,1994,4473.0
+Thailand,1994,10889.0
+Vietnam,1994,794.0
+Albania,1994,133.0
+Andorra,1994,9.0
+Armenia,1994,104.0
+Austria,1994,887.0
+Azerbaijan,1994,80.0
+Belarus,1994,88.0
+Belgium,1994,900.0
+Bosnia and Herzegovina,1994,152.0
+Bulgaria,1994,1396.0
+Croatia,1994,478.0
+Cyprus,1994,1962.0
+Czech Republic,1994,654.0
+Denmark,1994,1022.0
+Estonia,1994,226.0
+Finland,1994,924.0
+France,1994,5843.0
+Georgia,1994,142.0
+Germany,1994,8592.0
+Greece,1994,3699.0
+Hungary,1994,885.0
+Iceland,1994,568.0
+Ireland,1994,909.0
+Italy,1994,2704.0
+Latvia,1994,194.0
+Liechtenstein,1994,16.0
+Lithuania,1994,193.0
+Luxembourg,1994,65.0
+Malta,1994,63.0
+Moldova,1994,54.0
+Monaco,1994,18.0
+Netherlands,1994,1847.0
+Norway,1994,2123.0
+Poland,1994,1593.0
+Portugal,1994,739.0
+Romania,1994,1133.0
+Russia,1994,4832.0
+San Marino,1994,3.0
+Slovakia,1994,166.0
+Slovenia,1994,121.0
+Spain,1994,5126.0
+Sweden,1994,3432.0
+Switzerland,1994,1630.0
+Turkey/Türkiye,1994,6716.0
+Ukraine,1994,792.0
+United Kingdom,1994,7786.0
+Anguilla,1994,16.0
+Antigua and Barbuda,1994,254.0
+Aruba,1994,41.0
+Bahamas,1994,1858.0
+Barbados,1994,621.0
+Bermuda,1994,647.0
+British Virgin Islands,1994,68.0
+Cayman Islands,1994,132.0
+Cuba,1994,86.0
+Dominica,1994,170.0
+Dominican Republic,1994,976.0
+Grenada,1994,214.0
+Guadeloupe,1994,10.0
+Haiti,1994,795.0
+Jamaica,1994,2878.0
+Martinique,1994,7.0
+Montserrat,1994,22.0
+St. Kitts and Nevis,1994,134.0
+St. Lucia,1994,149.0
+St. Vincent and the Grenadines,1994,118.0
+Trinidad and Tobago,1994,2037.0
+Turks and Caicos,1994,19.0
+"Caribbean, Unspecified",1994,181.0
+Belize,1994,334.0
+Costa Rica,1994,866.0
+El Salvador,1994,760.0
+Guatemala,1994,785.0
+Honduras,1994,1148.0
+Mexico,1994,9003.0
+Nicaragua,1994,615.0
+Panama,1994,1409.0
+Argentina,1994,1996.0
+Bolivia,1994,757.0
+Brazil,1994,5017.0
+Chile,1994,907.0
+Colombia,1994,3208.0
+Ecuador,1994,1471.0
+Falkland Islands/Islas Malvinas,1994,3.0
+French Guiana,1994,6.0
+Guyana,1994,467.0
+Paraguay,1994,251.0
+Peru,1994,2382.0
+Suriname,1994,153.0
+Uruguay,1994,319.0
+Venezuela,1994,4092.0
+Bahrain,1994,343.0
+Iran,1994,2896.0
+Iraq,1994,255.0
+Israel,1994,2692.0
+Jordan,1994,2431.0
+Kuwait,1994,2844.0
+Lebanon,1994,1835.0
+Oman,1994,585.0
+Qatar,1994,427.0
+Saudi Arabia,1994,4075.0
+Syria,1994,678.0
+United Arab Emirates,1994,2071.0
+Yemen,1994,426.0
+Algeria,1994,251.0
+Egypt,1994,1577.0
+Libya,1994,57.0
+Morocco,1994,912.0
+Tunisia,1994,283.0
+Canada,1994,22747.0
+Australia,1994,2247.0
+Cook Islands,1994,18.0
+Fiji,1994,147.0
+French Polynesia,1994,92.0
+Kiribati,1994,35.0
+"Marshall Islands, Republic of the",1994,10.0
+"Micronesia, Federate States of",1994,574.0
+Nauru,1994,1.0
+New Caledonia,1994,3.0
+New Zealand,1994,798.0
+Niue,1994,7.0
+Palau,1994,94.0
+Papua New Guinea,1994,22.0
+Samoa,1994,123.0
+Solomon Islands,1994,10.0
+Tonga,1994,131.0
+Tuvalu,1994,6.0
+Vanuatu,1994,9.0
+Stateless,1994,105.0
+Cameroon,1999,903.0
+Central African Republic,1999,20.0
+Chad,1999,42.0
+"Congo, Republic of the (Brazzaville)",1999,12.0
+"Congo, Dem. Rep. of the (Kinshasa)",1999,489.0
+Equatorial Guinea,1999,22.0
+Gabon,1999,74.0
+São Tomé & Príncipe,1999,16.0
+Burundi,1999,40.0
+Djibouti,1999,7.0
+Eritrea,1999,105.0
+Ethiopia,1999,1286.0
+Kenya,1999,5684.0
+Rwanda,1999,131.0
+Seychelles,1999,15.0
+Somalia,1999,91.0
+Sudan,1999,354.0
+Tanzania,1999,1091.0
+Uganda,1999,693.0
+Angola,1999,198.0
+Botswana,1999,1053.0
+Comoros,1999,22.0
+Eswatini,1999,71.0
+Lesotho,1999,63.0
+Madagascar,1999,114.0
+Malawi,1999,308.0
+Mauritius,1999,209.0
+Mozambique,1999,82.0
+Namibia,1999,99.0
+Reunion,1999,3.0
+South Africa,1999,1962.0
+Zambia,1999,494.0
+Zimbabwe,1999,1184.0
+Benin,1999,130.0
+Burkina Faso,1999,74.0
+Cabo Verde,1999,44.0
+Côte d’Ivoire,1999,563.0
+"Gambia, The",1999,263.0
+Ghana,1999,2127.0
+Guinea,1999,235.0
+Guinea-Bissau,1999,29.0
+Liberia,1999,426.0
+Mali,1999,207.0
+Mauritania,1999,62.0
+Niger,1999,73.0
+Nigeria,1999,3602.0
+Senegal,1999,707.0
+Sierra Leone,1999,452.0
+Togo,1999,176.0
+"West Africa, Unspecified",1999,7.0
+China,1999,54466.0
+Hong Kong,1999,7545.0
+Japan,1999,46872.0
+Macau,1999,297.0
+Mongolia,1999,325.0
+North Korea,1999,201.0
+South Korea,1999,41191.0
+Taiwan,1999,29234.0
+Afghanistan,1999,110.0
+Bangladesh,1999,3845.0
+Bhutan,1999,57.0
+India,1999,42337.0
+Kazakhstan,1999,542.0
+Kyrgyzstan,1999,126.0
+Maldives,1999,18.0
+Nepal,1999,2411.0
+Pakistan,1999,6107.0
+Sri Lanka,1999,1968.0
+Tajikistan,1999,71.0
+Turkmenistan,1999,65.0
+Uzbekistan,1999,493.0
+Brunei,1999,26.0
+Burma,1999,527.0
+Cambodia,1999,152.0
+Indonesia,1999,11300.0
+Laos,1999,131.0
+Malaysia,1999,9074.0
+Philippines,1999,3143.0
+Singapore,1999,4250.0
+Thailand,1999,10983.0
+Vietnam,1999,2266.0
+Albania,1999,855.0
+Andorra,1999,13.0
+Armenia,1999,342.0
+Austria,1999,1041.0
+Azerbaijan,1999,166.0
+Belarus,1999,283.0
+Belgium,1999,904.0
+Bosnia and Herzegovina,1999,447.0
+Bulgaria,1999,2847.0
+Croatia,1999,812.0
+Cyprus,1999,2071.0
+Czech Republic,1999,941.0
+Denmark,1999,1066.0
+Estonia,1999,249.0
+Finland,1999,905.0
+France,1999,6877.0
+Georgia,1999,347.0
+Germany,1999,9800.0
+Greece,1999,2782.0
+Holy See,1999,3.0
+Hungary,1999,1166.0
+Iceland,1999,538.0
+Ireland,1999,1166.0
+Italy,1999,3286.0
+Latvia,1999,309.0
+Liechtenstein,1999,11.0
+Lithuania,1999,405.0
+Luxembourg,1999,69.0
+North Macedonia,1999,258.0
+Malta,1999,65.0
+Moldova,1999,159.0
+Monaco,1999,17.0
+Netherlands,1999,1751.0
+Norway,1999,2329.0
+Poland,1999,2194.0
+Portugal,1999,918.0
+Romania,1999,2716.0
+Russia,1999,7025.0
+San Marino,1999,3.0
+Slovakia,1999,498.0
+Slovenia,1999,224.0
+Spain,1999,4337.0
+Sweden,1999,4994.0
+Switzerland,1999,1893.0
+Turkey/Türkiye,1999,10100.0
+Ukraine,1999,1673.0
+United Kingdom,1999,7990.0
+"Europe, Unspecified",1999,12.0
+Anguilla,1999,63.0
+Antigua and Barbuda,1999,287.0
+Aruba,1999,82.0
+Bahamas,1999,1902.0
+Barbados,1999,701.0
+Bermuda,1999,584.0
+British Virgin Islands,1999,83.0
+Cayman Islands,1999,249.0
+Cuba,1999,139.0
+Dominica,1999,256.0
+Dominican Republic,1999,922.0
+Grenada,1999,292.0
+Guadeloupe,1999,7.0
+Haiti,1999,1145.0
+Jamaica,1999,3762.0
+Martinique,1999,7.0
+Montserrat,1999,18.0
+St. Kitts and Nevis,1999,196.0
+St. Lucia,1999,231.0
+St. Vincent and the Grenadines,1999,209.0
+Trinidad and Tobago,1999,2762.0
+Turks and Caicos,1999,30.0
+"Caribbean, Unspecified",1999,95.0
+Belize,1999,464.0
+Costa Rica,1999,821.0
+El Salvador,1999,1079.0
+Guatemala,1999,1044.0
+Honduras,1999,859.0
+Mexico,1999,10607.0
+Nicaragua,1999,591.0
+Panama,1999,1389.0
+Argentina,1999,2978.0
+Bolivia,1999,876.0
+Brazil,1999,8600.0
+Chile,1999,1429.0
+Colombia,1999,6277.0
+Ecuador,1999,1939.0
+Falkland Islands/Islas Malvinas,1999,5.0
+French Guiana,1999,8.0
+Guyana,1999,496.0
+Paraguay,1999,304.0
+Peru,1999,2785.0
+Suriname,1999,111.0
+Uruguay,1999,397.0
+Venezuela,1999,5125.0
+Bahrain,1999,542.0
+Iran,1999,1885.0
+Iraq,1999,112.0
+Israel,1999,3238.0
+Jordan,1999,2074.0
+Kuwait,1999,3298.0
+Lebanon,1999,1582.0
+Oman,1999,661.0
+Palestinian Territories,1999,209.0
+Qatar,1999,416.0
+Saudi Arabia,1999,5156.0
+Syria,1999,641.0
+United Arab Emirates,1999,2539.0
+Yemen,1999,372.0
+Algeria,1999,214.0
+Egypt,1999,1964.0
+Libya,1999,38.0
+Morocco,1999,1607.0
+Tunisia,1999,344.0
+Canada,1999,23544.0
+Australia,1999,2617.0
+Cook Islands,1999,9.0
+Fiji,1999,214.0
+French Polynesia,1999,94.0
+Kiribati,1999,46.0
+"Marshall Islands, Republic of the",1999,30.0
+"Micronesia, Federate States of",1999,226.0
+Nauru,1999,4.0
+New Caledonia,1999,12.0
+New Zealand,1999,956.0
+Niue,1999,5.0
+Palau,1999,58.0
+Papua New Guinea,1999,38.0
+Samoa,1999,189.0
+Solomon Islands,1999,5.0
+Tonga,1999,164.0
+Tuvalu,1999,4.0
+Vanuatu,1999,3.0
+Stateless,1999,7.0
+Cameroon,2000,870.0
+Central African Republic,2000,18.0
+Chad,2000,51.0
+"Congo, Republic of the (Brazzaville)",2000,0.0
+"Congo, Dem. Rep. of the (Kinshasa)",2000,411.0
+Equatorial Guinea,2000,44.0
+Gabon,2000,98.0
+São Tomé & Príncipe,2000,13.0
+Burundi,2000,55.0
+Djibouti,2000,8.0
+Eritrea,2000,134.0
+Ethiopia,2000,1205.0
+Kenya,2000,6229.0
+Rwanda,2000,261.0
+Seychelles,2000,13.0
+Somalia,2000,96.0
+Sudan,2000,366.0
+Tanzania,2000,1528.0
+Uganda,2000,754.0
+Angola,2000,348.0
+Botswana,2000,941.0
+Comoros,2000,38.0
+Eswatini,2000,104.0
+Lesotho,2000,35.0
+Madagascar,2000,115.0
+Malawi,2000,428.0
+Mauritius,2000,246.0
+Mozambique,2000,86.0
+Namibia,2000,117.0
+Reunion,2000,2.0
+South Africa,2000,2106.0
+Zambia,2000,613.0
+Zimbabwe,2000,1703.0
+Benin,2000,145.0
+Burkina Faso,2000,112.0
+Cabo Verde,2000,59.0
+Côte d’Ivoire,2000,637.0
+"Gambia, The",2000,386.0
+Ghana,2000,2469.0
+Guinea,2000,237.0
+Guinea-Bissau,2000,16.0
+Liberia,2000,451.0
+Mali,2000,439.0
+Mauritania,2000,73.0
+Niger,2000,87.0
+Nigeria,2000,3820.0
+Saint Helena,2000,1.0
+Senegal,2000,732.0
+Sierra Leone,2000,336.0
+Togo,2000,330.0
+"West Africa, Unspecified",2000,16.0
+China,2000,59939.0
+Hong Kong,2000,7627.0
+Japan,2000,46497.0
+Macau,2000,372.0
+Mongolia,2000,442.0
+North Korea,2000,127.0
+South Korea,2000,45685.0
+Taiwan,2000,28566.0
+Afghanistan,2000,75.0
+Bangladesh,2000,4114.0
+Bhutan,2000,62.0
+India,2000,54664.0
+Kazakhstan,2000,540.0
+Kyrgyzstan,2000,160.0
+Maldives,2000,13.0
+Nepal,2000,2618.0
+Pakistan,2000,6948.0
+Sri Lanka,2000,1964.0
+Tajikistan,2000,118.0
+Turkmenistan,2000,65.0
+Uzbekistan,2000,418.0
+Brunei,2000,25.0
+Burma,2000,673.0
+Cambodia,2000,187.0
+Indonesia,2000,11625.0
+Laos,2000,96.0
+Malaysia,2000,7795.0
+Philippines,2000,3139.0
+Singapore,2000,4166.0
+Thailand,2000,11187.0
+Timor-Leste,2000,0.0
+Vietnam,2000,2022.0
+Albania,2000,1118.0
+Andorra,2000,5.0
+Armenia,2000,366.0
+Austria,2000,1062.0
+Azerbaijan,2000,253.0
+Belarus,2000,311.0
+Belgium,2000,881.0
+Bosnia and Herzegovina,2000,477.0
+Bulgaria,2000,3270.0
+Croatia,2000,782.0
+Cyprus,2000,2217.0
+Czech Republic,2000,1112.0
+Denmark,2000,1007.0
+Estonia,2000,287.0
+Finland,2000,893.0
+France,2000,7273.0
+Georgia,2000,329.0
+Germany,2000,10128.0
+Gibraltar,2000,4.0
+Greece,2000,2768.0
+Holy See,2000,5.0
+Hungary,2000,1174.0
+Iceland,2000,558.0
+Ireland,2000,1086.0
+Italy,2000,3490.0
+Kosovo,2000,0.0
+Latvia,2000,383.0
+Liechtenstein,2000,13.0
+Lithuania,2000,493.0
+Luxembourg,2000,73.0
+North Macedonia,2000,281.0
+Malta,2000,61.0
+Moldova,2000,183.0
+Monaco,2000,18.0
+Netherlands,2000,1856.0
+Norway,2000,2098.0
+Poland,2000,2432.0
+Portugal,2000,884.0
+Romania,2000,2976.0
+Russia,2000,6858.0
+San Marino,2000,4.0
+Slovakia,2000,539.0
+Slovenia,2000,207.0
+Spain,2000,4156.0
+Sweden,2000,4598.0
+Switzerland,2000,1850.0
+Turkey/Türkiye,2000,10983.0
+Ukraine,2000,1909.0
+United Kingdom,2000,8139.0
+"Europe, Unspecified",2000,0.0
+Anguilla,2000,65.0
+Antigua and Barbuda,2000,271.0
+Aruba,2000,85.0
+Bahamas,2000,1762.0
+Barbados,2000,647.0
+Bermuda,2000,609.0
+British Virgin Islands,2000,84.0
+Cayman Islands,2000,243.0
+Cuba,2000,517.0
+Dominica,2000,258.0
+Dominican Republic,2000,869.0
+Grenada,2000,281.0
+Guadeloupe,2000,10.0
+Haiti,2000,1012.0
+Jamaica,2000,4225.0
+Martinique,2000,8.0
+Montserrat,2000,10.0
+St. Kitts and Nevis,2000,271.0
+St. Lucia,2000,267.0
+St. Vincent and the Grenadines,2000,139.0
+Trinidad and Tobago,2000,2901.0
+Turks and Caicos,2000,48.0
+"Caribbean, Unspecified",2000,98.0
+Belize,2000,489.0
+Costa Rica,2000,928.0
+El Salvador,2000,825.0
+Guatemala,2000,1050.0
+Honduras,2000,974.0
+Mexico,2000,10670.0
+Nicaragua,2000,611.0
+Panama,2000,1217.0
+Argentina,2000,3172.0
+Bolivia,2000,897.0
+Brazil,2000,8846.0
+Chile,2000,1553.0
+Colombia,2000,6765.0
+Ecuador,2000,2028.0
+Falkland Islands/Islas Malvinas,2000,4.0
+French Guiana,2000,5.0
+Guyana,2000,409.0
+Paraguay,2000,371.0
+Peru,2000,2660.0
+Suriname,2000,121.0
+Uruguay,2000,397.0
+Venezuela,2000,5217.0
+Bahrain,2000,562.0
+Iran,2000,1844.0
+Iraq,2000,155.0
+Israel,2000,3402.0
+Jordan,2000,2187.0
+Kuwait,2000,3045.0
+Lebanon,2000,2005.0
+Oman,2000,702.0
+Palestinian Territories,2000,237.0
+Qatar,2000,463.0
+Saudi Arabia,2000,5273.0
+Syria,2000,713.0
+United Arab Emirates,2000,2659.0
+Yemen,2000,411.0
+Algeria,2000,220.0
+Egypt,2000,2255.0
+Libya,2000,39.0
+Morocco,2000,1917.0
+Tunisia,2000,385.0
+Canada,2000,25279.0
+Australia,2000,2645.0
+Cook Islands,2000,4.0
+Fiji,2000,250.0
+French Polynesia,2000,71.0
+Kiribati,2000,42.0
+"Marshall Islands, Republic of the",2000,37.0
+"Micronesia, Federate States of",2000,188.0
+Nauru,2000,4.0
+New Caledonia,2000,7.0
+New Zealand,2000,971.0
+Niue,2000,5.0
+Norfolk Island,2000,1.0
+Palau,2000,48.0
+Papua New Guinea,2000,30.0
+Samoa,2000,118.0
+Solomon Islands,2000,7.0
+Tonga,2000,188.0
+Tuvalu,2000,2.0
+Vanuatu,2000,5.0
+Wallis and Futuna,2000,0.0
+Stateless,2000,10.0
+Cameroon,2001,967.0
+Central African Republic,2001,12.0
+Chad,2001,60.0
+"Congo, Republic of the (Brazzaville)",2001,8.0
+"Congo, Dem. Rep. of the (Kinshasa)",2001,422.0
+Equatorial Guinea,2001,35.0
+Gabon,2001,101.0
+São Tomé & Príncipe,2001,7.0
+Burundi,2001,75.0
+Djibouti,2001,8.0
+Eritrea,2001,161.0
+Ethiopia,2001,1133.0
+Kenya,2001,7097.0
+Rwanda,2001,263.0
+Seychelles,2001,20.0
+Somalia,2001,87.0
+Sudan,2001,378.0
+Tanzania,2001,1814.0
+Uganda,2001,805.0
+Angola,2001,360.0
+Botswana,2001,1004.0
+Comoros,2001,44.0
+Eswatini,2001,88.0
+Lesotho,2001,39.0
+Madagascar,2001,124.0
+Malawi,2001,475.0
+Mauritius,2001,251.0
+Mozambique,2001,106.0
+Namibia,2001,80.0
+Reunion,2001,20.0
+South Africa,2001,2232.0
+Zambia,2001,819.0
+Zimbabwe,2001,2029.0
+Benin,2001,153.0
+Burkina Faso,2001,135.0
+Cabo Verde,2001,57.0
+Côte d’Ivoire,2001,707.0
+"Gambia, The",2001,401.0
+Ghana,2001,2672.0
+Guinea,2001,220.0
+Guinea-Bissau,2001,21.0
+Liberia,2001,471.0
+Mali,2001,311.0
+Mauritania,2001,79.0
+Niger,2001,139.0
+Nigeria,2001,4499.0
+Saint Helena,2001,1.0
+Senegal,2001,809.0
+Sierra Leone,2001,320.0
+Togo,2001,382.0
+"West Africa, Unspecified",2001,8.0
+China,2001,63211.0
+Hong Kong,2001,7757.0
+Japan,2001,46810.0
+Macau,2001,371.0
+Mongolia,2001,574.0
+North Korea,2001,113.0
+South Korea,2001,49046.0
+Taiwan,2001,28930.0
+Afghanistan,2001,92.0
+Bangladesh,2001,3935.0
+Bhutan,2001,78.0
+India,2001,66836.0
+Kazakhstan,2001,617.0
+Kyrgyzstan,2001,230.0
+Maldives,2001,16.0
+Nepal,2001,3019.0
+Pakistan,2001,8644.0
+Sri Lanka,2001,2069.0
+Tajikistan,2001,143.0
+Turkmenistan,2001,71.0
+Uzbekistan,2001,381.0
+Brunei,2001,27.0
+Burma,2001,875.0
+Cambodia,2001,247.0
+Indonesia,2001,11614.0
+Laos,2001,133.0
+Malaysia,2001,7395.0
+Philippines,2001,3295.0
+Singapore,2001,4141.0
+Thailand,2001,11606.0
+Timor-Leste,2001,4.0
+Vietnam,2001,2531.0
+Albania,2001,1129.0
+Andorra,2001,8.0
+Armenia,2001,439.0
+Austria,2001,1079.0
+Azerbaijan,2001,277.0
+Belarus,2001,411.0
+Belgium,2001,884.0
+Bosnia and Herzegovina,2001,511.0
+Bulgaria,2001,3584.0
+Croatia,2001,802.0
+Cyprus,2001,2027.0
+Czech Republic,2001,1152.0
+Denmark,2001,922.0
+Estonia,2001,293.0
+Finland,2001,819.0
+France,2001,7401.0
+Georgia,2001,345.0
+Germany,2001,9613.0
+Gibraltar,2001,1.0
+Greece,2001,2599.0
+Holy See,2001,1.0
+Hungary,2001,1242.0
+Iceland,2001,891.0
+Ireland,2001,1053.0
+Italy,2001,3333.0
+Kosovo,2001,0.0
+Latvia,2001,434.0
+Liechtenstein,2001,12.0
+Lithuania,2001,628.0
+Luxembourg,2001,61.0
+North Macedonia,2001,337.0
+Malta,2001,51.0
+Moldova,2001,269.0
+Monaco,2001,15.0
+Netherlands,2001,1791.0
+Norway,2001,2323.0
+Poland,2001,2606.0
+Portugal,2001,946.0
+Romania,2001,3325.0
+Russia,2001,6643.0
+San Marino,2001,2.0
+Slovakia,2001,627.0
+Slovenia,2001,225.0
+Spain,2001,4048.0
+Sweden,2001,4041.0
+Switzerland,2001,1680.0
+Turkey/Türkiye,2001,12091.0
+Ukraine,2001,2195.0
+United Kingdom,2001,8414.0
+"Europe, Unspecified",2001,0.0
+Anguilla,2001,46.0
+Antigua and Barbuda,2001,239.0
+Aruba,2001,64.0
+Bahamas,2001,1973.0
+Barbados,2001,580.0
+Bermuda,2001,525.0
+British Virgin Islands,2001,97.0
+Cayman Islands,2001,211.0
+Cuba,2001,163.0
+Dominica,2001,232.0
+Dominican Republic,2001,898.0
+Grenada,2001,185.0
+Guadeloupe,2001,8.0
+Haiti,2001,1184.0
+Jamaica,2001,4286.0
+Martinique,2001,13.0
+Montserrat,2001,6.0
+St. Kitts and Nevis,2001,146.0
+St. Lucia,2001,269.0
+St. Vincent and the Grenadines,2001,131.0
+Trinidad and Tobago,2001,2668.0
+Turks and Caicos,2001,64.0
+"Caribbean, Unspecified",2001,81.0
+Belize,2001,542.0
+Costa Rica,2001,966.0
+El Salvador,2001,917.0
+Guatemala,2001,1058.0
+Honduras,2001,1007.0
+Mexico,2001,12518.0
+Nicaragua,2001,608.0
+Panama,2001,1208.0
+Argentina,2001,3444.0
+Bolivia,2001,953.0
+Brazil,2001,8972.0
+Chile,2001,1655.0
+Colombia,2001,8068.0
+Ecuador,2001,2364.0
+Falkland Islands/Islas Malvinas,2001,1.0
+French Guiana,2001,6.0
+Guyana,2001,359.0
+Paraguay,2001,375.0
+Peru,2001,3188.0
+Suriname,2001,100.0
+Uruguay,2001,468.0
+Venezuela,2001,5627.0
+Bahrain,2001,601.0
+Iran,2001,2216.0
+Iraq,2001,147.0
+Israel,2001,3458.0
+Jordan,2001,2417.0
+Kuwait,2001,2966.0
+Lebanon,2001,2435.0
+Oman,2001,623.0
+Palestinian Territories,2001,232.0
+Qatar,2001,461.0
+Saudi Arabia,2001,5579.0
+Syria,2001,735.0
+United Arab Emirates,2001,2121.0
+Yemen,2001,436.0
+Algeria,2001,196.0
+Egypt,2001,2409.0
+Libya,2001,42.0
+Morocco,2001,2102.0
+Tunisia,2001,458.0
+Canada,2001,26514.0
+Australia,2001,2707.0
+Cook Islands,2001,4.0
+Fiji,2001,247.0
+French Polynesia,2001,110.0
+Kiribati,2001,35.0
+"Marshall Islands, Republic of the",2001,40.0
+"Micronesia, Federate States of",2001,274.0
+Nauru,2001,2.0
+New Caledonia,2001,2.0
+New Zealand,2001,1046.0
+Niue,2001,18.0
+Norfolk Island,2001,2.0
+Palau,2001,45.0
+Papua New Guinea,2001,32.0
+Samoa,2001,107.0
+Solomon Islands,2001,8.0
+Tonga,2001,164.0
+Tuvalu,2001,2.0
+Vanuatu,2001,6.0
+Wallis and Futuna,2001,0.0
+Stateless,2001,87.0
+Cameroon,2002,1171.0
+Central African Republic,2002,23.0
+Chad,2002,90.0
+"Congo, Republic of the (Brazzaville)",2002,3.0
+"Congo, Dem. Rep. of the (Kinshasa)",2002,429.0
+Equatorial Guinea,2002,94.0
+Gabon,2002,125.0
+São Tomé & Príncipe,2002,4.0
+Burundi,2002,66.0
+Djibouti,2002,5.0
+Eritrea,2002,141.0
+Ethiopia,2002,1119.0
+Kenya,2002,7862.0
+Rwanda,2002,149.0
+Seychelles,2002,19.0
+Somalia,2002,87.0
+Sudan,2002,431.0
+Tanzania,2002,1822.0
+Uganda,2002,776.0
+Angola,2002,432.0
+Botswana,2002,688.0
+Comoros,2002,31.0
+Eswatini,2002,84.0
+Lesotho,2002,38.0
+Madagascar,2002,119.0
+Malawi,2002,391.0
+Mauritius,2002,228.0
+Mozambique,2002,108.0
+Namibia,2002,111.0
+Reunion,2002,4.0
+South Africa,2002,2095.0
+Zambia,2002,882.0
+Zimbabwe,2002,2186.0
+Benin,2002,171.0
+Burkina Faso,2002,162.0
+Cabo Verde,2002,79.0
+Côte d’Ivoire,2002,675.0
+"Gambia, The",2002,464.0
+Ghana,2002,3032.0
+Guinea,2002,249.0
+Guinea-Bissau,2002,13.0
+Liberia,2002,531.0
+Mali,2002,507.0
+Mauritania,2002,87.0
+Niger,2002,177.0
+Nigeria,2002,5816.0
+Saint Helena,2002,0.0
+Senegal,2002,774.0
+Sierra Leone,2002,340.0
+Togo,2002,498.0
+"West Africa, Unspecified",2002,15.0
+China,2002,64757.0
+Hong Kong,2002,8076.0
+Japan,2002,45960.0
+Macau,2002,385.0
+Mongolia,2002,739.0
+North Korea,2002,213.0
+South Korea,2002,51519.0
+Taiwan,2002,28017.0
+Afghanistan,2002,102.0
+Bangladesh,2002,3596.0
+Bhutan,2002,68.0
+India,2002,74603.0
+Kazakhstan,2002,556.0
+Kyrgyzstan,2002,217.0
+Maldives,2002,23.0
+Nepal,2002,3729.0
+Pakistan,2002,8123.0
+Sri Lanka,2002,2094.0
+Tajikistan,2002,167.0
+Turkmenistan,2002,102.0
+Uzbekistan,2002,386.0
+Brunei,2002,17.0
+Burma,2002,870.0
+Cambodia,2002,329.0
+Indonesia,2002,10432.0
+Laos,2002,108.0
+Malaysia,2002,6595.0
+Philippines,2002,3576.0
+Singapore,2002,4189.0
+Thailand,2002,9982.0
+Timor-Leste,2002,4.0
+Vietnam,2002,2722.0
+Albania,2002,1106.0
+Andorra,2002,11.0
+Armenia,2002,390.0
+Austria,2002,1060.0
+Azerbaijan,2002,277.0
+Belarus,2002,417.0
+Belgium,2002,847.0
+Bosnia and Herzegovina,2002,528.0
+Bulgaria,2002,3725.0
+Croatia,2002,735.0
+Cyprus,2002,1834.0
+Czech Republic,2002,1180.0
+Denmark,2002,901.0
+Estonia,2002,298.0
+Finland,2002,739.0
+France,2002,7223.0
+Georgia,2002,377.0
+Germany,2002,9302.0
+Gibraltar,2002,3.0
+Greece,2002,2341.0
+Holy See,2002,6.0
+Hungary,2002,1200.0
+Iceland,2002,537.0
+Ireland,2002,1055.0
+Italy,2002,3287.0
+Kosovo,2002,0.0
+Latvia,2002,447.0
+Liechtenstein,2002,9.0
+Lithuania,2002,647.0
+Luxembourg,2002,73.0
+North Macedonia,2002,305.0
+Malta,2002,38.0
+Moldova,2002,268.0
+Monaco,2002,13.0
+Netherlands,2002,1672.0
+Norway,2002,1568.0
+Poland,2002,2744.0
+Portugal,2002,881.0
+Romania,2002,3407.0
+Russia,2002,6238.0
+San Marino,2002,4.0
+Slovakia,2002,610.0
+Slovenia,2002,238.0
+Spain,2002,3633.0
+Sweden,2002,3709.0
+Switzerland,2002,1562.0
+Turkey/Türkiye,2002,11601.0
+Ukraine,2002,2070.0
+United Kingdom,2002,8326.0
+"Europe, Unspecified",2002,35.0
+Anguilla,2002,46.0
+Antigua and Barbuda,2002,215.0
+Aruba,2002,55.0
+Bahamas,2002,2012.0
+Barbados,2002,590.0
+Bermuda,2002,714.0
+British Virgin Islands,2002,113.0
+Cayman Islands,2002,203.0
+Cuba,2002,141.0
+Dominica,2002,288.0
+Dominican Republic,2002,983.0
+Grenada,2002,317.0
+Guadeloupe,2002,8.0
+Haiti,2002,910.0
+Jamaica,2002,4723.0
+Martinique,2002,6.0
+Montserrat,2002,13.0
+St. Kitts and Nevis,2002,172.0
+St. Lucia,2002,331.0
+St. Vincent and the Grenadines,2002,172.0
+Trinidad and Tobago,2002,3127.0
+Turks and Caicos,2002,54.0
+"Caribbean, Unspecified",2002,86.0
+Belize,2002,489.0
+Costa Rica,2002,951.0
+El Salvador,2002,971.0
+Guatemala,2002,1045.0
+Honduras,2002,985.0
+Mexico,2002,12801.0
+Nicaragua,2002,480.0
+Panama,2002,1134.0
+Argentina,2002,3644.0
+Bolivia,2002,1051.0
+Brazil,2002,8388.0
+Chile,2002,1723.0
+Colombia,2002,7771.0
+Ecuador,2002,2398.0
+Falkland Islands/Islas Malvinas,2002,0.0
+French Guiana,2002,4.0
+Guyana,2002,503.0
+Paraguay,2002,418.0
+Peru,2002,3376.0
+Suriname,2002,97.0
+Uruguay,2002,493.0
+Venezuela,2002,5333.0
+Bahrain,2002,451.0
+Iran,2002,2258.0
+Iraq,2002,127.0
+Israel,2002,3521.0
+Jordan,2002,2173.0
+Kuwait,2002,2212.0
+Lebanon,2002,2364.0
+Oman,2002,540.0
+Palestinian Territories,2002,287.0
+Qatar,2002,441.0
+Saudi Arabia,2002,4175.0
+Syria,2002,642.0
+United Arab Emirates,2002,1792.0
+Yemen,2002,375.0
+Algeria,2002,177.0
+Egypt,2002,2155.0
+Libya,2002,33.0
+Morocco,2002,2034.0
+Tunisia,2002,381.0
+Canada,2002,26513.0
+Australia,2002,2777.0
+Cook Islands,2002,5.0
+Fiji,2002,212.0
+French Polynesia,2002,80.0
+Kiribati,2002,47.0
+"Marshall Islands, Republic of the",2002,31.0
+"Micronesia, Federate States of",2002,198.0
+Nauru,2002,3.0
+New Caledonia,2002,9.0
+New Zealand,2002,1041.0
+Niue,2002,17.0
+Norfolk Island,2002,1.0
+Palau,2002,57.0
+Papua New Guinea,2002,37.0
+Samoa,2002,125.0
+Solomon Islands,2002,10.0
+Tonga,2002,144.0
+Tuvalu,2002,9.0
+Vanuatu,2002,8.0
+Wallis and Futuna,2002,0.0
+Stateless,2002,33.0
+Cameroon,2003,1216.0
+Central African Republic,2003,40.0
+Chad,2003,95.0
+"Congo, Republic of the (Brazzaville)",2003,9.0
+"Congo, Dem. Rep. of the (Kinshasa)",2003,340.0
+Equatorial Guinea,2003,79.0
+Gabon,2003,105.0
+São Tomé & Príncipe,2003,5.0
+Burundi,2003,80.0
+Djibouti,2003,2.0
+Eritrea,2003,127.0
+Ethiopia,2003,1060.0
+Kenya,2003,7381.0
+Rwanda,2003,275.0
+Seychelles,2003,10.0
+Somalia,2003,37.0
+Sudan,2003,279.0
+Tanzania,2003,1471.0
+Uganda,2003,696.0
+Angola,2003,442.0
+Botswana,2003,488.0
+Comoros,2003,22.0
+Eswatini,2003,86.0
+Lesotho,2003,39.0
+Madagascar,2003,109.0
+Malawi,2003,399.0
+Mauritius,2003,209.0
+Mozambique,2003,93.0
+Namibia,2003,95.0
+Reunion,2003,2.0
+South Africa,2003,1971.0
+Zambia,2003,859.0
+Zimbabwe,2003,1999.0
+Benin,2003,168.0
+Burkina Faso,2003,191.0
+Cabo Verde,2003,52.0
+Côte d’Ivoire,2003,636.0
+"Gambia, The",2003,523.0
+Ghana,2003,3288.0
+Guinea,2003,250.0
+Guinea-Bissau,2003,16.0
+Liberia,2003,411.0
+Mali,2003,378.0
+Mauritania,2003,68.0
+Niger,2003,169.0
+Nigeria,2003,6140.0
+Saint Helena,2003,1.0
+Senegal,2003,805.0
+Sierra Leone,2003,306.0
+Togo,2003,413.0
+"West Africa, Unspecified",2003,6.0
+China,2003,61765.0
+Hong Kong,2003,7353.0
+Japan,2003,40835.0
+Macau,2003,374.0
+Mongolia,2003,711.0
+North Korea,2003,174.0
+South Korea,2003,52484.0
+Taiwan,2003,26178.0
+Afghanistan,2003,109.0
+Bangladesh,2003,3198.0
+Bhutan,2003,63.0
+India,2003,79736.0
+Kazakhstan,2003,538.0
+Kyrgyzstan,2003,179.0
+Maldives,2003,15.0
+Nepal,2003,4384.0
+Pakistan,2003,7325.0
+Sri Lanka,2003,1964.0
+Tajikistan,2003,117.0
+Turkmenistan,2003,98.0
+Uzbekistan,2003,412.0
+Brunei,2003,13.0
+Burma,2003,691.0
+Cambodia,2003,330.0
+Indonesia,2003,8880.0
+Laos,2003,65.0
+Malaysia,2003,6483.0
+Philippines,2003,3467.0
+Singapore,2003,3955.0
+Thailand,2003,8937.0
+Timor-Leste,2003,8.0
+Vietnam,2003,3165.0
+Albania,2003,916.0
+Andorra,2003,9.0
+Armenia,2003,412.0
+Austria,2003,899.0
+Azerbaijan,2003,238.0
+Belarus,2003,422.0
+Belgium,2003,823.0
+Bosnia and Herzegovina,2003,433.0
+Bulgaria,2003,3734.0
+Croatia,2003,660.0
+Cyprus,2003,1562.0
+Czech Republic,2003,1052.0
+Denmark,2003,859.0
+Estonia,2003,271.0
+Finland,2003,619.0
+France,2003,6818.0
+Georgia,2003,373.0
+Germany,2003,8745.0
+Gibraltar,2003,0.0
+Greece,2003,2126.0
+Holy See,2003,11.0
+Hungary,2003,997.0
+Iceland,2003,488.0
+Ireland,2003,1020.0
+Italy,2003,3308.0
+Kosovo,2003,0.0
+Latvia,2003,424.0
+Liechtenstein,2003,6.0
+Lithuania,2003,691.0
+Luxembourg,2003,50.0
+North Macedonia,2003,349.0
+Malta,2003,30.0
+Moldova,2003,266.0
+Monaco,2003,8.0
+Netherlands,2003,1505.0
+Norway,2003,1471.0
+Poland,2003,2913.0
+Portugal,2003,880.0
+Romania,2003,3320.0
+Russia,2003,5532.0
+San Marino,2003,2.0
+Slovakia,2003,585.0
+Slovenia,2003,209.0
+Spain,2003,3631.0
+Sweden,2003,3116.0
+Switzerland,2003,1561.0
+Turkey/Türkiye,2003,11398.0
+Ukraine,2003,2004.0
+United Kingdom,2003,8439.0
+"Europe, Unspecified",2003,1.0
+Anguilla,2003,62.0
+Antigua and Barbuda,2003,240.0
+Aruba,2003,60.0
+Bahamas,2003,2030.0
+Barbados,2003,569.0
+Bermuda,2003,633.0
+British Virgin Islands,2003,145.0
+Cayman Islands,2003,191.0
+Cuba,2003,132.0
+Dominica,2003,232.0
+Dominican Republic,2003,998.0
+Grenada,2003,229.0
+Guadeloupe,2003,5.0
+Haiti,2003,1074.0
+Jamaica,2003,4994.0
+Martinique,2003,9.0
+Montserrat,2003,6.0
+St. Kitts and Nevis,2003,167.0
+St. Lucia,2003,299.0
+St. Vincent and the Grenadines,2003,183.0
+Trinidad and Tobago,2003,3638.0
+Turks and Caicos,2003,78.0
+"Caribbean, Unspecified",2003,40.0
+Belize,2003,501.0
+Costa Rica,2003,907.0
+El Salvador,2003,976.0
+Guatemala,2003,1030.0
+Honduras,2003,1089.0
+Mexico,2003,13329.0
+Nicaragua,2003,473.0
+Panama,2003,958.0
+Argentina,2003,3644.0
+Bolivia,2003,1004.0
+Brazil,2003,7799.0
+Chile,2003,1612.0
+Colombia,2003,7533.0
+Ecuador,2003,2345.0
+Falkland Islands/Islas Malvinas,2003,0.0
+French Guiana,2003,1.0
+Guyana,2003,503.0
+Paraguay,2003,343.0
+Peru,2003,3771.0
+Suriname,2003,126.0
+Uruguay,2003,532.0
+Venezuela,2003,5575.0
+Bahrain,2003,444.0
+Iran,2003,2321.0
+Iraq,2003,120.0
+Israel,2003,3474.0
+Jordan,2003,1853.0
+Kuwait,2003,1846.0
+Lebanon,2003,2179.0
+Oman,2003,445.0
+Palestinian Territories,2003,247.0
+Qatar,2003,354.0
+Saudi Arabia,2003,3521.0
+Syria,2003,556.0
+United Arab Emirates,2003,1248.0
+Yemen,2003,284.0
+Algeria,2003,148.0
+Egypt,2003,1822.0
+Libya,2003,39.0
+Morocco,2003,1835.0
+Tunisia,2003,341.0
+Canada,2003,27017.0
+Australia,2003,2706.0
+Cook Islands,2003,3.0
+Fiji,2003,177.0
+French Polynesia,2003,97.0
+Kiribati,2003,53.0
+"Marshall Islands, Republic of the",2003,24.0
+"Micronesia, Federate States of",2003,182.0
+Nauru,2003,0.0
+New Caledonia,2003,9.0
+New Zealand,2003,962.0
+Niue,2003,11.0
+Norfolk Island,2003,0.0
+Palau,2003,45.0
+Papua New Guinea,2003,32.0
+Samoa,2003,103.0
+Solomon Islands,2003,9.0
+Tonga,2003,111.0
+Tuvalu,2003,5.0
+Vanuatu,2003,5.0
+Wallis and Futuna,2003,0.0
+Stateless,2003,19.0
+Cameroon,2004,1364.0
+Central African Republic,2004,32.0
+Chad,2004,75.0
+"Congo, Republic of the (Brazzaville)",2004,23.0
+"Congo, Dem. Rep. of the (Kinshasa)",2004,323.0
+Equatorial Guinea,2004,104.0
+Gabon,2004,145.0
+São Tomé & Príncipe,2004,8.0
+Burundi,2004,82.0
+Djibouti,2004,5.0
+Eritrea,2004,194.0
+Ethiopia,2004,1129.0
+Kenya,2004,6728.0
+Rwanda,2004,191.0
+Seychelles,2004,10.0
+Somalia,2004,55.0
+Sudan,2004,290.0
+Tanzania,2004,1332.0
+Uganda,2004,632.0
+Angola,2004,431.0
+Botswana,2004,338.0
+Comoros,2004,23.0
+Eswatini,2004,96.0
+Lesotho,2004,41.0
+Madagascar,2004,127.0
+Malawi,2004,375.0
+Mauritius,2004,188.0
+Mozambique,2004,106.0
+Namibia,2004,66.0
+Reunion,2004,8.0
+South Africa,2004,1699.0
+Zambia,2004,794.0
+Zimbabwe,2004,1695.0
+Benin,2004,180.0
+Burkina Faso,2004,277.0
+Cabo Verde,2004,40.0
+Côte d’Ivoire,2004,622.0
+"Gambia, The",2004,445.0
+Ghana,2004,3114.0
+Guinea,2004,225.0
+Guinea-Bissau,2004,11.0
+Liberia,2004,343.0
+Mali,2004,345.0
+Mauritania,2004,58.0
+Niger,2004,234.0
+Nigeria,2004,6335.0
+Saint Helena,2004,1.0
+Senegal,2004,725.0
+Sierra Leone,2004,308.0
+Togo,2004,514.0
+"West Africa, Unspecified",2004,5.0
+China,2004,62523.0
+Hong Kong,2004,7180.0
+Japan,2004,42215.0
+Macau,2004,383.0
+Mongolia,2004,769.0
+North Korea,2004,219.0
+South Korea,2004,53358.0
+Taiwan,2004,25914.0
+Afghanistan,2004,155.0
+Bangladesh,2004,2758.0
+Bhutan,2004,70.0
+India,2004,80466.0
+Kazakhstan,2004,477.0
+Kyrgyzstan,2004,185.0
+Maldives,2004,24.0
+Nepal,2004,4861.0
+Pakistan,2004,6296.0
+Sri Lanka,2004,1992.0
+Tajikistan,2004,158.0
+Turkmenistan,2004,103.0
+Uzbekistan,2004,416.0
+Brunei,2004,18.0
+Burma,2004,651.0
+Cambodia,2004,333.0
+Indonesia,2004,7760.0
+Laos,2004,63.0
+Malaysia,2004,6142.0
+Philippines,2004,3531.0
+Singapore,2004,3769.0
+Thailand,2004,8637.0
+Timor-Leste,2004,16.0
+Vietnam,2004,3670.0
+Albania,2004,866.0
+Andorra,2004,11.0
+Armenia,2004,410.0
+Austria,2004,885.0
+Azerbaijan,2004,252.0
+Belarus,2004,431.0
+Belgium,2004,743.0
+Bosnia and Herzegovina,2004,359.0
+Bulgaria,2004,3644.0
+Croatia,2004,675.0
+Cyprus,2004,1326.0
+Czech Republic,2004,902.0
+Denmark,2004,887.0
+Estonia,2004,283.0
+Finland,2004,570.0
+France,2004,6555.0
+Georgia,2004,340.0
+Germany,2004,8640.0
+Gibraltar,2004,9.0
+Greece,2004,2035.0
+Holy See,2004,8.0
+Hungary,2004,934.0
+Iceland,2004,434.0
+Ireland,2004,976.0
+Italy,2004,3261.0
+Kosovo,2004,35.0
+Latvia,2004,408.0
+Liechtenstein,2004,9.0
+Lithuania,2004,635.0
+Luxembourg,2004,39.0
+North Macedonia,2004,381.0
+Malta,2004,27.0
+Moldova,2004,285.0
+Monaco,2004,9.0
+Netherlands,2004,1474.0
+Norway,2004,1414.0
+Poland,2004,2861.0
+Portugal,2004,852.0
+Romania,2004,3217.0
+Russia,2004,5073.0
+San Marino,2004,3.0
+Slovakia,2004,609.0
+Slovenia,2004,306.0
+Spain,2004,3512.0
+Sweden,2004,3106.0
+Switzerland,2004,1361.0
+Turkey/Türkiye,2004,12474.0
+Ukraine,2004,1831.0
+United Kingdom,2004,8236.0
+"Europe, Unspecified",2004,0.0
+Anguilla,2004,61.0
+Antigua and Barbuda,2004,204.0
+Aruba,2004,70.0
+Bahamas,2004,1638.0
+Barbados,2004,494.0
+Bermuda,2004,494.0
+British Virgin Islands,2004,187.0
+Cayman Islands,2004,168.0
+Cuba,2004,190.0
+Dominica,2004,319.0
+Dominican Republic,2004,868.0
+Grenada,2004,210.0
+Guadeloupe,2004,10.0
+Haiti,2004,1002.0
+Jamaica,2004,4368.0
+Martinique,2004,16.0
+Montserrat,2004,13.0
+St. Kitts and Nevis,2004,196.0
+St. Lucia,2004,345.0
+St. Vincent and the Grenadines,2004,175.0
+Trinidad and Tobago,2004,2930.0
+Turks and Caicos,2004,168.0
+"Caribbean, Unspecified",2004,63.0
+Belize,2004,449.0
+Costa Rica,2004,895.0
+El Salvador,2004,962.0
+Guatemala,2004,1037.0
+Honduras,2004,1140.0
+Mexico,2004,13063.0
+Nicaragua,2004,673.0
+Panama,2004,1008.0
+Argentina,2004,3363.0
+Bolivia,2004,1008.0
+Brazil,2004,7244.0
+Chile,2004,1559.0
+Colombia,2004,7334.0
+Ecuador,2004,2177.0
+Falkland Islands/Islas Malvinas,2004,0.0
+French Guiana,2004,3.0
+Guyana,2004,441.0
+Paraguay,2004,305.0
+Peru,2004,3631.0
+Suriname,2004,92.0
+Uruguay,2004,526.0
+Venezuela,2004,5279.0
+Bahrain,2004,377.0
+Iran,2004,2251.0
+Iraq,2004,142.0
+Israel,2004,3323.0
+Jordan,2004,1754.0
+Kuwait,2004,1720.0
+Lebanon,2004,2040.0
+Oman,2004,354.0
+Palestinian Territories,2004,268.0
+Qatar,2004,290.0
+Saudi Arabia,2004,3035.0
+Syria,2004,498.0
+United Arab Emirates,2004,1158.0
+Yemen,2004,238.0
+Algeria,2004,143.0
+Egypt,2004,1574.0
+Libya,2004,39.0
+Morocco,2004,1571.0
+Tunisia,2004,268.0
+Canada,2004,28140.0
+Australia,2004,2659.0
+Cook Islands,2004,3.0
+Fiji,2004,184.0
+French Polynesia,2004,91.0
+Kiribati,2004,32.0
+"Marshall Islands, Republic of the",2004,91.0
+"Micronesia, Federate States of",2004,128.0
+Nauru,2004,8.0
+New Caledonia,2004,9.0
+New Zealand,2004,900.0
+Niue,2004,6.0
+Norfolk Island,2004,0.0
+Palau,2004,38.0
+Papua New Guinea,2004,35.0
+Samoa,2004,123.0
+Solomon Islands,2004,19.0
+Tonga,2004,146.0
+Tuvalu,2004,1.0
+Vanuatu,2004,7.0
+Wallis and Futuna,2004,1.0
+Stateless,2004,37.0
+Cameroon,2005,1582.0
+Central African Republic,2005,34.0
+Chad,2005,73.0
+"Congo, Republic of the (Brazzaville)",2005,86.0
+"Congo, Dem. Rep. of the (Kinshasa)",2005,308.0
+Equatorial Guinea,2005,160.0
+Gabon,2005,161.0
+São Tomé & Príncipe,2005,6.0
+Burundi,2005,78.0
+Djibouti,2005,15.0
+Eritrea,2005,199.0
+Ethiopia,2005,1266.0
+Kenya,2005,6559.0
+Rwanda,2005,215.0
+Seychelles,2005,2.0
+Somalia,2005,50.0
+Sudan,2005,309.0
+Tanzania,2005,1239.0
+Uganda,2005,685.0
+Angola,2005,415.0
+Botswana,2005,284.0
+Comoros,2005,29.0
+Eswatini,2005,98.0
+Lesotho,2005,52.0
+Madagascar,2005,112.0
+Malawi,2005,347.0
+Mauritius,2005,210.0
+Mozambique,2005,98.0
+Namibia,2005,89.0
+Reunion,2005,11.0
+South Africa,2005,1709.0
+Zambia,2005,816.0
+Zimbabwe,2005,1704.0
+Benin,2005,217.0
+Burkina Faso,2005,339.0
+Cabo Verde,2005,40.0
+Côte d’Ivoire,2005,656.0
+"Gambia, The",2005,403.0
+Ghana,2005,3160.0
+Guinea,2005,218.0
+Guinea-Bissau,2005,5.0
+Liberia,2005,364.0
+Mali,2005,402.0
+Mauritania,2005,63.0
+Niger,2005,359.0
+Nigeria,2005,6192.0
+Saint Helena,2005,14.0
+Senegal,2005,666.0
+Sierra Leone,2005,297.0
+Togo,2005,448.0
+"West Africa, Unspecified",2005,3.0
+China,2005,62582.0
+Hong Kong,2005,7849.0
+Japan,2005,38712.0
+Macau,2005,407.0
+Mongolia,2005,927.0
+North Korea,2005,201.0
+South Korea,2005,59022.0
+Taiwan,2005,27876.0
+Afghanistan,2005,175.0
+Bangladesh,2005,2581.0
+Bhutan,2005,77.0
+India,2005,76503.0
+Kazakhstan,2005,626.0
+Kyrgyzstan,2005,189.0
+Maldives,2005,26.0
+Nepal,2005,6061.0
+Pakistan,2005,5759.0
+Sri Lanka,2005,2157.0
+Tajikistan,2005,185.0
+Turkmenistan,2005,154.0
+Uzbekistan,2005,472.0
+Brunei,2005,12.0
+Burma,2005,650.0
+Cambodia,2005,364.0
+Indonesia,2005,7575.0
+Laos,2005,65.0
+Malaysia,2005,5515.0
+Philippines,2005,3758.0
+Singapore,2005,3909.0
+Thailand,2005,8765.0
+Timor-Leste,2005,34.0
+Vietnam,2005,4597.0
+Albania,2005,904.0
+Andorra,2005,6.0
+Armenia,2005,408.0
+Austria,2005,843.0
+Azerbaijan,2005,337.0
+Belarus,2005,458.0
+Belgium,2005,754.0
+Bosnia and Herzegovina,2005,369.0
+Bulgaria,2005,3633.0
+Croatia,2005,639.0
+Cyprus,2005,1111.0
+Czech Republic,2005,927.0
+Denmark,2005,900.0
+Estonia,2005,321.0
+Finland,2005,608.0
+France,2005,6640.0
+Georgia,2005,343.0
+Germany,2005,8829.0
+Gibraltar,2005,6.0
+Greece,2005,2088.0
+Holy See,2005,6.0
+Hungary,2005,831.0
+Iceland,2005,438.0
+Ireland,2005,1100.0
+Italy,2005,3224.0
+Kosovo,2005,70.0
+Latvia,2005,382.0
+Liechtenstein,2005,14.0
+Lithuania,2005,653.0
+Luxembourg,2005,51.0
+North Macedonia,2005,362.0
+Malta,2005,38.0
+Moldova,2005,359.0
+Monaco,2005,24.0
+Netherlands,2005,1567.0
+Norway,2005,1297.0
+Poland,2005,3020.0
+Portugal,2005,845.0
+Romania,2005,3225.0
+Russia,2005,4801.0
+San Marino,2005,3.0
+Slovakia,2005,697.0
+Slovenia,2005,219.0
+Spain,2005,3455.0
+Sweden,2005,3212.0
+Switzerland,2005,1276.0
+Turkey/Türkiye,2005,11622.0
+Ukraine,2005,1805.0
+United Kingdom,2005,8274.0
+"Europe, Unspecified",2005,0.0
+Anguilla,2005,44.0
+Antigua and Barbuda,2005,226.0
+Aruba,2005,91.0
+Bahamas,2005,1631.0
+Barbados,2005,467.0
+Bermuda,2005,497.0
+British Virgin Islands,2005,188.0
+Cayman Islands,2005,223.0
+Cuba,2005,119.0
+Dominica,2005,376.0
+Dominican Republic,2005,875.0
+Grenada,2005,376.0
+Guadeloupe,2005,13.0
+Haiti,2005,1029.0
+Jamaica,2005,4166.0
+Martinique,2005,15.0
+Montserrat,2005,17.0
+St. Kitts and Nevis,2005,265.0
+St. Lucia,2005,342.0
+St. Vincent and the Grenadines,2005,140.0
+Trinidad and Tobago,2005,2924.0
+Turks and Caicos,2005,166.0
+"Caribbean, Unspecified",2005,15.0
+Belize,2005,462.0
+Costa Rica,2005,896.0
+El Salvador,2005,939.0
+Guatemala,2005,1006.0
+Honduras,2005,1042.0
+Mexico,2005,13931.0
+Nicaragua,2005,410.0
+Panama,2005,1023.0
+Argentina,2005,3032.0
+Bolivia,2005,995.0
+Brazil,2005,7009.0
+Chile,2005,1550.0
+Colombia,2005,6835.0
+Ecuador,2005,2173.0
+Falkland Islands/Islas Malvinas,2005,1.0
+French Guiana,2005,3.0
+Guyana,2005,349.0
+Paraguay,2005,321.0
+Peru,2005,3519.0
+Suriname,2005,117.0
+Uruguay,2005,509.0
+Venezuela,2005,4792.0
+Bahrain,2005,373.0
+Iran,2005,2420.0
+Iraq,2005,190.0
+Israel,2005,3419.0
+Jordan,2005,1733.0
+Kuwait,2005,1703.0
+Lebanon,2005,1950.0
+Oman,2005,337.0
+Palestinian Territories,2005,309.0
+Qatar,2005,254.0
+Saudi Arabia,2005,3448.0
+Syria,2005,446.0
+United Arab Emirates,2005,978.0
+Yemen,2005,246.0
+Algeria,2005,132.0
+Egypt,2005,1509.0
+Libya,2005,38.0
+Morocco,2005,1502.0
+Tunisia,2005,277.0
+Canada,2005,28202.0
+Australia,2005,2806.0
+Cook Islands,2005,12.0
+Fiji,2005,177.0
+French Polynesia,2005,87.0
+Kiribati,2005,34.0
+"Marshall Islands, Republic of the",2005,90.0
+"Micronesia, Federate States of",2005,156.0
+Nauru,2005,8.0
+New Caledonia,2005,21.0
+New Zealand,2005,929.0
+Niue,2005,5.0
+Norfolk Island,2005,1.0
+Palau,2005,34.0
+Papua New Guinea,2005,64.0
+Samoa,2005,87.0
+Solomon Islands,2005,12.0
+Tonga,2005,168.0
+Tuvalu,2005,1.0
+Vanuatu,2005,9.0
+Wallis and Futuna,2005,1.0
+Stateless,2005,0.0
+Cameroon,2006,1799.0
+Central African Republic,2006,47.0
+Chad,2006,120.0
+"Congo, Republic of the (Brazzaville)",2006,143.0
+"Congo, Dem. Rep. of the (Kinshasa)",2006,271.0
+Equatorial Guinea,2006,196.0
+Gabon,2006,230.0
+São Tomé & Príncipe,2006,9.0
+Burundi,2006,85.0
+Djibouti,2006,14.0
+Eritrea,2006,184.0
+Ethiopia,2006,1328.0
+Kenya,2006,6349.0
+Rwanda,2006,210.0
+Seychelles,2006,6.0
+Somalia,2006,78.0
+Sudan,2006,321.0
+Tanzania,2006,1196.0
+Uganda,2006,743.0
+Angola,2006,442.0
+Botswana,2006,227.0
+Comoros,2006,39.0
+Eswatini,2006,114.0
+Lesotho,2006,57.0
+Madagascar,2006,136.0
+Malawi,2006,321.0
+Mauritius,2006,205.0
+Mozambique,2006,80.0
+Namibia,2006,61.0
+Reunion,2006,6.0
+South Africa,2006,1665.0
+Zambia,2006,876.0
+Zimbabwe,2006,1518.0
+Benin,2006,253.0
+Burkina Faso,2006,423.0
+Cabo Verde,2006,76.0
+Côte d’Ivoire,2006,657.0
+"Gambia, The",2006,372.0
+Ghana,2006,2961.0
+Guinea,2006,181.0
+Guinea-Bissau,2006,19.0
+Liberia,2006,336.0
+Mali,2006,455.0
+Mauritania,2006,64.0
+Niger,2006,258.0
+Nigeria,2006,5943.0
+Saint Helena,2006,0.0
+Senegal,2006,681.0
+Sierra Leone,2006,299.0
+Togo,2006,366.0
+"West Africa, Unspecified",2006,0.0
+China,2006,67723.0
+Hong Kong,2006,7722.0
+Japan,2006,35282.0
+Macau,2006,388.0
+Mongolia,2006,1156.0
+North Korea,2006,266.0
+South Korea,2006,62392.0
+Taiwan,2006,29094.0
+Afghanistan,2006,268.0
+Bangladesh,2006,2410.0
+Bhutan,2006,83.0
+India,2006,83833.0
+Kazakhstan,2006,1212.0
+Kyrgyzstan,2006,209.0
+Maldives,2006,26.0
+Nepal,2006,7754.0
+Pakistan,2006,5401.0
+Sri Lanka,2006,2373.0
+Tajikistan,2006,164.0
+Turkmenistan,2006,143.0
+Uzbekistan,2006,581.0
+Brunei,2006,24.0
+Burma,2006,625.0
+Cambodia,2006,329.0
+Indonesia,2006,7338.0
+Laos,2006,45.0
+Malaysia,2006,5281.0
+Philippines,2006,3730.0
+Singapore,2006,3705.0
+Thailand,2006,8886.0
+Timor-Leste,2006,16.0
+Vietnam,2006,6036.0
+Albania,2006,841.0
+Andorra,2006,3.0
+Armenia,2006,427.0
+Austria,2006,843.0
+Azerbaijan,2006,286.0
+Belarus,2006,496.0
+Belgium,2006,703.0
+Bosnia and Herzegovina,2006,413.0
+Bulgaria,2006,3478.0
+Croatia,2006,629.0
+Cyprus,2006,877.0
+Czech Republic,2006,914.0
+Denmark,2006,963.0
+Estonia,2006,240.0
+Finland,2006,566.0
+France,2006,6704.0
+Georgia,2006,353.0
+Germany,2006,8656.0
+Gibraltar,2006,8.0
+Greece,2006,1986.0
+Holy See,2006,3.0
+Hungary,2006,735.0
+Iceland,2006,422.0
+Ireland,2006,1081.0
+Italy,2006,3342.0
+Kosovo,2006,56.0
+Latvia,2006,430.0
+Liechtenstein,2006,6.0
+Lithuania,2006,536.0
+Luxembourg,2006,56.0
+North Macedonia,2006,345.0
+Malta,2006,27.0
+Moldova,2006,365.0
+Monaco,2006,21.0
+Montenegro,2006,58.0
+Netherlands,2006,1587.0
+Norway,2006,1191.0
+Poland,2006,2810.0
+Portugal,2006,854.0
+Romania,2006,3134.0
+Russia,2006,4751.0
+San Marino,2006,2.0
+Serbia,2006,1074.0
+Slovakia,2006,592.0
+Slovenia,2006,199.0
+Spain,2006,3575.0
+Sweden,2006,2920.0
+Switzerland,2006,1241.0
+Turkey/Türkiye,2006,11506.0
+Ukraine,2006,1692.0
+United Kingdom,2006,8438.0
+"Europe, Unspecified",2006,2.0
+Anguilla,2006,49.0
+Antigua and Barbuda,2006,203.0
+Aruba,2006,90.0
+Bahamas,2006,1681.0
+Barbados,2006,440.0
+Bermuda,2006,476.0
+British Virgin Islands,2006,138.0
+Cayman Islands,2006,210.0
+Cuba,2006,99.0
+Dominica,2006,327.0
+Dominican Republic,2006,961.0
+Grenada,2006,297.0
+Guadeloupe,2006,10.0
+Haiti,2006,1163.0
+Jamaica,2006,4110.0
+Martinique,2006,8.0
+Montserrat,2006,24.0
+St. Kitts and Nevis,2006,271.0
+St. Lucia,2006,331.0
+St. Vincent and the Grenadines,2006,139.0
+Trinidad and Tobago,2006,2912.0
+Turks and Caicos,2006,199.0
+"Caribbean, Unspecified",2006,2.0
+Belize,2006,454.0
+Costa Rica,2006,939.0
+El Salvador,2006,1031.0
+Guatemala,2006,1014.0
+Honduras,2006,1097.0
+Mexico,2006,13826.0
+Nicaragua,2006,409.0
+Panama,2006,973.0
+Argentina,2006,2813.0
+Bolivia,2006,993.0
+Brazil,2006,7126.0
+Chile,2006,1570.0
+Colombia,2006,6750.0
+Ecuador,2006,2211.0
+Falkland Islands/Islas Malvinas,2006,33.0
+French Guiana,2006,2.0
+Guyana,2006,343.0
+Paraguay,2006,340.0
+Peru,2006,3701.0
+Suriname,2006,101.0
+Uruguay,2006,476.0
+Venezuela,2006,4523.0
+Bahrain,2006,392.0
+Iran,2006,2795.0
+Iraq,2006,262.0
+Israel,2006,3269.0
+Jordan,2006,1726.0
+Kuwait,2006,1633.0
+Lebanon,2006,1852.0
+Oman,2006,254.0
+Palestinian Territories,2006,361.0
+Qatar,2006,296.0
+Saudi Arabia,2006,7886.0
+Syria,2006,462.0
+United Arab Emirates,2006,885.0
+Yemen,2006,248.0
+Algeria,2006,145.0
+Egypt,2006,1664.0
+Libya,2006,93.0
+Morocco,2006,1202.0
+Tunisia,2006,274.0
+Canada,2006,28280.0
+Australia,2006,2797.0
+Cook Islands,2006,3.0
+Fiji,2006,112.0
+French Polynesia,2006,21.0
+Kiribati,2006,58.0
+"Marshall Islands, Republic of the",2006,54.0
+"Micronesia, Federate States of",2006,231.0
+Nauru,2006,5.0
+New Caledonia,2006,5.0
+New Zealand,2006,870.0
+Niue,2006,5.0
+Norfolk Island,2006,0.0
+Palau,2006,22.0
+Papua New Guinea,2006,27.0
+Samoa,2006,27.0
+Solomon Islands,2006,6.0
+Tonga,2006,47.0
+Tuvalu,2006,3.0
+Vanuatu,2006,5.0
+Wallis and Futuna,2006,2.0
+Stateless,2006,0.0
+Cameroon,2007,1891.0
+Central African Republic,2007,47.0
+Chad,2007,127.0
+"Congo, Republic of the (Brazzaville)",2007,150.0
+"Congo, Dem. Rep. of the (Kinshasa)",2007,282.0
+Equatorial Guinea,2007,98.0
+Gabon,2007,303.0
+São Tomé & Príncipe,2007,4.0
+Burundi,2007,87.0
+Djibouti,2007,5.0
+Eritrea,2007,163.0
+Ethiopia,2007,1316.0
+Kenya,2007,5838.0
+Rwanda,2007,270.0
+Seychelles,2007,8.0
+Somalia,2007,37.0
+Sudan,2007,224.0
+Tanzania,2007,1192.0
+Uganda,2007,769.0
+Angola,2007,503.0
+Botswana,2007,236.0
+Comoros,2007,42.0
+Eswatini,2007,128.0
+Lesotho,2007,45.0
+Madagascar,2007,130.0
+Malawi,2007,297.0
+Mauritius,2007,218.0
+Mozambique,2007,78.0
+Namibia,2007,66.0
+Reunion,2007,6.0
+South Africa,2007,1620.0
+Zambia,2007,787.0
+Zimbabwe,2007,1421.0
+Benin,2007,319.0
+Burkina Faso,2007,514.0
+Cabo Verde,2007,43.0
+Côte d’Ivoire,2007,711.0
+"Gambia, The",2007,330.0
+Ghana,2007,2895.0
+Guinea,2007,167.0
+Guinea-Bissau,2007,15.0
+Liberia,2007,298.0
+Mali,2007,435.0
+Mauritania,2007,60.0
+Niger,2007,289.0
+Nigeria,2007,6222.0
+Saint Helena,2007,7.0
+Senegal,2007,658.0
+Sierra Leone,2007,230.0
+Togo,2007,439.0
+"West Africa, Unspecified",2007,0.0
+China,2007,81127.0
+Hong Kong,2007,8286.0
+Japan,2007,33974.0
+Macau,2007,421.0
+Mongolia,2007,1308.0
+North Korea,2007,65.0
+South Korea,2007,69124.0
+Taiwan,2007,29001.0
+Afghanistan,2007,338.0
+Bangladesh,2007,2305.0
+Bhutan,2007,96.0
+India,2007,94563.0
+Kazakhstan,2007,1456.0
+Kyrgyzstan,2007,264.0
+Maldives,2007,38.0
+Nepal,2007,8936.0
+Pakistan,2007,5345.0
+Sri Lanka,2007,2591.0
+Tajikistan,2007,364.0
+Turkmenistan,2007,166.0
+Uzbekistan,2007,539.0
+Brunei,2007,34.0
+Burma,2007,604.0
+Cambodia,2007,369.0
+Indonesia,2007,7692.0
+Laos,2007,69.0
+Malaysia,2007,5428.0
+Philippines,2007,4170.0
+Singapore,2007,3976.0
+Thailand,2007,9004.0
+Timor-Leste,2007,37.0
+Vietnam,2007,8769.0
+Albania,2007,689.0
+Andorra,2007,9.0
+Armenia,2007,403.0
+Austria,2007,886.0
+Azerbaijan,2007,318.0
+Belarus,2007,457.0
+Belgium,2007,812.0
+Bosnia and Herzegovina,2007,409.0
+Bulgaria,2007,3205.0
+Croatia,2007,602.0
+Cyprus,2007,782.0
+Czech Republic,2007,922.0
+Denmark,2007,898.0
+Estonia,2007,245.0
+Finland,2007,672.0
+France,2007,7050.0
+Georgia,2007,378.0
+Germany,2007,8907.0
+Gibraltar,2007,15.0
+Greece,2007,1981.0
+Holy See,2007,2.0
+Hungary,2007,710.0
+Iceland,2007,402.0
+Ireland,2007,1018.0
+Italy,2007,3535.0
+Kosovo,2007,50.0
+Latvia,2007,363.0
+Liechtenstein,2007,13.0
+Lithuania,2007,495.0
+Luxembourg,2007,49.0
+North Macedonia,2007,311.0
+Malta,2007,24.0
+Moldova,2007,418.0
+Monaco,2007,28.0
+Montenegro,2007,107.0
+Netherlands,2007,1680.0
+Norway,2007,1264.0
+Poland,2007,2731.0
+Portugal,2007,902.0
+Romania,2007,2902.0
+Russia,2007,4906.0
+San Marino,2007,0.0
+Serbia,2007,1193.0
+Slovakia,2007,536.0
+Slovenia,2007,210.0
+Spain,2007,3660.0
+Sweden,2007,3292.0
+Switzerland,2007,1296.0
+Turkey/Türkiye,2007,12030.0
+Ukraine,2007,1714.0
+United Kingdom,2007,8367.0
+"Europe, Unspecified",2007,19.0
+Anguilla,2007,93.0
+Antigua and Barbuda,2007,174.0
+Aruba,2007,68.0
+Bahamas,2007,1542.0
+Barbados,2007,403.0
+Bermuda,2007,421.0
+British Virgin Islands,2007,93.0
+Cayman Islands,2007,161.0
+Cuba,2007,82.0
+Dominica,2007,228.0
+Dominican Republic,2007,1159.0
+Grenada,2007,238.0
+Guadeloupe,2007,6.0
+Haiti,2007,872.0
+Jamaica,2007,3871.0
+Martinique,2007,5.0
+Montserrat,2007,16.0
+St. Kitts and Nevis,2007,239.0
+St. Lucia,2007,319.0
+St. Vincent and the Grenadines,2007,126.0
+Trinidad and Tobago,2007,2640.0
+Turks and Caicos,2007,169.0
+"Caribbean, Unspecified",2007,2.0
+Belize,2007,490.0
+Costa Rica,2007,927.0
+El Salvador,2007,940.0
+Guatemala,2007,1019.0
+Honduras,2007,1068.0
+Mexico,2007,14837.0
+Nicaragua,2007,389.0
+Panama,2007,1130.0
+Argentina,2007,2535.0
+Bolivia,2007,964.0
+Brazil,2007,7578.0
+Chile,2007,1685.0
+Colombia,2007,6662.0
+Ecuador,2007,2152.0
+Falkland Islands/Islas Malvinas,2007,7.0
+French Guiana,2007,8.0
+Guyana,2007,300.0
+Paraguay,2007,377.0
+Peru,2007,3672.0
+Suriname,2007,88.0
+Uruguay,2007,458.0
+Venezuela,2007,4446.0
+Bahrain,2007,394.0
+Iran,2007,3060.0
+Iraq,2007,307.0
+Israel,2007,3004.0
+Jordan,2007,1799.0
+Kuwait,2007,1823.0
+Lebanon,2007,1807.0
+Oman,2007,361.0
+Palestinian Territories,2007,249.0
+Qatar,2007,345.0
+Saudi Arabia,2007,9873.0
+Syria,2007,517.0
+United Arab Emirates,2007,983.0
+Yemen,2007,233.0
+Algeria,2007,179.0
+Egypt,2007,1766.0
+Libya,2007,155.0
+Morocco,2007,1132.0
+Tunisia,2007,402.0
+Canada,2007,29051.0
+Australia,2007,3088.0
+Cook Islands,2007,5.0
+Fiji,2007,177.0
+French Polynesia,2007,58.0
+Kiribati,2007,36.0
+"Marshall Islands, Republic of the",2007,85.0
+"Micronesia, Federate States of",2007,140.0
+Nauru,2007,3.0
+New Caledonia,2007,9.0
+New Zealand,2007,1021.0
+Niue,2007,3.0
+Norfolk Island,2007,0.0
+Palau,2007,44.0
+Papua New Guinea,2007,35.0
+Samoa,2007,72.0
+Solomon Islands,2007,14.0
+Tonga,2007,201.0
+Tuvalu,2007,5.0
+Vanuatu,2007,5.0
+Wallis and Futuna,2007,3.0
+Stateless,2007,0.0
+Cameroon,2008,1826.0
+Central African Republic,2008,42.0
+Chad,2008,138.0
+"Congo, Republic of the (Brazzaville)",2008,208.0
+"Congo, Dem. Rep. of the (Kinshasa)",2008,247.0
+Equatorial Guinea,2008,94.0
+Gabon,2008,262.0
+São Tomé & Príncipe,2008,2.0
+Burundi,2008,85.0
+Djibouti,2008,13.0
+Eritrea,2008,168.0
+Ethiopia,2008,1583.0
+Kenya,2008,5877.0
+Rwanda,2008,366.0
+Seychelles,2008,9.0
+Somalia,2008,40.0
+Sudan,2008,217.0
+Tanzania,2008,1217.0
+Uganda,2008,836.0
+Angola,2008,544.0
+Botswana,2008,298.0
+Comoros,2008,23.0
+Eswatini,2008,156.0
+Lesotho,2008,61.0
+Madagascar,2008,123.0
+Malawi,2008,315.0
+Mauritius,2008,221.0
+Mozambique,2008,89.0
+Namibia,2008,60.0
+Reunion,2008,8.0
+South Africa,2008,1703.0
+Zambia,2008,743.0
+Zimbabwe,2008,1269.0
+Benin,2008,328.0
+Burkina Faso,2008,568.0
+Cabo Verde,2008,100.0
+Côte d’Ivoire,2008,806.0
+"Gambia, The",2008,328.0
+Ghana,2008,2988.0
+Guinea,2008,190.0
+Guinea-Bissau,2008,17.0
+Liberia,2008,261.0
+Mali,2008,479.0
+Mauritania,2008,59.0
+Niger,2008,249.0
+Nigeria,2008,6256.0
+Saint Helena,2008,12.0
+Senegal,2008,642.0
+Sierra Leone,2008,173.0
+Togo,2008,381.0
+"West Africa, Unspecified",2008,0.0
+China,2008,98235.0
+Hong Kong,2008,8329.0
+Japan,2008,29264.0
+Macau,2008,429.0
+Mongolia,2008,1522.0
+North Korea,2008,43.0
+South Korea,2008,75065.0
+Taiwan,2008,28065.0
+Afghanistan,2008,407.0
+Bangladesh,2008,2706.0
+Bhutan,2008,109.0
+India,2008,103260.0
+Kazakhstan,2008,1714.0
+Kyrgyzstan,2008,275.0
+Maldives,2008,36.0
+Nepal,2008,11581.0
+Pakistan,2008,5298.0
+Sri Lanka,2008,2976.0
+Tajikistan,2008,342.0
+Turkmenistan,2008,180.0
+Uzbekistan,2008,688.0
+Brunei,2008,39.0
+Burma,2008,667.0
+Cambodia,2008,353.0
+Indonesia,2008,7509.0
+Laos,2008,80.0
+Malaysia,2008,5942.0
+Philippines,2008,4226.0
+Singapore,2008,3989.0
+Thailand,2008,8736.0
+Timor-Leste,2008,31.0
+Vietnam,2008,12823.0
+Albania,2008,757.0
+Andorra,2008,12.0
+Armenia,2008,401.0
+Austria,2008,909.0
+Azerbaijan,2008,364.0
+Belarus,2008,443.0
+Belgium,2008,858.0
+Bosnia and Herzegovina,2008,409.0
+Bulgaria,2008,2889.0
+Croatia,2008,617.0
+Cyprus,2008,696.0
+Czech Republic,2008,925.0
+Denmark,2008,999.0
+Estonia,2008,270.0
+Finland,2008,753.0
+France,2008,7421.0
+Georgia,2008,407.0
+Germany,2008,9679.0
+Gibraltar,2008,6.0
+Greece,2008,1896.0
+Holy See,2008,3.0
+Hungary,2008,680.0
+Iceland,2008,382.0
+Ireland,2008,1059.0
+Italy,2008,3945.0
+Kosovo,2008,75.0
+Latvia,2008,320.0
+Liechtenstein,2008,8.0
+Lithuania,2008,420.0
+Luxembourg,2008,87.0
+North Macedonia,2008,329.0
+Malta,2008,37.0
+Moldova,2008,485.0
+Monaco,2008,12.0
+Montenegro,2008,120.0
+Netherlands,2008,1870.0
+Norway,2008,1349.0
+Poland,2008,2772.0
+Portugal,2008,974.0
+Romania,2008,2612.0
+Russia,2008,4908.0
+San Marino,2008,2.0
+Serbia,2008,1234.0
+Slovakia,2008,543.0
+Slovenia,2008,199.0
+Spain,2008,3849.0
+Sweden,2008,3279.0
+Switzerland,2008,1316.0
+Turkey/Türkiye,2008,13263.0
+Ukraine,2008,1716.0
+United Kingdom,2008,8701.0
+"Europe, Unspecified",2008,0.0
+Anguilla,2008,71.0
+Antigua and Barbuda,2008,189.0
+Aruba,2008,124.0
+Bahamas,2008,1773.0
+Barbados,2008,452.0
+Bermuda,2008,410.0
+British Virgin Islands,2008,96.0
+Cayman Islands,2008,164.0
+Cuba,2008,84.0
+Dominica,2008,285.0
+Dominican Republic,2008,1387.0
+Grenada,2008,298.0
+Guadeloupe,2008,14.0
+Haiti,2008,857.0
+Jamaica,2008,3902.0
+Martinique,2008,7.0
+Montserrat,2008,13.0
+St. Kitts and Nevis,2008,310.0
+St. Lucia,2008,331.0
+St. Vincent and the Grenadines,2008,122.0
+Trinidad and Tobago,2008,2475.0
+Turks and Caicos,2008,169.0
+"Caribbean, Unspecified",2008,10.0
+Belize,2008,468.0
+Costa Rica,2008,1027.0
+El Salvador,2008,1184.0
+Guatemala,2008,1094.0
+Honduras,2008,1226.0
+Mexico,2008,14850.0
+Nicaragua,2008,448.0
+Panama,2008,1133.0
+Argentina,2008,2380.0
+Bolivia,2008,1067.0
+Brazil,2008,8767.0
+Chile,2008,1953.0
+Colombia,2008,7013.0
+Ecuador,2008,2268.0
+Falkland Islands/Islas Malvinas,2008,33.0
+French Guiana,2008,4.0
+Guyana,2008,280.0
+Paraguay,2008,380.0
+Peru,2008,3598.0
+Suriname,2008,93.0
+Uruguay,2008,447.0
+Venezuela,2008,4678.0
+Bahrain,2008,431.0
+Iran,2008,3533.0
+Iraq,2008,359.0
+Israel,2008,3060.0
+Jordan,2008,2225.0
+Kuwait,2008,2031.0
+Lebanon,2008,1823.0
+Oman,2008,271.0
+Palestinian Territories,2008,362.0
+Qatar,2008,463.0
+Saudi Arabia,2008,12661.0
+Syria,2008,454.0
+United Arab Emirates,2008,1218.0
+Yemen,2008,249.0
+Algeria,2008,172.0
+Egypt,2008,1915.0
+Libya,2008,667.0
+Morocco,2008,1169.0
+Tunisia,2008,306.0
+Canada,2008,29697.0
+Australia,2008,3203.0
+Cook Islands,2008,1.0
+Fiji,2008,192.0
+French Polynesia,2008,35.0
+Kiribati,2008,30.0
+"Marshall Islands, Republic of the",2008,63.0
+"Micronesia, Federate States of",2008,118.0
+Nauru,2008,6.0
+New Caledonia,2008,7.0
+New Zealand,2008,1074.0
+Niue,2008,11.0
+Norfolk Island,2008,0.0
+Palau,2008,33.0
+Papua New Guinea,2008,56.0
+Samoa,2008,94.0
+Solomon Islands,2008,6.0
+Tonga,2008,115.0
+Tuvalu,2008,4.0
+Vanuatu,2008,5.0
+Wallis and Futuna,2008,0.0
+Stateless,2008,0.0
+Cameroon,2009,1881.0
+Central African Republic,2009,32.0
+Chad,2009,96.0
+"Congo, Republic of the (Brazzaville)",2009,229.0
+"Congo, Dem. Rep. of the (Kinshasa)",2009,249.0
+Equatorial Guinea,2009,78.0
+Gabon,2009,306.0
+São Tomé & Príncipe,2009,1.0
+Burundi,2009,113.0
+Djibouti,2009,3.0
+Eritrea,2009,164.0
+Ethiopia,2009,1553.0
+Kenya,2009,5384.0
+Rwanda,2009,451.0
+Seychelles,2009,5.0
+Somalia,2009,36.0
+Sudan,2009,213.0
+Tanzania,2009,1098.0
+Uganda,2009,852.0
+Angola,2009,615.0
+Botswana,2009,212.0
+Comoros,2009,50.0
+Eswatini,2009,140.0
+Lesotho,2009,48.0
+Madagascar,2009,142.0
+Malawi,2009,274.0
+Mauritius,2009,210.0
+Mozambique,2009,88.0
+Namibia,2009,76.0
+Reunion,2009,2.0
+South Africa,2009,1656.0
+Zambia,2009,641.0
+Zimbabwe,2009,1159.0
+Benin,2009,342.0
+Burkina Faso,2009,680.0
+Cabo Verde,2009,42.0
+Côte d’Ivoire,2009,867.0
+"Gambia, The",2009,299.0
+Ghana,2009,2951.0
+Guinea,2009,180.0
+Guinea-Bissau,2009,15.0
+Liberia,2009,231.0
+Mali,2009,500.0
+Mauritania,2009,52.0
+Niger,2009,228.0
+Nigeria,2009,6568.0
+Saint Helena,2009,2.0
+Senegal,2009,624.0
+Sierra Leone,2009,173.0
+Togo,2009,310.0
+"West Africa, Unspecified",2009,0.0
+China,2009,127628.0
+Hong Kong,2009,8034.0
+Japan,2009,24842.0
+Macau,2009,468.0
+Mongolia,2009,1258.0
+North Korea,2009,57.0
+South Korea,2009,72153.0
+Taiwan,2009,26685.0
+Afghanistan,2009,426.0
+Bangladesh,2009,2619.0
+Bhutan,2009,126.0
+India,2009,104897.0
+Kazakhstan,2009,1936.0
+Kyrgyzstan,2009,274.0
+Maldives,2009,39.0
+Nepal,2009,11233.0
+Pakistan,2009,5222.0
+Sri Lanka,2009,2957.0
+Tajikistan,2009,288.0
+Turkmenistan,2009,195.0
+Uzbekistan,2009,513.0
+Brunei,2009,43.0
+Burma,2009,695.0
+Cambodia,2009,347.0
+Indonesia,2009,6943.0
+Laos,2009,64.0
+Malaysia,2009,6190.0
+Philippines,2009,3815.0
+Singapore,2009,4051.0
+Thailand,2009,8531.0
+Timor-Leste,2009,26.0
+Vietnam,2009,13112.0
+Albania,2009,790.0
+Andorra,2009,11.0
+Armenia,2009,374.0
+Austria,2009,994.0
+Azerbaijan,2009,409.0
+Belarus,2009,408.0
+Belgium,2009,845.0
+Bosnia and Herzegovina,2009,404.0
+Bulgaria,2009,2495.0
+Croatia,2009,623.0
+Cyprus,2009,586.0
+Czech Republic,2009,828.0
+Denmark,2009,989.0
+Estonia,2009,220.0
+Finland,2009,663.0
+France,2009,7716.0
+Georgia,2009,448.0
+Germany,2009,9548.0
+Gibraltar,2009,18.0
+Greece,2009,1837.0
+Holy See,2009,1.0
+Hungary,2009,664.0
+Iceland,2009,407.0
+Ireland,2009,1212.0
+Italy,2009,4072.0
+Kosovo,2009,88.0
+Latvia,2009,286.0
+Liechtenstein,2009,8.0
+Lithuania,2009,361.0
+Luxembourg,2009,56.0
+North Macedonia,2009,278.0
+Malta,2009,32.0
+Moldova,2009,441.0
+Monaco,2009,23.0
+Montenegro,2009,94.0
+Netherlands,2009,1830.0
+Norway,2009,1467.0
+Poland,2009,2264.0
+Portugal,2009,1015.0
+Romania,2009,2204.0
+Russia,2009,4827.0
+San Marino,2009,2.0
+Serbia,2009,1175.0
+Slovakia,2009,466.0
+Slovenia,2009,192.0
+Spain,2009,3971.0
+Sweden,2009,3116.0
+Switzerland,2009,1284.0
+Turkey/Türkiye,2009,12397.0
+Ukraine,2009,1727.0
+United Kingdom,2009,8861.0
+"Europe, Unspecified",2009,0.0
+Anguilla,2009,65.0
+Antigua and Barbuda,2009,213.0
+Aruba,2009,72.0
+Bahamas,2009,1828.0
+Barbados,2009,360.0
+Bermuda,2009,429.0
+British Virgin Islands,2009,122.0
+Cayman Islands,2009,158.0
+Cuba,2009,88.0
+Dominica,2009,301.0
+Dominican Republic,2009,1400.0
+Grenada,2009,231.0
+Guadeloupe,2009,14.0
+Haiti,2009,1012.0
+Jamaica,2009,3530.0
+Martinique,2009,8.0
+Montserrat,2009,15.0
+St. Kitts and Nevis,2009,244.0
+St. Lucia,2009,529.0
+St. Vincent and the Grenadines,2009,124.0
+Trinidad and Tobago,2009,2402.0
+Turks and Caicos,2009,146.0
+"Caribbean, Unspecified",2009,6.0
+Belize,2009,415.0
+Costa Rica,2009,1089.0
+El Salvador,2009,1208.0
+Guatemala,2009,992.0
+Honduras,2009,1337.0
+Mexico,2009,13450.0
+Nicaragua,2009,383.0
+Panama,2009,1082.0
+Argentina,2009,2165.0
+Bolivia,2009,1039.0
+Brazil,2009,8786.0
+Chile,2009,2055.0
+Colombia,2009,6920.0
+Ecuador,2009,2232.0
+Falkland Islands/Islas Malvinas,2009,1.0
+French Guiana,2009,2.0
+Guyana,2009,296.0
+Paraguay,2009,340.0
+Peru,2009,3279.0
+Suriname,2009,101.0
+Uruguay,2009,390.0
+Venezuela,2009,4958.0
+Bahrain,2009,415.0
+Iran,2009,4731.0
+Iraq,2009,423.0
+Israel,2009,2778.0
+Jordan,2009,1995.0
+Kuwait,2009,2442.0
+Lebanon,2009,1608.0
+Oman,2009,286.0
+Palestinian Territories,2009,304.0
+Qatar,2009,663.0
+Saudi Arabia,2009,15810.0
+Syria,2009,424.0
+United Arab Emirates,2009,1653.0
+Yemen,2009,265.0
+Algeria,2009,178.0
+Egypt,2009,2271.0
+Libya,2009,1064.0
+Morocco,2009,1120.0
+Tunisia,2009,308.0
+Canada,2009,28145.0
+Australia,2009,3296.0
+Cook Islands,2009,9.0
+Fiji,2009,157.0
+French Polynesia,2009,28.0
+Kiribati,2009,31.0
+"Marshall Islands, Republic of the",2009,51.0
+"Micronesia, Federate States of",2009,115.0
+Nauru,2009,2.0
+New Caledonia,2009,12.0
+New Zealand,2009,1103.0
+Niue,2009,36.0
+Norfolk Island,2009,5.0
+Palau,2009,32.0
+Papua New Guinea,2009,52.0
+Samoa,2009,43.0
+Solomon Islands,2009,8.0
+Tonga,2009,102.0
+Tuvalu,2009,2.0
+Vanuatu,2009,5.0
+Wallis and Futuna,2009,2.0
+Stateless,2009,0.0
+Cameroon,2010,1659.0
+Central African Republic,2010,29.0
+Chad,2010,99.0
+"Congo, Republic of the (Brazzaville)",2010,240.0
+"Congo, Dem. Rep. of the (Kinshasa)",2010,252.0
+Equatorial Guinea,2010,119.0
+Gabon,2010,431.0
+São Tomé & Príncipe,2010,2.0
+Burundi,2010,123.0
+Djibouti,2010,11.0
+Eritrea,2010,120.0
+Ethiopia,2010,1392.0
+Kenya,2010,4666.0
+Rwanda,2010,457.0
+Seychelles,2010,6.0
+Somalia,2010,26.0
+Sudan,2010,236.0
+Tanzania,2010,1006.0
+Uganda,2010,820.0
+Angola,2010,699.0
+Botswana,2010,229.0
+Comoros,2010,23.0
+Eswatini,2010,146.0
+Lesotho,2010,51.0
+Madagascar,2010,146.0
+Malawi,2010,269.0
+Mauritius,2010,247.0
+Mozambique,2010,76.0
+Namibia,2010,73.0
+Reunion,2010,7.0
+South Africa,2010,1669.0
+Zambia,2010,560.0
+Zimbabwe,2010,1135.0
+Benin,2010,289.0
+Burkina Faso,2010,626.0
+Cabo Verde,2010,55.0
+Côte d’Ivoire,2010,904.0
+"Gambia, The",2010,385.0
+Ghana,2010,2900.0
+Guinea,2010,139.0
+Guinea-Bissau,2010,12.0
+Liberia,2010,172.0
+Mali,2010,481.0
+Mauritania,2010,60.0
+Niger,2010,247.0
+Nigeria,2010,7148.0
+Saint Helena,2010,4.0
+Senegal,2010,600.0
+Sierra Leone,2010,183.0
+Togo,2010,241.0
+"West Africa, Unspecified",2010,0.0
+China,2010,157558.0
+Hong Kong,2010,8136.0
+Japan,2010,21290.0
+Macau,2010,497.0
+Mongolia,2010,1259.0
+North Korea,2010,16.0
+South Korea,2010,73351.0
+Taiwan,2010,24818.0
+Afghanistan,2010,429.0
+Bangladesh,2010,2873.0
+Bhutan,2010,115.0
+India,2010,103895.0
+Kazakhstan,2010,1890.0
+Kyrgyzstan,2010,279.0
+Maldives,2010,34.0
+Nepal,2010,10301.0
+Pakistan,2010,5045.0
+Sri Lanka,2010,2965.0
+Tajikistan,2010,249.0
+Turkmenistan,2010,210.0
+Uzbekistan,2010,560.0
+Brunei,2010,66.0
+Burma,2010,796.0
+Cambodia,2010,340.0
+Indonesia,2010,6942.0
+Laos,2010,49.0
+Malaysia,2010,6735.0
+Philippines,2010,3604.0
+Singapore,2010,4316.0
+Thailand,2010,8236.0
+Timor-Leste,2010,48.0
+Vietnam,2010,14888.0
+Albania,2010,697.0
+Andorra,2010,14.0
+Armenia,2010,350.0
+Austria,2010,1019.0
+Azerbaijan,2010,440.0
+Belarus,2010,347.0
+Belgium,2010,904.0
+Bosnia and Herzegovina,2010,356.0
+Bulgaria,2010,1957.0
+Croatia,2010,583.0
+Cyprus,2010,470.0
+Czech Republic,2010,765.0
+Denmark,2010,1149.0
+Estonia,2010,228.0
+Finland,2010,639.0
+France,2010,8098.0
+Georgia,2010,460.0
+Germany,2010,9458.0
+Gibraltar,2010,2.0
+Greece,2010,1874.0
+Holy See,2010,4.0
+Hungary,2010,670.0
+Iceland,2010,369.0
+Ireland,2010,1167.0
+Italy,2010,4308.0
+Kosovo,2010,121.0
+Latvia,2010,324.0
+Liechtenstein,2010,5.0
+Lithuania,2010,338.0
+Luxembourg,2010,59.0
+North Macedonia,2010,257.0
+Malta,2010,19.0
+Moldova,2010,411.0
+Monaco,2010,22.0
+Montenegro,2010,85.0
+Netherlands,2010,1833.0
+Norway,2010,1822.0
+Poland,2010,1852.0
+Portugal,2010,981.0
+Romania,2010,1883.0
+Russia,2010,4692.0
+San Marino,2010,2.0
+Serbia,2010,1067.0
+Slovakia,2010,419.0
+Slovenia,2010,178.0
+Spain,2010,4330.0
+Sweden,2010,3236.0
+Switzerland,2010,1287.0
+Turkey/Türkiye,2010,12184.0
+Ukraine,2010,1583.0
+United Kingdom,2010,8947.0
+"Europe, Unspecified",2010,31.0
+Anguilla,2010,43.0
+Antigua and Barbuda,2010,193.0
+Aruba,2010,94.0
+Bahamas,2010,1720.0
+Barbados,2010,332.0
+Bermuda,2010,395.0
+British Virgin Islands,2010,94.0
+Cayman Islands,2010,165.0
+Cuba,2010,62.0
+Dominica,2010,256.0
+Dominican Republic,2010,1393.0
+Grenada,2010,189.0
+Guadeloupe,2010,14.0
+Haiti,2010,888.0
+Jamaica,2010,3172.0
+Martinique,2010,8.0
+Montserrat,2010,8.0
+St. Kitts and Nevis,2010,217.0
+St. Lucia,2010,526.0
+St. Vincent and the Grenadines,2010,105.0
+Trinidad and Tobago,2010,1882.0
+Turks and Caicos,2010,82.0
+"Caribbean, Unspecified",2010,0.0
+Belize,2010,388.0
+Costa Rica,2010,1105.0
+El Salvador,2010,1157.0
+Guatemala,2010,1042.0
+Honduras,2010,1349.0
+Mexico,2010,13713.0
+Nicaragua,2010,434.0
+Panama,2010,1173.0
+Argentina,2010,2105.0
+Bolivia,2010,977.0
+Brazil,2010,8777.0
+Chile,2010,2164.0
+Colombia,2010,6456.0
+Ecuador,2010,2150.0
+Falkland Islands/Islas Malvinas,2010,0.0
+French Guiana,2010,28.0
+Guyana,2010,272.0
+Paraguay,2010,322.0
+Peru,2010,2939.0
+Suriname,2010,94.0
+Uruguay,2010,389.0
+Venezuela,2010,5491.0
+Bahrain,2010,409.0
+Iran,2010,5626.0
+Iraq,2010,616.0
+Israel,2010,2701.0
+Jordan,2010,2002.0
+Kuwait,2010,2998.0
+Lebanon,2010,1462.0
+Oman,2010,313.0
+Palestinian Territories,2010,331.0
+Qatar,2010,716.0
+Saudi Arabia,2010,22704.0
+Syria,2010,526.0
+United Arab Emirates,2010,1871.0
+Yemen,2010,268.0
+Algeria,2010,158.0
+Egypt,2010,2181.0
+Libya,2010,1494.0
+Morocco,2010,1201.0
+Tunisia,2010,386.0
+Canada,2010,27546.0
+Australia,2010,3777.0
+Cook Islands,2010,4.0
+Fiji,2010,138.0
+French Polynesia,2010,30.0
+Kiribati,2010,31.0
+"Marshall Islands, Republic of the",2010,52.0
+"Micronesia, Federate States of",2010,131.0
+Nauru,2010,11.0
+New Caledonia,2010,13.0
+New Zealand,2010,1164.0
+Niue,2010,8.0
+Norfolk Island,2010,0.0
+Palau,2010,31.0
+Papua New Guinea,2010,50.0
+Samoa,2010,49.0
+Solomon Islands,2010,7.0
+Tonga,2010,103.0
+Tuvalu,2010,2.0
+Vanuatu,2010,8.0
+Wallis and Futuna,2010,1.0
+Stateless,2010,10.0
+Cameroon,2011,1530.0
+Central African Republic,2011,28.0
+Chad,2011,84.0
+"Congo, Republic of the (Brazzaville)",2011,249.0
+"Congo, Dem. Rep. of the (Kinshasa)",2011,320.0
+Equatorial Guinea,2011,164.0
+Gabon,2011,402.0
+São Tomé & Príncipe,2011,1.0
+Burundi,2011,103.0
+Djibouti,2011,8.0
+Eritrea,2011,110.0
+Ethiopia,2011,1334.0
+Kenya,2011,3898.0
+Rwanda,2011,465.0
+Seychelles,2011,10.0
+Somalia,2011,34.0
+Sudan,2011,180.0
+Tanzania,2011,906.0
+Uganda,2011,779.0
+Angola,2011,779.0
+Botswana,2011,175.0
+Comoros,2011,9.0
+Eswatini,2011,154.0
+Lesotho,2011,46.0
+Madagascar,2011,133.0
+Malawi,2011,258.0
+Mauritius,2011,205.0
+Mozambique,2011,67.0
+Namibia,2011,63.0
+Reunion,2011,1.0
+South Africa,2011,1610.0
+Zambia,2011,535.0
+Zimbabwe,2011,1161.0
+Benin,2011,313.0
+Burkina Faso,2011,631.0
+Cabo Verde,2011,87.0
+Côte d’Ivoire,2011,955.0
+"Gambia, The",2011,383.0
+Ghana,2011,2769.0
+Guinea,2011,104.0
+Guinea-Bissau,2011,12.0
+Liberia,2011,159.0
+Mali,2011,402.0
+Mauritania,2011,61.0
+Niger,2011,279.0
+Nigeria,2011,7028.0
+Saint Helena,2011,1.0
+Senegal,2011,681.0
+Sierra Leone,2011,130.0
+Togo,2011,250.0
+"West Africa, Unspecified",2011,0.0
+China,2011,194029.0
+Hong Kong,2011,8032.0
+Japan,2011,19966.0
+Macau,2011,505.0
+Mongolia,2011,1423.0
+North Korea,2011,15.0
+South Korea,2011,72295.0
+Taiwan,2011,23250.0
+Afghanistan,2011,371.0
+Bangladesh,2011,3314.0
+Bhutan,2011,100.0
+India,2011,100270.0
+Kazakhstan,2011,1938.0
+Kyrgyzstan,2011,254.0
+Maldives,2011,29.0
+Nepal,2011,9621.0
+Pakistan,2011,4600.0
+Sri Lanka,2011,2902.0
+Tajikistan,2011,298.0
+Turkmenistan,2011,209.0
+Uzbekistan,2011,486.0
+Brunei,2011,69.0
+Burma,2011,807.0
+Cambodia,2011,333.0
+Indonesia,2011,7131.0
+Laos,2011,43.0
+Malaysia,2011,6743.0
+Philippines,2011,3194.0
+Singapore,2011,4505.0
+Thailand,2011,7626.0
+Timor-Leste,2011,40.0
+Vietnam,2011,15572.0
+Albania,2011,659.0
+Andorra,2011,24.0
+Armenia,2011,363.0
+Austria,2011,989.0
+Azerbaijan,2011,460.0
+Belarus,2011,358.0
+Belgium,2011,880.0
+Bosnia and Herzegovina,2011,341.0
+Bulgaria,2011,1694.0
+Croatia,2011,552.0
+Cyprus,2011,438.0
+Czech Republic,2011,701.0
+Denmark,2011,1233.0
+Estonia,2011,241.0
+Finland,2011,640.0
+France,2011,8232.0
+Georgia,2011,481.0
+Germany,2011,9347.0
+Gibraltar,2011,4.0
+Greece,2011,1922.0
+Holy See,2011,1.0
+Hungary,2011,655.0
+Iceland,2011,391.0
+Ireland,2011,1106.0
+Italy,2011,4284.0
+Kosovo,2011,114.0
+Latvia,2011,308.0
+Liechtenstein,2011,14.0
+Lithuania,2011,288.0
+Luxembourg,2011,68.0
+North Macedonia,2011,222.0
+Malta,2011,41.0
+Moldova,2011,416.0
+Monaco,2011,43.0
+Montenegro,2011,112.0
+Netherlands,2011,1975.0
+Norway,2011,2016.0
+Poland,2011,1838.0
+Portugal,2011,970.0
+Romania,2011,1607.0
+Russia,2011,4805.0
+San Marino,2011,3.0
+Serbia,2011,1068.0
+Slovakia,2011,424.0
+Slovenia,2011,171.0
+Spain,2011,4924.0
+Sweden,2011,3926.0
+Switzerland,2011,1362.0
+Turkey/Türkiye,2011,11973.0
+Ukraine,2011,1535.0
+United Kingdom,2011,9186.0
+"Europe, Unspecified",2011,18.0
+Anguilla,2011,29.0
+Antigua and Barbuda,2011,183.0
+Aruba,2011,67.0
+Bahamas,2011,1737.0
+Barbados,2011,267.0
+Bermuda,2011,389.0
+British Virgin Islands,2011,116.0
+Cayman Islands,2011,181.0
+Cuba,2011,57.0
+Dominica,2011,261.0
+Dominican Republic,2011,1610.0
+Grenada,2011,261.0
+Guadeloupe,2011,15.0
+Haiti,2011,889.0
+Jamaica,2011,2694.0
+Martinique,2011,3.0
+Montserrat,2011,2.0
+St. Kitts and Nevis,2011,269.0
+St. Lucia,2011,352.0
+St. Vincent and the Grenadines,2011,95.0
+Trinidad and Tobago,2011,1689.0
+Turks and Caicos,2011,55.0
+"Caribbean, Unspecified",2011,0.0
+Belize,2011,370.0
+Costa Rica,2011,1078.0
+El Salvador,2011,1151.0
+Guatemala,2011,1048.0
+Honduras,2011,1407.0
+Mexico,2011,13893.0
+Nicaragua,2011,363.0
+Panama,2011,1122.0
+Argentina,2011,1888.0
+Bolivia,2011,1025.0
+Brazil,2011,9029.0
+Chile,2011,2203.0
+Colombia,2011,6295.0
+Ecuador,2011,2160.0
+Falkland Islands/Islas Malvinas,2011,0.0
+French Guiana,2011,1.0
+Guyana,2011,224.0
+Paraguay,2011,342.0
+Peru,2011,2702.0
+Suriname,2011,92.0
+Uruguay,2011,360.0
+Venezuela,2011,6281.0
+Bahrain,2011,438.0
+Iran,2011,6982.0
+Iraq,2011,809.0
+Israel,2011,2490.0
+Jordan,2011,2062.0
+Kuwait,2011,3722.0
+Lebanon,2011,1350.0
+Oman,2011,538.0
+Palestinian Territories,2011,331.0
+Qatar,2011,979.0
+Saudi Arabia,2011,34139.0
+Syria,2011,458.0
+United Arab Emirates,2011,2097.0
+Yemen,2011,269.0
+Algeria,2011,177.0
+Egypt,2011,2201.0
+Libya,2011,1328.0
+Morocco,2011,1305.0
+Tunisia,2011,445.0
+Canada,2011,26821.0
+Australia,2011,3848.0
+Cook Islands,2011,6.0
+Fiji,2011,122.0
+French Polynesia,2011,42.0
+Kiribati,2011,48.0
+"Marshall Islands, Republic of the",2011,39.0
+"Micronesia, Federate States of",2011,98.0
+Nauru,2011,7.0
+New Caledonia,2011,8.0
+New Zealand,2011,1204.0
+Niue,2011,8.0
+Norfolk Island,2011,0.0
+Palau,2011,21.0
+Papua New Guinea,2011,60.0
+Samoa,2011,51.0
+Solomon Islands,2011,13.0
+Tonga,2011,104.0
+Tuvalu,2011,3.0
+Vanuatu,2011,8.0
+Wallis and Futuna,2011,7.0
+Stateless,2011,8.0
+Cameroon,2012,1472.0
+Central African Republic,2012,28.0
+Chad,2012,89.0
+"Congo, Republic of the (Brazzaville)",2012,309.0
+"Congo, Dem. Rep. of the (Kinshasa)",2012,386.0
+Equatorial Guinea,2012,196.0
+Gabon,2012,378.0
+São Tomé & Príncipe,2012,3.0
+Burundi,2012,124.0
+Djibouti,2012,13.0
+Eritrea,2012,106.0
+Ethiopia,2012,1463.0
+Kenya,2012,3516.0
+Rwanda,2012,565.0
+Seychelles,2012,16.0
+Somalia,2012,30.0
+South Sudan,2012,8.0
+Sudan,2012,187.0
+Tanzania,2012,950.0
+Uganda,2012,783.0
+Angola,2012,812.0
+Botswana,2012,216.0
+Comoros,2012,19.0
+Eswatini,2012,182.0
+Lesotho,2012,41.0
+Madagascar,2012,124.0
+Malawi,2012,252.0
+Mauritius,2012,228.0
+Mozambique,2012,88.0
+Namibia,2012,65.0
+Reunion,2012,2.0
+South Africa,2012,1816.0
+Zambia,2012,496.0
+Zimbabwe,2012,1170.0
+Benin,2012,318.0
+Burkina Faso,2012,627.0
+Cabo Verde,2012,81.0
+Côte d’Ivoire,2012,980.0
+"Gambia, The",2012,328.0
+Ghana,2012,2863.0
+Guinea,2012,79.0
+Guinea-Bissau,2012,10.0
+Liberia,2012,172.0
+Mali,2012,383.0
+Mauritania,2012,71.0
+Niger,2012,194.0
+Nigeria,2012,7316.0
+Saint Helena,2012,1.0
+Senegal,2012,688.0
+Sierra Leone,2012,123.0
+Togo,2012,218.0
+"West Africa, Unspecified",2012,0.0
+China,2012,235597.0
+Hong Kong,2012,8026.0
+Japan,2012,19568.0
+Macau,2012,533.0
+Mongolia,2012,1361.0
+North Korea,2012,17.0
+South Korea,2012,70627.0
+Taiwan,2012,21867.0
+Afghanistan,2012,449.0
+Bangladesh,2012,3828.0
+Bhutan,2012,133.0
+India,2012,96754.0
+Kazakhstan,2012,1969.0
+Kyrgyzstan,2012,261.0
+Maldives,2012,33.0
+Nepal,2012,8920.0
+Pakistan,2012,4772.0
+Sri Lanka,2012,3046.0
+Tajikistan,2012,312.0
+Turkmenistan,2012,178.0
+Uzbekistan,2012,445.0
+Brunei,2012,61.0
+Burma,2012,955.0
+Cambodia,2012,393.0
+Indonesia,2012,7670.0
+Laos,2012,50.0
+Malaysia,2012,6791.0
+Philippines,2012,3215.0
+Singapore,2012,4558.0
+Thailand,2012,7314.0
+Timor-Leste,2012,47.0
+Vietnam,2012,16098.0
+Albania,2012,649.0
+Andorra,2012,13.0
+Armenia,2012,345.0
+Austria,2012,1036.0
+Azerbaijan,2012,388.0
+Belarus,2012,355.0
+Belgium,2012,894.0
+Bosnia and Herzegovina,2012,364.0
+Bulgaria,2012,1473.0
+Croatia,2012,581.0
+Cyprus,2012,425.0
+Czech Republic,2012,776.0
+Denmark,2012,1359.0
+Estonia,2012,218.0
+Finland,2012,691.0
+France,2012,8297.0
+Georgia,2012,456.0
+Germany,2012,9819.0
+Gibraltar,2012,4.0
+Greece,2012,2046.0
+Holy See,2012,1.0
+Hungary,2012,690.0
+Iceland,2012,384.0
+Ireland,2012,1158.0
+Italy,2012,4276.0
+Kosovo,2012,106.0
+Latvia,2012,295.0
+Liechtenstein,2012,7.0
+Lithuania,2012,284.0
+Luxembourg,2012,87.0
+North Macedonia,2012,237.0
+Malta,2012,51.0
+Moldova,2012,379.0
+Monaco,2012,21.0
+Montenegro,2012,109.0
+Netherlands,2012,1948.0
+Norway,2012,2097.0
+Poland,2012,1581.0
+Portugal,2012,949.0
+Romania,2012,1460.0
+Russia,2012,4898.0
+San Marino,2012,3.0
+Serbia,2012,1041.0
+Slovakia,2012,362.0
+Slovenia,2012,227.0
+Spain,2012,5033.0
+Sweden,2012,4283.0
+Switzerland,2012,1420.0
+Turkey/Türkiye,2012,11278.0
+Ukraine,2012,1490.0
+United Kingdom,2012,9467.0
+"Europe, Unspecified",2012,12.0
+Anguilla,2012,15.0
+Antigua and Barbuda,2012,188.0
+Aruba,2012,69.0
+Bahamas,2012,1629.0
+Barbados,2012,293.0
+Bermuda,2012,406.0
+British Virgin Islands,2012,112.0
+Cayman Islands,2012,175.0
+Cuba,2012,76.0
+Curacao,2012,4.0
+Dominica,2012,237.0
+Dominican Republic,2012,1803.0
+Grenada,2012,225.0
+Guadeloupe,2012,11.0
+Haiti,2012,934.0
+Jamaica,2012,2499.0
+Martinique,2012,4.0
+Montserrat,2012,3.0
+St. Kitts and Nevis,2012,234.0
+St. Lucia,2012,330.0
+St. Vincent and the Grenadines,2012,98.0
+Trinidad and Tobago,2012,1532.0
+Turks and Caicos,2012,29.0
+"Caribbean, Unspecified",2012,0.0
+Belize,2012,333.0
+Costa Rica,2012,1074.0
+El Salvador,2012,1172.0
+Guatemala,2012,1113.0
+Honduras,2012,1513.0
+Mexico,2012,14199.0
+Nicaragua,2012,434.0
+Panama,2012,1234.0
+Argentina,2012,1847.0
+Bolivia,2012,1024.0
+Brazil,2012,10868.0
+Chile,2012,2349.0
+Colombia,2012,6543.0
+Ecuador,2012,2299.0
+Falkland Islands/Islas Malvinas,2012,7.0
+French Guiana,2012,4.0
+Guyana,2012,206.0
+Paraguay,2012,395.0
+Peru,2012,2539.0
+Suriname,2012,88.0
+Uruguay,2012,365.0
+Venezuela,2012,6158.0
+Bahrain,2012,459.0
+Iran,2012,8744.0
+Iraq,2012,1074.0
+Israel,2012,2430.0
+Jordan,2012,2109.0
+Kuwait,2012,5115.0
+Lebanon,2012,1266.0
+Oman,2012,980.0
+Palestinian Territories,2012,319.0
+Qatar,2012,994.0
+Saudi Arabia,2012,44566.0
+Syria,2012,505.0
+United Arab Emirates,2012,2256.0
+Yemen,2012,353.0
+Algeria,2012,176.0
+Egypt,2012,2608.0
+Libya,2012,1343.0
+Morocco,2012,1293.0
+Tunisia,2012,459.0
+Canada,2012,27357.0
+Australia,2012,4121.0
+Cook Islands,2012,7.0
+Fiji,2012,136.0
+French Polynesia,2012,37.0
+Kiribati,2012,70.0
+"Marshall Islands, Republic of the",2012,42.0
+"Micronesia, Federate States of",2012,88.0
+Nauru,2012,1.0
+New Caledonia,2012,7.0
+New Zealand,2012,1311.0
+Niue,2012,7.0
+Norfolk Island,2012,0.0
+Palau,2012,20.0
+Papua New Guinea,2012,78.0
+Samoa,2012,53.0
+Solomon Islands,2012,10.0
+Tonga,2012,105.0
+Tuvalu,2012,2.0
+Vanuatu,2012,7.0
+Wallis and Futuna,2012,2.0
+Stateless,2012,13.0
+Cameroon,2013,1285.0
+Central African Republic,2013,11.0
+Chad,2013,81.0
+"Congo, Republic of the (Brazzaville)",2013,282.0
+"Congo, Dem. Rep. of the (Kinshasa)",2013,571.0
+Equatorial Guinea,2013,253.0
+Gabon,2013,397.0
+São Tomé & Príncipe,2013,3.0
+Burundi,2013,122.0
+Djibouti,2013,7.0
+Eritrea,2013,97.0
+Ethiopia,2013,1516.0
+Kenya,2013,3201.0
+Rwanda,2013,720.0
+Seychelles,2013,16.0
+Somalia,2013,15.0
+South Sudan,2013,18.0
+Sudan,2013,186.0
+Tanzania,2013,889.0
+Uganda,2013,762.0
+Angola,2013,985.0
+Botswana,2013,228.0
+Comoros,2013,27.0
+Eswatini,2013,177.0
+Lesotho,2013,41.0
+Madagascar,2013,151.0
+Malawi,2013,275.0
+Mauritius,2013,221.0
+Mozambique,2013,91.0
+Namibia,2013,61.0
+Reunion,2013,2.0
+South Africa,2013,1716.0
+Zambia,2013,502.0
+Zimbabwe,2013,1206.0
+Benin,2013,291.0
+Burkina Faso,2013,526.0
+Cabo Verde,2013,69.0
+Côte d’Ivoire,2013,1116.0
+"Gambia, The",2013,300.0
+Ghana,2013,2914.0
+Guinea,2013,80.0
+Guinea-Bissau,2013,15.0
+Liberia,2013,161.0
+Mali,2013,315.0
+Mauritania,2013,63.0
+Niger,2013,217.0
+Nigeria,2013,7921.0
+Saint Helena,2013,0.0
+Senegal,2013,633.0
+Sierra Leone,2013,146.0
+Togo,2013,231.0
+"West Africa, Unspecified",2013,0.0
+China,2013,274439.0
+Hong Kong,2013,8104.0
+Japan,2013,19334.0
+Macau,2013,552.0
+Mongolia,2013,1444.0
+North Korea,2013,19.0
+South Korea,2013,68047.0
+Taiwan,2013,21266.0
+Afghanistan,2013,450.0
+Bangladesh,2013,4802.0
+Bhutan,2013,127.0
+India,2013,102673.0
+Kazakhstan,2013,2012.0
+Kyrgyzstan,2013,244.0
+Maldives,2013,39.0
+Nepal,2013,8155.0
+Pakistan,2013,4935.0
+Sri Lanka,2013,2917.0
+Tajikistan,2013,270.0
+Turkmenistan,2013,214.0
+Uzbekistan,2013,463.0
+Brunei,2013,60.0
+Burma,2013,1042.0
+Cambodia,2013,432.0
+Indonesia,2013,7920.0
+Laos,2013,57.0
+Malaysia,2013,6822.0
+Philippines,2013,3112.0
+Singapore,2013,4592.0
+Thailand,2013,7341.0
+Timor-Leste,2013,47.0
+Vietnam,2013,16579.0
+Albania,2013,636.0
+Andorra,2013,9.0
+Armenia,2013,272.0
+Austria,2013,1062.0
+Azerbaijan,2013,383.0
+Belarus,2013,306.0
+Belgium,2013,948.0
+Bosnia and Herzegovina,2013,319.0
+Bulgaria,2013,1252.0
+Croatia,2013,529.0
+Cyprus,2013,419.0
+Czech Republic,2013,736.0
+Denmark,2013,1470.0
+Estonia,2013,212.0
+Finland,2013,656.0
+France,2013,8302.0
+Georgia,2013,496.0
+Germany,2013,10160.0
+Gibraltar,2013,2.0
+Greece,2013,2170.0
+Holy See,2013,1.0
+Hungary,2013,667.0
+Iceland,2013,390.0
+Ireland,2013,1156.0
+Italy,2013,4443.0
+Kosovo,2013,112.0
+Latvia,2013,266.0
+Liechtenstein,2013,8.0
+Lithuania,2013,287.0
+Luxembourg,2013,95.0
+North Macedonia,2013,237.0
+Malta,2013,52.0
+Moldova,2013,328.0
+Monaco,2013,28.0
+Montenegro,2013,95.0
+Netherlands,2013,2074.0
+Norway,2013,2304.0
+Poland,2013,1520.0
+Portugal,2013,877.0
+Romania,2013,1317.0
+Russia,2013,5138.0
+San Marino,2013,1.0
+Serbia,2013,966.0
+Slovakia,2013,356.0
+Slovenia,2013,188.0
+Spain,2013,5350.0
+Sweden,2013,4369.0
+Switzerland,2013,1441.0
+Turkey/Türkiye,2013,10821.0
+Ukraine,2013,1464.0
+United Kingdom,2013,10191.0
+"Europe, Unspecified",2013,4.0
+Anguilla,2013,21.0
+Antigua and Barbuda,2013,215.0
+Aruba,2013,74.0
+Bahamas,2013,1744.0
+Barbados,2013,285.0
+Bermuda,2013,388.0
+British Virgin Islands,2013,80.0
+Cayman Islands,2013,187.0
+Cuba,2013,69.0
+Curacao,2013,76.0
+Dominica,2013,191.0
+Dominican Republic,2013,1746.0
+Grenada,2013,189.0
+Guadeloupe,2013,18.0
+Haiti,2013,942.0
+Jamaica,2013,2502.0
+Martinique,2013,7.0
+Montserrat,2013,1.0
+St. Kitts and Nevis,2013,190.0
+St. Lucia,2013,322.0
+St. Vincent and the Grenadines,2013,105.0
+Sint Maarten,2013,46.0
+Trinidad and Tobago,2013,1440.0
+Turks and Caicos,2013,29.0
+"Caribbean, Unspecified",2013,12.0
+Belize,2013,324.0
+Costa Rica,2013,1067.0
+El Salvador,2013,1233.0
+Guatemala,2013,1252.0
+Honduras,2013,1756.0
+Mexico,2013,14779.0
+Nicaragua,2013,437.0
+Panama,2013,1428.0
+Argentina,2013,1902.0
+Bolivia,2013,1068.0
+Brazil,2013,13286.0
+Chile,2013,2432.0
+Colombia,2013,7083.0
+Ecuador,2013,2578.0
+Falkland Islands/Islas Malvinas,2013,1.0
+French Guiana,2013,2.0
+Guyana,2013,246.0
+Paraguay,2013,492.0
+Peru,2013,2607.0
+Suriname,2013,91.0
+Uruguay,2013,353.0
+Venezuela,2013,7022.0
+Bahrain,2013,467.0
+Iran,2013,10194.0
+Iraq,2013,1491.0
+Israel,2013,2457.0
+Jordan,2013,2148.0
+Kuwait,2013,7288.0
+Lebanon,2013,1367.0
+Oman,2013,1504.0
+Palestinian Territories,2013,429.0
+Qatar,2013,1191.0
+Saudi Arabia,2013,53919.0
+Syria,2013,693.0
+United Arab Emirates,2013,2784.0
+Yemen,2013,440.0
+Algeria,2013,173.0
+Egypt,2013,2832.0
+Libya,2013,1379.0
+Morocco,2013,1324.0
+Tunisia,2013,538.0
+Canada,2013,28304.0
+Australia,2013,4377.0
+Cook Islands,2013,5.0
+Fiji,2013,124.0
+French Polynesia,2013,28.0
+Kiribati,2013,84.0
+"Marshall Islands, Republic of the",2013,13.0
+"Micronesia, Federate States of",2013,35.0
+Nauru,2013,6.0
+New Caledonia,2013,9.0
+New Zealand,2013,1337.0
+Niue,2013,2.0
+Norfolk Island,2013,0.0
+Palau,2013,6.0
+Papua New Guinea,2013,79.0
+Samoa,2013,51.0
+Solomon Islands,2013,11.0
+Tonga,2013,116.0
+Tuvalu,2013,1.0
+Vanuatu,2013,7.0
+Wallis and Futuna,2013,1.0
+Stateless,2013,12.0
+Cameroon,2014,1212.0
+Central African Republic,2014,13.0
+Chad,2014,61.0
+"Congo, Republic of the (Brazzaville)",2014,288.0
+"Congo, Dem. Rep. of the (Kinshasa)",2014,755.0
+Equatorial Guinea,2014,314.0
+Gabon,2014,388.0
+São Tomé & Príncipe,2014,1.0
+Burundi,2014,165.0
+Djibouti,2014,7.0
+Eritrea,2014,108.0
+Ethiopia,2014,1472.0
+Kenya,2014,3072.0
+Rwanda,2014,800.0
+Seychelles,2014,14.0
+Somalia,2014,32.0
+South Sudan,2014,28.0
+Sudan,2014,233.0
+Tanzania,2014,867.0
+Uganda,2014,762.0
+Angola,2014,1184.0
+Botswana,2014,257.0
+Comoros,2014,32.0
+Eswatini,2014,165.0
+Lesotho,2014,56.0
+Madagascar,2014,122.0
+Malawi,2014,272.0
+Mauritius,2014,231.0
+Mozambique,2014,108.0
+Namibia,2014,67.0
+Reunion,2014,1.0
+South Africa,2014,1838.0
+Zambia,2014,465.0
+Zimbabwe,2014,1245.0
+Benin,2014,287.0
+Burkina Faso,2014,567.0
+Cabo Verde,2014,64.0
+Côte d’Ivoire,2014,1227.0
+"Gambia, The",2014,275.0
+Ghana,2014,3099.0
+Guinea,2014,109.0
+Guinea-Bissau,2014,9.0
+Liberia,2014,168.0
+Mali,2014,356.0
+Mauritania,2014,81.0
+Niger,2014,199.0
+Nigeria,2014,9494.0
+Saint Helena,2014,0.0
+Senegal,2014,633.0
+Sierra Leone,2014,152.0
+Togo,2014,238.0
+"West Africa, Unspecified",2014,0.0
+China,2014,304040.0
+Hong Kong,2014,8012.0
+Japan,2014,19064.0
+Macau,2014,573.0
+Mongolia,2014,1481.0
+North Korea,2014,8.0
+South Korea,2014,63710.0
+Taiwan,2014,20993.0
+Afghanistan,2014,471.0
+Bangladesh,2014,5455.0
+Bhutan,2014,128.0
+India,2014,132888.0
+Kazakhstan,2014,2017.0
+Kyrgyzstan,2014,227.0
+Maldives,2014,34.0
+Nepal,2014,8158.0
+Pakistan,2014,5354.0
+Sri Lanka,2014,2882.0
+Tajikistan,2014,254.0
+Turkmenistan,2014,201.0
+Uzbekistan,2014,491.0
+Brunei,2014,73.0
+Burma,2014,1067.0
+Cambodia,2014,492.0
+Indonesia,2014,8188.0
+Laos,2014,63.0
+Malaysia,2014,7231.0
+Philippines,2014,3026.0
+Singapore,2014,4727.0
+Thailand,2014,7217.0
+Timor-Leste,2014,59.0
+Vietnam,2014,18722.0
+Albania,2014,670.0
+Andorra,2014,9.0
+Armenia,2014,304.0
+Austria,2014,1114.0
+Azerbaijan,2014,408.0
+Belarus,2014,330.0
+Belgium,2014,1001.0
+Bosnia and Herzegovina,2014,296.0
+Bulgaria,2014,1171.0
+Croatia,2014,523.0
+Cyprus,2014,417.0
+Czech Republic,2014,796.0
+Denmark,2014,1602.0
+Estonia,2014,288.0
+Finland,2014,669.0
+France,2014,8743.0
+Georgia,2014,541.0
+Germany,2014,10193.0
+Gibraltar,2014,6.0
+Greece,2014,2147.0
+Holy See,2014,2.0
+Hungary,2014,720.0
+Iceland,2014,396.0
+Ireland,2014,1192.0
+Italy,2014,4863.0
+Kosovo,2014,170.0
+Latvia,2014,276.0
+Liechtenstein,2014,8.0
+Lithuania,2014,293.0
+Luxembourg,2014,97.0
+North Macedonia,2014,237.0
+Malta,2014,29.0
+Moldova,2014,322.0
+Monaco,2014,18.0
+Montenegro,2014,121.0
+Netherlands,2014,2257.0
+Norway,2014,2498.0
+Poland,2014,1493.0
+Portugal,2014,915.0
+Romania,2014,1220.0
+Russia,2014,5562.0
+San Marino,2014,1.0
+Serbia,2014,970.0
+Slovakia,2014,359.0
+Slovenia,2014,245.0
+Spain,2014,6143.0
+Sweden,2014,4507.0
+Switzerland,2014,1461.0
+Turkey/Türkiye,2014,10724.0
+Ukraine,2014,1551.0
+United Kingdom,2014,10743.0
+"Europe, Unspecified",2014,4.0
+Anguilla,2014,15.0
+Antigua and Barbuda,2014,120.0
+Aruba,2014,68.0
+Bahamas,2014,1835.0
+Barbados,2014,278.0
+Bermuda,2014,387.0
+British Virgin Islands,2014,99.0
+Cayman Islands,2014,174.0
+Cuba,2014,94.0
+Curacao,2014,75.0
+Dominica,2014,166.0
+Dominican Republic,2014,1535.0
+Grenada,2014,145.0
+Guadeloupe,2014,11.0
+Haiti,2014,934.0
+Jamaica,2014,2440.0
+Martinique,2014,3.0
+Montserrat,2014,1.0
+St. Kitts and Nevis,2014,182.0
+St. Lucia,2014,275.0
+St. Vincent and the Grenadines,2014,75.0
+Sint Maarten,2014,52.0
+Trinidad and Tobago,2014,1464.0
+Turks and Caicos,2014,36.0
+"Caribbean, Unspecified",2014,14.0
+Belize,2014,312.0
+Costa Rica,2014,1118.0
+El Salvador,2014,1460.0
+Guatemala,2014,1205.0
+Honduras,2014,1760.0
+Mexico,2014,17052.0
+Nicaragua,2014,418.0
+Panama,2014,1384.0
+Argentina,2014,2053.0
+Bolivia,2014,1116.0
+Brazil,2014,23675.0
+Chile,2014,2513.0
+Colombia,2014,7169.0
+Ecuador,2014,2797.0
+Falkland Islands/Islas Malvinas,2014,3.0
+French Guiana,2014,11.0
+Guyana,2014,230.0
+Paraguay,2014,505.0
+Peru,2014,2763.0
+Suriname,2014,82.0
+Uruguay,2014,384.0
+Venezuela,2014,7890.0
+Bahrain,2014,474.0
+Iran,2014,11338.0
+Iraq,2014,1727.0
+Israel,2014,2370.0
+Jordan,2014,2215.0
+Kuwait,2014,9034.0
+Lebanon,2014,1416.0
+Oman,2014,2200.0
+Palestinian Territories,2014,458.0
+Qatar,2014,1252.0
+Saudi Arabia,2014,59945.0
+Syria,2014,792.0
+United Arab Emirates,2014,2878.0
+Yemen,2014,516.0
+Algeria,2014,175.0
+Egypt,2014,2974.0
+Libya,2014,1578.0
+Morocco,2014,1373.0
+Tunisia,2014,592.0
+Canada,2014,27240.0
+Australia,2014,4511.0
+Cook Islands,2014,2.0
+Fiji,2014,89.0
+French Polynesia,2014,23.0
+Kiribati,2014,41.0
+"Marshall Islands, Republic of the",2014,17.0
+"Micronesia, Federate States of",2014,39.0
+Nauru,2014,9.0
+New Caledonia,2014,7.0
+New Zealand,2014,1472.0
+Niue,2014,8.0
+Norfolk Island,2014,0.0
+Palau,2014,10.0
+Papua New Guinea,2014,87.0
+Samoa,2014,21.0
+Solomon Islands,2014,7.0
+Tonga,2014,95.0
+Tuvalu,2014,7.0
+Vanuatu,2014,8.0
+Wallis and Futuna,2014,18.0
+Stateless,2014,6.0
+Cameroon,2015,1210.0
+Central African Republic,2015,13.0
+Chad,2015,52.0
+"Congo, Republic of the (Brazzaville)",2015,337.0
+"Congo, Dem. Rep. of the (Kinshasa)",2015,949.0
+Equatorial Guinea,2015,339.0
+Gabon,2015,410.0
+São Tomé & Príncipe,2015,1.0
+Burundi,2015,148.0
+Djibouti,2015,9.0
+Eritrea,2015,109.0
+Ethiopia,2015,1517.0
+Kenya,2015,3019.0
+Rwanda,2015,928.0
+Seychelles,2015,20.0
+Somalia,2015,35.0
+South Sudan,2015,36.0
+Sudan,2015,253.0
+Tanzania,2015,840.0
+Uganda,2015,776.0
+Angola,2015,1296.0
+Botswana,2015,246.0
+Comoros,2015,32.0
+Eswatini,2015,192.0
+Lesotho,2015,61.0
+Madagascar,2015,126.0
+Malawi,2015,289.0
+Mauritius,2015,250.0
+Mozambique,2015,109.0
+Namibia,2015,76.0
+Reunion,2015,5.0
+South Africa,2015,1813.0
+Zambia,2015,473.0
+Zimbabwe,2015,1295.0
+Benin,2015,259.0
+Burkina Faso,2015,540.0
+Cabo Verde,2015,102.0
+Côte d’Ivoire,2015,1229.0
+"Gambia, The",2015,274.0
+Ghana,2015,3049.0
+Guinea,2015,94.0
+Guinea-Bissau,2015,18.0
+Liberia,2015,205.0
+Mali,2015,331.0
+Mauritania,2015,97.0
+Niger,2015,246.0
+Nigeria,2015,10674.0
+Saint Helena,2015,3.0
+Senegal,2015,603.0
+Sierra Leone,2015,167.0
+Togo,2015,209.0
+"West Africa, Unspecified",2015,0.0
+China,2015,328547.0
+Hong Kong,2015,7923.0
+Japan,2015,19060.0
+Macau,2015,586.0
+Mongolia,2015,1434.0
+North Korea,2015,18.0
+South Korea,2015,61007.0
+Taiwan,2015,21127.0
+Afghanistan,2015,498.0
+Bangladesh,2015,6513.0
+Bhutan,2015,143.0
+India,2015,165918.0
+Kazakhstan,2015,1935.0
+Kyrgyzstan,2015,227.0
+Maldives,2015,37.0
+Nepal,2015,9662.0
+Pakistan,2015,6141.0
+Sri Lanka,2015,3080.0
+Tajikistan,2015,235.0
+Turkmenistan,2015,216.0
+Uzbekistan,2015,530.0
+Brunei,2015,59.0
+Burma,2015,1194.0
+Cambodia,2015,499.0
+Indonesia,2015,8727.0
+Laos,2015,63.0
+Malaysia,2015,7834.0
+Philippines,2015,2886.0
+Singapore,2015,4865.0
+Thailand,2015,7113.0
+Timor-Leste,2015,45.0
+Vietnam,2015,21403.0
+Albania,2015,705.0
+Andorra,2015,11.0
+Armenia,2015,270.0
+Austria,2015,1141.0
+Azerbaijan,2015,391.0
+Belarus,2015,323.0
+Belgium,2015,1094.0
+Bosnia and Herzegovina,2015,309.0
+Bulgaria,2015,1016.0
+Croatia,2015,527.0
+Cyprus,2015,401.0
+Czech Republic,2015,749.0
+Denmark,2015,1486.0
+Estonia,2015,191.0
+Finland,2015,714.0
+France,2015,8764.0
+Georgia,2015,543.0
+Germany,2015,10145.0
+Gibraltar,2015,4.0
+Greece,2015,2199.0
+Holy See,2015,6.0
+Hungary,2015,773.0
+Iceland,2015,382.0
+Ireland,2015,1183.0
+Italy,2015,5155.0
+Kosovo,2015,268.0
+Latvia,2015,281.0
+Liechtenstein,2015,8.0
+Lithuania,2015,315.0
+Luxembourg,2015,86.0
+North Macedonia,2015,236.0
+Malta,2015,23.0
+Moldova,2015,281.0
+Monaco,2015,23.0
+Montenegro,2015,126.0
+Netherlands,2015,2445.0
+Norway,2015,2391.0
+Poland,2015,1460.0
+Portugal,2015,919.0
+Romania,2015,1105.0
+Russia,2015,5444.0
+San Marino,2015,3.0
+Serbia,2015,1023.0
+Slovakia,2015,343.0
+Slovenia,2015,256.0
+Spain,2015,6640.0
+Sweden,2015,4297.0
+Switzerland,2015,1480.0
+Turkey/Türkiye,2015,10691.0
+Ukraine,2015,1680.0
+United Kingdom,2015,11599.0
+"Europe, Unspecified",2015,10.0
+Anguilla,2015,18.0
+Antigua and Barbuda,2015,228.0
+Aruba,2015,89.0
+Bahamas,2015,2027.0
+Barbados,2015,319.0
+Bermuda,2015,319.0
+British Virgin Islands,2015,95.0
+Cayman Islands,2015,165.0
+Cuba,2015,153.0
+Curacao,2015,117.0
+Dominica,2015,238.0
+Dominican Republic,2015,1513.0
+Grenada,2015,186.0
+Guadeloupe,2015,11.0
+Haiti,2015,946.0
+Jamaica,2015,2510.0
+Martinique,2015,9.0
+Montserrat,2015,4.0
+St. Kitts and Nevis,2015,222.0
+St. Lucia,2015,265.0
+St. Vincent and the Grenadines,2015,89.0
+Sint Maarten,2015,92.0
+Trinidad and Tobago,2015,1381.0
+Turks and Caicos,2015,44.0
+"Caribbean, Unspecified",2015,2.0
+Belize,2015,308.0
+Costa Rica,2015,1148.0
+El Salvador,2015,1632.0
+Guatemala,2015,1245.0
+Honduras,2015,1985.0
+Mexico,2015,16733.0
+Nicaragua,2015,395.0
+Panama,2015,1537.0
+Argentina,2015,2201.0
+Bolivia,2015,1142.0
+Brazil,2015,19370.0
+Chile,2015,2630.0
+Colombia,2015,7815.0
+Ecuador,2015,2889.0
+Falkland Islands/Islas Malvinas,2015,2.0
+French Guiana,2015,7.0
+Guyana,2015,246.0
+Paraguay,2015,564.0
+Peru,2015,3256.0
+Suriname,2015,84.0
+Uruguay,2015,410.0
+Venezuela,2015,8267.0
+Bahrain,2015,469.0
+Iran,2015,12269.0
+Iraq,2015,1901.0
+Israel,2015,2343.0
+Jordan,2015,2330.0
+Kuwait,2015,9772.0
+Lebanon,2015,1486.0
+Oman,2015,2856.0
+Palestinian Territories,2015,468.0
+Qatar,2015,1443.0
+Saudi Arabia,2015,61287.0
+Syria,2015,783.0
+United Arab Emirates,2015,2920.0
+Yemen,2015,599.0
+Algeria,2015,158.0
+Egypt,2015,3442.0
+Libya,2015,1514.0
+Morocco,2015,1495.0
+Tunisia,2015,692.0
+Canada,2015,26973.0
+Australia,2015,4752.0
+Cook Islands,2015,5.0
+Fiji,2015,111.0
+French Polynesia,2015,31.0
+Kiribati,2015,53.0
+"Marshall Islands, Republic of the",2015,18.0
+"Micronesia, Federate States of",2015,22.0
+Nauru,2015,0.0
+New Caledonia,2015,2.0
+New Zealand,2015,1608.0
+Niue,2015,2.0
+Norfolk Island,2015,2.0
+Palau,2015,12.0
+Papua New Guinea,2015,87.0
+Samoa,2015,60.0
+Solomon Islands,2015,5.0
+Tonga,2015,130.0
+Tuvalu,2015,4.0
+Vanuatu,2015,9.0
+Wallis and Futuna,2015,4.0
+Stateless,2015,10.0
+Cameroon,2016,1334.0
+Central African Republic,2016,15.0
+Chad,2016,66.0
+"Congo, Republic of the (Brazzaville)",2016,268.0
+"Congo, Dem. Rep. of the (Kinshasa)",2016,1137.0
+Equatorial Guinea,2016,360.0
+Gabon,2016,363.0
+São Tomé & Príncipe,2016,2.0
+Burundi,2016,180.0
+Djibouti,2016,10.0
+Eritrea,2016,138.0
+Ethiopia,2016,1847.0
+Kenya,2016,3189.0
+Rwanda,2016,1088.0
+Seychelles,2016,16.0
+Somalia,2016,50.0
+South Sudan,2016,48.0
+Sudan,2016,324.0
+Tanzania,2016,811.0
+Uganda,2016,779.0
+Angola,2016,1257.0
+Botswana,2016,296.0
+Comoros,2016,10.0
+Eswatini,2016,183.0
+Lesotho,2016,59.0
+Madagascar,2016,143.0
+Malawi,2016,317.0
+Mauritius,2016,283.0
+Mozambique,2016,120.0
+Namibia,2016,93.0
+Reunion,2016,2.0
+South Africa,2016,1911.0
+Zambia,2016,469.0
+Zimbabwe,2016,1330.0
+Benin,2016,248.0
+Burkina Faso,2016,533.0
+Cabo Verde,2016,80.0
+Côte d’Ivoire,2016,1353.0
+"Gambia, The",2016,299.0
+Ghana,2016,3111.0
+Guinea,2016,94.0
+Guinea-Bissau,2016,9.0
+Liberia,2016,221.0
+Mali,2016,310.0
+Mauritania,2016,103.0
+Niger,2016,177.0
+Nigeria,2016,11710.0
+Saint Helena,2016,1.0
+Senegal,2016,569.0
+Sierra Leone,2016,209.0
+Togo,2016,210.0
+"West Africa, Unspecified",2016,0.0
+China,2016,350755.0
+Hong Kong,2016,7547.0
+Japan,2016,18780.0
+Macau,2016,605.0
+Mongolia,2016,1410.0
+North Korea,2016,8.0
+South Korea,2016,58663.0
+Taiwan,2016,21516.0
+Afghanistan,2016,506.0
+Bangladesh,2016,7143.0
+Bhutan,2016,148.0
+India,2016,186267.0
+Kazakhstan,2016,1792.0
+Kyrgyzstan,2016,216.0
+Maldives,2016,40.0
+Nepal,2016,11607.0
+Pakistan,2016,7015.0
+Sri Lanka,2016,3263.0
+Tajikistan,2016,204.0
+Turkmenistan,2016,231.0
+Uzbekistan,2016,505.0
+Brunei,2016,53.0
+Burma,2016,1351.0
+Cambodia,2016,512.0
+Indonesia,2016,8776.0
+Laos,2016,91.0
+Malaysia,2016,8247.0
+Philippines,2016,3006.0
+Singapore,2016,4677.0
+Thailand,2016,6893.0
+Timor-Leste,2016,44.0
+Vietnam,2016,22438.0
+Albania,2016,781.0
+Andorra,2016,16.0
+Armenia,2016,280.0
+Austria,2016,1111.0
+Azerbaijan,2016,386.0
+Belarus,2016,319.0
+Belgium,2016,1087.0
+Bosnia and Herzegovina,2016,303.0
+Bulgaria,2016,929.0
+Croatia,2016,537.0
+Cyprus,2016,388.0
+Czech Republic,2016,772.0
+Denmark,2016,1490.0
+Estonia,2016,179.0
+Finland,2016,737.0
+France,2016,8814.0
+Georgia,2016,558.0
+Germany,2016,10169.0
+Gibraltar,2016,15.0
+Greece,2016,2318.0
+Holy See,2016,0.0
+Hungary,2016,730.0
+Iceland,2016,402.0
+Ireland,2016,1217.0
+Italy,2016,5593.0
+Kosovo,2016,244.0
+Latvia,2016,244.0
+Liechtenstein,2016,8.0
+Lithuania,2016,333.0
+Luxembourg,2016,118.0
+North Macedonia,2016,245.0
+Malta,2016,25.0
+Moldova,2016,252.0
+Monaco,2016,22.0
+Montenegro,2016,101.0
+Netherlands,2016,2551.0
+Norway,2016,2293.0
+Poland,2016,1489.0
+Portugal,2016,929.0
+Romania,2016,1173.0
+Russia,2016,5412.0
+San Marino,2016,2.0
+Serbia,2016,1055.0
+Slovakia,2016,348.0
+Slovenia,2016,245.0
+Spain,2016,7164.0
+Sweden,2016,4053.0
+Switzerland,2016,1487.0
+Turkey/Türkiye,2016,10586.0
+Ukraine,2016,1817.0
+United Kingdom,2016,11489.0
+"Europe, Unspecified",2016,4.0
+Anguilla,2016,14.0
+Antigua and Barbuda,2016,225.0
+Aruba,2016,73.0
+Bahamas,2016,2252.0
+Barbados,2016,319.0
+Bermuda,2016,315.0
+British Virgin Islands,2016,76.0
+Cayman Islands,2016,165.0
+Cuba,2016,119.0
+Curacao,2016,118.0
+Dominica,2016,271.0
+Dominican Republic,2016,1428.0
+Grenada,2016,194.0
+Guadeloupe,2016,9.0
+Haiti,2016,958.0
+Jamaica,2016,2797.0
+Martinique,2016,9.0
+Montserrat,2016,3.0
+St. Kitts and Nevis,2016,218.0
+St. Lucia,2016,268.0
+St. Vincent and the Grenadines,2016,83.0
+Sint Maarten,2016,78.0
+Trinidad and Tobago,2016,1304.0
+Turks and Caicos,2016,50.0
+"Caribbean, Unspecified",2016,5.0
+Belize,2016,356.0
+Costa Rica,2016,1148.0
+El Salvador,2016,1570.0
+Guatemala,2016,1217.0
+Honduras,2016,2046.0
+Mexico,2016,16835.0
+Nicaragua,2016,398.0
+Panama,2016,1588.0
+Argentina,2016,2219.0
+Bolivia,2016,1207.0
+Brazil,2016,13089.0
+Chile,2016,2523.0
+Colombia,2016,7982.0
+Ecuador,2016,3032.0
+Falkland Islands/Islas Malvinas,2016,0.0
+French Guiana,2016,1.0
+Guyana,2016,250.0
+Paraguay,2016,587.0
+Peru,2016,3200.0
+Suriname,2016,83.0
+Uruguay,2016,433.0
+Venezuela,2016,8540.0
+Bahrain,2016,475.0
+Iran,2016,12643.0
+Iraq,2016,1698.0
+Israel,2016,2393.0
+Jordan,2016,2312.0
+Kuwait,2016,9825.0
+Lebanon,2016,1556.0
+Oman,2016,2876.0
+Palestinian Territories,2016,423.0
+Qatar,2016,1420.0
+Saudi Arabia,2016,52611.0
+Syria,2016,827.0
+United Arab Emirates,2016,2753.0
+Yemen,2016,658.0
+Algeria,2016,192.0
+Egypt,2016,3715.0
+Libya,2016,1311.0
+Morocco,2016,1634.0
+Tunisia,2016,692.0
+Canada,2016,27065.0
+Australia,2016,4933.0
+Cook Islands,2016,0.0
+Fiji,2016,100.0
+French Polynesia,2016,30.0
+Kiribati,2016,64.0
+"Marshall Islands, Republic of the",2016,10.0
+"Micronesia, Federate States of",2016,28.0
+Nauru,2016,1.0
+New Caledonia,2016,5.0
+New Zealand,2016,1741.0
+Niue,2016,4.0
+Norfolk Island,2016,1.0
+Palau,2016,15.0
+Papua New Guinea,2016,77.0
+Samoa,2016,56.0
+Solomon Islands,2016,8.0
+Tonga,2016,133.0
+Tuvalu,2016,3.0
+Vanuatu,2016,11.0
+Wallis and Futuna,2016,2.0
+Stateless,2016,2.0
+Cameroon,2017,1382.0
+Central African Republic,2017,14.0
+Chad,2017,75.0
+"Congo, Republic of the (Brazzaville)",2017,298.0
+"Congo, Dem. Rep. of the (Kinshasa)",2017,1123.0
+Equatorial Guinea,2017,335.0
+Gabon,2017,332.0
+São Tomé & Príncipe,2017,3.0
+Burundi,2017,134.0
+Djibouti,2017,9.0
+Eritrea,2017,151.0
+Ethiopia,2017,2118.0
+Kenya,2017,3322.0
+Rwanda,2017,1232.0
+Seychelles,2017,11.0
+Somalia,2017,67.0
+South Sudan,2017,76.0
+Sudan,2017,331.0
+Tanzania,2017,824.0
+Uganda,2017,818.0
+Angola,2017,1183.0
+Botswana,2017,233.0
+Comoros,2017,12.0
+Eswatini,2017,188.0
+Lesotho,2017,55.0
+Madagascar,2017,132.0
+Malawi,2017,306.0
+Mauritius,2017,288.0
+Mozambique,2017,111.0
+Namibia,2017,101.0
+Reunion,2017,6.0
+South Africa,2017,2040.0
+Zambia,2017,450.0
+Zimbabwe,2017,1324.0
+Benin,2017,234.0
+Burkina Faso,2017,567.0
+Cabo Verde,2017,67.0
+Côte d’Ivoire,2017,1349.0
+"Gambia, The",2017,261.0
+Ghana,2017,3213.0
+Guinea,2017,98.0
+Guinea-Bissau,2017,10.0
+Liberia,2017,262.0
+Mali,2017,302.0
+Mauritania,2017,106.0
+Niger,2017,288.0
+Nigeria,2017,12693.0
+Saint Helena,2017,1.0
+Senegal,2017,544.0
+Sierra Leone,2017,200.0
+Togo,2017,199.0
+"West Africa, Unspecified",2017,1.0
+China,2017,363341.0
+Hong Kong,2017,7162.0
+Japan,2017,18753.0
+Macau,2017,555.0
+Mongolia,2017,1481.0
+North Korea,2017,3.0
+South Korea,2017,54555.0
+Taiwan,2017,22454.0
+Afghanistan,2017,476.0
+Bangladesh,2017,7496.0
+Bhutan,2017,152.0
+India,2017,196271.0
+Kazakhstan,2017,1865.0
+Kyrgyzstan,2017,227.0
+Maldives,2017,32.0
+Nepal,2017,13270.0
+Pakistan,2017,7537.0
+Sri Lanka,2017,3309.0
+Tajikistan,2017,222.0
+Turkmenistan,2017,234.0
+Uzbekistan,2017,570.0
+Brunei,2017,53.0
+Burma,2017,1569.0
+Cambodia,2017,659.0
+Indonesia,2017,8650.0
+Laos,2017,104.0
+Malaysia,2017,8271.0
+Philippines,2017,3225.0
+Singapore,2017,4575.0
+Thailand,2017,6636.0
+Timor-Leste,2017,44.0
+Vietnam,2017,24325.0
+Albania,2017,884.0
+Andorra,2017,14.0
+Armenia,2017,313.0
+Austria,2017,1148.0
+Azerbaijan,2017,426.0
+Belarus,2017,351.0
+Belgium,2017,1080.0
+Bosnia and Herzegovina,2017,290.0
+Bulgaria,2017,826.0
+Croatia,2017,528.0
+Cyprus,2017,410.0
+Czech Republic,2017,763.0
+Denmark,2017,1423.0
+Estonia,2017,186.0
+Finland,2017,768.0
+France,2017,8802.0
+Georgia,2017,597.0
+Germany,2017,10042.0
+Gibraltar,2017,6.0
+Greece,2017,2395.0
+Holy See,2017,3.0
+Hungary,2017,716.0
+Iceland,2017,412.0
+Ireland,2017,1141.0
+Italy,2017,5789.0
+Kosovo,2017,229.0
+Latvia,2017,236.0
+Liechtenstein,2017,9.0
+Lithuania,2017,327.0
+Luxembourg,2017,102.0
+North Macedonia,2017,224.0
+Malta,2017,34.0
+Moldova,2017,237.0
+Monaco,2017,17.0
+Montenegro,2017,115.0
+Netherlands,2017,2701.0
+Norway,2017,2105.0
+Poland,2017,1477.0
+Portugal,2017,937.0
+Romania,2017,1071.0
+Russia,2017,5518.0
+San Marino,2017,4.0
+Serbia,2017,1079.0
+Slovakia,2017,347.0
+Slovenia,2017,250.0
+Spain,2017,7489.0
+Sweden,2017,3543.0
+Switzerland,2017,1382.0
+Turkey/Türkiye,2017,10520.0
+Ukraine,2017,1928.0
+United Kingdom,2017,11460.0
+"Europe, Unspecified",2017,1.0
+Anguilla,2017,15.0
+Antigua and Barbuda,2017,200.0
+Aruba,2017,90.0
+Bahamas,2017,2176.0
+Barbados,2017,322.0
+Bermuda,2017,296.0
+British Virgin Islands,2017,70.0
+Cayman Islands,2017,169.0
+Cuba,2017,152.0
+Curacao,2017,128.0
+Dominica,2017,371.0
+Dominican Republic,2017,1467.0
+Grenada,2017,170.0
+Guadeloupe,2017,10.0
+Haiti,2017,948.0
+Jamaica,2017,2785.0
+Martinique,2017,12.0
+Montserrat,2017,3.0
+St. Kitts and Nevis,2017,200.0
+St. Lucia,2017,229.0
+St. Vincent and the Grenadines,2017,83.0
+Sint Maarten,2017,82.0
+Trinidad and Tobago,2017,1257.0
+Turks and Caicos,2017,42.0
+"Caribbean, Unspecified",2017,12.0
+Belize,2017,366.0
+Costa Rica,2017,1146.0
+El Salvador,2017,1554.0
+Guatemala,2017,1206.0
+Honduras,2017,2104.0
+Mexico,2017,15468.0
+Nicaragua,2017,409.0
+Panama,2017,1749.0
+Argentina,2017,2283.0
+Bolivia,2017,1153.0
+Brazil,2017,14620.0
+Chile,2017,2528.0
+Colombia,2017,7976.0
+Ecuador,2017,3050.0
+Falkland Islands/Islas Malvinas,2017,0.0
+French Guiana,2017,3.0
+Guyana,2017,296.0
+Paraguay,2017,590.0
+Peru,2017,3235.0
+Suriname,2017,80.0
+Uruguay,2017,444.0
+Venezuela,2017,8371.0
+Bahrain,2017,451.0
+Iran,2017,12783.0
+Iraq,2017,1438.0
+Israel,2017,2327.0
+Jordan,2017,2420.0
+Kuwait,2017,10190.0
+Lebanon,2017,1633.0
+Oman,2017,3097.0
+Palestinian Territories,2017,480.0
+Qatar,2017,1127.0
+Saudi Arabia,2017,44432.0
+Syria,2017,726.0
+United Arab Emirates,2017,2486.0
+Yemen,2017,517.0
+Algeria,2017,212.0
+Egypt,2017,3701.0
+Libya,2017,1064.0
+Morocco,2017,1563.0
+Tunisia,2017,728.0
+Canada,2017,25909.0
+Australia,2017,4908.0
+Cook Islands,2017,5.0
+Fiji,2017,109.0
+French Polynesia,2017,30.0
+Kiribati,2017,58.0
+"Marshall Islands, Republic of the",2017,22.0
+"Micronesia, Federate States of",2017,38.0
+Nauru,2017,1.0
+New Caledonia,2017,6.0
+New Zealand,2017,1785.0
+Niue,2017,4.0
+Norfolk Island,2017,3.0
+Palau,2017,31.0
+Papua New Guinea,2017,83.0
+Samoa,2017,93.0
+Solomon Islands,2017,9.0
+Tonga,2017,169.0
+Tuvalu,2017,4.0
+Vanuatu,2017,14.0
+Wallis and Futuna,2017,0.0
+Stateless,2017,6.0
+Cameroon,2018,1188.0
+Central African Republic,2018,17.0
+Chad,2018,65.0
+"Congo, Republic of the (Brazzaville)",2018,284.0
+"Congo, Dem. Rep. of the (Kinshasa)",2018,1164.0
+Equatorial Guinea,2018,280.0
+Gabon,2018,327.0
+São Tomé & Príncipe,2018,0.0
+Burundi,2018,141.0
+Djibouti,2018,9.0
+Eritrea,2018,117.0
+Ethiopia,2018,2061.0
+Kenya,2018,3451.0
+Rwanda,2018,1292.0
+Seychelles,2018,16.0
+Somalia,2018,76.0
+South Sudan,2018,63.0
+Sudan,2018,319.0
+Tanzania,2018,834.0
+Uganda,2018,848.0
+Angola,2018,1014.0
+Botswana,2018,214.0
+Comoros,2018,18.0
+Eswatini,2018,181.0
+Lesotho,2018,58.0
+Madagascar,2018,159.0
+Malawi,2018,311.0
+Mauritius,2018,311.0
+Mozambique,2018,113.0
+Namibia,2018,105.0
+Reunion,2018,1.0
+South Africa,2018,2042.0
+Zambia,2018,445.0
+Zimbabwe,2018,1343.0
+Benin,2018,246.0
+Burkina Faso,2018,514.0
+Cabo Verde,2018,52.0
+Côte d’Ivoire,2018,1392.0
+"Gambia, The",2018,243.0
+Ghana,2018,3661.0
+Guinea,2018,107.0
+Guinea-Bissau,2018,16.0
+Liberia,2018,255.0
+Mali,2018,291.0
+Mauritania,2018,84.0
+Niger,2018,257.0
+Nigeria,2018,13423.0
+Saint Helena,2018,8.0
+Senegal,2018,504.0
+Sierra Leone,2018,181.0
+Togo,2018,189.0
+"West Africa, Unspecified",2018,0.0
+China,2018,369548.0
+Hong Kong,2018,6917.0
+Japan,2018,18105.0
+Macau,2018,558.0
+Mongolia,2018,1336.0
+North Korea,2018,2.0
+South Korea,2018,52250.0
+Taiwan,2018,23369.0
+Afghanistan,2018,418.0
+Bangladesh,2018,8249.0
+Bhutan,2018,146.0
+India,2018,202014.0
+Kazakhstan,2018,1879.0
+Kyrgyzstan,2018,290.0
+Maldives,2018,25.0
+Nepal,2018,13229.0
+Pakistan,2018,7957.0
+Sri Lanka,2018,3334.0
+Tajikistan,2018,229.0
+Turkmenistan,2018,280.0
+Uzbekistan,2018,571.0
+Brunei,2018,50.0
+Burma,2018,1773.0
+Cambodia,2018,685.0
+Indonesia,2018,8356.0
+Laos,2018,96.0
+Malaysia,2018,7709.0
+Philippines,2018,3320.0
+Singapore,2018,4632.0
+Thailand,2018,6503.0
+Timor-Leste,2018,38.0
+Vietnam,2018,24392.0
+Albania,2018,993.0
+Andorra,2018,17.0
+Armenia,2018,328.0
+Austria,2018,1098.0
+Azerbaijan,2018,489.0
+Belarus,2018,378.0
+Belgium,2018,1073.0
+Bosnia and Herzegovina,2018,300.0
+Bulgaria,2018,757.0
+Croatia,2018,516.0
+Cyprus,2018,431.0
+Czech Republic,2018,820.0
+Denmark,2018,1423.0
+Estonia,2018,184.0
+Finland,2018,716.0
+France,2018,8716.0
+Georgia,2018,574.0
+Germany,2018,9191.0
+Gibraltar,2018,16.0
+Greece,2018,2523.0
+Holy See,2018,0.0
+Hungary,2018,793.0
+Iceland,2018,407.0
+Ireland,2018,1180.0
+Italy,2018,6114.0
+Kosovo,2018,159.0
+Latvia,2018,244.0
+Liechtenstein,2018,8.0
+Lithuania,2018,318.0
+Luxembourg,2018,101.0
+North Macedonia,2018,227.0
+Malta,2018,38.0
+Moldova,2018,205.0
+Monaco,2018,17.0
+Montenegro,2018,112.0
+Netherlands,2018,2681.0
+Norway,2018,1988.0
+Poland,2018,1526.0
+Portugal,2018,973.0
+Romania,2018,1016.0
+Russia,2018,5292.0
+San Marino,2018,3.0
+Serbia,2018,1098.0
+Slovakia,2018,349.0
+Slovenia,2018,256.0
+Spain,2018,7262.0
+Sweden,2018,3460.0
+Switzerland,2018,1367.0
+Turkey/Türkiye,2018,10159.0
+Ukraine,2018,1953.0
+United Kingdom,2018,11146.0
+"Europe, Unspecified",2018,1.0
+Anguilla,2018,19.0
+Antigua and Barbuda,2018,164.0
+Aruba,2018,71.0
+Bahamas,2018,2148.0
+Barbados,2018,333.0
+Bermuda,2018,280.0
+British Virgin Islands,2018,81.0
+Cayman Islands,2018,159.0
+Cuba,2018,163.0
+Curacao,2018,122.0
+Dominica,2018,227.0
+Dominican Republic,2018,1559.0
+Grenada,2018,133.0
+Guadeloupe,2018,8.0
+Haiti,2018,967.0
+Jamaica,2018,2820.0
+Martinique,2018,11.0
+Montserrat,2018,7.0
+St. Kitts and Nevis,2018,147.0
+St. Lucia,2018,206.0
+St. Vincent and the Grenadines,2018,92.0
+Sint Maarten,2018,109.0
+Trinidad and Tobago,2018,1202.0
+Turks and Caicos,2018,37.0
+"Caribbean, Unspecified",2018,0.0
+Belize,2018,375.0
+Costa Rica,2018,1157.0
+El Salvador,2018,1566.0
+Guatemala,2018,1192.0
+Honduras,2018,2191.0
+Mexico,2018,15229.0
+Nicaragua,2018,443.0
+Panama,2018,1845.0
+Argentina,2018,2407.0
+Bolivia,2018,1195.0
+Brazil,2018,16059.0
+Chile,2018,2699.0
+Colombia,2018,8060.0
+Ecuador,2018,2892.0
+Falkland Islands/Islas Malvinas,2018,0.0
+French Guiana,2018,7.0
+Guyana,2018,311.0
+Paraguay,2018,619.0
+Peru,2018,3409.0
+Suriname,2018,74.0
+Uruguay,2018,407.0
+Venezuela,2018,7760.0
+Bahrain,2018,422.0
+Iran,2018,12142.0
+Iraq,2018,1237.0
+Israel,2018,2392.0
+Jordan,2018,2435.0
+Kuwait,2018,9195.0
+Lebanon,2018,1672.0
+Oman,2018,2963.0
+Palestinian Territories,2018,468.0
+Qatar,2018,834.0
+Saudi Arabia,2018,37080.0
+Syria,2018,566.0
+United Arab Emirates,2018,2361.0
+Yemen,2018,398.0
+Algeria,2018,238.0
+Egypt,2018,3675.0
+Libya,2018,884.0
+Morocco,2018,1461.0
+Tunisia,2018,703.0
+Canada,2018,26122.0
+Australia,2018,4930.0
+Cook Islands,2018,17.0
+Fiji,2018,98.0
+French Polynesia,2018,60.0
+Kiribati,2018,91.0
+"Marshall Islands, Republic of the",2018,16.0
+"Micronesia, Federate States of",2018,44.0
+Nauru,2018,1.0
+New Caledonia,2018,4.0
+New Zealand,2018,1841.0
+Niue,2018,2.0
+Norfolk Island,2018,1.0
+Palau,2018,26.0
+Papua New Guinea,2018,86.0
+Samoa,2018,103.0
+Solomon Islands,2018,15.0
+Tonga,2018,186.0
+Tuvalu,2018,4.0
+Vanuatu,2018,15.0
+Wallis and Futuna,2018,2.0
+Stateless,2018,1.0
+Cameroon,2019,1027.0
+Central African Republic,2019,12.0
+Chad,2019,51.0
+"Congo, Republic of the (Brazzaville)",2019,255.0
+"Congo, Dem. Rep. of the (Kinshasa)",2019,1198.0
+Equatorial Guinea,2019,247.0
+Gabon,2019,280.0
+São Tomé & Príncipe,2019,1.0
+Burundi,2019,164.0
+Djibouti,2019,6.0
+Eritrea,2019,81.0
+Ethiopia,2019,2356.0
+Kenya,2019,3710.0
+Rwanda,2019,1444.0
+Seychelles,2019,11.0
+Somalia,2019,68.0
+South Sudan,2019,102.0
+Sudan,2019,318.0
+Tanzania,2019,859.0
+Uganda,2019,870.0
+Angola,2019,814.0
+Botswana,2019,246.0
+Comoros,2019,40.0
+Eswatini,2019,174.0
+Lesotho,2019,69.0
+Madagascar,2019,181.0
+Malawi,2019,315.0
+Mauritius,2019,332.0
+Mozambique,2019,127.0
+Namibia,2019,121.0
+Reunion,2019,2.0
+South Africa,2019,2224.0
+Zambia,2019,464.0
+Zimbabwe,2019,1377.0
+Benin,2019,234.0
+Burkina Faso,2019,483.0
+Cabo Verde,2019,61.0
+Côte d’Ivoire,2019,1257.0
+"Gambia, The",2019,239.0
+Ghana,2019,4221.0
+Guinea,2019,92.0
+Guinea-Bissau,2019,13.0
+Liberia,2019,260.0
+Mali,2019,285.0
+Mauritania,2019,67.0
+Niger,2019,277.0
+Nigeria,2019,13762.0
+Saint Helena,2019,2.0
+Senegal,2019,485.0
+Sierra Leone,2019,199.0
+Togo,2019,214.0
+"West Africa, Unspecified",2019,0.0
+China,2019,372532.0
+Hong Kong,2019,6778.0
+Japan,2019,17554.0
+Macau,2019,503.0
+Mongolia,2019,1438.0
+North Korea,2019,1.0
+South Korea,2019,49809.0
+Taiwan,2019,23724.0
+Afghanistan,2019,422.0
+Bangladesh,2019,8838.0
+Bhutan,2019,154.0
+India,2019,193124.0
+Kazakhstan,2019,2091.0
+Kyrgyzstan,2019,357.0
+Maldives,2019,29.0
+Nepal,2019,12730.0
+Pakistan,2019,7939.0
+Sri Lanka,2019,3206.0
+Tajikistan,2019,242.0
+Turkmenistan,2019,272.0
+Uzbekistan,2019,546.0
+Brunei,2019,54.0
+Burma,2019,1828.0
+Cambodia,2019,742.0
+Indonesia,2019,8300.0
+Laos,2019,131.0
+Malaysia,2019,6910.0
+Philippines,2019,3295.0
+Singapore,2019,4504.0
+Thailand,2019,6154.0
+Timor-Leste,2019,30.0
+Vietnam,2019,23777.0
+Albania,2019,1095.0
+Andorra,2019,11.0
+Armenia,2019,339.0
+Austria,2019,1105.0
+Azerbaijan,2019,571.0
+Belarus,2019,388.0
+Belgium,2019,1055.0
+Bosnia and Herzegovina,2019,287.0
+Bulgaria,2019,690.0
+Croatia,2019,472.0
+Cyprus,2019,432.0
+Czech Republic,2019,763.0
+Denmark,2019,1264.0
+Estonia,2019,177.0
+Finland,2019,690.0
+France,2019,8471.0
+Georgia,2019,640.0
+Germany,2019,9242.0
+Gibraltar,2019,2.0
+Greece,2019,2489.0
+Holy See,2019,1.0
+Hungary,2019,724.0
+Iceland,2019,411.0
+Ireland,2019,1228.0
+Italy,2019,6063.0
+Kosovo,2019,173.0
+Latvia,2019,274.0
+Liechtenstein,2019,9.0
+Lithuania,2019,320.0
+Luxembourg,2019,88.0
+North Macedonia,2019,265.0
+Malta,2019,52.0
+Moldova,2019,214.0
+Monaco,2019,20.0
+Montenegro,2019,122.0
+Netherlands,2019,2727.0
+Norway,2019,1886.0
+Poland,2019,1513.0
+Portugal,2019,934.0
+Romania,2019,1000.0
+Russia,2019,5293.0
+San Marino,2019,4.0
+Serbia,2019,1044.0
+Slovakia,2019,331.0
+Slovenia,2019,260.0
+Spain,2019,7954.0
+Sweden,2019,3213.0
+Switzerland,2019,1340.0
+Turkey/Türkiye,2019,9481.0
+Ukraine,2019,1899.0
+United Kingdom,2019,10756.0
+"Europe, Unspecified",2019,2.0
+Anguilla,2019,19.0
+Antigua and Barbuda,2019,193.0
+Aruba,2019,73.0
+Bahamas,2019,2500.0
+Barbados,2019,298.0
+Bermuda,2019,251.0
+British Virgin Islands,2019,81.0
+Cayman Islands,2019,136.0
+Cuba,2019,130.0
+Curacao,2019,136.0
+Dominica,2019,576.0
+Dominican Republic,2019,1379.0
+Grenada,2019,161.0
+Guadeloupe,2019,14.0
+Haiti,2019,1016.0
+Jamaica,2019,2884.0
+Martinique,2019,8.0
+Montserrat,2019,4.0
+St. Kitts and Nevis,2019,216.0
+St. Lucia,2019,215.0
+St. Vincent and the Grenadines,2019,91.0
+Sint Maarten,2019,134.0
+Trinidad and Tobago,2019,1272.0
+Turks and Caicos,2019,37.0
+"Caribbean, Unspecified",2019,21.0
+Belize,2019,388.0
+Costa Rica,2019,1240.0
+El Salvador,2019,1581.0
+Guatemala,2019,1195.0
+Honduras,2019,2161.0
+Mexico,2019,14348.0
+Nicaragua,2019,489.0
+Panama,2019,1708.0
+Argentina,2019,2428.0
+Bolivia,2019,1199.0
+Brazil,2019,16671.0
+Chile,2019,2483.0
+Colombia,2019,7787.0
+Ecuador,2019,2852.0
+Falkland Islands/Islas Malvinas,2019,0.0
+French Guiana,2019,7.0
+Guyana,2019,301.0
+Paraguay,2019,609.0
+Peru,2019,3547.0
+Suriname,2019,57.0
+Uruguay,2019,453.0
+Venezuela,2019,6855.0
+Bahrain,2019,406.0
+Iran,2019,11451.0
+Iraq,2019,965.0
+Israel,2019,2226.0
+Jordan,2019,2441.0
+Kuwait,2019,8375.0
+Lebanon,2019,1709.0
+Oman,2019,2808.0
+Palestinian Territories,2019,478.0
+Qatar,2019,670.0
+Saudi Arabia,2019,30957.0
+Syria,2019,463.0
+United Arab Emirates,2019,2074.0
+Yemen,2019,320.0
+Algeria,2019,239.0
+Egypt,2019,3859.0
+Libya,2019,720.0
+Morocco,2019,1499.0
+Tunisia,2019,665.0
+Canada,2019,25992.0
+Australia,2019,4982.0
+Cook Islands,2019,0.0
+Fiji,2019,90.0
+French Polynesia,2019,49.0
+Kiribati,2019,67.0
+"Marshall Islands, Republic of the",2019,8.0
+"Micronesia, Federate States of",2019,17.0
+Nauru,2019,2.0
+New Caledonia,2019,6.0
+New Zealand,2019,1856.0
+Niue,2019,1.0
+Norfolk Island,2019,2.0
+Palau,2019,34.0
+Papua New Guinea,2019,88.0
+Samoa,2019,76.0
+Solomon Islands,2019,17.0
+Tonga,2019,161.0
+Tuvalu,2019,4.0
+Vanuatu,2019,13.0
+Wallis and Futuna,2019,0.0
+Stateless,2019,7.0
+Cameroon,2020,930.0
+Central African Republic,2020,13.0
+Chad,2020,52.0
+"Congo, Republic of the (Brazzaville)",2020,280.0
+"Congo, Dem. Rep. of the (Kinshasa)",2020,1125.0
+Equatorial Guinea,2020,226.0
+Gabon,2020,272.0
+São Tomé & Príncipe,2020,1.0
+Burundi,2020,149.0
+Djibouti,2020,6.0
+Eritrea,2020,53.0
+Ethiopia,2020,2166.0
+Kenya,2020,3502.0
+Rwanda,2020,1333.0
+Seychelles,2020,9.0
+Somalia,2020,97.0
+South Sudan,2020,95.0
+Sudan,2020,324.0
+Tanzania,2020,699.0
+Uganda,2020,886.0
+Angola,2020,673.0
+Botswana,2020,218.0
+Comoros,2020,23.0
+Eswatini,2020,181.0
+Lesotho,2020,69.0
+Madagascar,2020,181.0
+Malawi,2020,287.0
+Mauritius,2020,323.0
+Mozambique,2020,131.0
+Namibia,2020,122.0
+Reunion,2020,4.0
+South Africa,2020,2079.0
+Zambia,2020,440.0
+Zimbabwe,2020,1304.0
+Benin,2020,210.0
+Burkina Faso,2020,420.0
+Cabo Verde,2020,63.0
+Côte d’Ivoire,2020,1115.0
+"Gambia, The",2020,219.0
+Ghana,2020,4229.0
+Guinea,2020,104.0
+Guinea-Bissau,2020,9.0
+Liberia,2020,232.0
+Mali,2020,270.0
+Mauritania,2020,53.0
+Niger,2020,197.0
+Nigeria,2020,12860.0
+Saint Helena,2020,0.0
+Senegal,2020,430.0
+Sierra Leone,2020,201.0
+Togo,2020,196.0
+"West Africa, Unspecified",2020,0.0
+China,2020,317299.0
+Hong Kong,2020,5878.0
+Japan,2020,11785.0
+Macau,2020,422.0
+Mongolia,2020,1258.0
+North Korea,2020,2.0
+South Korea,2020,39491.0
+Taiwan,2020,19673.0
+Afghanistan,2020,354.0
+Bangladesh,2020,8598.0
+Bhutan,2020,116.0
+India,2020,167582.0
+Kazakhstan,2020,1830.0
+Kyrgyzstan,2020,328.0
+Maldives,2020,23.0
+Nepal,2020,11172.0
+Pakistan,2020,7475.0
+Sri Lanka,2020,2770.0
+Tajikistan,2020,205.0
+Turkmenistan,2020,269.0
+Uzbekistan,2020,538.0
+Brunei,2020,37.0
+Burma,2020,1698.0
+Cambodia,2020,848.0
+Indonesia,2020,7489.0
+Laos,2020,113.0
+Malaysia,2020,5280.0
+Philippines,2020,2907.0
+Singapore,2020,3558.0
+Thailand,2020,4960.0
+Timor-Leste,2020,33.0
+Vietnam,2020,21631.0
+Albania,2020,1053.0
+Andorra,2020,16.0
+Armenia,2020,318.0
+Austria,2020,655.0
+Azerbaijan,2020,556.0
+Belarus,2020,356.0
+Belgium,2020,756.0
+Bosnia and Herzegovina,2020,261.0
+Bulgaria,2020,585.0
+Croatia,2020,393.0
+Cyprus,2020,374.0
+Czech Republic,2020,609.0
+Denmark,2020,608.0
+Estonia,2020,156.0
+Finland,2020,485.0
+France,2020,5643.0
+Georgia,2020,583.0
+Germany,2020,5364.0
+Gibraltar,2020,4.0
+Greece,2020,2256.0
+Holy See,2020,1.0
+Hungary,2020,653.0
+Iceland,2020,359.0
+Ireland,2020,870.0
+Italy,2020,4894.0
+Kosovo,2020,154.0
+Latvia,2020,232.0
+Liechtenstein,2020,2.0
+Lithuania,2020,273.0
+Luxembourg,2020,62.0
+North Macedonia,2020,208.0
+Malta,2020,46.0
+Moldova,2020,157.0
+Monaco,2020,26.0
+Montenegro,2020,121.0
+Netherlands,2020,1767.0
+Norway,2020,1265.0
+Poland,2020,1328.0
+Portugal,2020,791.0
+Romania,2020,852.0
+Russia,2020,4805.0
+San Marino,2020,2.0
+Serbia,2020,927.0
+Slovakia,2020,267.0
+Slovenia,2020,193.0
+Spain,2020,5781.0
+Sweden,2020,2045.0
+Switzerland,2020,988.0
+Turkey/Türkiye,2020,8109.0
+Ukraine,2020,1739.0
+United Kingdom,2020,8028.0
+"Europe, Unspecified",2020,3.0
+Anguilla,2020,19.0
+Antigua and Barbuda,2020,186.0
+Aruba,2020,74.0
+Bahamas,2020,2342.0
+Barbados,2020,339.0
+Bermuda,2020,234.0
+British Virgin Islands,2020,45.0
+Cayman Islands,2020,120.0
+Cuba,2020,115.0
+Curacao,2020,74.0
+Dominica,2020,583.0
+Dominican Republic,2020,1244.0
+Grenada,2020,141.0
+Guadeloupe,2020,3.0
+Haiti,2020,1067.0
+Jamaica,2020,2714.0
+Martinique,2020,3.0
+Montserrat,2020,6.0
+St. Kitts and Nevis,2020,235.0
+St. Lucia,2020,216.0
+St. Vincent and the Grenadines,2020,86.0
+Sint Maarten,2020,99.0
+Trinidad and Tobago,2020,1180.0
+Turks and Caicos,2020,46.0
+"Caribbean, Unspecified",2020,4.0
+Belize,2020,352.0
+Costa Rica,2020,1134.0
+El Salvador,2020,1492.0
+Guatemala,2020,1102.0
+Honduras,2020,2021.0
+Mexico,2020,12986.0
+Nicaragua,2020,478.0
+Panama,2020,1659.0
+Argentina,2020,2184.0
+Bolivia,2020,1124.0
+Brazil,2020,14000.0
+Chile,2020,2227.0
+Colombia,2020,7107.0
+Ecuador,2020,2515.0
+Falkland Islands/Islas Malvinas,2020,0.0
+French Guiana,2020,4.0
+Guyana,2020,358.0
+Paraguay,2020,804.0
+Peru,2020,3556.0
+Suriname,2020,55.0
+Uruguay,2020,395.0
+Venezuela,2020,6122.0
+Bahrain,2020,362.0
+Iran,2020,9614.0
+Iraq,2020,771.0
+Israel,2020,1844.0
+Jordan,2020,2338.0
+Kuwait,2020,6846.0
+Lebanon,2020,1700.0
+Oman,2020,2433.0
+Palestinian Territories,2020,424.0
+Qatar,2020,562.0
+Saudi Arabia,2020,21933.0
+Syria,2020,425.0
+United Arab Emirates,2020,1737.0
+Yemen,2020,293.0
+Algeria,2020,219.0
+Egypt,2020,3672.0
+Libya,2020,563.0
+Morocco,2020,1294.0
+Tunisia,2020,534.0
+Canada,2020,25143.0
+Australia,2020,3623.0
+Cook Islands,2020,8.0
+Fiji,2020,89.0
+French Polynesia,2020,65.0
+Kiribati,2020,53.0
+"Marshall Islands, Republic of the",2020,7.0
+"Micronesia, Federate States of",2020,23.0
+Nauru,2020,1.0
+New Caledonia,2020,7.0
+New Zealand,2020,1520.0
+Niue,2020,10.0
+Norfolk Island,2020,2.0
+Palau,2020,25.0
+Papua New Guinea,2020,100.0
+Samoa,2020,106.0
+Solomon Islands,2020,16.0
+Tonga,2020,189.0
+Tuvalu,2020,6.0
+Vanuatu,2020,11.0
+Wallis and Futuna,2020,3.0
+Stateless,2020,12.0
+Cameroon,2021,927.0
+Central African Republic,2021,11.0
+Chad,2021,61.0
+"Congo, Republic of the (Brazzaville)",2021,190.0
+"Congo, Dem. Rep. of the (Kinshasa)",2021,1266.0
+Equatorial Guinea,2021,186.0
+Gabon,2021,229.0
+São Tomé & Príncipe,2021,1.0
+Burundi,2021,157.0
+Djibouti,2021,6.0
+Eritrea,2021,77.0
+Ethiopia,2021,2680.0
+Kenya,2021,3799.0
+Rwanda,2021,1226.0
+Seychelles,2021,6.0
+Somalia,2021,92.0
+South Sudan,2021,100.0
+Sudan,2021,360.0
+Tanzania,2021,749.0
+Uganda,2021,905.0
+Angola,2021,541.0
+Botswana,2021,231.0
+Comoros,2021,21.0
+Eswatini,2021,169.0
+Lesotho,2021,70.0
+Madagascar,2021,209.0
+Malawi,2021,342.0
+Mauritius,2021,281.0
+Mozambique,2021,145.0
+Namibia,2021,107.0
+Reunion,2021,6.0
+South Africa,2021,2375.0
+Zambia,2021,512.0
+Zimbabwe,2021,1507.0
+Benin,2021,201.0
+Burkina Faso,2021,367.0
+Cabo Verde,2021,44.0
+Côte d’Ivoire,2021,1034.0
+"Gambia, The",2021,231.0
+Ghana,2021,4916.0
+Guinea,2021,76.0
+Guinea-Bissau,2021,8.0
+Liberia,2021,269.0
+Mali,2021,254.0
+Mauritania,2021,53.0
+Niger,2021,246.0
+Nigeria,2021,14438.0
+Saint Helena,2021,2.0
+Senegal,2021,445.0
+Sierra Leone,2021,197.0
+Togo,2021,193.0
+"West Africa, Unspecified",2021,0.0
+China,2021,290086.0
+Hong Kong,2021,5848.0
+Japan,2021,13449.0
+Macau,2021,394.0
+Mongolia,2021,1355.0
+North Korea,2021,4.0
+South Korea,2021,40755.0
+Taiwan,2021,20487.0
+Afghanistan,2021,420.0
+Bangladesh,2021,10597.0
+Bhutan,2021,143.0
+India,2021,199182.0
+Kazakhstan,2021,2121.0
+Kyrgyzstan,2021,478.0
+Maldives,2021,23.0
+Nepal,2021,11799.0
+Pakistan,2021,8772.0
+Sri Lanka,2021,2928.0
+Tajikistan,2021,183.0
+Turkmenistan,2021,223.0
+Uzbekistan,2021,631.0
+Brunei,2021,42.0
+Burma,2021,1909.0
+Cambodia,2021,875.0
+Indonesia,2021,8003.0
+Laos,2021,101.0
+Malaysia,2021,4933.0
+Philippines,2021,3278.0
+Singapore,2021,3901.0
+Thailand,2021,5007.0
+Timor-Leste,2021,29.0
+Vietnam,2021,20713.0
+Albania,2021,1026.0
+Andorra,2021,18.0
+Armenia,2021,366.0
+Austria,2021,977.0
+Azerbaijan,2021,728.0
+Belarus,2021,357.0
+Belgium,2021,988.0
+Bosnia and Herzegovina,2021,257.0
+Bulgaria,2021,532.0
+Croatia,2021,392.0
+Cyprus,2021,413.0
+Czech Republic,2021,732.0
+Denmark,2021,1091.0
+Estonia,2021,178.0
+Finland,2021,480.0
+France,2021,7751.0
+Georgia,2021,662.0
+Germany,2021,8550.0
+Gibraltar,2021,12.0
+Greece,2021,2407.0
+Holy See,2021,2.0
+Hungary,2021,705.0
+Iceland,2021,411.0
+Ireland,2021,1295.0
+Italy,2021,5695.0
+Kosovo,2021,157.0
+Latvia,2021,291.0
+Liechtenstein,2021,7.0
+Lithuania,2021,314.0
+Luxembourg,2021,89.0
+North Macedonia,2021,218.0
+Malta,2021,62.0
+Moldova,2021,147.0
+Monaco,2021,19.0
+Montenegro,2021,121.0
+Netherlands,2021,2172.0
+Norway,2021,1633.0
+Poland,2021,1458.0
+Portugal,2021,1030.0
+Romania,2021,872.0
+Russia,2021,4802.0
+San Marino,2021,3.0
+Serbia,2021,898.0
+Slovakia,2021,305.0
+Slovenia,2021,201.0
+Spain,2021,8165.0
+Sweden,2021,2352.0
+Switzerland,2021,1301.0
+Turkey/Türkiye,2021,8467.0
+Ukraine,2021,1835.0
+United Kingdom,2021,10292.0
+"Europe, Unspecified",2021,4.0
+Anguilla,2021,18.0
+Antigua and Barbuda,2021,159.0
+Aruba,2021,65.0
+Bahamas,2021,2387.0
+Barbados,2021,269.0
+Bermuda,2021,235.0
+British Virgin Islands,2021,35.0
+Cayman Islands,2021,111.0
+Cuba,2021,114.0
+Curacao,2021,76.0
+Dominica,2021,514.0
+Dominican Republic,2021,1300.0
+Grenada,2021,118.0
+Guadeloupe,2021,2.0
+Haiti,2021,1015.0
+Jamaica,2021,2651.0
+Martinique,2021,4.0
+Montserrat,2021,3.0
+St. Kitts and Nevis,2021,184.0
+St. Lucia,2021,164.0
+St. Vincent and the Grenadines,2021,74.0
+Sint Maarten,2021,88.0
+Trinidad and Tobago,2021,1160.0
+Turks and Caicos,2021,40.0
+"Caribbean, Unspecified",2021,3.0
+Belize,2021,388.0
+Costa Rica,2021,1315.0
+El Salvador,2021,1445.0
+Guatemala,2021,1228.0
+Honduras,2021,2186.0
+Mexico,2021,14500.0
+Nicaragua,2021,553.0
+Panama,2021,1910.0
+Argentina,2021,2718.0
+Bolivia,2021,1285.0
+Brazil,2021,14897.0
+Chile,2021,2750.0
+Colombia,2021,8077.0
+Ecuador,2021,2781.0
+Falkland Islands/Islas Malvinas,2021,1.0
+French Guiana,2021,3.0
+Guyana,2021,326.0
+Paraguay,2021,714.0
+Peru,2021,4335.0
+Suriname,2021,37.0
+Uruguay,2021,414.0
+Venezuela,2021,5317.0
+Bahrain,2021,387.0
+Iran,2021,9295.0
+Iraq,2021,597.0
+Israel,2021,2027.0
+Jordan,2021,2426.0
+Kuwait,2021,5923.0
+Lebanon,2021,1958.0
+Oman,2021,2202.0
+Palestinian Territories,2021,485.0
+Qatar,2021,500.0
+Saudi Arabia,2021,18206.0
+Syria,2021,385.0
+United Arab Emirates,2021,1618.0
+Yemen,2021,305.0
+Algeria,2021,268.0
+Egypt,2021,3967.0
+Libya,2021,472.0
+Morocco,2021,1466.0
+Tunisia,2021,617.0
+Canada,2021,27013.0
+Australia,2021,3892.0
+Cook Islands,2021,4.0
+Fiji,2021,85.0
+French Polynesia,2021,39.0
+Kiribati,2021,28.0
+"Marshall Islands, Republic of the",2021,14.0
+"Micronesia, Federate States of",2021,51.0
+Nauru,2021,3.0
+New Caledonia,2021,2.0
+New Zealand,2021,1539.0
+Niue,2021,0.0
+Norfolk Island,2021,0.0
+Palau,2021,19.0
+Papua New Guinea,2021,92.0
+Samoa,2021,72.0
+Solomon Islands,2021,14.0
+Tonga,2021,119.0
+Tuvalu,2021,1.0
+Vanuatu,2021,11.0
+Wallis and Futuna,2021,9.0
+Stateless,2021,12.0
+Cameroon,2022,1086.0
+Central African Republic,2022,11.0
+Chad,2022,67.0
+"Congo, Republic of the (Brazzaville)",2022,199.0
+"Congo, Dem. Rep. of the (Kinshasa)",2022,1660.0
+Equatorial Guinea,2022,234.0
+Gabon,2022,236.0
+São Tomé & Príncipe,2022,1.0
+Burundi,2022,194.0
+Djibouti,2022,10.0
+Eritrea,2022,73.0
+Ethiopia,2022,3006.0
+Kenya,2022,4059.0
+Rwanda,2022,1372.0
+Seychelles,2022,18.0
+Somalia,2022,120.0
+South Sudan,2022,87.0
+Sudan,2022,381.0
+Tanzania,2022,904.0
+Uganda,2022,1088.0
+Angola,2022,553.0
+Botswana,2022,256.0
+Comoros,2022,23.0
+Eswatini,2022,181.0
+Lesotho,2022,70.0
+Madagascar,2022,226.0
+Malawi,2022,373.0
+Mauritius,2022,292.0
+Mozambique,2022,147.0
+Namibia,2022,94.0
+Reunion,2022,10.0
+South Africa,2022,2713.0
+Zambia,2022,555.0
+Zimbabwe,2022,1789.0
+Benin,2022,246.0
+Burkina Faso,2022,372.0
+Cabo Verde,2022,47.0
+Côte d’Ivoire,2022,1072.0
+"Gambia, The",2022,286.0
+Ghana,2022,6468.0
+Guinea,2022,96.0
+Guinea-Bissau,2022,12.0
+Liberia,2022,276.0
+Mali,2022,254.0
+Mauritania,2022,41.0
+Niger,2022,332.0
+Nigeria,2022,17640.0
+Saint Helena,2022,1.0
+Senegal,2022,490.0
+Sierra Leone,2022,280.0
+Togo,2022,198.0
+"West Africa, Unspecified",2022,0.0
+China,2022,289526.0
+Hong Kong,2022,5867.0
+Japan,2022,16054.0
+Macau,2022,360.0
+Mongolia,2022,1488.0
+North Korea,2022,3.0
+South Korea,2022,43847.0
+Taiwan,2022,21834.0
+Afghanistan,2022,682.0
+Bangladesh,2022,13563.0
+Bhutan,2022,188.0
+India,2022,268923.0
+Kazakhstan,2022,2440.0
+Kyrgyzstan,2022,705.0
+Maldives,2022,27.0
+Nepal,2022,15090.0
+Pakistan,2022,10164.0
+Sri Lanka,2022,3106.0
+Tajikistan,2022,170.0
+Turkmenistan,2022,299.0
+Uzbekistan,2022,1089.0
+Brunei,2022,41.0
+Burma,2022,2483.0
+Cambodia,2022,1060.0
+Indonesia,2022,8467.0
+Laos,2022,107.0
+Malaysia,2022,4973.0
+Philippines,2022,3818.0
+Singapore,2022,4484.0
+Thailand,2022,5376.0
+Timor-Leste,2022,31.0
+Vietnam,2022,21900.0
+Albania,2022,1087.0
+Andorra,2022,20.0
+Armenia,2022,457.0
+Austria,2022,1054.0
+Azerbaijan,2022,901.0
+Belarus,2022,382.0
+Belgium,2022,1044.0
+Bosnia and Herzegovina,2022,236.0
+Bulgaria,2022,546.0
+Croatia,2022,408.0
+Cyprus,2022,413.0
+Czech Republic,2022,787.0
+Denmark,2022,1393.0
+Estonia,2022,197.0
+Finland,2022,517.0
+France,2022,8552.0
+Georgia,2022,832.0
+Germany,2022,9751.0
+Gibraltar,2022,5.0
+Greece,2022,2539.0
+Holy See,2022,0.0
+Hungary,2022,712.0
+Iceland,2022,367.0
+Ireland,2022,1441.0
+Italy,2022,6274.0
+Kosovo,2022,160.0
+Latvia,2022,251.0
+Liechtenstein,2022,7.0
+Lithuania,2022,323.0
+Luxembourg,2022,89.0
+North Macedonia,2022,209.0
+Malta,2022,82.0
+Moldova,2022,151.0
+Monaco,2022,14.0
+Montenegro,2022,132.0
+Netherlands,2022,2751.0
+Norway,2022,1926.0
+Poland,2022,1585.0
+Portugal,2022,1045.0
+Romania,2022,876.0
+Russia,2022,4913.0
+San Marino,2022,4.0
+Serbia,2022,863.0
+Slovakia,2022,296.0
+Slovenia,2022,212.0
+Spain,2022,8548.0
+Sweden,2022,2732.0
+Switzerland,2022,1434.0
+Turkey/Türkiye,2022,8657.0
+Ukraine,2022,2072.0
+United Kingdom,2022,10659.0
+"Europe, Unspecified",2022,0.0
+Anguilla,2022,15.0
+Antigua and Barbuda,2022,168.0
+Aruba,2022,58.0
+Bahamas,2022,2606.0
+Barbados,2022,287.0
+Bermuda,2022,228.0
+British Virgin Islands,2022,82.0
+Cayman Islands,2022,145.0
+Cuba,2022,113.0
+Curacao,2022,54.0
+Dominica,2022,459.0
+Dominican Republic,2022,1514.0
+Grenada,2022,129.0
+Guadeloupe,2022,25.0
+Haiti,2022,1015.0
+Jamaica,2022,2928.0
+Martinique,2022,5.0
+Montserrat,2022,4.0
+St. Kitts and Nevis,2022,186.0
+St. Lucia,2022,201.0
+St. Vincent and the Grenadines,2022,93.0
+Sint Maarten,2022,90.0
+Trinidad and Tobago,2022,1248.0
+Turks and Caicos,2022,36.0
+"Caribbean, Unspecified",2022,3.0
+Belize,2022,370.0
+Costa Rica,2022,1357.0
+El Salvador,2022,1309.0
+Guatemala,2022,1289.0
+Honduras,2022,2227.0
+Mexico,2022,14541.0
+Nicaragua,2022,598.0
+Panama,2022,2087.0
+Argentina,2022,2979.0
+Bolivia,2022,1332.0
+Brazil,2022,16025.0
+Chile,2022,3007.0
+Colombia,2022,9096.0
+Ecuador,2022,3090.0
+Falkland Islands/Islas Malvinas,2022,0.0
+French Guiana,2022,13.0
+Guyana,2022,380.0
+Paraguay,2022,732.0
+Peru,2022,5170.0
+Suriname,2022,43.0
+Uruguay,2022,398.0
+Venezuela,2022,4210.0
+Bahrain,2022,371.0
+Iran,2022,10812.0
+Iraq,2022,544.0
+Israel,2022,2019.0
+Jordan,2022,2608.0
+Kuwait,2022,5427.0
+Lebanon,2022,2097.0
+Oman,2022,2077.0
+Palestinian Territories,2022,457.0
+Qatar,2022,404.0
+Saudi Arabia,2022,15989.0
+Syria,2022,402.0
+United Arab Emirates,2022,1502.0
+Yemen,2022,305.0
+Algeria,2022,302.0
+Egypt,2022,4247.0
+Libya,2022,449.0
+Morocco,2022,1603.0
+Tunisia,2022,680.0
+Canada,2022,27876.0
+Australia,2022,4504.0
+Cook Islands,2022,2.0
+Fiji,2022,134.0
+French Polynesia,2022,56.0
+Kiribati,2022,42.0
+"Marshall Islands, Republic of the",2022,3.0
+"Micronesia, Federate States of",2022,33.0
+Nauru,2022,3.0
+New Caledonia,2022,2.0
+New Zealand,2022,1651.0
+Niue,2022,1.0
+Norfolk Island,2022,0.0
+Palau,2022,13.0
+Papua New Guinea,2022,104.0
+Samoa,2022,66.0
+Solomon Islands,2022,10.0
+Tonga,2022,147.0
+Tuvalu,2022,3.0
+Vanuatu,2022,8.0
+Wallis and Futuna,2022,0.0
+Stateless,2022,20.0
+Cameroon,2023,981.0
+Central African Republic,2023,20.0
+Chad,2023,66.0
+"Congo, Republic of the (Brazzaville)",2023,180.0
+"Congo, Dem. Rep. of the (Kinshasa)",2023,1738.0
+Equatorial Guinea,2023,234.0
+Gabon,2023,250.0
+São Tomé & Príncipe,2023,0.0
+Burundi,2023,199.0
+Djibouti,2023,9.0
+Eritrea,2023,73.0
+Ethiopia,2023,3078.0
+Kenya,2023,4507.0
+Rwanda,2023,1311.0
+Seychelles,2023,17.0
+Somalia,2023,117.0
+South Sudan,2023,96.0
+Sudan,2023,398.0
+Tanzania,2023,1027.0
+Uganda,2023,1303.0
+Angola,2023,511.0
+Botswana,2023,273.0
+Comoros,2023,56.0
+Eswatini,2023,210.0
+Lesotho,2023,75.0
+Madagascar,2023,240.0
+Malawi,2023,502.0
+Mauritius,2023,258.0
+Mozambique,2023,175.0
+Namibia,2023,82.0
+Reunion,2023,8.0
+South Africa,2023,2814.0
+Zambia,2023,597.0
+Zimbabwe,2023,1907.0
+Benin,2023,260.0
+Burkina Faso,2023,299.0
+Cabo Verde,2023,51.0
+Côte d’Ivoire,2023,1138.0
+"Gambia, The",2023,363.0
+Ghana,2023,9394.0
+Guinea,2023,78.0
+Guinea-Bissau,2023,11.0
+Liberia,2023,261.0
+Mali,2023,239.0
+Mauritania,2023,38.0
+Niger,2023,171.0
+Nigeria,2023,20029.0
+Saint Helena,2023,3.0
+Senegal,2023,508.0
+Sierra Leone,2023,385.0
+Togo,2023,240.0
+"West Africa, Unspecified",2023,0.0
+China,2023,277398.0
+Hong Kong,2023,5627.0
+Japan,2023,13959.0
+Macau,2023,408.0
+Mongolia,2023,1671.0
+North Korea,2023,0.0
+South Korea,2023,43149.0
+Taiwan,2023,23157.0
+Afghanistan,2023,702.0
+Bangladesh,2023,17099.0
+Bhutan,2023,184.0
+India,2023,331602.0
+Kazakhstan,2023,2712.0
+Kyrgyzstan,2023,977.0
+Maldives,2023,33.0
+Nepal,2023,16742.0
+Pakistan,2023,10988.0
+Sri Lanka,2023,3424.0
+Tajikistan,2023,198.0
+Turkmenistan,2023,380.0
+Uzbekistan,2023,1219.0
+Brunei,2023,33.0
+Burma,2023,3222.0
+Cambodia,2023,997.0
+Indonesia,2023,8348.0
+Laos,2023,114.0
+Malaysia,2023,4816.0
+Philippines,2023,4100.0
+Singapore,2023,4574.0
+Thailand,2023,5310.0
+Timor-Leste,2023,29.0
+Vietnam,2023,22066.0
+Albania,2023,1187.0
+Andorra,2023,22.0
+Armenia,2023,497.0
+Austria,2023,1017.0
+Azerbaijan,2023,1130.0
+Belarus,2023,389.0
+Belgium,2023,1037.0
+Bosnia and Herzegovina,2023,247.0
+Bulgaria,2023,576.0
+Croatia,2023,390.0
+Cyprus,2023,409.0
+Czech Republic,2023,803.0
+Denmark,2023,1329.0
+Estonia,2023,195.0
+Finland,2023,482.0
+France,2023,8543.0
+Georgia,2023,991.0
+Germany,2023,9230.0
+Gibraltar,2023,12.0
+Greece,2023,2561.0
+Holy See,2023,0.0
+Hungary,2023,758.0
+Iceland,2023,328.0
+Ireland,2023,1423.0
+Italy,2023,6545.0
+Kosovo,2023,189.0
+Latvia,2023,262.0
+Liechtenstein,2023,16.0
+Lithuania,2023,322.0
+Luxembourg,2023,108.0
+North Macedonia,2023,206.0
+Malta,2023,72.0
+Moldova,2023,154.0
+Monaco,2023,17.0
+Montenegro,2023,148.0
+Netherlands,2023,2546.0
+Norway,2023,1692.0
+Poland,2023,1661.0
+Portugal,2023,1111.0
+Romania,2023,902.0
+Russia,2023,5071.0
+San Marino,2023,2.0
+Serbia,2023,894.0
+Slovakia,2023,326.0
+Slovenia,2023,199.0
+Spain,2023,8842.0
+Sweden,2023,2572.0
+Switzerland,2023,1383.0
+Turkey/Türkiye,2023,9148.0
+Ukraine,2023,2183.0
+United Kingdom,2023,10473.0
+"Europe, Unspecified",2023,0.0
+Anguilla,2023,8.0
+Antigua and Barbuda,2023,183.0
+Aruba,2023,58.0
+Bahamas,2023,2513.0
+Barbados,2023,282.0
+Bermuda,2023,237.0
+British Virgin Islands,2023,45.0
+Cayman Islands,2023,157.0
+Cuba,2023,117.0
+Curacao,2023,50.0
+Dominica,2023,406.0
+Dominican Republic,2023,1542.0
+Grenada,2023,160.0
+Guadeloupe,2023,4.0
+Haiti,2023,883.0
+Jamaica,2023,3185.0
+Martinique,2023,7.0
+Montserrat,2023,3.0
+St. Kitts and Nevis,2023,193.0
+St. Lucia,2023,197.0
+St. Vincent and the Grenadines,2023,104.0
+Sint Maarten,2023,72.0
+Trinidad and Tobago,2023,1334.0
+Turks and Caicos,2023,40.0
+"Caribbean, Unspecified",2023,0.0
+Belize,2023,416.0
+Costa Rica,2023,1431.0
+El Salvador,2023,1451.0
+Guatemala,2023,1352.0
+Honduras,2023,2532.0
+Mexico,2023,15474.0
+Nicaragua,2023,618.0
+Panama,2023,2128.0
+Argentina,2023,3101.0
+Bolivia,2023,1357.0
+Brazil,2023,16877.0
+Chile,2023,3113.0
+Colombia,2023,10120.0
+Ecuador,2023,3256.0
+Falkland Islands/Islas Malvinas,2023,2.0
+French Guiana,2023,1.0
+Guyana,2023,365.0
+Paraguay,2023,642.0
+Peru,2023,5505.0
+Suriname,2023,46.0
+Uruguay,2023,420.0
+Venezuela,2023,3904.0
+Bahrain,2023,335.0
+Iran,2023,12430.0
+Iraq,2023,476.0
+Israel,2023,2167.0
+Jordan,2023,2643.0
+Kuwait,2023,5102.0
+Lebanon,2023,1987.0
+Oman,2023,1748.0
+Palestinian Territories,2023,466.0
+Qatar,2023,388.0
+Saudi Arabia,2023,14828.0
+Syria,2023,385.0
+United Arab Emirates,2023,1571.0
+Yemen,2023,256.0
+Algeria,2023,364.0
+Egypt,2023,4280.0
+Libya,2023,365.0
+Morocco,2023,1784.0
+Tunisia,2023,717.0
+Canada,2023,28998.0
+Australia,2023,4432.0
+Cook Islands,2023,11.0
+Fiji,2023,156.0
+French Polynesia,2023,60.0
+Kiribati,2023,61.0
+"Marshall Islands, Republic of the",2023,10.0
+"Micronesia, Federate States of",2023,28.0
+Nauru,2023,0.0
+New Caledonia,2023,1.0
+New Zealand,2023,1696.0
+Niue,2023,1.0
+Norfolk Island,2023,0.0
+Palau,2023,33.0
+Papua New Guinea,2023,109.0
+Samoa,2023,76.0
+Solomon Islands,2023,5.0
+Tonga,2023,185.0
+Tuvalu,2023,2.0
+Vanuatu,2023,12.0
+Wallis and Futuna,2023,0.0
+Stateless,2023,13.0
+Cameroon,2024,1181.0
+Central African Republic,2024,11.0
+Chad,2024,115.0
+"Congo, Republic of the (Brazzaville)",2024,178.0
+"Congo, Dem. Rep. of the (Kinshasa)",2024,1794.0
+Equatorial Guinea,2024,217.0
+Gabon,2024,235.0
+São Tomé & Príncipe,2024,1.0
+Burundi,2024,220.0
+Djibouti,2024,13.0
+Eritrea,2024,80.0
+Ethiopia,2024,3395.0
+Kenya,2024,5337.0
+Rwanda,2024,1359.0
+Seychelles,2024,16.0
+Somalia,2024,128.0
+South Sudan,2024,137.0
+Sudan,2024,417.0
+Tanzania,2024,1140.0
+Uganda,2024,1495.0
+Angola,2024,478.0
+Botswana,2024,303.0
+Comoros,2024,22.0
+Eswatini,2024,219.0
+Lesotho,2024,70.0
+Madagascar,2024,251.0
+Malawi,2024,610.0
+Mauritius,2024,239.0
+Mozambique,2024,198.0
+Namibia,2024,95.0
+Reunion,2024,6.0
+South Africa,2024,2952.0
+Zambia,2024,743.0
+Zimbabwe,2024,2712.0
+Benin,2024,267.0
+Burkina Faso,2024,309.0
+Cabo Verde,2024,57.0
+Côte d’Ivoire,2024,1188.0
+"Gambia, The",2024,430.0
+Ghana,2024,12825.0
+Guinea,2024,83.0
+Guinea-Bissau,2024,9.0
+Liberia,2024,290.0
+Mali,2024,249.0
+Mauritania,2024,37.0
+Niger,2024,219.0
+Nigeria,2024,21847.0
+Saint Helena,2024,1.0
+Senegal,2024,498.0
+Sierra Leone,2024,462.0
+Togo,2024,247.0
+"West Africa, Unspecified",2024,0.0
+China,2024,265919.0
+Hong Kong,2024,5492.0
+Japan,2024,13814.0
+Macau,2024,397.0
+Mongolia,2024,1991.0
+North Korea,2024,0.0
+South Korea,2024,42293.0
+Taiwan,2024,23263.0
+Afghanistan,2024,712.0
+Bangladesh,2024,20156.0
+Bhutan,2024,228.0
+India,2024,363019.0
+Kazakhstan,2024,3102.0
+Kyrgyzstan,2024,1386.0
+Maldives,2024,42.0
+Nepal,2024,24890.0
+Pakistan,2024,13165.0
+Sri Lanka,2024,3661.0
+Tajikistan,2024,234.0
+Turkmenistan,2024,447.0
+Uzbekistan,2024,1310.0
+Brunei,2024,31.0
+Burma,2024,3744.0
+Cambodia,2024,1201.0
+Indonesia,2024,8104.0
+Laos,2024,124.0
+Malaysia,2024,4485.0
+Philippines,2024,4573.0
+Singapore,2024,4449.0
+Thailand,2024,5022.0
+Timor-Leste,2024,47.0
+Vietnam,2024,25584.0
+Albania,2024,1184.0
+Andorra,2024,28.0
+Armenia,2024,525.0
+Austria,2024,1043.0
+Azerbaijan,2024,1329.0
+Belarus,2024,411.0
+Belgium,2024,1059.0
+Bosnia and Herzegovina,2024,517.0
+Bulgaria,2024,612.0
+Croatia,2024,369.0
+Cyprus,2024,438.0
+Czech Republic,2024,840.0
+Denmark,2024,1172.0
+Estonia,2024,208.0
+Finland,2024,543.0
+France,2024,8698.0
+Georgia,2024,1040.0
+Germany,2024,9123.0
+Gibraltar,2024,7.0
+Greece,2024,2641.0
+Holy See,2024,0.0
+Hungary,2024,848.0
+Iceland,2024,320.0
+Ireland,2024,1404.0
+Italy,2024,6744.0
+Kosovo,2024,190.0
+Latvia,2024,271.0
+Liechtenstein,2024,17.0
+Lithuania,2024,343.0
+Luxembourg,2024,133.0
+North Macedonia,2024,205.0
+Malta,2024,97.0
+Moldova,2024,154.0
+Monaco,2024,32.0
+Montenegro,2024,169.0
+Netherlands,2024,2462.0
+Norway,2024,1617.0
+Poland,2024,1809.0
+Portugal,2024,1137.0
+Romania,2024,956.0
+Russia,2024,4948.0
+San Marino,2024,3.0
+Serbia,2024,940.0
+Slovakia,2024,366.0
+Slovenia,2024,236.0
+Spain,2024,9229.0
+Sweden,2024,2665.0
+Switzerland,2024,1382.0
+Turkey/Türkiye,2024,9413.0
+Ukraine,2024,2346.0
+United Kingdom,2024,11136.0
+"Europe, Unspecified",2024,2.0
+Anguilla,2024,12.0
+Antigua and Barbuda,2024,186.0
+Aruba,2024,69.0
+Bahamas,2024,2764.0
+Barbados,2024,296.0
+Bermuda,2024,228.0
+British Virgin Islands,2024,61.0
+Cayman Islands,2024,164.0
+Cuba,2024,91.0
+Curacao,2024,37.0
+Dominica,2024,414.0
+Dominican Republic,2024,1582.0
+Grenada,2024,200.0
+Guadeloupe,2024,6.0
+Haiti,2024,896.0
+Jamaica,2024,3416.0
+Martinique,2024,8.0
+Montserrat,2024,2.0
+St. Kitts and Nevis,2024,208.0
+St. Lucia,2024,216.0
+St. Vincent and the Grenadines,2024,112.0
+Sint Maarten,2024,81.0
+Trinidad and Tobago,2024,1419.0
+Turks and Caicos,2024,40.0
+"Caribbean, Unspecified",2024,0.0
+Belize,2024,382.0
+Costa Rica,2024,1461.0
+El Salvador,2024,1384.0
+Guatemala,2024,1344.0
+Honduras,2024,2548.0
+Mexico,2024,15652.0
+Nicaragua,2024,696.0
+Panama,2024,2233.0
+Argentina,2024,3335.0
+Bolivia,2024,1463.0
+Brazil,2024,17277.0
+Chile,2024,3092.0
+Colombia,2024,10213.0
+Ecuador,2024,3282.0
+Falkland Islands/Islas Malvinas,2024,0.0
+French Guiana,2024,4.0
+Guyana,2024,344.0
+Paraguay,2024,665.0
+Peru,2024,5667.0
+Suriname,2024,45.0
+Uruguay,2024,451.0
+Venezuela,2024,3886.0
+Bahrain,2024,438.0
+Iran,2024,12656.0
+Iraq,2024,572.0
+Israel,2024,2266.0
+Jordan,2024,2768.0
+Kuwait,2024,5018.0
+Lebanon,2024,1826.0
+Oman,2024,1401.0
+Palestinian Territories,2024,500.0
+Qatar,2024,350.0
+Saudi Arabia,2024,12702.0
+Syria,2024,434.0
+United Arab Emirates,2024,1808.0
+Yemen,2024,258.0
+Algeria,2024,426.0
+Egypt,2024,4518.0
+Libya,2024,333.0
+Morocco,2024,1975.0
+Tunisia,2024,769.0
+Canada,2024,29903.0
+Australia,2024,4620.0
+Cook Islands,2024,18.0
+Fiji,2024,165.0
+French Polynesia,2024,66.0
+Kiribati,2024,56.0
+"Marshall Islands, Republic of the",2024,30.0
+"Micronesia, Federate States of",2024,52.0
+Nauru,2024,0.0
+New Caledonia,2024,2.0
+New Zealand,2024,1781.0
+Niue,2024,4.0
+Norfolk Island,2024,0.0
+Palau,2024,58.0
+Papua New Guinea,2024,118.0
+Samoa,2024,75.0
+Solomon Islands,2024,8.0
+Tonga,2024,195.0
+Tuvalu,2024,3.0
+Vanuatu,2024,18.0
+Wallis and Futuna,2024,1.0
+Stateless,2024,12.0

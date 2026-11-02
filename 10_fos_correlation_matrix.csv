@@ -1,0 +1,13 @@
+field,Total,Engineering,Business and Management,Math and Computer Science,Computer and Information Sciences,Physical and Life Sciences,Other Fields of Study,Social Sciences,Fine and Applied Arts,Liberal Arts and Sciences/General Studies,Biological and Biomedical Sciences,Visual and Performing Arts
+Total,1.0,0.988,0.855,0.892,0.855,0.963,0.965,0.986,0.938,0.869,0.943,0.918
+Engineering,0.988,1.0,0.892,0.841,0.794,0.941,0.926,0.987,0.966,0.906,0.907,0.949
+Business and Management,0.855,0.892,1.0,0.551,0.492,0.805,0.75,0.869,0.902,0.895,0.734,0.893
+Math and Computer Science,0.892,0.841,0.551,1.0,0.996,0.859,0.927,0.861,0.762,0.629,0.887,0.735
+Computer and Information Sciences,0.855,0.794,0.492,0.996,1.0,0.821,0.909,0.816,0.709,0.579,0.859,0.68
+Physical and Life Sciences,0.963,0.941,0.805,0.859,0.821,1.0,0.94,0.965,0.846,0.791,0.992,0.817
+Other Fields of Study,0.965,0.926,0.75,0.927,0.909,0.94,1.0,0.927,0.839,0.822,0.945,0.813
+Social Sciences,0.986,0.987,0.869,0.861,0.816,0.965,0.927,1.0,0.939,0.855,0.938,0.918
+Fine and Applied Arts,0.938,0.966,0.902,0.762,0.709,0.846,0.839,0.939,1.0,0.896,0.792,0.998
+Liberal Arts and Sciences/General Studies,0.869,0.906,0.895,0.629,0.579,0.791,0.822,0.855,0.896,1.0,0.735,0.893
+Biological and Biomedical Sciences,0.943,0.907,0.734,0.887,0.859,0.992,0.945,0.938,0.792,0.735,1.0,0.76
+Visual and Performing Arts,0.918,0.949,0.893,0.735,0.68,0.817,0.813,0.918,0.998,0.893,0.76,1.0
